@@ -1,0 +1,76 @@
+menu_title: '&1&l世界传送&f&l（&e/worldtp&f&l）'
+open_command: worldtp
+permission: worldtp.open
+size: 26
+items:
+  'ITEM_SLOT_0':
+    material: white_stained_glass_pane
+    slots: 
+    - 0
+    - 8
+    - 9
+    - 17
+    - 18
+    - 26
+    display_name: '&f装饰物品'
+  'WORLD':
+    material: grass_block
+    slot: 11
+    display_name: '&f&l生存世界随机传送'
+    lore:
+    - '&e&l圈地做家的好地方:D'
+    left_click_commands:
+    - '[player] rtp world world'
+    - '[close]'
+    right_click_commands:
+    - '[player] rtp world world'
+    - '[close]'
+  'WORLD_NETHER':
+    material:  netherrack
+    slot: 12
+    display_name: '&f&l地狱世界随机传送'
+    lore:
+    - '&e&l来探索地狱吧:D'
+    left_click_commands:
+    - '[player] rtp world world_nether'
+    - '[close]'
+    right_click_commands:
+    - '[player] rtp world world_nether'
+    - '[close]'
+  'WORLD_THE_END':
+    material:  end_stone
+    slot: 13
+    display_name: '&f&l末地世界随机传送'
+    lore:
+    - '&e&l来探索末地城吧:D'
+    left_click_commands:
+    - '[player] rtp world world_the_end'
+    - '[close]'
+    right_click_commands:
+    - '[player] rtp world world_the_end'
+    - '[close]'
+  'RPG':
+    material: emerald_block
+    slot: 14
+    display_name: '&f&l资源世界随机传送'
+    lore:
+    - '&e&l获取资源的好去处:D'
+    left_click_commands:
+    - '[player] rtp world otd_dungeon'
+    - '[close]'
+    right_click_commands:
+    - '[player] rtp world otd_dungeon'
+    - '[close]'
+  'SPAWN':
+    material: oak_planks
+    slot: 15
+    display_name: '&f&l主城'
+    lore:
+    - '&e&l你的出生点:D'
+    left_click_commands:
+    - '[player] spawn'
+    - '[close]'
+    right_click_commands:
+    - '[player] spawn'
+    - '[close]'
+    

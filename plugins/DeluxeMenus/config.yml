@@ -1,0 +1,12 @@
+# DeluxeMenus 1.13.3-Release main configuration file
+# 
+# A full wiki on how to use this plugin can be found at:
+# https://github.com/help-chat/DeluxeMenus/wiki
+
+debug: false
+check_updates: false
+gui_menus:
+  menu:
+    file: menu.yml
+  worldtp:
+    file: worldtp.yml

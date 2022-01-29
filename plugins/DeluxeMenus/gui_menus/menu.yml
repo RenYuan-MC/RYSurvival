@@ -1,0 +1,56 @@
+menu_title: '&1&l主菜单&f&l（&e/menu&f&l）'
+open_command: menu
+permission: menu.open
+size: 53
+items:
+  'ITEM_SLOT_0':
+    material: white_stained_glass_pane
+    slots: 
+    - 0
+    - 8
+    - 9
+    - 17
+    - 18
+    - 26
+    - 27
+    - 35
+    - 36
+    - 44
+    - 45
+    - 53
+    display_name: '&f装饰物品'
+  'SFGUIDE':
+    material: enchanted_book
+    slot: 11
+    display_name: '&f&l获取粘液科技指南'
+    lore:
+    - '&e&l获取粘液科技指南'
+    left_click_commands:
+    - '[player] sf guide'
+    right_click_commands:
+    - '[player] sf guide'
+  'SCOREBOARD':
+    material: beacon
+    slot: 12
+    display_name: '&f&l启用/隐藏计分板'
+    lore:
+    - '&e&l如果觉得计分板碍眼可以隐藏:D'
+    left_click_commands:
+    - '[player] sb toggle'
+    right_click_commands:
+    - '[player] sb toggle'
+
+
+  'BACK':
+    material: barrier
+    slot: 42
+    display_name: '&f&l返回引导菜单'
+    lore:
+    - '&e&l:D'
+    left_click_commands:
+    - '[player] clock'
+    right_click_commands:
+    - '[player] clock'
+    
+    
+    

@@ -1,0 +1,83 @@
+Clock:
+  AutoGetClock: true
+  MainGuiId: 0
+  Name: '&a&l引导菜单'
+  Lore:
+  - '&e&l引导菜单'
+  World:
+  - spawn
+  - world
+  - world_nether
+  - world_the_end
+  - otd_dungeon
+GUI:
+  '0':
+    Name: '&1&l引导菜单&f&l（&e/cd&f&l）'
+    Item:
+      '1':
+        Position: 2
+        ItemID: clock
+        Name: '&f&l主菜单'
+        Lore:
+        - '&e&l提供基础功能:D'
+        Function:
+          Command:
+            Use: true
+            CloseGui: true
+            Content:
+            - dm open menu
+            RunAsOp: false
+          OpenAnotherGUI:
+            Use: false
+      '2':
+        Position: 4
+        ItemID: grass_block
+        Name: '&f&l世界传送'
+        Lore:
+        - '&e&l打开世界传送菜单:D'
+        Function:
+          Command:
+            Use: true
+            CloseGui: true
+            RunAsOp: false
+            Content:
+            - dm open worldtp
+          OpenAnotherGUI:
+            Use: false
+      '3':
+        Position: 6
+        ItemID: diamond_axe
+        Name: '&f&l打开技能菜单'
+        Lore:
+        - '&e&l技能?:D'
+        Function:
+          Command:
+            Use: true
+            CloseGui: true
+            RunAsOp: false
+            Content:
+            - skills
+          OpenAnotherGUI:
+            Use: false
+      '4':
+        Position: 0
+        ItemID: white_stained_glass_pane
+        Name: '&f&l装饰物品'
+        Function:
+          Command:
+            Use: false
+            CloseGui: true
+            RunAsOp: false
+          OpenAnotherGUI:
+            Use: false
+      '5':
+        Position: 8
+        ItemID: white_stained_glass_pane
+        Name: '&f&l装饰物品'
+        Function:
+          Command:
+            Use: false
+            CloseGui: true
+            RunAsOp: false
+          OpenAnotherGUI:
+            Use: false

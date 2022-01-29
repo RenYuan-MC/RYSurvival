@@ -1,0 +1,63 @@
+# Translation author: OasisAkari (GitHub)
+Messages:
+  Locked: '&c瀵逛笉璧凤紝&7浣犲凡缁忕敤瀹屼簡浣犵殑闅忔満浼犻�佹鏁颁簡锛�'
+  Edit:
+    Error: '&c閿欒锛�&7鎻愪緵鐨勫弬鏁版棤鏁堬紒'
+    Set: '&b鎴愬姛锛�&7%type%璁剧疆涓�%value%銆�'
+    Remove: '&c宸茬Щ闄わ紝&7浣犵Щ闄や簡鑷畾涔変笘鐣�%world%銆�'
+  Prefix: '&7[&6BetterRTP&7] '
+  Success:
+    Loading: '&a瀹夊叏浣嶇疆宸插畾浣嶏紒&7鍔犺浇鍖哄潡涓�︹��'
+    Teleport: '&a浼犻�佷腑鈥︹��&f鐩村埌鎴戜滑鎵惧埌瀹夊叏鐨勪綅缃箣鍓嶈绛変竴涓嬶紒'
+    Paid: '&aJe bent getp''d naar&7 x=%x% y=%y% z=%z% for &c$%price%&7 in &f%attempts%
+      &7attempts!'
+    Bypass: '&aJe bent getp''d naar&7 x=%x% y=%y% z=%z%'
+  Failed:
+    Hunger: '&7浣犲お楗夸簡锛�&c浼犻�佷箣鍓嶅厛鍚冪偣涓滆タ鍐嶈锛�'
+    Price: '&cKan niet rtpen vanwege onvoldoende saldo! &7Je moet minstens $%price%
+      &7hebben om te rtpen!'
+    NotSafe: '&cKon geen veilige plek vinden, Probeer opnieuw! &7Je bent niet ge tp''d!'
+  Other:
+    Success: '&a%player% is getp''d naar&7 x=%x% y=%y% z=%z% in &f%attempts% &7pogingen!'
+    NotSafe: '&cKon geen veilige plek binnenin %attempts% pogingen! &7%player% is
+      niet gertp''d!'
+    Biome: '&cHet lijkt er naar dat de biome&7 %biome%&c niet bestaat! &7Probeer de
+      tab list te gebruiken!'
+  Reload: '&eConfig succesvol herladen!'
+  NoPermission:
+    Basic: '&cSorry! &7U heeft geen toestemming om deze command te gebruiken!'
+    World: '&cSorry! &7Je mag niet rtpen in de %world% wereld!'
+  DisabledWorld: '&cUitgeschakeld %world%! &7Kon niet RTPen!'
+  Cooldown: '&cSorry! &7Je kan niet rtpen voor &c%time% &7seconden!'
+  Invalid: '&cOngeldig argument. probeer ''/%command% help'''
+  NotOnline: '&cDe speler &7%player% &cis niet online!'
+  Delay: '&aTeleportering in &f%time% &aseconden! Niet bewegen!'
+  Moved: '&cJe hebt bewogen! &7RTP was afgelast!'
+  NotExist: '&cLijkt dat de wereld &7%world% &cniet bestaat!'
+  Already: '&cOepsie! &7Het lijkt erop dat je al aan het rtpen bent, heb wat geduld!'
+  Sign: '&7Commando bordje is aangemaakt! &7Commando is... ''&f/rtp %command%&7'''
+Help:
+  Prefix: '&e&m-----&6&l BetterRTP &8| 甯姪鑿滃崟 &e&m-----'
+  Edit: ' &7- &e/%command% edit <榛樿/涓栫晫> [鍙傛暟...] &7- 淇敼鎻掍欢璁剧疆銆�'
+  Info: ' &7- &e/%command% info [world/particles/shapes/potion_effects] &7- 鏌ョ湅鏈夊叧鎻掍欢鍙傛暟鐨勭壒瀹氫俊鎭��'
+  Settings: ' &7- &e/%command% settings &7- 鎵撳紑GUI璁剧疆銆�'
+  Test: ' &7- &e/%command% test &7- 娴嬭瘯浼犻�佸悗鐨勬彃浠舵晥鏋溿��'
+  Version: ' &7- &e/%command% version &7- 鏄剧ず鐩墠浣跨敤鐨勬彃浠剁増鏈��'
+  Main: ' &7- &e/%command% &7- Teleporteert jou naar een random locatie!'
+  Biome: ' &7- &e/%command% biome <biome1, biome2...> &7- Random teleport in deze
+    biome'
+  Help: ' &7- &e/%command% help &7- Toont help lijst.'
+  Player: ' &7- &e/%command% player <player> [world] [biome1, biome2...] &7- Random
+    teleport een andere speler'
+  Reload: ' &7- &e/%command% reload &7- Herlaad de plugin'
+  World: ' &7- &e/%command% world <world> [biome1, biome2...] &7- Random teleport
+    in een andere wereld'
+Usage:
+  Edit:
+    Base: '&c鐢ㄦ硶&7锛�/%command% edit <default/涓栫晫> [鍙傛暟...]'
+    Default: '&c鐢ㄦ硶&7锛�/%command% edit default <max/min/useworldborder/center> <鍊�>'
+    World: '&c鐢ㄦ硶&7锛�/%command% edit world <world> <max/min/useworldborder/center>
+      <鍊�>'
+  Player: '&cUsage&7: /%command% player <player> [world] [biome1, biome2]'
+  World: '&cUsage&7: /%command% world <world> [biome1, biome2...]'
+  Biome: '&cUsage&7: /%command% biome <biome1, biome2...>'

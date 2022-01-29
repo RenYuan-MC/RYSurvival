@@ -1,0 +1,66 @@
+#ConsoleSpamFix的默认config.yml
+#配置版本1.8.6
+#在此处添加要从控制台和日志中隐藏的消息。
+#每行代表一条新消息。
+#注意！你不需要添加完整的信息！
+#该插件将隐藏包含下面添加的文本的所有消息。
+#例如:
+#
+# Messages-To-Hide-Filter:
+# - 'SERVER IS RUNNING IN OFFLINE/INSECURE MODE'
+#
+#服务器控制台中出现的所有包含'SERVER IS RUNNING IN OFFLINE/INSECURE MODE'字样的消息都将被隐藏，并且不会出现在日志或控制台上。
+#如果有较大错误，则不必键入完整错误。但是添加的单词越多，则越准确，并且不会隐藏可能包含在筛选器中添加的单词的其他消息。
+
+Messages-To-Hide-Filter:
+#离线服务器警告屏蔽
+- 'SERVER IS RUNNING IN OFFLINE/INSECURE MODE'
+- 'To change this, set "online-mode" to "true" in the server.properties file'
+- 'The server will make no attempt to authenticate usernames'
+- 'While this makes the game possible to play without internet access'
+
+#ESS更新提示屏蔽
+- '正在获取版本信息...'
+- '服务端版本V1.3.1'
+
+#ESS无用信息屏蔽
+- 'Permissions lag notice with'
+- '被拒绝使用命令'
+
+#Vault无用信息屏蔽
+- 'Loaded class com.earth2me.essentials.api.Economy from'
+
+#Multiverse-Core无用信息屏蔽
+- 'has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method'
+- 'We are aware of the warning about the deprecated event'
+
+#Scoreboard无用信息屏蔽
+- '»'
+
+#PlaceholderAPI无用信息屏蔽
+- 'Successfully registered expansion'
+- 'placeholder hooks successfully registered'
+
+#CatSeedLogin无用信息屏蔽
+- '缓存加载'
+
+#CMILib更新提示屏蔽
+- 'New version of CMILib was detected'
+
+#CMILib无用信息屏蔽
+- 'Server version: v1_17_R1 - 1.17.1 - paper'
+
+#未知无用信息屏蔽
+- 'UUID of added entity already exists'
+
+#Floodgate无用信息屏蔽
+- 'The prefix you entered in your Floodgate config'
+- '******************************************'
+
+#ClockGUI无用信息屏蔽
+- '制作者QQ'
+
+ChatMessages:
+    NoPermission: '&f[&6服务器&f] &f你没有权限'
+    CmdHelp: '&f[&6服务器&f] &f可用的命令: /csf reload'
+    CmdReload: '&f[&6服务器&f] &f配置重载完成'
