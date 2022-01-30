@@ -65,6 +65,7 @@ Messages-To-Hide-Filter:
 
 #懂的都懂,看着就烦
 - 'Preparing spawn area: 0%'
+- 'Unable to find spawn biome'
 
 ChatMessages:
     NoPermission: '&f[&6服务器&f] &f你没有权限'
