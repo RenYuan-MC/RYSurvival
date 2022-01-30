@@ -60,6 +60,12 @@ Messages-To-Hide-Filter:
 #ClockGUI无用信息屏蔽
 - '制作者QQ'
 
+#ViaBackward无用信息屏蔽
+- 'Ignoring plugin channel in incoming REGISTER'
+
+#懂的都懂,看着就烦
+- 'Preparing spawn area: 0%'
+
 ChatMessages:
     NoPermission: '&f[&6服务器&f] &f你没有权限'
     CmdHelp: '&f[&6服务器&f] &f可用的命令: /csf reload'
