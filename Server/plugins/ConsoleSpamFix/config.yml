@@ -67,6 +67,13 @@ Messages-To-Hide-Filter:
 - 'Preparing spawn area: 0%'
 - 'Unable to find spawn biome'
 
+#Geyser无用信息屏蔽
+- '无法翻译数据包'
+
+#slimefun无用信息屏蔽
+- 'Attempted to refresh skin cache'
+- 'This usually means mojang.com is temporarily down or started'
+
 ChatMessages:
     NoPermission: '&f[&6服务器&f] &f你没有权限'
     CmdHelp: '&f[&6服务器&f] &f可用的命令: /csf reload'

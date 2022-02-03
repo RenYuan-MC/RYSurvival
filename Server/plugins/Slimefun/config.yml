@@ -24,7 +24,7 @@ options:
   legacy-ore-grinder: true
   language: zh-CN
   enable-translations: true
-  log-duplicate-block-entries: true
+  log-duplicate-block-entries: false
   burn-players-when-radioactive: true
   drop-excess-sf-give-items: false
   backup-data: true

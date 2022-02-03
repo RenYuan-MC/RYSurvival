@@ -1,0 +1,6 @@
+gamerules:
+  keepInventory: 'true'
+  doImmediateRespawn: 'true'
+locale: zh_CN
+exempt-worlds:
+- spawn
