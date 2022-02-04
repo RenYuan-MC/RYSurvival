@@ -86,8 +86,7 @@ Messages-To-Hide-Filter:
 - 'Failed to download'
 
 #不联网导致的报错屏蔽(请联网,OK?)
-- '不知道这样的主机'
-- 'at java.net.Inet6AddressImpl.lookupAllHostAddr'
+- 'Got an error'
 - 'Exception while requesting skin'
 - 'You can do it manually or try again later or simply ignore it'
 - 'Failed to check for Residence update on spigot web page'
