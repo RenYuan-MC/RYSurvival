@@ -84,6 +84,17 @@ Messages-To-Hide-Filter:
 
 #Residence下载失败信息屏蔽
 - 'Failed to download'
+
+#不联网导致的报错屏蔽(请联网,OK?)
+- '不知道这样的主机'
+- 'at java.net.Inet6AddressImpl.lookupAllHostAddr'
+- 'Exception while requesting skin'
+- 'You can do it manually or try again later or simply ignore it'
+- 'Failed to check for Residence update on spigot web page'
+- 'Unable to check for updates'
+- '无法获取本地附件缓存'
+- '非法的本地下载和加载请求'
+
 ChatMessages:
     NoPermission: '&f[&6服务器&f] &f你没有权限'
     CmdHelp: '&f[&6服务器&f] &f可用的命令: /csf reload'
