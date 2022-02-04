@@ -67,7 +67,7 @@ Messages-To-Hide-Filter:
 - 'Preparing spawn area: 0%'
 - 'Unable to find spawn biome'
 - 'Uncaught exception in thread Profile Lookup Executor'
-- 'Couldn't look up profile properties for'
+- 'look up profile properties for'
 
 #Geyser无用信息屏蔽
 - '无法翻译数据包'
