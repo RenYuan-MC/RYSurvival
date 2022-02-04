@@ -66,6 +66,8 @@ Messages-To-Hide-Filter:
 #懂的都懂,看着就烦
 - 'Preparing spawn area: 0%'
 - 'Unable to find spawn biome'
+- 'Uncaught exception in thread Profile Lookup Executor'
+- 'Couldn't look up profile properties for'
 
 #Geyser无用信息屏蔽
 - '无法翻译数据包'
@@ -73,7 +75,15 @@ Messages-To-Hide-Filter:
 #slimefun无用信息屏蔽
 - 'Attempted to refresh skin cache'
 - 'This usually means mojang.com is temporarily down or started'
+- 'Retrying request to {s}->https://api.github.com:443'
+- 'I/O exception (java.net.SocketException)'
+- 'Failed to fetch the latest jar file from the builds page'
+- 'Failed to start metrics as the file could not be downloaded'
+- 'Failed to fetch latest builds for Metrics'
 
+
+#Residence下载失败信息屏蔽
+- 'Failed to download'
 ChatMessages:
     NoPermission: '&f[&6服务器&f] &f你没有权限'
     CmdHelp: '&f[&6服务器&f] &f可用的命令: /csf reload'
