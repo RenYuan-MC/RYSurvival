@@ -56,7 +56,7 @@ function MainForm_Home(p: player):
 
 function MainForm_Setting(p: player):
     set {_fp} to FloodgateApi.getInstance().getPlayer({_p}.getUniqueId())
-    set {_F} to SimpleForm.builder().title("&l功能菜单").content("功能菜单").button("开关计分板", Type.PATH, "textures/items/apple.png").button("开关技能状态显示栏", Type.PATH, "textures/items/apple_golden.png")
+    set {_F} to SimpleForm.builder().title("&l功能菜单").content("功能菜单").button("开关计分板", Type.PATH, "textures/items/apple.png").button("开关技能状态显示栏", Type.PATH, "textures/items/apple_golden.png").button("签到", Type.PATH, "textures/items/paper.png")
     set {_F} to LForm.SimpleListener({_p}, {_F}, "MainMenu_S")
     {_fp}.sendForm({_F})
 
@@ -134,6 +134,8 @@ on SimpleFormClickEvent:
             make event.getPlayer() execute command "sb toggle"
         else if {_id} is 1:
             make event.getPlayer() execute command "abtoggle"
+        else if {_id} is 2:
+            make event.getPlayer() execute command "signin click"
     else if event.getFormId() is "MainMenu_P":
         set {_id} to event.getButtonID()
         if {_id} is 0:

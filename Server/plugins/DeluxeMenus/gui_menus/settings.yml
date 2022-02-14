@@ -16,7 +16,6 @@ items:
     - 7
     - 8
     - 9
-    - 13
     - 17
     - 18
     - 19
@@ -48,7 +47,19 @@ items:
     right_click_commands:
     - '[player] sb toggle'
     - '[close]'
-  'WORLD_NETHER':
+  'SIGNIN':
+    material: paper
+    slot: 13
+    display_name: '&f&l签到'
+    lore:
+    - '&e&l有好东西(确信):D'
+    left_click_commands:
+    - '[player] signin gui'
+    - '[close]'
+    right_click_commands:
+    - '[player] signin gui'
+    - '[close]'
+  'ABTOGGLE':
     material: golden_apple
     slot: 15
     display_name: '&f&l开关技能状态显示栏'
