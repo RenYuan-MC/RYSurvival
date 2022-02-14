@@ -1,0 +1,29 @@
+On Swap Hand Items:
+    player is sneaking
+    make player execute command "dm open menu"
+    cancel event
+
+On join:
+    player has enough space for 64 clock
+    remove clock named "§b§l主菜单" from player
+    give a clock named "§b§l主菜单" with lore "§e主菜单" to the player
+    player is from floodgate
+    player does not have permission "group.bedrock"
+    command "lp user %player% parent add bedrock"
+
+on click holding a clock:
+    name of player's tool contains "§b§l主菜单"
+    tool's lore contains "§e主菜单"
+    make player execute command "cd"
+    cancel event
+
+command /cd:
+    trigger:
+        if player is from floodgate:
+            make player execute command "OpenBeMenu"
+        else:
+            make player execute command "dm open menu" 
+
+command /tpend:
+    trigger:
+        teleport the player to location(0.5, 63.0, 0.5, world "world_the_end")

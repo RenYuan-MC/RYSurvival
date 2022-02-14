@@ -75,7 +75,7 @@ Messages-To-Hide-Filter:
 #slimefun无用信息屏蔽
 - 'Attempted to refresh skin cache'
 - 'This usually means mojang.com is temporarily down or started'
-- 'Retrying request to {s}->https://api.github.com:443'
+- 'Retrying request to'
 - 'I/O exception (java.net.SocketException)'
 - 'Failed to fetch the latest jar file from the builds page'
 - 'Failed to start metrics as the file could not be downloaded'

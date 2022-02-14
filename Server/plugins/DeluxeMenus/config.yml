@@ -10,3 +10,7 @@ gui_menus:
     file: menu.yml
   worldtp:
     file: worldtp.yml
+  settings:
+    file: settings.yml
+  playing:
+    file: playing.yml

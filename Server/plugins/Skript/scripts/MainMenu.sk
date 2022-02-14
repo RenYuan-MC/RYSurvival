@@ -1,0 +1,142 @@
+import:
+    org.geysermc.floodgate.api.FloodgateApi
+    org.geysermc.cumulus.SimpleForm
+    org.geysermc.cumulus.ModalForm
+    org.geysermc.cumulus.CustomForm
+    org.geysermc.cumulus.util.FormBuilder
+    org.geysermc.cumulus.util.FormImage
+    
+    org.bukkit.entity.Player
+   
+    org.geysermc.cumulus.util.FormImage$Type
+    
+    me.zimzaza4.LForm
+    me.zimzaza4.SimpleFormClickEvent
+    me.zimzaza4.ModalFormClickEvent
+    me.zimzaza4.CustomFormClickEvent
+   
+
+function MainForm_Teleport(p: player):
+    set {_fp} to FloodgateApi.getInstance().getPlayer({_p}.getUniqueId())
+    set {_F} to CustomForm.builder().title("传送").input("请输入你要传送的玩家(不需要完整名称)", "&7RENaa")
+    set {_F} to LForm.CustomListener({_p}, {_F}, "MainMenu_T")
+    {_fp}.sendForm({_F})
+    
+function MainForm_TeleportHere(p: player):
+    set {_fp} to FloodgateApi.getInstance().getPlayer({_p}.getUniqueId())
+    set {_F} to CustomForm.builder().title("传送").input("请输入你要传送的玩家(不需要完整名称)", "&7RENaa")
+    set {_F} to LForm.CustomListener({_p}, {_F}, "MainMenu_TH")
+    {_fp}.sendForm({_F})
+    
+function MainForm_Main(p: player):
+    set {_fp} to FloodgateApi.getInstance().getPlayer({_p}.getUniqueId())
+    set {_F} to SimpleForm.builder().title("&e&l主菜单").content("主菜单").button("世界传送菜单", Type.PATH, "textures/ui/arrow_dark_right_stretch.png").button("玩家传送菜单", Type.PATH, "textures/items/ender_pearl.png").button("功能菜单", Type.PATH, "textures/ui/settings_glyph_color_2x.png").button("玩法菜单", Type.PATH, "textures/items/book_enchanted.png").button("家管理", Type.PATH, "textures/ui/store_home_icon.png")
+    set {_F} to LForm.SimpleListener({_p}, {_F}, "MainMenu_M")
+    {_fp}.sendForm({_F})
+
+
+function MainForm_WorldTeleport(p: player):
+    set {_fp} to FloodgateApi.getInstance().getPlayer({_p}.getUniqueId())
+    set {_F} to SimpleForm.builder().title("&l世界传送").content("世界传送").button("生存世界随机传送", Type.PATH, "textures/blocks/grass_path_side.png").button("地狱世界随机传送", Type.PATH, "textures/blocks/netherrack.png").button("末地世界传送", Type.PATH, "textures/blocks/end_stone.png").button("资源世界随机传送", Type.PATH, "textures/blocks/emerald_block.png").button("传送至主城", Type.PATH, "textures/blocks/planks_oak.png")
+    set {_F} to LForm.SimpleListener({_p}, {_F}, "MainMenu_WT")
+    {_fp}.sendForm({_F})
+
+function MainForm_PlayerTeleport(p: player):
+    set {_fp} to FloodgateApi.getInstance().getPlayer({_p}.getUniqueId())
+    set {_F} to SimpleForm.builder().title("&l玩家传送").content("玩家传送").button("传送到别的玩家", Type.PATH, "textures/ui/arrow_dark_right.png").button("让别的玩家传送到这", Type.PATH, "textures/ui/arrow_dark_left_stretch.png").button("拒绝传送", Type.PATH, "textures/ui/realms_red_x.png").button("同意传送", Type.PATH, "textures/ui/realms_green_check.png").button("取消传送", Type.PATH, "textures/blocks/barrier.png")
+    set {_F} to LForm.SimpleListener({_p}, {_F}, "MainMenu_PT")
+    {_fp}.sendForm({_F})
+
+
+function MainForm_Home(p: player):
+    set {_fp} to FloodgateApi.getInstance().getPlayer({_p}.getUniqueId())
+    set {_F} to SimpleForm.builder().title("&l家管理").content("家管理").button("传送到你的家", Type.PATH, "textures/ui/arrow_dark_right_stretch.png").button("将当前位置设置为家", Type.PATH, "textures/blocks/planks_oak.png")
+    set {_F} to LForm.SimpleListener({_p}, {_F}, "MainMenu_H")
+    {_fp}.sendForm({_F})
+
+function MainForm_Setting(p: player):
+    set {_fp} to FloodgateApi.getInstance().getPlayer({_p}.getUniqueId())
+    set {_F} to SimpleForm.builder().title("&l功能菜单").content("功能菜单").button("开关计分板", Type.PATH, "textures/items/apple.png").button("开关技能状态显示栏", Type.PATH, "textures/items/apple_golden.png")
+    set {_F} to LForm.SimpleListener({_p}, {_F}, "MainMenu_S")
+    {_fp}.sendForm({_F})
+
+function MainForm_Playing(p: player):
+    set {_fp} to FloodgateApi.getInstance().getPlayer({_p}.getUniqueId())
+    set {_F} to SimpleForm.builder().title("&l玩法菜单").content("玩法菜单").button("获取粘液科技指南", Type.PATH, "textures/items/book_enchanted.png").button("打开技能菜单", Type.PATH, "textures/items/diamond_axe.png")
+    set {_F} to LForm.SimpleListener({_p}, {_F}, "MainMenu_P")
+    {_fp}.sendForm({_F})
+
+command /OpenBeMenu:
+    trigger:
+        if player is from floodgate:
+            MainForm_Main(player)
+
+
+on CustomFormClickEvent:
+    set {_p} to event.getPlayer()
+    set {_res} to event.getResponse()
+    if {_res}.getInput(0) is not null:
+        set {_a} to {_res}.getInput(0)
+
+    if event.getFormID() is "MainMenu_T":
+        make {_p} execute command "tpa %{_a}%"
+    else if event.getFormID() is "MainMenu_TH":
+        make {_p} execute command "tpahere %{_a}%"
+        
+        
+    
+on SimpleFormClickEvent:
+    if event.getFormId() is "MainMenu_M":
+        set {_id} to event.getButtonID()
+        if {_id} is 0:
+            MainForm_WorldTeleport(event.getPlayer())
+        else if {_id} is 1:
+            MainForm_PlayerTeleport(event.getPlayer())
+        else if {_id} is 2:
+            MainForm_Setting(event.getPlayer())
+        else if {_id} is 3:
+            MainForm_Playing(event.getPlayer())
+        else if {_id} is 4:
+            MainForm_Home(event.getPlayer())
+    else if event.getFormId() is "MainMenu_WT":
+        set {_id} to event.getButtonID()
+        if {_id} is 0:
+            make event.getPlayer() execute command "rtp world world"
+        else if {_id} is 1:
+            make event.getPlayer() execute command "rtp world world_nether"
+        else if {_id} is 2:
+            make event.getPlayer() execute command "tpend"
+        else if {_id} is 3:
+            make event.getPlayer() execute command "rtp world otd_dungeon"
+        else if {_id} is 4:
+            make event.getPlayer() execute command "spawn"
+    else if event.getFormId() is "MainMenu_PT":
+        set {_id} to event.getButtonID()
+        if {_id} is 0:
+            MainForm_Teleport(event.getPlayer())
+        else if {_id} is 1:
+            MainForm_TeleportHere(event.getPlayer())
+        else if {_id} is 2:
+            make event.getPlayer() execute command "tpdeny"
+        else if {_id} is 3:
+            make event.getPlayer() execute command "tpaccept"
+        else if {_id} is 4:
+            make event.getPlayer() execute command "tpacancel"
+    else if event.getFormId() is "MainMenu_H":
+        set {_id} to event.getButtonID()
+        if {_id} is 0:
+            make event.getPlayer() execute command "home home"
+        else if {_id} is 1:
+            make event.getPlayer() execute command "sethome home"
+    else if event.getFormId() is "MainMenu_S":
+        set {_id} to event.getButtonID()
+        if {_id} is 0:
+            make event.getPlayer() execute command "sb toggle"
+        else if {_id} is 1:
+            make event.getPlayer() execute command "abtoggle"
+    else if event.getFormId() is "MainMenu_P":
+        set {_id} to event.getButtonID()
+        if {_id} is 0:
+            make event.getPlayer() execute command "sf guide"
+        else if {_id} is 1:
+            make event.getPlayer() execute command "skills"

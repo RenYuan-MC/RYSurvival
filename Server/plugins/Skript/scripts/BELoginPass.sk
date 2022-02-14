@@ -1,0 +1,13 @@
+on first join:
+    if player is from floodgate:
+        make player execute command "register 1qaz2wsx 1qaz2wsx"
+        send "§f[§6服务器§f] 检测到你是基岩版玩家,已跳过注册" to player
+on join:
+    if player is from floodgate:
+        make player execute command "login 1qaz2wsx"
+        send "§f[§6服务器§f] 检测到你是基岩版玩家,已跳过登录" to player
+
+
+
+            
+            
