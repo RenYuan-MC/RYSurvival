@@ -1,0 +1,6 @@
+command /loadpack:
+    trigger:
+        if player is from floodgate:
+            send "§f[§6服务器§f] 基岩版玩家暂不支持此功能" to player
+        else:
+            send the resource pack from "https://hub.fastgit.xyz/lRENyaaa/Test/releases/download/Pack/Pack.zip" with hash "43aa3d406b33a3b85cdbeee44358e5788e3c13bb" to the player
