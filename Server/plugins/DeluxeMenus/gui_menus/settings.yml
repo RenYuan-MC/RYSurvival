@@ -40,37 +40,33 @@ items:
     slot: 11
     display_name: '&f&l开关计分板'
     lore:
-    - '&e&l圈地做家的好地方:D'
+    - '&e&l开关计分板:D'
     left_click_commands:
     - '[player] sb toggle'
-    - '[close]'
     right_click_commands:
     - '[player] sb toggle'
-    - '[close]'
-  'SIGNIN':
-    material: paper
+  'RESOURCESPACK':
+    material: chest
     slot: 13
-    display_name: '&f&l签到'
+    display_name: '&f&l打开服务器资源包菜单'
     lore:
-    - '&e&l有好东西(确信):D'
+    - '&e&l服务器专用资源包设置:D'
     left_click_commands:
-    - '[player] signin gui'
+    - '[player] dm open resourcepack'
     - '[close]'
     right_click_commands:
-    - '[player] signin gui'
+    - '[player] dm open resourcepack'
     - '[close]'
   'ABTOGGLE':
     material: golden_apple
     slot: 15
     display_name: '&f&l开关技能状态显示栏'
     lore:
-    - '&e&l来探索地狱吧:D'
+    - '&e&l开关技能状态显示栏:D'
     left_click_commands:
     - '[player] abtoggle'
-    - '[close]'
     right_click_commands:
     - '[player] abtoggle'
-    - '[close]'
 
 
     

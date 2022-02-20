@@ -16,7 +16,6 @@ items:
     - 7
     - 8
     - 9
-    - 13
     - 17
     - 18
     - 19
@@ -47,6 +46,18 @@ items:
     - '[close]'
     right_click_commands:
     - '[player] rtp world world'
+    - '[close]'
+  'SIGNIN':
+    material: paper
+    slot: 13
+    display_name: '&f&l签到'
+    lore:
+    - '&e&l有好东西(确信):D'
+    left_click_commands:
+    - '[player] signin gui'
+    - '[close]'
+    right_click_commands:
+    - '[player] signin gui'
     - '[close]'
   'SKILLS':
     material: diamond_axe
