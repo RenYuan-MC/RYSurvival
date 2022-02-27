@@ -1,7 +1,7 @@
-# DeluxeMenus 1.13.3-Release main configuration file
+# DeluxeMenus 1.13.4-Release main configuration file
 # 
 # A full wiki on how to use this plugin can be found at:
-# https://github.com/help-chat/DeluxeMenus/wiki
+# https://wiki.helpch.at/clips-plugins/deluxemenus
 
 debug: false
 check_updates: false
@@ -16,3 +16,7 @@ gui_menus:
     file: playing.yml
   resourcepack:
     file: resourcepack.yml
+  RENaa:
+    file: RENaa.yml
+  menutest:
+    file: menutest.yml

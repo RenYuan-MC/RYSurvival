@@ -33,7 +33,7 @@ guide:
   receive-on-first-join: true
 researches:
   free-in-creative-mode: true
-  enable-fireworks: true
+  enable-fireworks: false
   use-money-unlock: false
   money-multiply: 25.0
   disable-learning-animation: false

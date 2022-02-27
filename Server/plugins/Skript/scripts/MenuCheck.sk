@@ -16,14 +16,3 @@ on click holding a clock:
     tool's lore contains "§e主菜单"
     make player execute command "cd"
     cancel event
-
-command /cd:
-    trigger:
-        if player is from floodgate:
-            make player execute command "OpenBeMenu"
-        else:
-            make player execute command "dm open menu" 
-
-command /tpend:
-    trigger:
-        teleport the player to location(0.5, 63.0, 0.5, world "world_the_end")

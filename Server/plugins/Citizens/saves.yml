@@ -1,0 +1,525 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 11
+npc:
+  '3':
+    metadata:
+      cached-skin-uuid: 59950bd1-6126-4e5e-a6b6-8a4823f52dc8
+      cached-skin-uuid-name: chilliconcorbett
+    name: 资源世界随机传送
+    uuid: b221239f-9997-4de3-84f8-58a0463d38b7
+    traits:
+      skintrait:
+        fetchDefaultSkin: true
+        signature: AGYSSJQbgbMEJdcGFAa5VxHDgwjmHAIf16l9u0Vb9qVdRrysv6SAetgIxfKmAUe+Hnxo0BvU0XDKOPx3eCaaMZCOKqffWXNoVHijKD33m+MfTiQ2zaLE0chCocjF/NBpQvpiEY2ZpjU1LtrgUaDWfpLCaeV5EOkyhwKx+m8mS/UKx9Xjg9NdBQWenXIZzLjLrgdRxh/kfwRjlXK2q02i56y/YvMYMMmd4anEscQHkrHUbv3xTU2C/8EXOv43MTuYLjj63v34p58fo5LOK2gbttQisvB9PJMZ2t1wh4h56B6lluU8dr3xwLpp02HByy0pPbYAFOgyf/8oVx9ej/QvFoQ5bMZUVippN2gNd24XAIWcCymCr2le1/yvrhCggjTMjGWgcIb2AqV9C32mlgGn7bx+1b1zcliQ0JhDY+9FBL/VAJ3MWX7usRs6VBej12fYCwKIwLZFLr+7FoJQe6nfIRTfrVW5H8P/3/oHnpuKlANp4BwDj8S8nhE/REtbWOaNOLvuzSRvT4/M+QVNZthheg3uOhu9qIUXb1D+xgH7dJO+Etxycb5XIaC+ci8zRLfi5sScZFub0WfvUo0E6oc9hQzblvK2E2/yDcvRabMbLlLveLytGpsdDHmUS70nlTeQWaR99jWJA7RDA4wWvBTXfcdcuN90vJpNd377E+pEwog=
+        skinName: chilliconcorbett
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0NTg2MjcwMzU5OSwKICAicHJvZmlsZUlkIiA6ICI1OTk1MGJkMTYxMjY0ZTVlYTZiNjhhNDgyM2Y1MmRjOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJDaGlsbGlDb25Db3JiZXR0IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzMwODdmZjIwZTgzZDQ5NDZjNDE4YTQ1ZjAwYTE1Y2Y5MDAxZDFhNjE1OWUxYjYyMmY5NmE2ZDIzNjBhYmFiOTYiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==
+        updateSkins: false
+      sneak:
+        sneaking: false
+      owner:
+        uuid: dfdbceb5-8be1-33aa-9fb1-eb94be69b3ae
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        experienceCost: -1.0
+        hideErrorMessages: false
+        commands:
+          '0':
+            command: rtp world otd_dungeon
+            hand: RIGHT
+            player: true
+            op: false
+            cooldown: 0
+            globalcooldown: 0
+            n: -1
+            delay: 0
+      location:
+        bodyYaw: -45.610947
+        world: spawn
+        x: '74.5'
+        y: '105.0'
+        z: '-153.5'
+        yaw: '-40.2657'
+        pitch: '-5.7754'
+      type: PLAYER
+      spawned: true
+      lookclose:
+        range: '5.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        randomPitchRange:
+          '0': -10.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+    traitnames: type,mounttrait,scoreboardtrait,skintrait,equipment,spawned,inventory,commandtrait,sneak,lookclose,owner,location
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '2':
+    metadata:
+      cached-skin-uuid: 87a22e05-e566-449a-b43f-c2ba24fffc12
+      cached-skin-uuid-name: privecy
+    name: 末地世界传送
+    uuid: 3e6c1e3c-3a9f-4144-a029-deb40cfe02f8
+    traits:
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VxOyZkgLU4duWBDfls1QvZivAgHjAHZ4DtPMZVzROcRciqqf0W59jg2fwY0Szx9InCNusY46XNYE312rbJuo8MOG2nal08JjQ3ygnqhFGQHyK4DzrMj+KvOorUacOF6OlZx6vqEHYM5RpBmCGebRJJ+IrsznnVQ+vTW0fA2acs6V/Ysrs2jMi/QzVsSSugCK6AZpjTuXScM9n2cwGbzAbzc8bZEONFUT+P7gh10E/eg+aTKV5t2Nb0XyNKGam+i1bYl/HuXvPsseCmjJKxwmnIZp1Gp452kSZLRA07RXpkxFUPXi9puNmDvLBrivYoqJMNZAkh8DopwoxZcgGfZtqOx18kHybHR8LwGtEDELWH+FtgFnZwRCUZe9D4nTZIZjt6jztEP0D7R21gQ3YLosFX4IJgAEYRhmKfNKJIP5bBR1u0qJ78hPLAHjMo1Ykm0sPliRnAWrZcJsUnLXbj0YRKdpjTsK37AhE3WoJe66QwQYVUB7RwkSqEENflrnSUAJnKXs8+FHbMTRM9S4es6QBFSUJrN3F9XhorQR2nX2N3vcZtijZxC+MLoN6eOS+4qN1e1+04ST00G8VHaJ+NJINbu1gtzvH3W9k9+7b226ctMcPDdm+pgAEII4Xs7omvZVDZ2aTiJhwFlqejuF8v5MwqEWhI8i5T+LG3RRjaJQP6s=
+        skinName: privecy
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0NTg2MjI0ODIxOCwKICAicHJvZmlsZUlkIiA6ICI4N2EyMmUwNWU1NjY0NDlhYjQzZmMyYmEyNGZmZmMxMiIsCiAgInByb2ZpbGVOYW1lIiA6ICJwcml2ZWN5IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFjNzg4OTE5OTkyZjZhOGJkYTE5NDE1MDQyYzUwMzVhOGE4ZjhmMDY2ZmQxYzEyMTUzMGU5ZWQyZTFhYmJlZiIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9
+        updateSkins: false
+      sneak:
+        sneaking: false
+      owner:
+        uuid: dfdbceb5-8be1-33aa-9fb1-eb94be69b3ae
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        experienceCost: -1.0
+        hideErrorMessages: false
+        commands:
+          '0':
+            command: tpend
+            hand: RIGHT
+            player: true
+            op: false
+            cooldown: 0
+            globalcooldown: 0
+            n: -1
+            delay: 0
+      location:
+        bodyYaw: 1.1768036
+        world: spawn
+        x: '82.5'
+        y: '105.0'
+        z: '-153.5'
+        yaw: '-27.4933'
+        pitch: '9.114'
+      type: PLAYER
+      spawned: true
+      lookclose:
+        range: '5.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        randomPitchRange:
+          '0': -10.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+    traitnames: type,mounttrait,scoreboardtrait,skintrait,equipment,inventory,spawned,commandtrait,owner,lookclose,sneak,location
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '1':
+    metadata:
+      cached-skin-uuid: aac9889d-26a9-401c-8812-4fe741767e1e
+      cached-skin-uuid-name: commandi
+    name: 地狱世界随机传送
+    uuid: 1d9c9254-21ae-476a-87e4-d8d2d5b94f36
+    traits:
+      skintrait:
+        fetchDefaultSkin: true
+        signature: O44WxRIoKLSIKLfuSgcbB3Tah/RV6/MpqGb2lG+NzNP7WsNqA8WxySo0TlMnCdjtGBdzKe9oLJCBOPuIrQiii7zJMga33n/7RTrsdwBbfAc+7nXdkLHAPuAhChW3q3TfcsGL9mJ8flRcS1jUsZPSa2UPvhYCWcSDKJa+UxCJABKzAgjanE3kzWAhFW3a8E6M8VnrFZ18oSI2KlPi8bxuaYNBbjwF6o7Ci0AYNz/nJjxRM8v461vy5vKuB/mm8ptqrlDBB/If5y0lPYMiC4ypy9vbXM4UPqFfM1zN7bOxxW2eYkMGaaSKMsnE1FLZf8gIcE7IQtcIwiRWwLTUlA8tXSjth0Ohangne0id4Qr0pvV1XA98Yh9rmmEQNZidZIFHrRE2Tr+F826y85c/mWmJMQH8eNgqhnUDGtzQe0obcmy+t8nq37pf1/B6AlmVmpflX/RwCD2B3Yxk2a5SOT2RUywC5Z8pR32pR6q6G6IUSPj+WKXDS89LB1JyRR/rlWQbJAUfMoniCbyuQGJAtzhxaP26zDvWCJ1qSzbqW6Uyi3Np9sS6K/dwtzs/ActnLUl3qPyyGD9t2UVPTlpsPyRDgBKU6P6tRGWG63wt1vinlqcRTtp0nEeivbAh/rk21xuplEa626roToWLKdB7+mF4PL8DTWj6Iv82Al113czMCm4=
+        skinName: commandi
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0NTg2MTY3ODc1OSwKICAicHJvZmlsZUlkIiA6ICJhYWM5ODg5ZDI2YTk0MDFjODgxMjRmZTc0MTc2N2UxZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJDb21tYW5kaSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kYmFmMDA4MzU5OGM0ZGQ0N2IyYzQyNDFjYTUwNWEwZWMwYjgyZDZmOTNiZDZkMGFjZjUwZTJmYjdlMjY3NjUxIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=
+        updateSkins: false
+      sneak:
+        sneaking: false
+      owner:
+        uuid: dfdbceb5-8be1-33aa-9fb1-eb94be69b3ae
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        experienceCost: -1.0
+        hideErrorMessages: false
+        commands:
+          '0':
+            command: rtp world world_nether
+            hand: RIGHT
+            player: true
+            op: false
+            cooldown: 0
+            globalcooldown: 0
+            n: -1
+            delay: 0
+      location:
+        bodyYaw: -9.391411
+        world: spawn
+        x: '84.5'
+        y: '105.0'
+        z: '-151.5'
+        yaw: '-49.3914'
+        pitch: '-0.3677'
+      type: PLAYER
+      spawned: true
+      lookclose:
+        range: '5.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        randomPitchRange:
+          '0': -10.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+    traitnames: type,mounttrait,scoreboardtrait,skintrait,equipment,spawned,inventory,commandtrait,lookclose,sneak,owner,location
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '0':
+    metadata:
+      cached-skin-uuid: f5642a49-b7c1-48ad-9a83-2cffa2dce948
+      cached-skin-uuid-name: renaa_fd
+    name: 生存世界随机传送
+    uuid: f86fa437-5701-4f80-b374-43d03ccfd634
+    traits:
+      skintrait:
+        fetchDefaultSkin: true
+        signature: ovSO7IraaZEhG3vI7HgOBDKruwXLPde3D80oqQ6mu2lk/dv9morgqgk545AghvQ/1Lo5AGP40ruxXe8Slf4xLQtQ5rga4kapiWHaz11E3Ih7RK1DlOHgvSf00wQrq36ylnT2h8gD/9hWZ1nbdjgT9BXfNZOQVQ80xcjkblZ8P/EezMufRJ7YoCDP92o6W5ST1AmhrTEaJifKF6QC+KXBLGArNqEjVFibIVXkT3X0tk2hjNxxbKbGBTeOnqCSmsk6P49vrHFxkNA5zPYmL/og8Fz+E3fbjeZeU9xnxIoI9VAdyQG8j2EoP8qrbkdsJRl61yOE28Pyj1Gp6qTuh/2z4MLMWF3vukdwl3ndjthLewkI+ogD76aL3Gch9cXhD7HeJyNZX66rOxBOY+bYC8Z2MQQs/7ZtrtjrOAUVbCGwaR0dAByAezbaumPJVWxuDmLhtMxMheuYV6JOu4MAKsmoIo/SN7tk+z9KN3uEMdmnthZBnimTYAWkkIoFVwWHco7vq5cdYtAEGyYXxiJNFbolYnNNvu6tm7OO3eux7KxQKaQRjtz41i6tFJjZ3bQFTuJRzWuZebM3+c8PYX8Xf2voelT4v/EFJCkMU1/q37A7E6hHLVOUXQ0UmXrkOh0MhDJOe5ltkH0Du8U9w8+m4KQnYoYr6JcFa8/QirADErC61RA=
+        skinName: renaa_fd
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0NTg2MTQxOTE4NiwKICAicHJvZmlsZUlkIiA6ICJmNTY0MmE0OWI3YzE0OGFkOWE4MzJjZmZhMmRjZTk0OCIsCiAgInByb2ZpbGVOYW1lIiA6ICJSRU5hYV9GRCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS82ZWQwMWYxY2M4NTMwY2FjMjMxMjIxYjJlMWViMWI3YjBjZGVhMTUwYWM3MWE1ZWVjZmZmMDMzMzVkNDFhYmZjIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=
+        updateSkins: false
+      sneak:
+        sneaking: false
+      owner:
+        uuid: dfdbceb5-8be1-33aa-9fb1-eb94be69b3ae
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        experienceCost: -1.0
+        hideErrorMessages: false
+        commands:
+          '0':
+            command: rtp world world
+            hand: RIGHT
+            player: true
+            op: false
+            cooldown: 0
+            globalcooldown: 0
+            n: -1
+            delay: 0
+      location:
+        bodyYaw: 22.861374
+        world: spawn
+        x: '84.5'
+        y: '105.0'
+        z: '-153.5'
+        yaw: '-17.1386'
+        pitch: '13.5238'
+      type: PLAYER
+      spawned: true
+      lookclose:
+        range: '5.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        randomPitchRange:
+          '0': -10.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+    traitnames: type,mounttrait,scoreboardtrait,skintrait,equipment,inventory,spawned,commandtrait,lookclose,sneak,owner,location
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '10':
+    metadata:
+      cached-skin-uuid: f5642a49-b7c1-48ad-9a83-2cffa2dce948
+      cached-skin-uuid-name: renaa_fd
+    name: 闲逛的RENaa_FD
+    uuid: 53a32f79-c968-4f7c-bec2-7a907c425480
+    traits:
+      skintrait:
+        fetchDefaultSkin: true
+        signature: MCC/Nn5wVnd5LTVNBsuRMTBdf9VFB+DUjvUCu0af4rnzopT1ST+ZVOBAD9dUtit2mcIaSyak1Ncm/gLvS5MY4RaiXVZ3kb52wLKyMxH3EMpFx7AqLs+rYLjmSqWzfSa8/9tOck9JYLwIP0vB4pgTxb7Y9ibsQaPDJApBdwuiIENLqgDm4eX03jyVZO9YdwMPM6gzaw/dcWvkrxondiPL9y+TtQfOBgmn3CIcjMxFFuwl2B/MxFZdWPExHU+wc41ceQeMwJ73hC0aEkjvJDgPN6sAYinLc24bUskKEXoKVz2+IzSoQ/gvkTQHA75JKyrAeopwlskFhiSCkYQZQ5mdeDImgIBxmSNo12ilVV5fKi6KroQhTMxPSgORayTQaV5ZrcMPXYQ6lnns/LNQjxzIFj3OmUo+PwVx/o1TDUYDvRkgsGkR/gCEEf7oPwXlugBeSy4hesn/mpbXSmEcUWgLMwZunlnHUjnJMZgVDgCSc6uxYOXXJ7SUCCmWmBeClEhMFLjX/F84JV5xL6a0CNuRA+LIcOZgh/X5A+MdcvmNBdAL0dXGRpEsagR8j7yrXdK3XUT3tn1RO5/uugK0bOD1yte2Wl2fEWFX58t2AYjoVe5xs1BYTR6GPm3ep5Sm7Wd34BHiJT6n3/2L04LzgMw70H0ZdEcIKgrXxHrpZpSiG+E=
+        skinName: renaa_fd
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0NTg2Mzk1NzYxNSwKICAicHJvZmlsZUlkIiA6ICJmNTY0MmE0OWI3YzE0OGFkOWE4MzJjZmZhMmRjZTk0OCIsCiAgInByb2ZpbGVOYW1lIiA6ICJSRU5hYV9GRCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS82ZWQwMWYxY2M4NTMwY2FjMjMxMjIxYjJlMWViMWI3YjBjZGVhMTUwYWM3MWE1ZWVjZmZmMDMzMzVkNDFhYmZjIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=
+        updateSkins: false
+      type: PLAYER
+      waypoints:
+        linear:
+          cachePaths: false
+          cycle: false
+          points:
+            '0':
+              location:
+                world: spawn
+                x: '61.0'
+                y: '103.0'
+                z: '-163.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: spawn
+                x: '61.0'
+                y: '103.0'
+                z: '-153.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: spawn
+                x: '61.0'
+                y: '103.0'
+                z: '-137.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: spawn
+                x: '68.0'
+                y: '103.0'
+                z: '-132.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: spawn
+                x: '75.0'
+                y: '103.0'
+                z: '-131.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: spawn
+                x: '83.0'
+                y: '103.0'
+                z: '-131.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: spawn
+                x: '91.0'
+                y: '103.0'
+                z: '-131.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: spawn
+                x: '94.0'
+                y: '103.0'
+                z: '-134.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: spawn
+                x: '97.0'
+                y: '103.0'
+                z: '-139.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '9':
+              location:
+                world: spawn
+                x: '97.0'
+                y: '103.0'
+                z: '-145.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '10':
+              location:
+                world: spawn
+                x: '97.0'
+                y: '103.0'
+                z: '-153.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '11':
+              location:
+                world: spawn
+                x: '97.0'
+                y: '103.0'
+                z: '-158.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '12':
+              location:
+                world: spawn
+                x: '97.0'
+                y: '103.0'
+                z: '-161.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '13':
+              location:
+                world: spawn
+                x: '94.0'
+                y: '103.0'
+                z: '-164.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '14':
+              location:
+                world: spawn
+                x: '91.0'
+                y: '103.0'
+                z: '-167.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '15':
+              location:
+                world: spawn
+                x: '85.0'
+                y: '103.0'
+                z: '-167.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '16':
+              location:
+                world: spawn
+                x: '80.0'
+                y: '103.0'
+                z: '-167.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '17':
+              location:
+                world: spawn
+                x: '76.0'
+                y: '103.0'
+                z: '-167.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '18':
+              location:
+                world: spawn
+                x: '71.0'
+                y: '103.0'
+                z: '-167.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '19':
+              location:
+                world: spawn
+                x: '67.0'
+                y: '103.0'
+                z: '-167.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '20':
+              location:
+                world: spawn
+                x: '63.0'
+                y: '103.0'
+                z: '-163.0'
+                yaw: '0.0'
+                pitch: '0.0'
+              triggers:
+                '0':
+                  location:
+                    world: spawn
+                    x: '63.3868'
+                    y: '103.0'
+                    z: '-162.4865'
+                    yaw: '-5.0769'
+                    pitch: '56.9918'
+                  type: teleport
+        provider: linear
+      lookclose:
+        range: '5.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        randomPitchRange:
+          '0': -10.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      sneak:
+        sneaking: false
+      owner:
+        uuid: dfdbceb5-8be1-33aa-9fb1-eb94be69b3ae
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        experienceCost: -1.0
+        hideErrorMessages: false
+        commands:
+          '0':
+            command: renaaspawn %player%
+            hand: RIGHT
+            player: false
+            op: false
+            cooldown: 12
+            globalcooldown: 0
+            n: -1
+            delay: 0
+        cooldowns:
+          dfdbceb5-8be1-33aa-9fb1-eb94be69b3ae:
+            lastUsed:
+              cmVuYWFzcGF3biAlcGxheWVyJQ==: 1645886386
+            lastUsedId: 0
+      location:
+        bodyYaw: 81.72827
+        world: spawn
+        x: '82.1995'
+        y: '103.0'
+        z: '-165.6017'
+        yaw: '81.7283'
+        pitch: '56.9918'
+      spawned: true
+    traitnames: scoreboardtrait,skintrait,equipment,spawned,inventory,sneak,type,mounttrait,commandtrait,lookclose,owner,location,waypoints
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '11':
+    metadata:
+      cached-skin-uuid: f5642a49-b7c1-48ad-9a83-2cffa2dce948
+      cached-skin-uuid-name: renaa_fd
+    name: test
+    uuid: 85320f07-8c2b-410d-a56e-68b72d72b078
+    traits:
+      type: PLAYER
+      skintrait:
+        fetchDefaultSkin: true
+        signature: YF1TA46V1PaVyl6ulhEEH7XBxZGVV9QZzFCxQMpWaGc2NB0PHx8LI/0ma7adI1XBwYfJkXlNTcYQyJrv0WcJrD8Bsd4DsKoTYTVUjU0wHaFeV8uxQHRazjSJKZ/5O1Id0gnlW99/Ooa/Vb1J8kTtuW6VW9OMUeFDUsdIHr4ra6rlkbw+RRMGqvZWaRqelvb6doACk+gw4at0lcZTRx2dZuDnFWzBN9PPE1w7s3+ZUeTon2viSzd/b14XNUdsMDvNt6bXcXd7BIYgrRf54N1ar9SjBIJ5+0dyfVPra5RIlNct5UdqQMGNM0JGntAIgjUtRRWzJdsFwnuDljBqVsjpy7Rj2dL/lmPPirNgfCvVv17fySCZOiOP3gfgC9gAtWL9HHWqlQu3Znv3MyBJZRHk9nNnj7bTdf1aljnAfvSyL8B/WyUFOEa8Ig8wyElZ6B5Hjpx/FJ3L5uFVx8czSYI1cEgOT2ag74lL8PTkQKA/kIPf0thZislId3mO+xdwROjY962IyjNs3BJjW4n+TZ4VLT4mdE5WhkCbeXQgMmS6cAnI117hWCQj8Q6USb5l+icRd7jALnbC0rO4Q28bUHT43IB4pOBuO8/iVLUO/E7nHQx9pG1l1z7pUZ3VXvZXuokFNiMMyScKpS+PWbWnhkDPzicuGT5CsKY/zHk+ysmsBvM=
+        skinName: renaa_fd
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0NTg4MjkxMjUyMiwKICAicHJvZmlsZUlkIiA6ICJmNTY0MmE0OWI3YzE0OGFkOWE4MzJjZmZhMmRjZTk0OCIsCiAgInByb2ZpbGVOYW1lIiA6ICJSRU5hYV9GRCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS82ZWQwMWYxY2M4NTMwY2FjMjMxMjIxYjJlMWViMWI3YjBjZGVhMTUwYWM3MWE1ZWVjZmZmMDMzMzVkNDFhYmZjIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=
+        updateSkins: false
+      spawned: true
+      owner:
+        uuid: dfdbceb5-8be1-33aa-9fb1-eb94be69b3ae
+      sneak:
+        sneaking: false
+      location:
+        bodyYaw: 127.75844
+        world: spawn
+        x: '57.1446'
+        y: '103.0'
+        z: '-129.6993'
+        yaw: '127.7584'
+        pitch: '26.0247'
+    traitnames: type,mounttrait,scoreboardtrait,skintrait,equipment,inventory,spawned,owner,sneak,location
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

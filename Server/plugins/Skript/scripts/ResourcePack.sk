@@ -31,6 +31,7 @@ on join:
         if player has permission "autoloadpack.2":
             command "lp user %player% permission set autoloadpack.1 false" 
             command "lp user %player% permission set autoloadpack.2 false" 
+            exit
         make player execute command "loadpack-1"
     else if player has permission "autoloadpack.2":
         make player execute command "loadpack-2"
