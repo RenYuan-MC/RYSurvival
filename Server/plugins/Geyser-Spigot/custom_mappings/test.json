@@ -1,0 +1,27 @@
+{
+    "format_version": "1.0.0",
+    "items": {
+        "minecraft:enchanted_book":[
+            {
+                "name": "slimefun_guide",
+                "custom_model_data": 2200001
+            }
+        ],
+        "minecraft:stick":[
+            {
+                "name": "grandmas_walking_stick",
+                "custom_model_data": 2200011
+            },
+            {
+                "name": "grandpas_walking_stick",
+                "custom_model_data": 2200012
+            }
+        ],
+        "minecraft:gray_stained_glass_pane":[
+            {
+                "name": "background",
+                "custom_model_data": 2200002
+            }
+        ]
+    }
+}

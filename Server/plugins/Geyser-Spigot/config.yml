@@ -19,8 +19,8 @@ bedrock:
   clone-remote-port: false
   # The MOTD that will be broadcasted to Minecraft: Bedrock Edition clients. This is irrelevant if "passthrough-motd" is set to true
   # If either of these are empty, the respective string will default to "Geyser"
-  motd1: ""
-  motd2: ""
+  motd1: "任渊生存"
+  motd2: "任渊生存"
   # The Server Name that will be sent to Minecraft: Bedrock Edition clients. This is visible in both the pause menu and the settings menu.
   server-name: ""
   # How much to compress network traffic to the Bedrock client. The higher the number, the more CPU usage used, but
@@ -86,7 +86,7 @@ floodgate-key-file: key.pem
 
 # Bedrock clients can freeze when opening up the command prompt for the first time if given a lot of commands.
 # Disabling this will prevent command suggestions from being sent and solve freezing for Bedrock clients.
-command-suggestions: true
+command-suggestions: false
 
 # The following three options enable "ping passthrough" - the MOTD, player count and/or protocol name gets retrieved from the Java server.
 # Relay the MOTD from the remote server to Bedrock players.
@@ -175,7 +175,7 @@ xbox-achievements-enabled: false
 # https://bstats.org/plugin/server-implementation/GeyserMC
 metrics:
   # If metrics should be enabled
-  enabled: true
+  enabled: false
   # UUID of server, don't change!
   uuid: bbcf8f23-01ed-4ba1-9394-ee061b397663
 
