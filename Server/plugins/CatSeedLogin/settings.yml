@@ -10,6 +10,8 @@ CommandWhiteList:
 - /(?i)l(ogin)?(\z| .*)
 - /(?i)reg(ister)?(\z| .*)
 - /(?i)resetpassword?(\z| .*)
+- /loadpack-1
+- /loadpack-2
 SpawnLocation: spawn:79.5:105.0:-148.5:0.0:0.0
 IpRegisterCountLimit: 2
 AutoKick: 120

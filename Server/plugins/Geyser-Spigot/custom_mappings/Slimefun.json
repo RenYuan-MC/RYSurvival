@@ -259,6 +259,222 @@
             {
                 "name": "android_butcher",
                 "custom_model_data": 2200401
+            },
+            {
+                "name": "android2_normal",
+                "custom_model_data": 2200402
+            },
+            {
+                "name": "android2_fisherman",
+                "custom_model_data": 2200403
+            },
+            {
+                "name": "android2_butcher",
+                "custom_model_data": 2200404
+            },
+            {
+                "name": "android2_farmer",
+                "custom_model_data": 2200405
+            },
+            {
+                "name": "android3_normal",
+                "custom_model_data": 2200406
+            },
+            {
+                "name": "android3_fisherman",
+                "custom_model_data": 2200407
+            },
+            {
+                "name": "android3_butcher",
+                "custom_model_data": 2200408
+            },
+            {
+                "name": "gps_geo_scanner",
+                "custom_model_data": 2200450
+            },
+            {
+                "name": "oil_pump",
+                "custom_model_data": 2200452
+            },
+            {
+                "name": "geo_miner",
+                "custom_model_data": 2200453
+            },
+            {
+                "name": "oil",
+                "custom_model_data": 2200454
+            },
+            {
+                "name": "fuel",
+                "custom_model_data": 2200455
+            },
+            {
+                "name": "nether_ice",
+                "custom_model_data": 2200456
+            },
+            {
+                "name": "lava_generator",
+                "custom_model_data": 2200458
+            },
+            {
+                "name": "lava_generator2",
+                "custom_model_data": 2200459
+            },
+            {
+                "name": "combustion_reactor",
+                "custom_model_data": 2200460
+            },
+            {
+                "name": "enriched_nether_ice",
+                "custom_model_data": 2200469
+            },
+            {
+                "name": "organic_food_wheat",
+                "custom_model_data": 2200473
+            },
+            {
+                "name": "organic_food_carrots",
+                "custom_model_data": 2200474
+            },
+            {
+                "name": "organic_food_potatoes",
+                "custom_model_data": 2200475
+            },
+            {
+                "name": "organic_food_seeds",
+                "custom_model_data": 2200476
+            },
+            {
+                "name": "organic_food_beetroot",
+                "custom_model_data": 2200477
+            },
+            {
+                "name": "organic_food_melon",
+                "custom_model_data": 2200478
+            },
+            {
+                "name": "organic_food_apple",
+                "custom_model_data": 2200479
+            },
+            {
+                "name": "organic_food_sweet_berries",
+                "custom_model_data": 2200480
+            },
+            {
+                "name": "organic_food_dried_kelp",
+                "custom_model_data": 2200481
+            },
+            {
+                "name": "organic_food_cocoa_beans",
+                "custom_model_data": 2200482
+            },
+            {
+                "name": "exp_collector",
+                "custom_model_data": 2200486
+            },
+            {
+                "name": "organic_fertilizer_wheat",
+                "custom_model_data": 2200489
+            },
+            {
+                "name": "organic_fertilizer_carrots",
+                "custom_model_data": 2200490
+            },
+            {
+                "name": "organic_fertilizer_potatoes",
+                "custom_model_data": 2200491
+            },
+            {
+                "name": "organic_fertilizer_seeds",
+                "custom_model_data": 2200492
+            },
+            {
+                "name": "organic_fertilizer_beetroot",
+                "custom_model_data": 2200493
+            },
+            {
+                "name": "organic_fertilizer_melon",
+                "custom_model_data": 2200494
+            },
+            {
+                "name": "organic_fertilizer_apple",
+                "custom_model_data": 2200495
+            },
+            {
+                "name": "organic_fertilizer_sweet_berries",
+                "custom_model_data": 2200496
+            },
+            {
+                "name": "organic_fertilizer_dried_kelp",
+                "custom_model_data": 2200497
+            },
+            {
+                "name": "organic_fertilizer_cocoa_beans",
+                "custom_model_data": 2200498
+            },
+            {
+                "name": "reactor_coolant_cell",
+                "custom_model_data": 2200503
+            },
+            {
+                "name": "nether_ice_coolant_cell",
+                "custom_model_data": 2200504
+            },
+            {
+                "name": "neptunium",
+                "custom_model_data": 2200505
+            },
+            {
+                "name": "plutonium",
+                "custom_model_data": 2200506
+            },
+            {
+                "name": "boosted_uranium",
+                "custom_model_data": 2200507
+            },
+            {
+                "name": "nuclear_reactor",
+                "custom_model_data": 2200508
+            },
+            {
+                "name": "nether_star_reactor",
+                "custom_model_data": 2200509
+            },
+            {
+                "name": "motor",
+                "custom_model_data": 2200510
+            },
+            {
+                "name": "manager",
+                "custom_model_data": 2200511
+            },
+            {
+                "name": "connector",
+                "custom_model_data": 2200512
+            },
+            {
+                "name": "input",
+                "custom_model_data": 2200513
+            },
+            {
+                "name": "output",
+                "custom_model_data": 2200514
+            },
+            {
+                "name": "output2",
+                "custom_model_data": 2200515
+            },
+            {
+                "name": "trash",
+                "custom_model_data": 2200519
+            },
+            {
+                "name": "tape_measure",
+                "custom_model_data": 2200527
+            },
+            {
+                "name": "energized_capacitor",
+                "custom_model_data": 2200528
             }
         ]
     }
