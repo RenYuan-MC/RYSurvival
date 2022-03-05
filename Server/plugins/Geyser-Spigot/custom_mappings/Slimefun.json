@@ -5,6 +5,10 @@
             {
                 "name": "slimefun_guide",
                 "custom_model_data": 2200001
+            },
+            {
+                "name": "back",
+                "custom_model_data": 2200003
             }
         ],
         "minecraft:stick":[
@@ -131,10 +135,6 @@
             {
                 "name": "infused_magnet",
                 "custom_model_data": 2200257
-            },
-            {
-                "name": "necrotic_skull",
-                "custom_model_data": 2200259
             },
             {
                 "name": "backpack_soulbound",
@@ -475,6 +475,38 @@
             {
                 "name": "energized_capacitor",
                 "custom_model_data": 2200528
+            }
+        ],
+        "minecraft:name_tag":[
+            {
+                "name": "search",
+                "custom_model_data": 2200005
+            }
+        ],
+        "minecraft:lime_stained_glass_pane":[
+            {
+                "name": "previous_on",
+                "custom_model_data": 2200007
+            },
+            {
+                "name": "next_on",
+                "custom_model_data": 2200009
+            }
+        ],
+        "minecraft:black_stained_glass_pane":[
+            {
+                "name": "previous_off",
+                "custom_model_data": 2200008
+            },
+            {
+                "name": "next_off",
+                "custom_model_data": 2200010
+            }
+        ],
+        "minecraft:comparator":[
+            {
+                "name": "menu",
+                "custom_model_data": 2200004
             }
         ]
     }

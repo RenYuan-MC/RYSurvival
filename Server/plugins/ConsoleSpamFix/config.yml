@@ -80,6 +80,7 @@ Messages-To-Hide-Filter:
 - 'Failed to fetch the latest jar file from the builds page'
 - 'Failed to start metrics as the file could not be downloaded'
 - 'Failed to fetch latest builds for Metrics'
+- '未检测到 Quickshop-Reremake, 相关功能将自动关闭'
 
 
 #Residence下载失败信息屏蔽
