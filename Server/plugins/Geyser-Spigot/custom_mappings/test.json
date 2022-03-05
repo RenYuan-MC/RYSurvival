@@ -22,6 +22,244 @@
                 "name": "background",
                 "custom_model_data": 2200002
             }
+        ],
+        "minecraft:player_head":[
+            {
+                "name": "portable_craftingtabble",
+                "custom_model_data": 2200013
+            },
+            {
+                "name": "portable_dustbin",
+                "custom_model_data": 2200018
+            },
+            {
+                "name": "backpack_ender",
+                "custom_model_data": 2200036
+            },
+            {
+                "name": "battery",
+                "custom_model_data": 2200060
+            },
+            {
+                "name": "synthetic_sapphire",
+                "custom_model_data": 2200089
+            },
+            {
+                "name": "raw_carbon",
+                "custom_model_data": 2200091
+            },
+            {
+                "name": "carbonado",
+                "custom_model_data": 2200094
+            },
+            {
+                "name": "carbon",
+                "custom_model_data": 2200113
+            },
+            {
+                "name": "compressed_carbon",
+                "custom_model_data": 2200116
+            },
+            {
+                "name": "carbon_chunk",
+                "custom_model_data": 2200117
+            },
+            {
+                "name": "powered_crystal",
+                "custom_model_data": 2200119
+            },
+            {
+                "name": "stone_chunk",
+                "custom_model_data": 2200155
+            },
+            {
+                "name": "lava_crystal",
+                "custom_model_data": 2200159
+            },
+            {
+                "name": "cheese",
+                "custom_model_data": 2200200
+            },
+            {
+                "name": "butter",
+                "custom_model_data": 2200201
+            },
+            {
+                "name": "tiny_pile_of_uranium",
+                "custom_model_data": 2200214
+            },
+            {
+                "name": "small_chunk_of_uranium",
+                "custom_model_data": 2200215
+            },
+            {
+                "name": "uranium",
+                "custom_model_data": 2200216
+            },
+            {
+                "name": "tin_can",
+                "custom_model_data": 2200226
+            },
+            {
+                "name": "backpack_small",
+                "custom_model_data": 2200248
+            },
+            {
+                "name": "backpack",
+                "custom_model_data": 2200249
+            },
+            {
+                "name": "backpack_large",
+                "custom_model_data": 2200250
+            },
+            {
+                "name": "backpack_woven",
+                "custom_model_data": 2200251
+            },
+            {
+                "name": "backpack_gilded",
+                "custom_model_data": 2200253
+            },
+            {
+                "name": "backpack_radiant",
+                "custom_model_data": 2200254
+            },
+            {
+                "name": "magnet",
+                "custom_model_data": 2200256
+            },
+            {
+                "name": "infused_magnet",
+                "custom_model_data": 2200257
+            },
+            {
+                "name": "necrotic_skull",
+                "custom_model_data": 2200259
+            },
+            {
+                "name": "backpack_soulbound",
+                "custom_model_data": 2200261
+            },
+            {
+                "name": "electromagnet",
+                "custom_model_data": 2200305
+            },
+            {
+                "name": "electric_motor",
+                "custom_model_data": 2200306
+            },
+            {
+                "name": "heating_coil",
+                "custom_model_data": 2200307
+            },
+            {
+                "name": "cooling_unit",
+                "custom_model_data": 2200334
+            },
+            {
+                "name": "cooler",
+                "custom_model_data": 2200335
+            },
+            {
+                "name": "energy_regulator",
+                "custom_model_data": 2200339
+            },
+            {
+                "name": "duct_tape",
+                "custom_model_data": 2200340
+            },
+            {
+                "name": "small_energy_capacitor",
+                "custom_model_data": 2200341
+            },
+            {
+                "name": "medium_energy_capacitor",
+                "custom_model_data": 2200342
+            },
+            {
+                "name": "big_energy_capacitor",
+                "custom_model_data": 2200343
+            },
+            {
+                "name": "large_energy_capacitor",
+                "custom_model_data": 2200344
+            },
+            {
+                "name": "carbonado_edged_energy_capacitor",
+                "custom_model_data": 2200345
+            },
+            {
+                "name": "coal_generator",
+                "custom_model_data": 2200371
+            },
+            {
+                "name": "coal_generator2",
+                "custom_model_data": 2200372
+            },
+            {
+                "name": "electric_press",
+                "custom_model_data": 2200376
+            },
+            {
+                "name": "electric_press2",
+                "custom_model_data": 2200377
+            },
+            {
+                "name": "magnesium_generator",
+                "custom_model_data": 2200379
+            },
+            {
+                "name": "android_memory_core",
+                "custom_model_data": 2200386
+            },
+            {
+                "name": "gps_transmitter",
+                "custom_model_data": 2200387
+            },
+            {
+                "name": "gps_transmitter_advanced",
+                "custom_model_data": 2200388
+            },
+            {
+                "name": "gps_transmitter_carbonado",
+                "custom_model_data": 2200389
+            },
+            {
+                "name": "gps_transmitter_energized",
+                "custom_model_data": 2200390
+            },
+            {
+                "name": "gps_control_panel",
+                "custom_model_data": 2200391
+            },
+            {
+                "name": "gps_emergency_transmitter",
+                "custom_model_data": 2200393
+            },
+            {
+                "name": "android_normal",
+                "custom_model_data": 2200396
+            },
+            {
+                "name": "android_miner",
+                "custom_model_data": 2200397
+            },
+            {
+                "name": "android_farmer",
+                "custom_model_data": 2200398
+            },
+            {
+                "name": "android_woodcutter",
+                "custom_model_data": 2200399
+            },
+            {
+                "name": "android_fisherman",
+                "custom_model_data": 2200400
+            },
+            {
+                "name": "android_butcher",
+                "custom_model_data": 2200401
+            }
         ]
     }
 }
