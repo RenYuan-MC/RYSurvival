@@ -14,4 +14,4 @@ QQ 交流群：1029946156<br>
 * 方法三:<br>
 下载"源代码"后往Server目录里放入最新版本的Paper1.17.1核心和开服脚本<br>
 专用开服脚本下载: [MinecraftRYServerStarterBatch](https://github.com/lRENyaaa/MinecraftRYServerStarterBatch)<br>
-(这样你可以下载到开发中的版本,虽然可以体验到最新添加的功能,但是这可能会导致更多未解决的问题)<br>
+(这样你可以下载到部分功能未完成的版本,虽然可以体验到最新添加的功能,但是这可能会导致更多未解决的问题)<br>
