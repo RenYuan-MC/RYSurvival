@@ -86,12 +86,12 @@ npc:
   commands:
     error-messages:
       maximum-times-used: You have reached the maximum number of uses ({0}).
-      missing-item: Missing {1} {0}
-      no-permission: You don't have permission to do that.
+      missing-item: "&f[&6服务器&f] 缺少 {1} {0}"
+      no-permission: "&f[&6服务器&f] 你没有权限."
       not-enough-experience: You need at least {0} experience.
       not-enough-money: You need at least ${0}.
-      on-cooldown: Please wait for {minutes} minutes and {seconds_over} seconds.
-      on-global-cooldown: Please wait for {minutes} minutes and {seconds_over} seconds.
+      on-cooldown: "&f[&6服务器&f] 请等待 {minutes} 分钟 {seconds_over} 秒."
+      on-global-cooldown:  "&f[&6服务器&f] 请等待 {minutes} 分钟 {seconds_over} 秒."
   packets:
     update-delay: 30
   player:

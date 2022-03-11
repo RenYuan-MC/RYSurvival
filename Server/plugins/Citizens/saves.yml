@@ -480,9 +480,9 @@ npc:
       location:
         bodyYaw: 81.72827
         world: spawn
-        x: '82.1995'
+        x: '61.0'
         y: '103.0'
-        z: '-165.6017'
+        z: '-163.0'
         yaw: '81.7283'
         pitch: '56.9918'
       spawned: true
@@ -491,35 +491,4 @@ npc:
       speedmodifier: '1.0'
       avoidwater: false
       usedefaultstuckaction: true
-  '11':
-    metadata:
-      cached-skin-uuid: f5642a49-b7c1-48ad-9a83-2cffa2dce948
-      cached-skin-uuid-name: renaa_fd
-    name: test
-    uuid: 85320f07-8c2b-410d-a56e-68b72d72b078
-    traits:
-      type: PLAYER
-      skintrait:
-        fetchDefaultSkin: true
-        signature: YF1TA46V1PaVyl6ulhEEH7XBxZGVV9QZzFCxQMpWaGc2NB0PHx8LI/0ma7adI1XBwYfJkXlNTcYQyJrv0WcJrD8Bsd4DsKoTYTVUjU0wHaFeV8uxQHRazjSJKZ/5O1Id0gnlW99/Ooa/Vb1J8kTtuW6VW9OMUeFDUsdIHr4ra6rlkbw+RRMGqvZWaRqelvb6doACk+gw4at0lcZTRx2dZuDnFWzBN9PPE1w7s3+ZUeTon2viSzd/b14XNUdsMDvNt6bXcXd7BIYgrRf54N1ar9SjBIJ5+0dyfVPra5RIlNct5UdqQMGNM0JGntAIgjUtRRWzJdsFwnuDljBqVsjpy7Rj2dL/lmPPirNgfCvVv17fySCZOiOP3gfgC9gAtWL9HHWqlQu3Znv3MyBJZRHk9nNnj7bTdf1aljnAfvSyL8B/WyUFOEa8Ig8wyElZ6B5Hjpx/FJ3L5uFVx8czSYI1cEgOT2ag74lL8PTkQKA/kIPf0thZislId3mO+xdwROjY962IyjNs3BJjW4n+TZ4VLT4mdE5WhkCbeXQgMmS6cAnI117hWCQj8Q6USb5l+icRd7jALnbC0rO4Q28bUHT43IB4pOBuO8/iVLUO/E7nHQx9pG1l1z7pUZ3VXvZXuokFNiMMyScKpS+PWbWnhkDPzicuGT5CsKY/zHk+ysmsBvM=
-        skinName: renaa_fd
-        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0NTg4MjkxMjUyMiwKICAicHJvZmlsZUlkIiA6ICJmNTY0MmE0OWI3YzE0OGFkOWE4MzJjZmZhMmRjZTk0OCIsCiAgInByb2ZpbGVOYW1lIiA6ICJSRU5hYV9GRCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS82ZWQwMWYxY2M4NTMwY2FjMjMxMjIxYjJlMWViMWI3YjBjZGVhMTUwYWM3MWE1ZWVjZmZmMDMzMzVkNDFhYmZjIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=
-        updateSkins: false
-      spawned: true
-      owner:
-        uuid: dfdbceb5-8be1-33aa-9fb1-eb94be69b3ae
-      sneak:
-        sneaking: false
-      location:
-        bodyYaw: 127.75844
-        world: spawn
-        x: '57.1446'
-        y: '103.0'
-        z: '-129.6993'
-        yaw: '127.7584'
-        pitch: '26.0247'
-    traitnames: type,mounttrait,scoreboardtrait,skintrait,equipment,inventory,spawned,owner,sneak,location
-    navigator:
-      speedmodifier: '1.0'
-      avoidwater: false
-      usedefaultstuckaction: true
+
