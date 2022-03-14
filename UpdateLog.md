@@ -21,4 +21,6 @@
 7.变动了一些细节<br>
 8.新增基于NotBoom魔改的防爆插件<br>
 9.新增了资源包管理系统<br>
-10.让资源包的CustomModelData适配了基岩版
+10.让资源包的CustomModelData适配了基岩版<br>
+11.新增了粘液科技材质包<br>
+12.服务端核心更换为 [Pufferfish](https://github.com/pufferfish-gg/Pufferfish)
