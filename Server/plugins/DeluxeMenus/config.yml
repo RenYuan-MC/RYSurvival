@@ -16,7 +16,3 @@ gui_menus:
     file: playing.yml
   resourcepack:
     file: resourcepack.yml
-  RENaa:
-    file: RENaa.yml
-  menutest:
-    file: menutest.yml

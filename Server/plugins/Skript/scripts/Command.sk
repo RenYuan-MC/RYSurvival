@@ -23,13 +23,9 @@ command /renaaspawn <player>:
         else:
             argument is online
             send "§7[§3平民§7] RENaa_FD: 你好,%argument%" to argument
-            wait 45 tick
+            wait 35 tick
             send "§7[§3平民§7] RENaa_FD: 我是这个服务端的作者RENaa_FD" to argument
-            wait 45 tick
+            wait 35 tick
             send "§7[§3平民§7] RENaa_FD: 你也可以叫我F_XH" to argument
-            wait 45 tick
+            wait 35 tick
             send "§7[§3平民§7] RENaa_FD: 找我有什么事吗" to argument
-            wait 40 tick
-            send "§7[§3平民§7] RENaa_FD: 没有什么事情的话,要不要听我介绍下服务器? :D" to argument
-            wait 45 tick
-            make argument execute command "dm open RENaa"
