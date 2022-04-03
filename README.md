@@ -2,6 +2,7 @@
 Minecraft生存服务端整合包,适用于1.17.1版本<br>
 <br>
 klpbbs 链接: https://klpbbs.com/thread-4196-1-1.html<br>
+mcbbs 链接: https://www.mcbbs.net/thread-1322237-1-1.html<br>
 <br>
 QQ 交流群：1029946156<br>
 <br>
