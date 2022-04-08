@@ -4,8 +4,8 @@ Minecraft生存服务端整合包,适用于1.17.1和1.18.2版本<br>
 klpbbs 链接: https://klpbbs.com/thread-4196-1-1.html<br>
 mcbbs 链接: https://www.mcbbs.net/thread-1322237-1-1.html<br>
 <br>
-查看1.17.1版本请前往 [V1.3 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/1.17.1(V1.3))<br>
-查看1.18.2版本请前往 [V1.4 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/1.18.2(V1.4))<br>
+查看1.17.1版本请前往 [V1.3 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/ver/V1.3)<br>
+查看1.18.2版本请前往 [V1.4 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/ver/V1.4)<br>
 <br>
 QQ 交流群：1029946156<br>
 <br>
