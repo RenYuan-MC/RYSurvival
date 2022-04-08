@@ -1,18 +1,34 @@
-# 任渊生存服务端
-Minecraft生存服务端整合包,适用于1.17.1版本<br>
-<br>
-klpbbs 链接: https://klpbbs.com/thread-4196-1-1.html<br>
-mcbbs 链接: https://www.mcbbs.net/thread-1322237-1-1.html<br>
-<br>
-QQ 交流群：1029946156<br>
-<br>
-**注:此服务端还在开发中,目前进度60%**
-# 如何下载
-* 方法一:<br>
-去Releases下载最新版本
-* 方法二:<br>
-添加QQ群1029946156,群内下载
-* 方法三:<br>
-下载"源代码"后往Server目录里放入最新版本的Paper1.17.1核心和开服脚本<br>
-专用开服脚本下载: [MinecraftRYServerStarterBatch](https://github.com/lRENyaaa/MinecraftRYServerStarterBatch)<br>
-(这样你可以下载到部分功能未完成的版本,虽然可以体验到最新添加的功能,但是这可能会导致更多未解决的问题)<br>
+# 更新纪录
+此处为V1.3版本更新记录
+**v1.3.1-Test2**
+1.优化了粘液科技<br>
+2.添加了服务器资源包(Java版1.13.2以下玩家不可用)<br>
+3.修复了菜单中部分功能介绍写错了<br>
+4.更新了版本兼容<br>
+5.添加了主城NPC<br>
+6.对基岩版体验又进行了优化<br>
+7.变动了一些细节<br>
+8.新增基于NotBoom魔改的防爆插件<br>
+9.新增了资源包管理系统<br>
+10.让资源包的CustomModelData适配了基岩版<br>
+11.新增了粘液科技材质包<br>
+12.服务端核心更换为 [Pufferfish](https://github.com/pufferfish-gg/Pufferfish)
+**v1.3.1-Test1**
+1.优化主城<br>
+2.固定了立即重生<br>
+3.锁定了游戏规则<br>
+4.修复了PlayerPoints语言文件中一处格式错误<br>
+5.更新了领地和粘液科技插件<br>
+6.屏蔽了一些无用信息<br>
+7.屏蔽了在少数情况下无法连接网络导致的报错<br>
+8.更新了基岩版兼容<br>
+9.为基岩版编写了专用菜单<br>
+10.重写了Java版菜单<br>
+11.更新了反作弊并适配基岩版<br>
+12.更新签到功能<br>
+**v1.3.1-Test0**
+1.彻底重构服务端,目前只保留基本功能,请等待后续完善<br>
+2.启动脚本彻底重写,新增不少功能<br>
+3.对服务端性能进行了优化<br>
+4.修复了基岩版兼容<br>
+5.服务端更干净,简洁了<br>
