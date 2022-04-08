@@ -1,0 +1,10 @@
+check_update: false
+
+# SQLITE/MYSQL
+data_type: SQLITE
+MYSQL:
+  host: localhost
+  port: 3306
+  database: db
+  user: username
+  password: passy

@@ -1,0 +1,7 @@
+gamerules:
+  keepInventory: 'true'
+  doImmediateRespawn: 'true'
+  showDeathMessages: 'false'
+locale: zh_CN
+exempt-worlds:
+- spawn

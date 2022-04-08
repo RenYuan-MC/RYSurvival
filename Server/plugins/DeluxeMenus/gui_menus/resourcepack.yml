@@ -1,0 +1,78 @@
+menu_title: '&1&l服务器资源包菜单&f&l（&e/Resource&f&l）'
+open_command: Resource
+permission: resource.open
+size: 26
+items:
+  'ITEM_SLOT_0':
+    material: white_stained_glass_pane
+    slots: 
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    display_name: '&f&l装饰物品'
+  'ITEM_SLOT_1':
+    material: light_blue_stained_glass_pane
+    slots: 
+    - 10
+    - 13
+    - 16
+    display_name: '&f&l装饰物品'
+  'PACK1':
+    material: book
+    slot: 11
+    display_name: '&f&l加载服务器资源包-线路1(国内)'
+    lore:
+    - '&e&l服务器资源包!:D'
+    left_click_commands:
+    - '[player] loadpack-1'
+    right_click_commands:
+    - '[player] loadpack-1'
+  'AUTOLOAD1':
+    material: enchanted_book
+    slot: 12
+    display_name: '&f&l自动加载服务器资源包-线路1(国内)'
+    lore:
+    - '&e&l进服自动加载:D'
+    left_click_commands:
+    - '[player] autoloadpack-1'
+    right_click_commands:
+    - '[player] autoloadpack-1'
+
+  'PACK2':
+    material: book
+    slot: 14
+    display_name: '&f&l加载服务器资源包-线路2(国外)'
+    lore:
+    - '&e&l服务器资源包!:D'
+    left_click_commands:
+    - '[player] loadpack-2'
+    right_click_commands:
+    - '[player] loadpack-2'
+  'AUTOLOAD2':
+    material: enchanted_book
+    slot: 15
+    display_name: '&f&l自动加载服务器资源包-线路2(国外)'
+    lore:
+    - '&e&l进服自动加载:D'
+    left_click_commands:
+    - '[player] autoloadpack-2'
+    right_click_commands:
+    - '[player] autoloadpack-2'
+    

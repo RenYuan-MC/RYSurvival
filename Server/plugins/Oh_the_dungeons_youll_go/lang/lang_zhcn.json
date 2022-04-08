@@ -1,0 +1,356 @@
+{
+  "lang_version": 11,
+  "GREYMERK": {
+    "Name": "Greymerk之斧",
+    "Lore": "一塌糊涂的锋利"
+  },
+  "NEBRISCROWN": {
+    "Name": "内布里亚正义王冠",
+    "Lore": "镶嵌有珍贵的宝石"
+  },
+  "NULL": {
+    "Name": "空指针",
+    "Lore": "异常产物"
+  },
+  "MANPANTS": {
+    "Name": "男式裤子",
+    "Lore": "纯爷们专用"
+  },
+  "ZISTEAUSIGN": {
+    "Name": "战牌",
+    "Lore": "“这是你应得的”"
+  },
+  "AVIDYA": {
+    "Name": "White Russian",
+    "Lore": "The dude\u0027s favourite"
+  },
+  "ASHLEA": {
+    "Name": "阿什莉亚牌燕麦饼干",
+    "Lore": "适合十一岁儿童"
+  },
+  "KURT": {
+    "Name": "边境之地旅行器",
+    "Lore": "货真价实！"
+  },
+  "AMLP": {
+    "Name": "羊毛毁灭者",
+    "Lore": "请谨慎使用"
+  },
+  "CLEO": {
+    "Name": "Cleophian挖掘之鱼",
+    "Lore": "显然，鱼不适合挖掘"
+  },
+  "BDOUBLEO": {
+    "Name": "挖掘者",
+    "Lore": "从地狱之火中诞生"
+  },
+  "GUUDE": {
+    "Name": "博尔德菲斯蒂安的金唱片",
+    "Lore": "\"You\u0027re Watching Guude Boulderfist...\""
+  },
+  "RLEAHY": {
+    "Name": "三明治",
+    "Lore": "配有五香熏牛肉"
+  },
+  "ETHO": {
+    "Name": "Your Mum",
+    "Lore": "The original"
+  },
+  "ENIKOBOW": {
+    "Name": "恩尼科的超弦理论",
+    "Lore": "为了科学！"
+  },
+  "ENIKOSWORD": {
+    "Name": "恩尼科的耳环",
+    "Lore": "\"She do the loot take boogie\""
+  },
+  "BAJ": {
+    "Name": "巴杰的最后一招",
+    "Lore": "\"饥饿可能是致命的\""
+  },
+  "DOCM": {
+    "Name": "指挥棒",
+    "Lore": "\"行往受难地\""
+  },
+  "GINGER": {
+    "Name": "宫保鸡丁",
+    "Lore": "\"Kung Pao!\""
+  },
+  "VECHS": {
+    "Name": "传奇棒",
+    "Lore": "\"真的吗？！\""
+  },
+  "NOTCH": {
+    "Name": "Notch的苹果",
+    "Lore": "创始者的力量"
+  },
+  "QUANTUMLEAP": {
+    "Name": "量子飞跃的之瑞士奶酪",
+    "Lore": "\"Oh boy\""
+  },
+  "GENERIKB": {
+    "Name": "烫手的山芋",
+    "Lore": "隐士的必需品"
+  },
+  "FOURLES": {
+    "Name": "无面粉烤黑豆",
+    "Lore": "\"色泽焦黑\""
+  },
+  "DINNERBONE": {
+    "Name": "Dinnerbone老先生",
+    "Lore": "\"Dang Skellies!\""
+  },
+  "GRIM": {
+    "Name": "Grim咀嚼玩具",
+    "Lore": "\"Come on Grim, let\u0027s do this!\""
+  },
+  "MMILLSS": {
+    "Name": "MMillssian蜘蛛之祸",
+    "Lore": "\"我不需要更多的线了。。\""
+  },
+  "VALANDRAH": {
+    "Name": "瓦兰德拉之吻",
+    "Lore": "\"感受我的剑吻\""
+  },
+  "Eldritch_Blade_of_Plundering": {
+    "Name": "恶魔的掠夺之刃",
+    "Lore": "增强掠夺"
+  },
+  "Eldritch_Blade_of_the_Inferno": {
+    "Name": "地狱之魔咒之刃",
+    "Lore": "来自火海深处"
+  },
+  "Eldritch_Blade": {
+    "Name": "魔咒之刃",
+    "Lore": "符文蚀刻"
+  },
+  "Tempered_Blade": {
+    "Name": "剑刃",
+    "Lore": "增强耐久"
+  },
+  "Yew_Longbow": {
+    "Name": "紫杉弓",
+    "Lore": "精湛工艺"
+  },
+  "Laminated_Bow": {
+    "Name": "叠层弓",
+    "Lore": "高度打磨"
+  },
+  "Recurve_Bow": {
+    "Name": "反曲弓",
+    "Lore": "做工考究"
+  },
+  "Eldritch_Bow": {
+    "Name": "魔咒之弓",
+    "Lore": "温润如玉"
+  },
+  "TEQUILA": {
+    "Name": "龙舌兰酒",
+    "Lore": ""
+  },
+  "LAUDANUM": {
+    "Name": "劳丹姆",
+    "Lore": "药酒."
+  },
+  "MOONSHINE": {
+    "Name": "月光酒",
+    "Lore": "（私酿）"
+  },
+  "ABSINTHE": {
+    "Name": "苦艾酒",
+    "Lore": ""
+  },
+  "VILE": {
+    "Name": "有害混合物",
+    "Lore": ""
+  },
+  "RAGE": {
+    "Name": "Animus",
+    "Lore": "不稳定的混合物."
+  },
+  "STAMINA": {
+    "Name": "Vitae",
+    "Lore": "生命的本质."
+  },
+  "STOUT": {
+    "Name": "Stout",
+    "Lore": "\"It\u0027s Good for You\""
+  },
+  "NECTAR": {
+    "Name": "花蜜",
+    "Lore": "花瓣浸出物."
+  },
+  "COFFEE": {
+    "Name": "咖啡",
+    "Lore": "深色咖啡."
+  },
+  "AURA": {
+    "Name": "流明",
+    "Lore": "荧石提取物."
+  },
+  "armour_prefix": {
+    "Surplus": "多余的",
+    "Riveted": "铆接的",
+    "Gothic": "哥特的",
+    "Jewelled": "珠宝的",
+    "Crystal": "水晶的",
+    "Strange": "诡异的"
+  },
+  "Nerf_Msg": "你的服务器禁用了刷怪笼AI。请查看该配置项：\u0027nerf-spawner-mobs\u0027 https://www.spigotmc.org/wiki/spigot-configuration/",
+  "Soul_Spade": "灵魂之铲",
+  "Grave_Spade": "重力之铲",
+  "Crystal_Head_Axe": "水晶头斧",
+  "Woodland_Hatchet": "林地斧",
+  "Crystal_Pick_of_Precision": "精准水晶镐",
+  "Crystal_Pick_of_Prospecting": "勘探水晶镐",
+  "Crystal_Pick": "水晶镐",
+  "Case_Hardened_Pick_of_Precision": "精细化工具",
+  "Case_Hardened_Pick_of_Prospecting": "技术化工具",
+  "Case_Hardened_Pick": "强化镐",
+  "Bonnet": "帽子",
+  "Coif": "头巾",
+  "Sallet": "轻盔",
+  "Helm": "头盔",
+  "Of_Diving": ":水遁",
+  "Of_Deflection": ":避弹",
+  "Of_Defense": ":防护",
+  "Shoes": "便鞋",
+  "Greaves": "轻鞋",
+  "Sabatons": "板靴",
+  "Boots": "战靴",
+  "Of_Warding": ":耐热",
+  "Of_Lightness": ":轻盈",
+  "Pantaloons": "短裤",
+  "Chausses": "护腿",
+  "Leg_plates": "板腿",
+  "Leggings": "腿甲",
+  "Of_Integrity": ":防爆",
+  "Tunic": "皮甲",
+  "Hauberk": "便甲",
+  "Cuirass": "盔甲",
+  "Plate": "战袍",
+  "Of_Flamewarding": ":防火",
+  "World_Manager": "世界管理器",
+  "World_List": "世界列表",
+  "Previous": "前一页",
+  "Next": "下一页",
+  "Click_To_Edit": "单击以编辑",
+  "DraylarBattleTower_Config": "Draylar战斗高塔设置",
+  "AntManDungeon_Config": "蚁人地牢设置",
+  "Ant_Man_Dungeon": "蚁人地牢",
+  "World_Editor": "世界地牢设置",
+  "Roguelike_Config": "冒险地牢设置",
+  "Doomlike_Config": "末日地牢设置",
+  "BattleTower_Config": "战斗高塔设置",
+  "Smoofy_Config": "花园地牢设置",
+  "Biome_Setting": "生物群系修正",
+  "Roguelike_Dungeon": "冒险地牢",
+  "Doomlike_Dungeon": "末日地牢",
+  "Battle_Tower": "战斗高塔",
+  "Smoofy_Dungeon": "花园地牢",
+  "Draylar_Battle_Tower": "Draylar战斗高塔",
+  "Roguelike_Dungeon_Natural_Spawn": "冒险地牢 自然生成",
+  "Doomlike_Dungeon_Natural_Spawn": "末日地牢 自然生成",
+  "Battle_Tower_Natural_Spawn": "战斗高塔 自然生成",
+  "Smoofy_Dungeon_Natural_Spawn": "花园地牢 自然生成",
+  "Draylar_Battle_Tower_Natural_Spawn": "Draylar战斗高塔 自然生成",
+  "Ant_Man_Dungeon_Natural_Spawn": "蚁人地牢 自然生成",
+  "Load_Config_Err": "读写世界设置时出错",
+  "Click_To_Toggle": "单击调整",
+  "World_Config_Save": "已保存世界设置",
+  "Builtin_Loot": "启用内置战利品列表",
+  "Natural_Spawn": "自然生成",
+  "NaturalSpawnStr": [
+    "--------------------",
+    "允许地牢随世界生成而生成"
+  ],
+  "Average_Dungeon_Chunk_Distance": "地牢间的平均区块距离",
+  "Easy_Find": "更易发现",
+  "EasyFindStr": [
+    "--------------------------",
+    "若为真，将为每个地牢修建地上入口"
+  ],
+  "Single_Entrance": "单个入口",
+  "Thin_Spawners": "刷怪笼修正",
+  "ThinSpawnersStr": [
+    "---------------------------------",
+    "若为真，生成器将移除小型地牢中的刷怪笼，",
+    "使得地牢比例更协调"
+  ],
+  "Dungeon_Spawn_Setting": "地牢生成设置",
+  "Dungeon_Spawn_Tip": "设置每个地牢的比例",
+  "Encase": "地牢包含外壳（建议开启）",
+  "Generous": "生成额外家具",
+  "GenerousStr": [
+    "-----------------------------",
+    "是否生成酿造台、末影箱、铁砧等家具"
+  ],
+  "Difficulty": [
+    "难度",
+    "无",
+    "菜鸟",
+    "新手",
+    "正常",
+    "困难",
+    "残酷"
+  ],
+  "Dungeon_Level": "层数",
+  "Level_Tip": "战利品是否会出现在该层",
+  "Beginner_Level": "最浅层数",
+  "Deepest_Level": "最深层数",
+  "Each": "放入每个箱子",
+  "EachTip": [
+    "----------------------------------",
+    "若为真，则相应战利品会被放入地牢中的所有箱子，",
+    "否则将在地牢箱子间平均分配"
+  ],
+  "Weight": "权重",
+  "Random_Dungeon": "随机主题",
+  "Random_Dungeon_Content": "采用随机的地牢主题（不推荐）",
+  "Loot_Config": "战利品设置",
+  "Reduce_Loot_Chance": "减少战利品几率",
+  "Increase_Loot_Chance": "增加战利品几率",
+  "Current_Chance": "当前几率",
+  "Apply": "应用",
+  "Cancel": "取消",
+  "Remove": "删除",
+  "Back": "返回",
+  "Loot_Chance": "战利品几率",
+  "Loot_Weight": "战利品权重",
+  "Current_Page": "当前页数",
+  "Max_Item": "物品最大数量",
+  "Min_Item": "物品最小数量",
+  "Amount_Item_Tip1": "左键增加",
+  "Amount_Item_Tip2": "右键减少",
+  "Chest_Type": "箱子类型",
+  "ChestTypeStr": "末端箱子的类型",
+  "Loot_Manager": "战利品管理器",
+  "Add_New_Loot": "添加新战利品",
+  "Tip": "Tip",
+  "Status": "状态",
+  "Enable": "启用",
+  "Disable": "禁用",
+  "Advancement1": "进入带有地牢的服务器",
+  "Advancement2": "踏足一个拥有战斗高塔的维度",
+  "Advancement3": "踏足一个拥有末日地牢的维度",
+  "Advancement4": "踏足一个拥有冒险地牢的维度",
+  "Advancement5": "踏足一个拥有花园地牢的维度",
+  "Dice": "骰子",
+  "DiceContent": "右键Roll点",
+  "ChangeSpawner": "允许使用刷怪蛋修改刷怪笼内容",
+  "ChangeSpawnerMessage": "无法使用刷怪蛋修改刷怪笼",
+  "PPDI_WORLD": "维度地牢世界",
+  "PPDI_WORLD_LORE": "受PerPlayerDungeonInstance托管",
+  "World_Spawner_Manager": "刷怪笼管理器",
+  "Silk_Vanilla_Spawner": "Silk Touch on Vanilla Spawner",
+  "Silk_Dungeon_Spawner": "Silk Touch on OhTheDungeon Spawner",
+  "Dungeon_Spawner_Lore1": "只对由\u003e\u003d7.0版本创建的刷怪笼有效",
+  "Dungeon_Spawner_Lore2": "由旧版本OTD创建的刷怪笼",
+  "Dungeon_Spawner_Lore3": "将被归类为原版刷怪笼",
+  "Mob_Drop_In_Vanilla_Spawner": "原版刷怪笼掉落物",
+  "Mob_Drop_In_Dungeon_Spawner": "OhTheDungeon刷怪笼掉落物",
+  "Spawner_Disappear_Vanilla": "每次刷怪后，原版刷怪笼的消失几率",
+  "Spawner_Disappear_Dungeon": "每次刷怪后，OTD刷怪笼的消失几率",
+  "Addon_Not_Installed": "扩展未安装",
+  "Click_To_Install": "点击来获取"
+}
