@@ -1,7 +1,0 @@
-MySQL:
-  Enable: false
-  Host: 127.0.0.1
-  Port: '3306'
-  Database: databaseName
-  User: root
-  Password: root
