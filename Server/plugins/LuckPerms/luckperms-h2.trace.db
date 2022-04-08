@@ -1,0 +1,7 @@
+2021-10-30 13:33:32 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: Writing to nio:C:/Users/Administrator/Desktop/Server/plugins/LuckPerms/luckperms-h2.mv.db failed; length 135168 at 184320 [1.4.199/2]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)

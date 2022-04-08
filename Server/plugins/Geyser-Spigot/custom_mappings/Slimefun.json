@@ -1,0 +1,513 @@
+{
+    "format_version": "1.0.0",
+    "items": {
+        "minecraft:enchanted_book":[
+            {
+                "name": "slimefun_guide",
+                "custom_model_data": 2200001
+            },
+            {
+                "name": "back",
+                "custom_model_data": 2200003
+            }
+        ],
+        "minecraft:stick":[
+            {
+                "name": "grandmas_walking_stick",
+                "custom_model_data": 2200011
+            },
+            {
+                "name": "grandpas_walking_stick",
+                "custom_model_data": 2200012
+            }
+        ],
+        "minecraft:gray_stained_glass_pane":[
+            {
+                "name": "background",
+                "custom_model_data": 2200002
+            }
+        ],
+        "minecraft:player_head":[
+            {
+                "name": "portable_craftingtabble",
+                "custom_model_data": 2200013
+            },
+            {
+                "name": "portable_dustbin",
+                "custom_model_data": 2200018
+            },
+            {
+                "name": "backpack_ender",
+                "custom_model_data": 2200036
+            },
+            {
+                "name": "battery",
+                "custom_model_data": 2200060
+            },
+            {
+                "name": "synthetic_sapphire",
+                "custom_model_data": 2200089
+            },
+            {
+                "name": "raw_carbon",
+                "custom_model_data": 2200091
+            },
+            {
+                "name": "carbonado",
+                "custom_model_data": 2200094
+            },
+            {
+                "name": "carbon",
+                "custom_model_data": 2200113
+            },
+            {
+                "name": "compressed_carbon",
+                "custom_model_data": 2200116
+            },
+            {
+                "name": "carbon_chunk",
+                "custom_model_data": 2200117
+            },
+            {
+                "name": "powered_crystal",
+                "custom_model_data": 2200119
+            },
+            {
+                "name": "stone_chunk",
+                "custom_model_data": 2200155
+            },
+            {
+                "name": "lava_crystal",
+                "custom_model_data": 2200159
+            },
+            {
+                "name": "cheese",
+                "custom_model_data": 2200200
+            },
+            {
+                "name": "butter",
+                "custom_model_data": 2200201
+            },
+            {
+                "name": "tiny_pile_of_uranium",
+                "custom_model_data": 2200214
+            },
+            {
+                "name": "small_chunk_of_uranium",
+                "custom_model_data": 2200215
+            },
+            {
+                "name": "uranium",
+                "custom_model_data": 2200216
+            },
+            {
+                "name": "tin_can",
+                "custom_model_data": 2200226
+            },
+            {
+                "name": "backpack_small",
+                "custom_model_data": 2200248
+            },
+            {
+                "name": "backpack",
+                "custom_model_data": 2200249
+            },
+            {
+                "name": "backpack_large",
+                "custom_model_data": 2200250
+            },
+            {
+                "name": "backpack_woven",
+                "custom_model_data": 2200251
+            },
+            {
+                "name": "backpack_gilded",
+                "custom_model_data": 2200253
+            },
+            {
+                "name": "backpack_radiant",
+                "custom_model_data": 2200254
+            },
+            {
+                "name": "magnet",
+                "custom_model_data": 2200256
+            },
+            {
+                "name": "infused_magnet",
+                "custom_model_data": 2200257
+            },
+            {
+                "name": "backpack_soulbound",
+                "custom_model_data": 2200261
+            },
+            {
+                "name": "electromagnet",
+                "custom_model_data": 2200305
+            },
+            {
+                "name": "electric_motor",
+                "custom_model_data": 2200306
+            },
+            {
+                "name": "heating_coil",
+                "custom_model_data": 2200307
+            },
+            {
+                "name": "cooling_unit",
+                "custom_model_data": 2200334
+            },
+            {
+                "name": "cooler",
+                "custom_model_data": 2200335
+            },
+            {
+                "name": "energy_regulator",
+                "custom_model_data": 2200339
+            },
+            {
+                "name": "duct_tape",
+                "custom_model_data": 2200340
+            },
+            {
+                "name": "small_energy_capacitor",
+                "custom_model_data": 2200341
+            },
+            {
+                "name": "medium_energy_capacitor",
+                "custom_model_data": 2200342
+            },
+            {
+                "name": "big_energy_capacitor",
+                "custom_model_data": 2200343
+            },
+            {
+                "name": "large_energy_capacitor",
+                "custom_model_data": 2200344
+            },
+            {
+                "name": "carbonado_edged_energy_capacitor",
+                "custom_model_data": 2200345
+            },
+            {
+                "name": "coal_generator",
+                "custom_model_data": 2200371
+            },
+            {
+                "name": "coal_generator2",
+                "custom_model_data": 2200372
+            },
+            {
+                "name": "electric_press",
+                "custom_model_data": 2200376
+            },
+            {
+                "name": "electric_press2",
+                "custom_model_data": 2200377
+            },
+            {
+                "name": "magnesium_generator",
+                "custom_model_data": 2200379
+            },
+            {
+                "name": "android_memory_core",
+                "custom_model_data": 2200386
+            },
+            {
+                "name": "gps_transmitter",
+                "custom_model_data": 2200387
+            },
+            {
+                "name": "gps_transmitter_advanced",
+                "custom_model_data": 2200388
+            },
+            {
+                "name": "gps_transmitter_carbonado",
+                "custom_model_data": 2200389
+            },
+            {
+                "name": "gps_transmitter_energized",
+                "custom_model_data": 2200390
+            },
+            {
+                "name": "gps_control_panel",
+                "custom_model_data": 2200391
+            },
+            {
+                "name": "gps_emergency_transmitter",
+                "custom_model_data": 2200393
+            },
+            {
+                "name": "android_normal",
+                "custom_model_data": 2200396
+            },
+            {
+                "name": "android_miner",
+                "custom_model_data": 2200397
+            },
+            {
+                "name": "android_farmer",
+                "custom_model_data": 2200398
+            },
+            {
+                "name": "android_woodcutter",
+                "custom_model_data": 2200399
+            },
+            {
+                "name": "android_fisherman",
+                "custom_model_data": 2200400
+            },
+            {
+                "name": "android_butcher",
+                "custom_model_data": 2200401
+            },
+            {
+                "name": "android2_normal",
+                "custom_model_data": 2200402
+            },
+            {
+                "name": "android2_fisherman",
+                "custom_model_data": 2200403
+            },
+            {
+                "name": "android2_butcher",
+                "custom_model_data": 2200404
+            },
+            {
+                "name": "android2_farmer",
+                "custom_model_data": 2200405
+            },
+            {
+                "name": "android3_normal",
+                "custom_model_data": 2200406
+            },
+            {
+                "name": "android3_fisherman",
+                "custom_model_data": 2200407
+            },
+            {
+                "name": "android3_butcher",
+                "custom_model_data": 2200408
+            },
+            {
+                "name": "gps_geo_scanner",
+                "custom_model_data": 2200450
+            },
+            {
+                "name": "oil_pump",
+                "custom_model_data": 2200452
+            },
+            {
+                "name": "geo_miner",
+                "custom_model_data": 2200453
+            },
+            {
+                "name": "oil",
+                "custom_model_data": 2200454
+            },
+            {
+                "name": "fuel",
+                "custom_model_data": 2200455
+            },
+            {
+                "name": "nether_ice",
+                "custom_model_data": 2200456
+            },
+            {
+                "name": "lava_generator",
+                "custom_model_data": 2200458
+            },
+            {
+                "name": "lava_generator2",
+                "custom_model_data": 2200459
+            },
+            {
+                "name": "combustion_reactor",
+                "custom_model_data": 2200460
+            },
+            {
+                "name": "enriched_nether_ice",
+                "custom_model_data": 2200469
+            },
+            {
+                "name": "organic_food_wheat",
+                "custom_model_data": 2200473
+            },
+            {
+                "name": "organic_food_carrots",
+                "custom_model_data": 2200474
+            },
+            {
+                "name": "organic_food_potatoes",
+                "custom_model_data": 2200475
+            },
+            {
+                "name": "organic_food_seeds",
+                "custom_model_data": 2200476
+            },
+            {
+                "name": "organic_food_beetroot",
+                "custom_model_data": 2200477
+            },
+            {
+                "name": "organic_food_melon",
+                "custom_model_data": 2200478
+            },
+            {
+                "name": "organic_food_apple",
+                "custom_model_data": 2200479
+            },
+            {
+                "name": "organic_food_sweet_berries",
+                "custom_model_data": 2200480
+            },
+            {
+                "name": "organic_food_dried_kelp",
+                "custom_model_data": 2200481
+            },
+            {
+                "name": "organic_food_cocoa_beans",
+                "custom_model_data": 2200482
+            },
+            {
+                "name": "exp_collector",
+                "custom_model_data": 2200486
+            },
+            {
+                "name": "organic_fertilizer_wheat",
+                "custom_model_data": 2200489
+            },
+            {
+                "name": "organic_fertilizer_carrots",
+                "custom_model_data": 2200490
+            },
+            {
+                "name": "organic_fertilizer_potatoes",
+                "custom_model_data": 2200491
+            },
+            {
+                "name": "organic_fertilizer_seeds",
+                "custom_model_data": 2200492
+            },
+            {
+                "name": "organic_fertilizer_beetroot",
+                "custom_model_data": 2200493
+            },
+            {
+                "name": "organic_fertilizer_melon",
+                "custom_model_data": 2200494
+            },
+            {
+                "name": "organic_fertilizer_apple",
+                "custom_model_data": 2200495
+            },
+            {
+                "name": "organic_fertilizer_sweet_berries",
+                "custom_model_data": 2200496
+            },
+            {
+                "name": "organic_fertilizer_dried_kelp",
+                "custom_model_data": 2200497
+            },
+            {
+                "name": "organic_fertilizer_cocoa_beans",
+                "custom_model_data": 2200498
+            },
+            {
+                "name": "reactor_coolant_cell",
+                "custom_model_data": 2200503
+            },
+            {
+                "name": "nether_ice_coolant_cell",
+                "custom_model_data": 2200504
+            },
+            {
+                "name": "neptunium",
+                "custom_model_data": 2200505
+            },
+            {
+                "name": "plutonium",
+                "custom_model_data": 2200506
+            },
+            {
+                "name": "boosted_uranium",
+                "custom_model_data": 2200507
+            },
+            {
+                "name": "nuclear_reactor",
+                "custom_model_data": 2200508
+            },
+            {
+                "name": "nether_star_reactor",
+                "custom_model_data": 2200509
+            },
+            {
+                "name": "motor",
+                "custom_model_data": 2200510
+            },
+            {
+                "name": "manager",
+                "custom_model_data": 2200511
+            },
+            {
+                "name": "connector",
+                "custom_model_data": 2200512
+            },
+            {
+                "name": "input",
+                "custom_model_data": 2200513
+            },
+            {
+                "name": "output",
+                "custom_model_data": 2200514
+            },
+            {
+                "name": "output2",
+                "custom_model_data": 2200515
+            },
+            {
+                "name": "trash",
+                "custom_model_data": 2200519
+            },
+            {
+                "name": "tape_measure",
+                "custom_model_data": 2200527
+            },
+            {
+                "name": "energized_capacitor",
+                "custom_model_data": 2200528
+            }
+        ],
+        "minecraft:name_tag":[
+            {
+                "name": "search",
+                "custom_model_data": 2200005
+            }
+        ],
+        "minecraft:lime_stained_glass_pane":[
+            {
+                "name": "previous_on",
+                "custom_model_data": 2200007
+            },
+            {
+                "name": "next_on",
+                "custom_model_data": 2200009
+            }
+        ],
+        "minecraft:black_stained_glass_pane":[
+            {
+                "name": "previous_off",
+                "custom_model_data": 2200008
+            },
+            {
+                "name": "next_off",
+                "custom_model_data": 2200010
+            }
+        ],
+        "minecraft:comparator":[
+            {
+                "name": "menu",
+                "custom_model_data": 2200004
+            }
+        ]
+    }
+}
