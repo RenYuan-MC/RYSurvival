@@ -12,7 +12,7 @@
 9.新增了资源包管理系统<br>
 10.让资源包的CustomModelData适配了基岩版<br>
 11.新增了粘液科技材质包<br>
-12.服务端核心更换为 [Pufferfish](https://github.com/pufferfish-gg/Pufferfish)
+12.服务端核心更换为 [Pufferfish](https://github.com/pufferfish-gg/Pufferfish)<br>
 **v1.3.1-Test1**<br>
 1.优化主城<br>
 2.固定了立即重生<br>
