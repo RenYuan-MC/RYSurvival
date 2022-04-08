@@ -10,7 +10,7 @@
 # - 'SERVER IS RUNNING IN OFFLINE/INSECURE MODE'
 #
 #服务器控制台中出现的所有包含'SERVER IS RUNNING IN OFFLINE/INSECURE MODE'字样的消息都将被隐藏，并且不会出现在日志或控制台上。
-#如果有较大错误，则不必键入完整错误。但是添加的单词越多，则越准确，并且不会隐藏可能包含在筛选器中添加的单词的其他消息。
+#如果有较多错误，则不必键入完整错误。但是添加的单词越多，就越准确，并且不会隐藏可能包含在筛选器中添加的单词的其他消息。
 
 Messages-To-Hide-Filter:
 #离线服务器警告屏蔽
@@ -18,6 +18,7 @@ Messages-To-Hide-Filter:
 - 'To change this, set "online-mode" to "true" in the server.properties file'
 - 'The server will make no attempt to authenticate usernames'
 - 'While this makes the game possible to play without internet access'
+- 'You will not be offered any support as long as the server allows offline-mode players to join'
 
 #ESS更新提示屏蔽
 - '正在获取版本信息...'
@@ -68,6 +69,11 @@ Messages-To-Hide-Filter:
 - 'Unable to find spawn biome'
 - 'Uncaught exception in thread Profile Lookup Executor'
 - 'look up profile properties for'
+
+#OhTheDungeons无用信息屏蔽
+- 'WorldEdit not installed, custom dungeon function is disabled. Dont worry, you could still use the built-in dungeons'
+- 'MythicMobs not installed, will disable MythicMobs related features'
+- 'Boss not installed, will disable BossPlugin related features'
 
 #Geyser无用信息屏蔽
 - '无法翻译数据包'
