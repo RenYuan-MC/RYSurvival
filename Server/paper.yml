@@ -210,33 +210,44 @@ world-settings:
           per-player: false
           day: 5
     anti-xray:
-      max-block-height: 64
       enabled: true
-      engine-mode: 1
+      engine-mode: 2
       max-chunk-section-index: 3
+      max-block-height: 128
       update-radius: 2
-      lava-obscures: false
+      lava-obscures: true
       use-permission: false
       hidden-blocks:
+      - copper_ore
+      - deepslate_copper_ore
       - gold_ore
+      - deepslate_gold_ore
       - iron_ore
+      - deepslate_iron_ore
       - coal_ore
+      - deepslate_coal_ore
       - lapis_ore
+      - deepslate_lapis_ore
       - mossy_cobblestone
       - obsidian
       - chest
       - diamond_ore
+      - deepslate_diamond_ore
       - redstone_ore
+      - deepslate_redstone_ore
       - clay
       - emerald_ore
+      - deepslate_emerald_ore
       - ender_chest
       - ancient_debris
       - nether_gold_ore
       - nether_quartz_ore
       replacement-blocks:
-      - netherrack
       - stone
       - oak_planks
+      - deepslate
+      - netherrack
+      - blackstone
     viewdistances:
       no-tick-view-distance: 7
     entity-per-chunk-save-limit:
