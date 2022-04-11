@@ -4,7 +4,7 @@
 1.将AntiUserName插件和NotBoomReload插件合并为RenYuan-Core<br>
 2.在RenYuan-Core添加的服务端数据统计<br>
 3.修复玩家名称长度过长导致无法进入服务器<br>
-4.更新CMILib,Geyser,Slimefun,Residence,AureliumSkills,NoCheatPlus,Themis插件<br>
+4.更新CMILib,Geyser,Slimefun,AureliumSkills,NoCheatPlus,Themis插件<br>
 5.修复假矿<br>
 6.修复菜单问题<br>
 **v1.3.1-Test2**<br>
