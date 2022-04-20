@@ -1,12 +1,15 @@
 # 更新记录
 此处为V1.3版本更新记录<br>
 **v1.3.1-Test3**<br>
-1.将AntiUserName插件和NotBoomReload插件合并为RenYuan-Core<br>
+1.对RenYuan-Core进行了更新<br>
 2.在RenYuan-Core添加的服务端数据统计<br>
-3.修复玩家名称长度过长导致无法进入服务器<br>
-4.更新CMILib,Geyser,Slimefun,AureliumSkills,NoCheatPlus插件<br>
-5.修复假矿<br>
-6.修复菜单问题<br>
+3.将主城功能集成到RenYuan-Core<br>
+4.在RenYuan-Core添加基岩版兼容相关扩展内容<br>
+5.修复玩家名称长度过长导致无法进入服务器<br>
+6.更新CMILib,Geyser,Slimefun,AureliumSkills,NoCheatPlus插件<br>
+7.修复假矿<br>
+8.修复菜单问题<br>
+9.修复讲台崩服<br>
 **v1.3.1-Test2**<br>
 1.优化了粘液科技<br>
 2.添加了服务器资源包(Java版1.13.2以下玩家不可用)<br>
