@@ -44,7 +44,7 @@ Global:
     DisabledWorlds:
       # List Of Worlds where this plugin is disabled
       List:
-      - world_resources
+      - otd_dungeon
       # Disables all listeners in included worlds
       DisableListeners: true
       # Disabled any command usage in included worlds
@@ -259,7 +259,7 @@ Global:
       # With this set to true, lava flow outside residence is blocked
       NoLavaFlow: true
       # With this set to true, water flow outside residence is blocked
-      NoWaterFlow: true
+      NoWaterFlow: false
       Worlds:
       - world
     Place:
@@ -269,7 +269,7 @@ Global:
       # With this set to true, playrs cant place lava outside residence
       NoLavaPlace: true
       # With this set to true, playrs cant place water outside residence
-      NoWaterPlace: true
+      NoWaterPlace: false
       Worlds:
       - world
     BlockFall:
