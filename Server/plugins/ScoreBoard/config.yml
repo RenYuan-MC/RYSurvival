@@ -1,6 +1,6 @@
 Scoreboard:
 #计分板标题
-  title: '&c&l1.17.1 趣味生存'
+  title: '&c&l1.18.2 趣味生存'
 #您可以在不使用PlaceHolderAPI的情况下使用占位符：
 #{Player} 获取玩家名称。
 #{Online} 获取在线玩家的计数。
@@ -14,8 +14,7 @@ Scoreboard:
     - ' §f延迟: [§a%player_ping%ms§f]'
     - ' §f金币: [&a{Money}金币&f]'
     - ' §f点券: [&a%playerpoints_points%点券&f]'
-    - ' §f所处: [§a1.17.1趣味生存§f]'
-    - ' §f引导菜单:§e/cd'
+    - ' §f所处: [§a1.18.2趣味生存§f]'
     - ' §f主菜单:§e/menu'
     - ''
     - ' §6§l§m咕咕咕咕咕咕咕咕咕咕咕咕'
