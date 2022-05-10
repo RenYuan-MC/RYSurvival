@@ -238,7 +238,7 @@
 			{
 				"name": "gold_block_24",
 				"custom_model_data": 2200238,
-				"texture_size": 16
+				"texture_size": 32
 			}
 		],
 		"minecraft:gray_stained_glass_pane": [
