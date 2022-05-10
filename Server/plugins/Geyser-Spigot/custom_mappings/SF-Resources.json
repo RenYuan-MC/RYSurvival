@@ -346,11 +346,6 @@
 				"texture_size": 32
 			},
 			{
-				"name": "zinc_dust",
-				"custom_model_data": 2200103,
-				"texture_size": 32
-			},
-			{
 				"name": "magnesium_salt",
 				"custom_model_data": 2200378,
 				"texture_size": 32

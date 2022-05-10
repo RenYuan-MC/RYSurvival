@@ -206,13 +206,6 @@
 				"texture_size": 16
 			}
 		],
-		"minecraft:chest": [
-			{
-				"name": "output_chest",
-				"custom_model_data": 2200016,
-				"texture_size": 32
-			}
-		],
 		"minecraft:glass": [
 			{
 				"name": "pressure_chamber",
@@ -241,7 +234,7 @@
 				"texture_size": 16
 			}
 		],
-		"minecraft:gold_block_24": [
+		"minecraft:gold_block": [
 			{
 				"name": "gold_block_24",
 				"custom_model_data": 2200238,
