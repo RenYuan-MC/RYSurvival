@@ -6,5 +6,6 @@
 **兮乐mc论坛**: https://bbs.xlhost.cn/thread-287-1-1.html<br>
 **MineBBS**: https://www.minebbs.com/resources/4131<br>
 **最mc论坛**: http://www.zuimc.com/thread-115842-1-1.html<br>
+**MCUTC**: https://www.mcutc.com/resources/pufferfish-1-7-2-1-18-2.114<br>
 <br>
 \*:这两个喵mc是两个不同的论坛,只是重名罢了,我第一次发现时就感觉挺离谱
