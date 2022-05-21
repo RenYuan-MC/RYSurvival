@@ -21,7 +21,6 @@ on right click:
     block is not chest
     player is op or the owner of the shop block
     set {shop::%player%} to block
-    send "发送:商店设置菜单" to player
     QuickShopSetting(player)
         
 on left click:
@@ -30,7 +29,6 @@ on left click:
     if player is not sneaking:
         if {b} is true:
             shop block is not empty
-            send "发送:商店购买/出售菜单" to player
             QuickShopMain(player,the price of the shop block)
         set {b} to false
     else:
@@ -43,7 +41,6 @@ on animation:
     if player is not sneaking:
         if {b} is true:
             shop event.getPlayer().getTargetBlock(null, 5) is not empty
-            send "发送:商店购买/出售菜单" to player
             QuickShopMain(player,the price of the shop event.getPlayer().getTargetBlock(null, 5))
         set {b} to false
     else:
