@@ -11,7 +11,7 @@
   "no-permission": "&f[&6服务器&f] 你没有权限这样做。",
   "integrations-check-failed-create": "&f[&6服务器&f] 集成模块 {0} 拒绝了创建商店操作。",
   "integrations-check-failed-trade": "&f[&6服务器&f] 集成模块 {0} 拒绝了商店交易操作。",
-  "3rd-plugin-build-check-failed": "&f[&6服务器&f] 第三方插件 &l{0}&r&f 拒绝了权限检查操作，您在那里有建造权限吗？",
+  "3rd-plugin-build-check-failed": "&f[&6服务器&f] 第三方插件 &l{0} \n&f[&6服务器&f] 拒绝了权限检查操作，您在那里有建造权限吗？",
   "3rd-plugin-build-check-failed-admin": "&f[&6服务器&f] (管理员信息) &d{0} &f拒绝了权限检查。\n&f[&6服务器&f] 如果不例外，请尝试添加 &d{1} &f进监听器黑名单。&f配置指南：\n&f[&6服务器&f] https://github.com/PotatoCraft-Studio/QuickShop-Reremake/wiki/Use-protection-listener-filter",
   "no-creative-break": "&f[&6服务器&f] 你不能在创造模式破坏其他玩家的商店, 请使用生存模式或用超级工具 {0} 来破坏。",
   "trading-in-creative-mode-is-disabled": "&f[&6服务器&f] 你不能在创造模式下进行交易操作。",
