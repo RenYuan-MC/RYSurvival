@@ -20,13 +20,6 @@
 				"texture_size": 16
 			}
 		],
-		"minecraft:iron_axe": [
-			{
-				"name": "seismic_axe",
-				"custom_model_data": 2200270,
-				"texture_size": 16
-			}
-		],
 		"minecraft:diamond_sword": [
 			{
 				"name": "soulbound_sword",
