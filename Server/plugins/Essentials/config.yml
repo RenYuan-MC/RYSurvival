@@ -779,7 +779,7 @@ confirm-home-overwrite: false
 # You can control the values of items that are sold to the server by using the /setworth command.
 
 # Defines the balance with which new players begin. Defaults to 0.
-starting-balance: 0
+starting-balance: 100
 
 # Defines the cost to use the given commands PER USE.
 # Some commands like /repair have sub-costs, check the wiki for more information.
