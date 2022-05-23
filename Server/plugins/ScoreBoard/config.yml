@@ -12,10 +12,10 @@ Scoreboard:
     - ''
     - ' §f玩家: [§e{Player}§f]'
     - ' §f延迟: [§a%player_ping%ms§f]'
-    - ' §f金币: [&a{Money}金币&f]'
+    - ' §f金币: [&a%vault_eco_balance_fixed%金币&f]'
     - ' §f点券: [&a%playerpoints_points%点券&f]'
     - ' §f所处: [§a1.18.2趣味生存§f]'
-    - ' §f主菜单:§e/menu'
+    - ' §f主菜单:§e/cd'
     - ''
     - ' §6§l§m咕咕咕咕咕咕咕咕咕咕咕咕'
 
