@@ -1,0 +1,11 @@
+AndyYu168:
+  tabprefix: "&6&lTAB示例前缀&r &a"
+  tabsuffix: "&6&lTAB示例后缀"
+  tagprefix: "&a&l头顶示例前缀&r &a"
+  tagsuffix: "&a&l头顶示例后缀"
+  abovename: "&b头顶玩家名的上面一行文字"
+  belowname: "&e头顶玩家名的下面一行文字" # 若要新增头顶内容行，请转至config.yml设置
+  customtabname: "自定义TAB名称"
+  customtagname: "自定义头顶名称"
+237d8b55-3f97-4749-aa60-e9fe97b45062: # my online uuid
+  tabsuffix: " &b&l已认证"
