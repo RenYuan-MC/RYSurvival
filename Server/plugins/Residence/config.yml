@@ -45,6 +45,7 @@ Global:
       # List Of Worlds where this plugin is disabled
       List:
       - otd_dungeon
+      - spawn
       # Disables all listeners in included worlds
       DisableListeners: true
       # Disabled any command usage in included worlds
