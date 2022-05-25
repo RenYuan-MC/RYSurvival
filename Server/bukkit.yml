@@ -41,3 +41,6 @@ ticks-per:
   ambient-spawns: 80
   autosave: 6000
 aliases: now-in-commands.yml
+worlds:
+    otd_dungeon:
+        generator: TerraformGenerator
