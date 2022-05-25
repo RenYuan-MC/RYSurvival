@@ -186,10 +186,10 @@ Groups:
            CanChange: true
            # The default enter message to apply to new Residences created by players in this group.
            # Leaving the message blank will disable it.
-           DefaultEnter: "Welcome %player to %residence, owned by %owner."
+           DefaultEnter: "§f[§6服务器§f] 欢迎 %player 进入 %residence, 领地主人是 %owner"
            # The default leave message to apply to new Residences created by players in this group.
            # Leaving the message blank will disable it.
-           DefaultLeave: "Now leaving %residence."
+           DefaultLeave: "§f[§6服务器§f] 你离开了 %residence"
        # Options relating to the Lease system.
        Lease:
           # The maximum number of days to allow leases.
