@@ -8,7 +8,7 @@ command /loadpack-1:
         else if Via.getAPI().getPlayerVersion(player) < 498:
             send "§f[§6服务器§f] 你的游戏版本过低,不支持此功能" to player
         else:
-            send the resource pack from "https://hub.fastgit.xyz/lRENyaaa/Test/releases/download/Pack/Pack.zip" with hash "43aa3d406b33a3b85cdbeee44358e5788e3c13bb" to the player
+            send the resource pack from "https://hub.fastgit.xyz/lRENyaaa/RYServerTexture/releases/download/v1.1/Pack.zip" with hash "2fa9b5326e064b24499edcf9569a3c466bd739ae" to the player
             send "§f[§6服务器§f] 已发送资源包加载请求-线路1(国内)" to player
 
 command /loadpack-2:
@@ -18,7 +18,7 @@ command /loadpack-2:
         else if Via.getAPI().getPlayerVersion(player) < 498:
             send "§f[§6服务器§f] 你的游戏版本过低,不支持此功能" to player
         else:
-            send the resource pack from "https://github.com/lRENyaaa/Test/releases/download/Pack/Pack.zip" with hash "43aa3d406b33a3b85cdbeee44358e5788e3c13bb" to the player
+            send the resource pack from "https://github.com/lRENyaaa/RYServerTexture/releases/download/v1.1/Pack.zip" with hash "2fa9b5326e064b24499edcf9569a3c466bd739ae" to the player
             send "§f[§6服务器§f] 已发送资源包加载请求-线路2(国外)" to player
 
 on resource pack request response:
