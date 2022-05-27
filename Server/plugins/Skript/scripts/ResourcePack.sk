@@ -1,7 +1,12 @@
+import:
+    com.viaversion.viaversion.api.Via
+
 command /loadpack-1:
     trigger:
         if player is from floodgate:
             send "§f[§6服务器§f] 基岩版玩家暂不支持此功能" to player
+        else if Via.getAPI().getPlayerVersion(player) < 498:
+            send "§f[§6服务器§f] 你的游戏版本过低,不支持此功能" to player
         else:
             send the resource pack from "https://hub.fastgit.xyz/lRENyaaa/Test/releases/download/Pack/Pack.zip" with hash "43aa3d406b33a3b85cdbeee44358e5788e3c13bb" to the player
             send "§f[§6服务器§f] 已发送资源包加载请求-线路1(国内)" to player
@@ -10,6 +15,8 @@ command /loadpack-2:
     trigger:
         if player is from floodgate:
             send "§f[§6服务器§f] 基岩版玩家暂不支持此功能" to player
+        else if Via.getAPI().getPlayerVersion(player) < 498:
+            send "§f[§6服务器§f] 你的游戏版本过低,不支持此功能" to player
         else:
             send the resource pack from "https://github.com/lRENyaaa/Test/releases/download/Pack/Pack.zip" with hash "43aa3d406b33a3b85cdbeee44358e5788e3c13bb" to the player
             send "§f[§6服务器§f] 已发送资源包加载请求-线路2(国外)" to player
@@ -27,6 +34,8 @@ on resource pack request response:
 on join:
     if player is from floodgate:
         exit
+    else if Via.getAPI().getPlayerVersion(player) < 498:
+        exit
     else if player has permission "autoloadpack.1":
         if player has permission "autoloadpack.2":
             command "lp user %player% permission set autoloadpack.1 false" 
@@ -40,6 +49,8 @@ command /autoloadpack-2:
     trigger:
         if player is from floodgate:
             send "§f[§6服务器§f] 基岩版玩家暂不支持此功能" to player
+        else if Via.getAPI().getPlayerVersion(player) < 498:
+            send "§f[§6服务器§f] 你的游戏版本过低,不支持此功能" to player
         else:
             if player does not have permission "autoloadpack.2":
                 command "lp user %player% permission set autoloadpack.2 true" 
@@ -56,6 +67,8 @@ command /autoloadpack-1:
     trigger:
         if player is from floodgate:
             send "§f[§6服务器§f] 基岩版玩家暂不支持此功能" to player
+        else if Via.getAPI().getPlayerVersion(player) < 498:
+            send "§f[§6服务器§f] 你的游戏版本过低,不支持此功能" to player
         else:
             if player does not have permission "autoloadpack.1":
                 command "lp user %player% permission set autoloadpack.1 true" 
