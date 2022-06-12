@@ -1,5 +1,5 @@
 # 任渊生存服务端
-Minecraft生存服务端整合包,适用于1.17.1和1.18.2版本<br>
+Minecraft生存服务端整合包,适用于1.17.1,1.18.2版本<br>
 <br>
 klpbbs 链接: https://klpbbs.com/thread-4196-1-1.html<br>
 mcbbs 链接: https://www.mcbbs.net/thread-1322237-1-1.html<br>
