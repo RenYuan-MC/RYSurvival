@@ -8,7 +8,7 @@ minebbs 链接: https://www.minebbs.com/resources/4131/<br>
 <br>
 查看1.19版本请前往 [V1.5 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/ver/1.5)<br>
 查看1.18.2版本请前往 [V1.4 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/ver/1.4)<br>
-**过时版本:**
+**过时版本:**<br>
 查看1.17.1版本请前往 [V1.3 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/legacy/1.3)<br>
 查看1.16.5版本请前往 [V1.2 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/legacy/1.2)<br>
 <br>
