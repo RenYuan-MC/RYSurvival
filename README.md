@@ -6,6 +6,7 @@ mcbbs 链接: https://www.mcbbs.net/thread-1322237-1-1.html<br>
 minebbs 链接: https://www.minebbs.com/resources/4131/<br>
 其他冷门论坛的服务端宣传贴请 [点击这查看](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/blob/main/bbs.md)<br>
 <br>
+**最新版本:**<br>
 查看1.19版本请前往 [V1.5 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/ver/1.5)<br>
 查看1.18.2版本请前往 [V1.4 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/ver/1.4)<br>
 **过时版本:**<br>
