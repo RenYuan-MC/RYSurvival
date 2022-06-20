@@ -1,5 +1,5 @@
 # 任渊生存服务端
-Minecraft生存服务端整合包,适用于1.17.1,1.18.2和1.19版本<br>
+Minecraft生存服务端整合包,适用于1.18.2和1.19版本<br>
 <br>
 klpbbs 链接: https://klpbbs.com/thread-4196-1-1.html<br>
 mcbbs 链接: https://www.mcbbs.net/thread-1322237-1-1.html<br>
@@ -10,6 +10,7 @@ minebbs 链接: https://www.minebbs.com/resources/4131/<br>
 查看1.18.2版本请前往 [V1.4 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/ver/1.4)<br>
 **过时版本:**<br>
 查看1.17.1版本请前往 [V1.3 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/legacy/1.3)<br>
+**远古版本:**<br>
 查看1.16.5版本请前往 [V1.2 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/legacy/1.2)<br>
 <br>
 QQ 交流群：1029946156<br>
