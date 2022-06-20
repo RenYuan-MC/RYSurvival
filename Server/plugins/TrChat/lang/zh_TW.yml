@@ -1,0 +1,157 @@
+PLUGIN:
+  LOADED-CHAT-FORMATS: '&8[&3Tr&bChat&8] &bCHAT &8| &3成功載入聊天格式... &8[{0} Ms]'
+  LOADED-FUNCTIONS: '&8[&3Tr&bChat&8] &bCHAT &8| &3成功載入自定義聊天功能... &8[{0} Ms]'
+  LOADED-FILTER-LOCAL: '&8[&3Tr&bChat&8] &aFILTER &8| &3已載入本地敏感詞庫總計 &b{0} &3個.'
+  LOADED-FILTER-CLOUD: '&8[&3Tr&bChat&8] &aFILTER &8| &3成功從雲端更新敏感詞彙總計 &a{0} &3個. &8[{1} - {2}]'
+  RELOADED: '&8[&3Tr&bChat&8] &7監聽到配置文件改動, 已自動載入相關配置等...'
+  FAILED-LOAD-FILTER-CLOUD: '&8[&3Tr&bChat&8] &8無法從雲端更新敏感詞庫......'
+  REGISTERED-BUNGEE: '&8[&3Tr&bChat&8] &6已支持 &eBungee &6通訊.'
+  NONE-BUNGEE: '&8[&3Tr&bChat&8] &7當前無 Bungee 支持.'
+  DEPEND:
+    DOWNLOAD: '&8[&3Tr&bChat&8] &eDEPEND &8| &7正在下載前置插件 &f{0} &7...'
+    INSTALL: '&8[&3Tr&bChat&8] &eDEPEND &8| &7已成功下載前置 &3{0} &7, 即將重啓服務端完成安裝...'
+    INSTALL-FAILED: '&8[&3Tr&bChat&8] &eDEPEND &8| &7自動下載前置 &c{0} &7過程出錯, 請手動安裝, 服務器即將停止...'
+  LOADED:
+    - ''
+    - '&3Tr&bChat &7正在載入中...'
+    - ''
+  ENABLED:
+    - '&8[&3Tr&bChat&8] &bINFO &8| &3加載完畢. TrChat &av{0} &3現已啓用, 敬請使用.'
+  DISABLED:
+    - '&8[&3Tr&bChat&8] &bINFO &8| &7感謝使用本插件, 您在論壇爲本插件評分即是對作者最大的鼓勵!'
+  COMMAND-TITLE: '&3「&8&m--------------------------------------------------&3」'
+  UPDATE-NOTIFY:
+    LATEST: '&8[&3Tr&bChat&8] &8你正在運行最新版的 TrChat.'
+    DEV: '&8[&3Tr&bChat&8] &7你正在運行開發版本的 TrChat, 請及時反饋漏洞!'
+    TOO-OLD:
+      - "&8--------------------------------------------------"
+      - "&r"
+      - "&8# &4您所運行的 &cTrChat &4版本過舊, 可能潛在很多漏洞"
+      - "&8# &4請及時更新到最新版本以便獲得更好的插件體驗!"
+      - "&8# &r"
+      - "&8# &4Mcbbs: &chttps://www.mcbbs.net/thread-903335-1-1.html"
+      - "&8# &r"
+      - "&8# &r"
+      - "&8# &4服務器將在 &c&l{0} secs &4後繼續啓動..."
+      - "&r"
+      - "&8--------------------------------------------------"
+    HEADER:
+      - ''
+      - '§3--------------------------------------------------'
+      - '&7▪ &3TrChat &a更新通知 &8{0} &7➦ &8{1}'
+      - ''
+      - '&7▪ &e內容: '
+    FOOTER:
+      - ''
+      - '&7▪ &2Github下載: &a&nhttps://github.com/Arasple/TrChat/releases/latest'
+      - '§3--------------------------------------------------'
+  DEBUG:
+    'ON':
+      - ==: TITLE
+        title: '&7&l調試模式'
+        subtitle: '&3&l當前已 &a&l開啓&3&l.'
+      - ==: SOUND
+        sound: 'BLOCK_NOTE_BLOCK_PLING-1-0'
+    'OFF':
+      - ==: TITLE
+        title: '&7&l調試模式'
+        subtitle: '&3&l當前已 &c&l關閉&3&l.'
+      - ==: SOUND
+        sound: 'BLOCK_ANVIL_LAND-1-0'
+
+ERROR:
+  VERSION: '&8[&3Tr&bMenu&8] &cERROR &8| &7檢測版本號時發生異常... 關閉服務器!'
+  JS:
+    - '&8[&3Tr&bMenu&8] &cERROR &8| &c表達式計算時出錯: &2{0}'
+    - '&6{1}'
+    - '&8{2}'
+
+GENERAL:
+  TOO-LONG: '&8[&3Tr&bChat&8] &7你的聊天內容過長. &8[&6{0}&8/&2{1}&8]'
+  TOO-SIMILAR: '&8[&3Tr&bChat&8] &7你的兩次聊天內容過于相似, 請勿複讀.'
+  NO-PERMISSION: '&8[&3Tr&bChat&8] &7你沒有足夠的權限執行此操作.'
+  NOT-PLAYER: '&8[&3Tr&bChat&8] &c你必須是一個玩家才能執行此操作.'
+
+COOLDOWNS:
+  CHAT:
+    - ==: ACTION
+      text: '&7&l您需要等待聊天冷卻 &6{0}s &7&l後才能聊天, 請勿頻繁刷屏.'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-2'
+  ITEM-SHOW:
+    - ==: ACTION
+      text: '&3&l您需要等待冷卻 &a{0}s &3&l後才能再次展示物品.'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+
+COMMAND-CONTROLLER:
+  DENY: '&c&l你不能使用该命令...'
+
+MENTIONS:
+  NOTIFY:
+    - ==: ACTION
+      text: '&d&l&k|&r &3&l玩家 &a&l{0} &3&l在聊天中At了你 &d&l&k|'
+    - ==: SOUND
+      sound: 'BLOCK_NOTE_BLOCK_PLING-1-0'
+
+PRIVATE-MESSAGE:
+  SPY-FORMAT: '&8[&3監聽&8] &6{0} &2-> &3{1}&f: &7{2}'
+  SPY:
+    'ON':
+      - ==: ACTION
+        text: '&c&l&k|&r &a&l開啓監聽私聊模式 &c&l&k|'
+      - ==: SOUND
+        sound: 'BLOCK_NOTE_BLOCK_PLING-1-0'
+    'OFF':
+      - ==: ACTION
+        text: '&c&l&k|&r &c&l關閉監聽私聊模式 &c&l&k|'
+      - ==: SOUND
+        sound: 'BLOCK_ANVIL_LAND-1-0'
+  NOT-PLAYER: '&8[&3Tr&bChat&8] &c你必須是一個玩家才能執行此操作.'
+  NO-PLAYER:
+    - ==: ACTION
+      text: '&3&l請提供一名私聊的對象'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+  NO-MESSAGE:
+    - ==: ACTION
+      text: '&7&l請提供私聊內容'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+  NOT-EXIST: '&8[&3Tr&bChat&8] &7目標玩家未在線或不存在.'
+  RECEIVE:
+    - ==: ACTION
+      text: '&8[ &a! &8] &3你收到來自 &a{0} &3的一條私聊消息'
+    - ==: SOUND
+      sound: 'BLOCK_NOTE_BLOCK_PLING-1-2'
+
+GLOBAL-MESSAGE:
+  NOT-PLAYER: '&8[&3Tr&bChat&8] &c你必須是一個玩家才能執行此操作.'
+  NOT-ENABLE: '&8[&3Tr&bChat&8] &7未啓用 &eBungeeCord &7支持, 暫不支持喊話.'
+  NO-MESSAGE:
+    - ==: ACTION
+      text: '&7&l你必須提供喊話內容'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+
+STAFF-CHANNEL:
+  NOT-PLAYER: '&8[&3Tr&bChat&8] &c你必須是一個玩家才能執行此操作.'
+  NO-MESSAGE:
+    - ==: ACTION
+      text: '&7&l你必須提供聊天內容'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+  JOIN:
+    - ==: ACTION
+      text: '&a&l已加入到管理頻道聊天'
+    - ==: TEXT
+      text: '&8[&3Tr&bChat&8] &3你已經加入到管理頻道, 再次輸入相同命令即可退出.'
+    - ==: SOUND
+      sound: 'BLOCK_NOTE_BLOCK_PLING-1-0'
+  QUIT:
+    - ==: ACTION
+      text: '&3&l離開管理頻道聊天'
+    - ==: TEXT
+      text: '&8[&3Tr&bChat&8] &7你已離開管理頻道, 但仍會收到管頻的消息.'
+    - ==: SOUND
+      sound: 'BLOCK_ANVIL_LAND-1-0'

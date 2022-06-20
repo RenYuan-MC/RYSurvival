@@ -1,0 +1,128 @@
+######################################################################
+#
+#  ___________      _________ .__            __
+#  \__    __________\_   ___ \|  |__ _____ _/  |_
+#  |    |  \_  __ /    \  \/|  |  \\__  \\   __\
+#  |    |   |  | \\     \___|   Y  \/ __ \|  |
+#  |____|   |__|   \______  |___|  (____  |__|
+#  \/     \/     \/  TrChat Function
+#
+#
+######################################################################
+
+# General (Plugin's internal functions)
+GENERAL:
+  # Command Controller
+  COMMAND-CONTROLLER:
+    ENABLE: true
+    # WHITELIST or BLACKLIST
+    TYPE: BLACKLIST
+    # Bypass permission
+    BYPASS: 'trchat.admin'
+    # The list of the command you want to control
+    # Support regex match, dont need '/'
+    #
+    # <exact> is a tag, by using it,
+    # the command includes the argument will have to complete match
+    #
+    # Example (blackList):
+    # - 'help'  player can not execute any commands' first label is "help"
+    # - 'help<exact>'  player can not execute "help", but can execute "help 1", "help 2"
+    LIST:
+      - 'ver(sion)?(s)?'
+      - 'help(s)?'
+      - 'arasple<exact>'
+  # Display item in chat
+  ITEM-SHOW:
+    ENABLE: true
+    COOLDOWNS: 30
+    FORMAT: '&8[&3{0} &bx{1}&8]'
+    KEYS:
+      - '%i'
+      - '%item'
+      - '%i%'
+      - '%item%'
+      - '[i]'
+      - '[item]'
+  # Mention (@At) someone in chat
+  MENTION:
+    ENABLE: true
+    SELF-MENTION: false
+    FORMAT: '&r &a@&2{0}&r '
+    COOLDOWNS: 30
+    NOTIFY: true
+
+# Custom Functions
+# Match chat text, format into JSON
+CUSTOM:
+
+  # 示例 —— QQ 分享
+  shareQQ:
+    # 满足条件表达式才能使用这个功能
+    requirement: '1!=0'
+    # 匹配表达式
+    # 示例模块的表达式部分来自互联网
+    pattern: 'QQ( )?[1-9]([0-9]{5,11})'
+    # 变量 {0} 是按下方表达式提取后的内容, 可以不配置此项
+    text-filter: '[1-9]([0-9]{5,11})'
+    # 自定义显示 JSON 组件
+    display:
+      text: '&8[&3&lQQ&8]'
+      hover:
+        - ''
+        - '&3QQ: &b{0}'
+        - ''
+        - '&7这是一个 QQ 账号,'
+        - '&7你可以点击此项快速打开聊天'
+        - ''
+        - '&8[&c!&8] &7请勿进行任何金钱交易'
+        - '&8[&c!&8] &7交友需谨慎'
+      url: 'https://wpa.qq.com/msgrd?v=3&uin={0}&site=qq&menu=yes'
+
+  # 示例 —— B站视频 分享
+  shareBilibili:
+    pattern: 'av( )?[1-9]([0-9]{0,9})'
+    text-filter: '[1-9]([0-9]{0,9})'
+    # 自定义显示 JSON 组件
+    display:
+      text: '&8[&f&lBilibili&8]'
+      hover:
+        - ''
+        - '&7这可能是一个 Bilibili 视频,'
+        - '&7点击即可访问'
+        - ''
+        - '&3Av号: &b{0}'
+      url: 'https://www.bilibili.com/video/av{0}'
+
+  # 示例 —— 防止玩家暴露、分享真实手机号
+  hidePhoneNumber:
+    pattern: '((13[0-9])|(14[0-9])|(15[0-9])|(17[0-9])|(18[0-9]))\d{8}'
+    display:
+      text: '&8[&c&m-&8]'
+      hover:
+        - '&7该内容疑似为手机号码,'
+        - '&7已自动屏蔽隐藏.'
+        - ''
+        - '&8[&c!&8] &7请勿分享任何隐私信息'
+
+  # 示例 —— 隐藏身份证
+  hideIDCardNumber:
+    pattern: '([1-9]\d{5}[12]\d{3}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])\d{3}[0-9xX])'
+    display:
+      text: '&8[&c&m-&8]'
+      hover:
+        - '&7该内容疑似为身份证号,'
+        - '&7已自动屏蔽隐藏.'
+        - ''
+        - '&8[&c!&8] &7请勿分享任何隐私信息'
+        - '&7严重者可能处于禁言/封禁'
+
+  # 示例 —— 高亮 IP
+  glowIP:
+    pattern: '(25[0-5]|2[0-4]\d|[0-1]\d{2}|[1-9]?\d)\.(25[0-5]|2[0-4]\d|[0-1]\d{2}|[1-9]?\d)\.(25[0-5]|2[0-4]\d|[0-1]\d{2}|[1-9]?\d)\.(25[0-5]|2[0-4]\d|[0-1]\d{2}|[1-9]?\d)'
+    display:
+      text: '&e&n{0}'
+      hover:
+        - '&7这是一个 IP地址'
+        - '&7点击复制!'
+      suggest: '{0}'

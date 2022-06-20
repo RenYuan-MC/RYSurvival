@@ -1,0 +1,34 @@
+# Note: Smaller area and height values result in less lag.
+# baseBlockSpeeds speed less than 0.4 may not work well.
+# autoPlace will automatically move players to be fully in the elevator
+# checkFloor will make sure all floors have glass blocks (at the cost of possible lag when starting a lift)
+# preventEntry will prevent players from entering an active elevator (at the cost of possible lag when lifts are running)
+maxLiftArea: 16
+maxHeight: 256
+debug: false
+autoPlace: false
+preventEntry: false
+preventLeave: true
+checkFloor: false
+liftMobs: true
+mouseScroll: true
+floorBlocks:
+- GLASS
+- '*_STAINED_GLASS'
+buttonBlocks:
+- '*BUTTON'
+signBlocks:
+- '*WALL_SIGN'
+redstone: false
+baseBlockSpeeds:
+  IRON_BLOCK: 0.5
+destination: '&1Dest'
+messages:
+  oneFloor: There is only one floor.
+  currentFloor: Current Floor
+  cantEnter: Can't enter elevator in use
+  cantLeave: Can't leave elevator in use
+  unsafe: It is unsafe to leave a vehicle in a lift!
+  scrollSelectEnabled: '&7Scrollable floor selection enabled. Click on sign with an
+    item for default mode'
+  scrollSelectDisabled: '&7Scrollable floor selection disabled'

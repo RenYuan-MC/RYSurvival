@@ -1,0 +1,5 @@
+# When enables, every message will be forwarded to Bungee servers
+FORCE-GLOBAL: false
+
+# Messages starting with this will be forwarded to Bungee servers
+FORCE-GLOBAL-PREFIX: '!all'

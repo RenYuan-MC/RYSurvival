@@ -1,0 +1,84 @@
+Clock:
+  AutoGetClock: true
+  MainGuiId: 0
+  Name: '&a&l引导菜单'
+  Lore:
+  - '&e&l引导菜单'
+  - '&2&lby 李任渊'
+  World:
+  - spawn
+  - world
+  - world_nether
+  - world_resources
+  - world_the_end
+GUI:
+  '0':
+    Name: '&1&l引导菜单&f&l（&e/cd&f&l）'
+    Item:
+      '1':
+        Position: 2
+        ItemID: clock
+        Name: '&f&l主菜单'
+        Lore:
+        - '&e&l提供基础功能:D'
+        Function:
+          Command:
+            Use: true
+            CloseGui: true
+            Content:
+            - cc open menu
+            RunAsOp: true
+          OpenAnotherGUI:
+            Use: false
+      '2':
+        Position: 4
+        ItemID: book
+        Name: '&f&l游戏帮助'
+        Lore:
+        - '&e&l这或许对萌新有点用处:D'
+        Function:
+          Command:
+            Use: true
+            CloseGui: true
+            RunAsOp: true
+            Content:
+            - cc open helper.yml
+          OpenAnotherGUI:
+            Use: false
+      '3':
+        Position: 6
+        ItemID: compass
+        Name: '&f&l每日挑战'
+        Lore:
+        - '&e&l来挑战任务吧:D'
+        Function:
+          Command:
+            Use: true
+            CloseGui: true
+            RunAsOp: false
+            Content:
+            - challenges
+          OpenAnotherGUI:
+            Use: false
+      '4':
+        Position: 0
+        ItemID: white_stained_glass_pane
+        Name: '&f&l装饰物品'
+        Function:
+          Command:
+            Use: false
+            CloseGui: true
+            RunAsOp: false
+          OpenAnotherGUI:
+            Use: false
+      '5':
+        Position: 8
+        ItemID: white_stained_glass_pane
+        Name: '&f&l装饰物品'
+        Function:
+          Command:
+            Use: false
+            CloseGui: true
+            RunAsOp: false
+          OpenAnotherGUI:
+            Use: false

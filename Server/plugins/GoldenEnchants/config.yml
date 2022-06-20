@@ -1,0 +1,76 @@
+core:
+  command-aliases: goldenenchants,genchants,ge
+  lang: en
+  prefix: GoldenEnchants
+general:
+  tasks:
+    arrow-trails:
+      tick-time: 1
+    passive-enchants:
+      tick-time: 80
+  enchantments:
+    disabled:
+    - some_enchant
+    - enchant_name
+    - enchant_name2
+    max-item-golden-enchants: 3
+    sword-enchants-applies-to-axes: true
+    bow-enchants-applies-to-crossbows: true
+    elytra-as-chestplate: true
+    allow-passive-enchants-for-mobs: false
+    description:
+      enabled: true
+      format: '&8▸ %description%'
+  enchantment-table:
+    max-golden-enchants: 2
+    golden-enchant-chance: 60.0
+  villagers:
+    enabled: true
+    enchantments:
+      total-maximum: 3
+      golden-acquire-chance: 25.0
+      golden-minimum: 0
+      golden-maximum: 2
+  loot-generation:
+    enabled: true
+    enchantments:
+      total-maximum: 3
+      golden-populate-chance: 25.0
+      golden-minimum: 0
+      golden-maximum: 2
+tiers:
+  default:
+    name: '&7Default'
+    color: '&7'
+    obtain-chance:
+      ENCHANTING: 80.0
+      VILLAGER: 80.0
+      LOOT_GENERATION: 80.0
+  common:
+    name: '&fCommon'
+    color: '&f'
+    obtain-chance:
+      ENCHANTING: 60.0
+      VILLAGER: 60.0
+      LOOT_GENERATION: 60.0
+  rare:
+    name: '&aRare'
+    color: '&a'
+    obtain-chance:
+      ENCHANTING: 45.0
+      VILLAGER: 45.0
+      LOOT_GENERATION: 45.0
+  exotic:
+    name: '&9Exotic'
+    color: '&9'
+    obtain-chance:
+      ENCHANTING: 20.0
+      VILLAGER: 20.0
+      LOOT_GENERATION: 20.0
+  legendary:
+    name: '&6Legendary'
+    color: '&6'
+    obtain-chance:
+      ENCHANTING: 5.0
+      VILLAGER: 5.0
+      LOOT_GENERATION: 5.0

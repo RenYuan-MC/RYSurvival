@@ -1,0 +1,22 @@
+#在线奖励发送间隔（秒）
+reward-interval: 7200
+
+reward-command: 'eco give %p% 20000'
+checkin-command: 'give %p% diamond 1'
+
+only-op: 只有OP可进行操作
+console-cant-run: 控制台无法执行此命令
+interval-only-int: 间隔只能是整数
+reload-success: 插件配置重载成功
+interval-modified: 在线奖励发放间隔修改成功
+reward-modified: 在线奖励发放指令修改成功
+checkin-modified: 签到奖励发放指令修改成功
+reward-sent: 在线奖励已发放
+checkin-success: 签到成功，奖励已发放（如果背包已满，则可能发放失败）
+already-checkin: 你今天已经签到过了
+checkin-file-error: 签到文件读写出错，将无法正常使用签到功能
+
+reload-help: 重载插件配置和签到记录
+interval-help: 设置在线奖励发放间隔（秒）
+reward-help: 设置在线奖励发放指令（%p% = 玩家名）
+checkin-help: 设置签到奖励发放指令（%p% = 玩家名）

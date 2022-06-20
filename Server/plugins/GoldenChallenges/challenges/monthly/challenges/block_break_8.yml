@@ -1,0 +1,45 @@
+name: '%generator-name% &7Lv. %generator-level%'
+type: BLOCK_BREAK
+icon:
+  material: OAK_LEAVES
+  name: '%name%'
+  lore: []
+  item-flags:
+  - '*'
+generator:
+  names:
+  - '&a园艺'
+  levels:
+    minimum: 1
+    maximum: 5
+  objectives:
+    amount:
+      minimum: '1'
+      maximum: '3'
+      list:
+        '1':
+        - OAK_LEAVES
+        - SPRUCE_LEAVES
+        - BIRCH_LEAVES
+        - JUNGLE_LEAVES
+        - ACACIA_LEAVES
+        - DARK_OAK_LEAVES
+        - COBWEB
+        - CACTUS
+    progress:
+      default:
+        minimum: 50 * 1 + %level% / 10
+        maximum: 70 * 1 + %level% / 10
+  affected-worlds:
+    minimum: '1'
+    maximum: '1'
+    list:
+      '1':
+      - world
+  rewards:
+    minimum: '1'
+    maximum: '2'
+    list:
+      '1':
+      - reward1
+      - reward2

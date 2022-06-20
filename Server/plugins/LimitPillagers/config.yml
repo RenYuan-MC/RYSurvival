@@ -1,0 +1,112 @@
+# LimitPillagers
+# Made with love from HexedHero ❤️
+# May 1.14 not kill your server #MojangPlease
+# This plugin isn't really needed for 1.15+
+# due to fixes and performance increases
+
+# Should we check for updates on plugin startup?
+Update-Checker: false
+
+# Disable the big wall of text on startup? (Not the enabling messages, just the advice ones)
+Silent-Startup: false
+
+Stopper:
+
+   # Should we stop Pillagers from spawning anywhere? (overwrites Limiter)
+   Enabled: false
+   
+   # Should we stop Pillager spawning when there is already x amount of Pillagers on the server instead of them all? (Needs stopped to be enabled)
+   Use-Hard-Limit: false
+   Hard-Limit-Amount: 25
+   
+   # Should we ignore Pillager Leaders (Ones with banners) so players can still get the Bad Omen effect?
+   Ignore-Leaders: false
+   
+   # Should we ignore named Pillagers?
+   Ignore-Named: false
+   
+   # Should we ignore Pillagers that are part of a raid?
+   Ignore-Raiders: false
+   
+Limiter:
+
+   # Should we limit Pillager spawns? (Needs stopper to be false)
+   Enabled: true
+   
+   # What radius should be check for other Pillagers?
+   Radius-X: 48
+   Radius-Y: 32
+   Radius-Z: 48
+   
+   # What amount of nearby Pillagers should we stop future Pillagers from spawning?
+   Stop-At-Amount: 6
+   
+   # Should we ignore Pillager Leaders (Ones with banners) so players can still get the Bad Omen effect?
+   Ignore-Leaders: false
+   
+   # Should we ignore named Pillagers?
+   Ignore-Named: false
+   
+   # Should we ignore Pillagers that are part of a raid?
+   Ignore-Raiders: false
+   
+Remover:
+
+   # Should we also remove any Pillagers that are already in the world?
+   # Checks for Pillagers on the chunk load event and can be used with the Stopper or Limiter!
+   # I highly don't recommend using this. Only use if you need to.
+   Enabled: false
+   
+   # Should we ignore Pillager Leaders (Ones with banners) so players can still get the Bad Omen effect?
+   Ignore-Leaders: false
+   
+   # Should we ignore named Pillagers?
+   Ignore-Named: false
+
+Patrol-Remover:
+
+   # Should we stop Patrols from spawning anywhere?
+   #
+   # !!! This is now a feature included in Paper !!!
+   #
+   # I'd recommend using that instead unless you only want to remove the target of the 
+   # patrol mob then enable both here and disable the setting in paper
+   #
+   Enabled: true
+   
+   # Should we ONLY remove the patrol mobs target to fix their lag but let patrols spawn and attack players like normal mobs? (Needs Enabled to be true)
+   # see https://www.youtube.com/watch?v=BJ0jzlzEhgo
+   Only-Remove-Target: true
+
+Messages:
+
+   # Command messages
+   Command:
+   
+      # Message for when you do /limitpillagers without the reload arg
+      Usage: "&cUsage: /limitpillagers reload/count/remove"
+   
+      # Message for when the plugin gets reloaded correctly
+      Reloaded: "&aReloaded LimitPillagers!"
+   
+      # Message for the count command showing how many Pillagers are alive on your server
+      Count: "&7There is %count% Pillager(s) on the server!"
+   
+      # Message for the remove command when you remove all Pillagers from the server
+      Remove: "&aRemoved %amount% Pillager(s) from the server!"
+   
+      # Message for when the user doesn't have permission
+      No-Permission: "&cYou don't have permission to do this!"
+   
+   # Update messages
+   Updater:
+   
+      # Message in console when checking for updates
+      Check: "Checking for updates..."
+      
+      # Message in console when there is an update - %currentversion% for installed versions and %updatedversion% for the one on Spigot.
+      Is-Update: "&cThere is an update available ( &6&l%currentversion% &c> &a&l%updatedversion% &c), go download it at https://www.spigotmc.org/resources/69733"
+      
+      # Message in console when there isn't an update
+      No-Update: "&aThere is no update available!"
+   

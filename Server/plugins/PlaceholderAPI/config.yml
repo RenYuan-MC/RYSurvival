@@ -1,13 +1,13 @@
 # PlaceholderAPI
-# 版本: 2.10.10
-# 作者: extended_clip
-# 贡献者: https://github.com/PlaceholderAPI/PlaceholderAPI/graphs/contributors
-# 反馈: https://github.com/PlaceholderAPI/PlaceholderAPI/issues
-# 占位符: https://api.extendedclip.com/all/
+# Version: 2.10.9
+# Created by: extended_clip
+# Contributors: https://github.com/PlaceholderAPI/PlaceholderAPI/graphs/contributors
+# Issues: https://github.com/PlaceholderAPI/PlaceholderAPI/issues
+# Expansions: https://api.extendedclip.com/all/
 # Wiki: https://github.com/PlaceholderAPI/PlaceholderAPI/wiki
-# Discord(国内需要翻墙): https://helpch.at/discord
-# 默认情况下此插件不提供占位符
-# 下载占位符: /papi ecloud
+# Discord: https://helpch.at/discord
+# No placeholders are provided with this plugin by default.
+# Download placeholders: /papi ecloud
 check_updates: false
 cloud_enabled: true
 cloud_sorting: name
@@ -21,16 +21,18 @@ expansions:
   player:
     ping_color:
       medium: '&e'
-      high: '&c'
-      low: '&a'
+      high: '&a'
+      low: '&c'
   vault:
-    baltop:
-      check_delay: 30
-      cache_size: 100
-      enabled: false
     formatting:
       thousands: k
       trillions: T
       quadrillions: Q
       billions: B
       millions: M
+  server:
+    tps_color:
+      high: '&a'
+      low: '&c'
+      medium: '&e'
+    server_name: A Minecraft Server

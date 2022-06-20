@@ -1,39 +1,88 @@
 enchi18n:
-  fire_protection: 火焰保护
-  sharpness: 锋利
-  flame: 火矢
-  soul_speed: 灵魂疾行
-  aqua_affinity: 水下速掘
-  punch: 冲击
-  loyalty: 忠诚
-  depth_strider: 深海探索者
-  vanishing_curse: 消失诅咒
-  unbreaking: 耐久
-  knockback: 击退
-  luck_of_the_sea: 海之眷顾
-  binding_curse: 绑定诅咒
-  fortune: 时运
-  protection: 保护
-  efficiency: 效率
-  mending: 经验修补
-  frost_walker: 冰霜行者
-  lure: 饵钓
-  looting: 抢夺
-  piercing: 穿透
-  blast_protection: 爆炸保护
-  smite: 亡灵杀手
-  multishot: 多重射击
-  fire_aspect: 火焰附加
-  channeling: 引雷
-  sweeping: 横扫之刃
-  thorns: 荆棘
-  bane_of_arthropods: 节肢杀手
-  respiration: 水下呼吸
-  riptide: 激流
-  silk_touch: 精准采集
-  quick_charge: 快速装填
-  projectile_protection: 弹射物保护
-  impaling: 穿刺
-  feather_falling: 摔落保护
-  power: 力量
-  infinity: 无限
+  fire_protection: Fire Protection
+  sharpness: Sharpness
+  flame: Flame
+  soul_speed: Soul Speed
+  aqua_affinity: Aqua Affinity
+  punch: Punch
+  loyalty: Loyalty
+  depth_strider: Depth Strider
+  vanishing_curse: Vanishing Curse
+  unbreaking: Unbreaking
+  knockback: Knockback
+  luck_of_the_sea: Luck Of The Sea
+  binding_curse: Binding Curse
+  fortune: Fortune
+  protection: Protection
+  efficiency: Efficiency
+  mending: Mending
+  frost_walker: Frost Walker
+  lure: Lure
+  looting: Looting
+  piercing: Piercing
+  blast_protection: Blast Protection
+  smite: Smite
+  multishot: Multishot
+  fire_aspect: Fire Aspect
+  channeling: Channeling
+  sweeping: Sweeping
+  thorns: Thorns
+  bane_of_arthropods: Bane Of Arthropods
+  respiration: Respiration
+  riptide: Riptide
+  silk_touch: Silk Touch
+  quick_charge: Quick Charge
+  projectile_protection: Projectile Protection
+  impaling: Impaling
+  feather_falling: Feather Falling
+  power: Power
+  infinity: Infinity
+  glow_enchant: Glow Enchant
+  aquaman: Aquaman
+  lucky_miner: Lucky Miner
+  surprise: Surprise
+  poisoned_arrows: Poisoned Arrows
+  executioner: Executioner
+  smelter: Smelter
+  paralyze: Paralyze
+  withered_arrows: Withered Arrows
+  blindness: Blindness
+  divine_touch: Divine Touch
+  ender_bow: Ender Bow
+  ice_aspect: Ice Aspect
+  rocket: Rocket
+  confusion: Confusion
+  cutter: Cutter
+  double_strike: Double Strike
+  sonic: Sonic
+  night_vision: Night Vision
+  cold_steel: Cold Steel
+  criticals: Criticals
+  infernus: Infernus
+  tunnel: Tunnel
+  venom: Venom
+  treasures: Treasures
+  scavenger: Scavenger
+  exhaust: Exhaust
+  explosive_arrows: Explosive Arrows
+  vampire: Vampire
+  exp_hunter: Exp Hunter
+  thrifty: Thrifty
+  wither: Wither
+  bomber: Bomber
+  pigificator: Pigificator
+  telekinesis: Telekinesis
+  bane_of_netherspawn: Bane Of Netherspawn
+  self_destruction: Self Destruction
+  replanter: Replanter
+  flame_walker: Flame Walker
+  hardened: Hardened
+  rage: Rage
+  bunny_hop: Bunny Hop
+  ghast: Ghast
+  silk_chest: Silk Chest
+  village_defender: Village Defender
+  haste: Haste
+  thunder: Thunder
+  saturation: Saturation
+  blast_mining: Blast Mining

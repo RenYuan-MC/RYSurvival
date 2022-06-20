@@ -1,0 +1,50 @@
+# This is the default configuration for RespawnX by SirBlobman
+# Made for version 2.1.0
+
+# Should the plugin be allowed to check for updates?
+update-checker: false
+
+# How long should RespawnX wait before automatically respawning players?
+# The delay is in ticks
+#
+# Default: 1
+delay: 1
+
+# Should a permission be required to automatically respawn a player?
+#
+# Default: false (no)
+require-permission: false
+
+# If 'require permission' is set to true, what permission is required?
+#
+# Default: "respawnx.respawn.automatic"
+permission: "respawnx.respawn.automatic"
+
+# This is a list of worlds that RespawnX will fail to work in
+# Worlds are case sensitive, therefore "world" is not the same as "wOrLd"
+#
+# Default:
+# - "minigame1"
+# - "minigame2"
+disabled-world-list:
+  - "minigame1"
+  - "MiNiGaMe2"
+
+# Which commands should be executed when a player respawns?
+# Set it to [] to disable
+#
+# Default:
+# - "give {player} rotten_flesh 1 0"
+respawn-commands: []
+
+respawn-near-death:
+  # Should players respawn near the location they died?
+  #
+  # Default: false
+  enabled: false
+
+  # How close to their death location should they respawn?
+  # The distance is a circular radius of blocks
+  #
+  # Default: 1
+  radius: 1

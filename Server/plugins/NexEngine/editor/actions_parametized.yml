@@ -1,0 +1,26 @@
+title: 'Editor: Actions Parametized Object'
+size: 54
+object-slots: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26
+object-name: '&eSubject: &c&l%subject%'
+object-lore:
+- '&bParams:'
+- '&a- %param-name%: &2%param-value%'
+- '&7'
+- '%description%'
+- '&7'
+- '&6Left-Click: &eEdit Params'
+- '&6Shift+Right: &eDelete'
+
+content:
+  return:
+    material: BARRIER
+    name: '&cReturn'
+    slots: 48
+    type: RETURN
+
+editor:
+  pz_add:
+    material: ANVIL
+    name: '&a&lAdd Subject'
+    slots: 50
+    type: OBJECT_ACTIONS_PARAMETIZED_ADD

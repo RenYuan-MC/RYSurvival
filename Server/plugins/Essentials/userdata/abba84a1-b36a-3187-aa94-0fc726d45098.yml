@@ -1,0 +1,20 @@
+lastAccountName: RENaa
+timestamps:
+  login: 1623413643751
+  lastteleport: 1623409324405
+  logout: 1623413963513
+ipAddress: 127.0.0.1
+lastlocation:
+  world: world
+  x: -107.79062492396517
+  y: 68.0
+  z: 109.14253243120055
+  yaw: 30.298637
+  pitch: 32.25036
+logoutlocation:
+  world: spawn
+  x: -8.122939725458432
+  y: 104.0
+  z: 69.3053963389183
+  yaw: -252.74994
+  pitch: 50.69998

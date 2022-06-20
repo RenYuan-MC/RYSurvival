@@ -1,0 +1,173 @@
+######################################################################
+#
+#  ___________      _________ .__            __
+#  \__    __________\_   ___ \|  |__ _____ _/  |_
+#  |    |  \_  __ /    \  \/|  |  \\__  \\   __\
+#  |    |   |  | \\     \___|   Y  \/ __ \|  |
+#  |____|   |__|   \______  |___|  (____  |__|
+#  \/     \/     \/
+#
+# TrChat 的语言文件, 基于 TLocale
+#
+# 如何自定义更强的消息？查阅文档：https://bkm016.github.io/TabooLib/#/tlocale
+# 所有消息均支持 BOOK / SOUND / TITLE / ACTIONBAR / BOSSBAR /JSON 等
+#
+######################################################################
+
+PLUGIN:
+  LOADED-CHAT-FORMATS: '&8[&3Tr&bChat&8] &bCHAT &8| &3成功载入聊天格式... &8[{0} Ms]'
+  LOADED-FUNCTIONS: '&8[&3Tr&bChat&8] &bCHAT &8| &3成功载入自定义聊天功能... &8[{0} Ms]'
+  LOADED-FILTER-LOCAL: '&8[&3Tr&bChat&8] &aFILTER &8| &3已载入本地敏感词库总计 &b{0} &3个.'
+  LOADED-FILTER-CLOUD: '&8[&3Tr&bChat&8] &aFILTER &8| &3成功从云端更新敏感词汇总计 &a{0} &3个. &8[{1} - {2}]'
+  RELOADED: '&8[&3Tr&bChat&8] &7监听到配置文件改动, 已自动载入相关配置等...'
+  FAILED-LOAD-FILTER-CLOUD: '&8[&3Tr&bChat&8] &8无法从云端更新敏感词库......'
+  REGISTERED-BUNGEE: '&8[&3Tr&bChat&8] &6已支持 &eBungee &6通讯.'
+  NONE-BUNGEE: '&8[&3Tr&bChat&8] &7当前无 Bungee 支持.'
+  DEPEND:
+    DOWNLOAD: '&8[&3Tr&bChat&8] &eDEPEND &8| &7正在下载前置插件 &f{0} &7...'
+    INSTALL: '&8[&3Tr&bChat&8] &eDEPEND &8| &7已成功下载前置 &3{0} &7, 即将重启服务端完成安装...'
+    INSTALL-FAILED: '&8[&3Tr&bChat&8] &eDEPEND &8| &7自动下载前置 &c{0} &7过程出错, 请手动安装, 服务器即将停止...'
+  LOADED:
+    - ''
+    - '&3Tr&bChat &7正在载入中...'
+    - ''
+  ENABLED:
+    - '&8[&3Tr&bChat&8] &bINFO &8| &3加载完毕. TrChat &av{0} &3现已启用, 敬请使用.'
+  DISABLED:
+    - '&8[&3Tr&bChat&8] &bINFO &8| &7感谢使用本插件, 您在论坛为本插件评分即是对作者最大的鼓励!'
+  COMMAND-TITLE: '&3「&8&m--------------------------------------------------&3」'
+  UPDATE-NOTIFY:
+    LATEST: '&8[&3Tr&bChat&8] &8你正在运行最新版的 TrChat.'
+    DEV: '&8[&3Tr&bChat&8] &7你正在运行开发版本的 TrChat, 请及时反馈漏洞!'
+    TOO-OLD:
+      - "&8--------------------------------------------------"
+      - "&r"
+      - "&8# &4您所运行的 &cTrChat &4版本过旧, 可能潜在很多漏洞"
+      - "&8# &4请及时更新到最新版本以便获得更好的插件体验!"
+      - "&8# &r"
+      - "&8# &4Mcbbs: &chttps://www.mcbbs.net/thread-903335-1-1.html"
+      - "&8# &r"
+      - "&8# &r"
+      - "&8# &4服务器将在 &c&l{0} secs &4后继续启动..."
+      - "&r"
+      - "&8--------------------------------------------------"
+    HEADER:
+      - ''
+      - '§3--------------------------------------------------'
+      - '&7▪ &3TrChat &a更新通知 &8{0} &7➦ &8{1}'
+      - ''
+      - '&7▪ &e内容: '
+    FOOTER:
+      - ''
+      - '&7▪ &2Github下载: &a&nhttps://github.com/Arasple/TrChat/releases/latest'
+      - '§3--------------------------------------------------'
+  DEBUG:
+    'ON':
+      - ==: TITLE
+        title: '&7&l调试模式'
+        subtitle: '&3&l当前已 &a&l开启&3&l.'
+      - ==: SOUND
+        sound: 'BLOCK_NOTE_BLOCK_PLING-1-0'
+    'OFF':
+      - ==: TITLE
+        title: '&7&l调试模式'
+        subtitle: '&3&l当前已 &c&l关闭&3&l.'
+      - ==: SOUND
+        sound: 'BLOCK_ANVIL_LAND-1-0'
+
+ERROR:
+  VERSION: '&8[&3Tr&bMenu&8] &cERROR &8| &7检测版本号时发生异常... 关闭服务器!'
+  JS:
+    - '&8[&3Tr&bMenu&8] &cERROR &8| &c表达式计算时出错: &2{0}'
+    - '&6{1}'
+    - '&8{2}'
+
+GENERAL:
+  TOO-LONG: '&8[&3Tr&bChat&8] &7你的聊天内容过长. &8[&6{0}&8/&2{1}&8]'
+  TOO-SIMILAR: '&8[&3Tr&bChat&8] &7你的两次聊天内容过于相似, 请勿复读.'
+  NO-PERMISSION: '&8[&3Tr&bChat&8] &7你没有足够的权限执行此操作.'
+  NOT-PLAYER: '&8[&3Tr&bChat&8] &c你必须是一个玩家才能执行此操作.'
+
+COOLDOWNS:
+  CHAT:
+    - ==: ACTION
+      text: '&7&l您需要等待聊天冷却 &6{0}s &7&l后才能聊天, 请勿频繁刷屏.'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-2'
+  ITEM-SHOW:
+    - ==: ACTION
+      text: '&3&l您需要等待冷却 &a{0}s &3&l后才能再次展示物品.'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+
+COMMAND-CONTROLLER:
+  DENY: '&c&l你不能使用该命令...'
+
+MENTIONS:
+  NOTIFY:
+    - ==: ACTION
+      text: '&d&l&k|&r &3&l玩家 &a&l{0} &3&l在聊天中At了你 &d&l&k|'
+    - ==: SOUND
+      sound: 'BLOCK_NOTE_BLOCK_PLING-1-0'
+
+PRIVATE-MESSAGE:
+  SPY-FORMAT: '&8[&3监听&8] &6{0} &2-> &3{1}&f: &7{2}'
+  SPY:
+    'ON':
+      - ==: ACTION
+        text: '&c&l&k|&r &a&l开启监听私聊模式 &c&l&k|'
+      - ==: SOUND
+        sound: 'BLOCK_NOTE_BLOCK_PLING-1-0'
+    'OFF':
+      - ==: ACTION
+        text: '&c&l&k|&r &c&l关闭监听私聊模式 &c&l&k|'
+      - ==: SOUND
+        sound: 'BLOCK_ANVIL_LAND-1-0'
+  NOT-PLAYER: '&8[&3Tr&bChat&8] &c你必须是一个玩家才能执行此操作.'
+  NO-PLAYER:
+    - ==: ACTION
+      text: '&3&l请提供一名私聊的对象'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+  NO-MESSAGE:
+    - ==: ACTION
+      text: '&7&l请提供私聊内容'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+  NOT-EXIST: '&8[&3Tr&bChat&8] &7目标玩家未在线或不存在.'
+  RECEIVE:
+    - ==: ACTION
+      text: '&8[ &a! &8] &3你收到来自 &a{0} &3的一条私聊消息'
+    - ==: SOUND
+      sound: 'BLOCK_NOTE_BLOCK_PLING-1-2'
+
+GLOBAL-MESSAGE:
+  NOT-PLAYER: '&8[&3Tr&bChat&8] &c你必须是一个玩家才能执行此操作.'
+  NOT-ENABLE: '&8[&3Tr&bChat&8] &7未启用 &eBungeeCord &7支持, 暂不支持喊话.'
+  NO-MESSAGE:
+    - ==: ACTION
+      text: '&7&l你必须提供喊话内容'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+
+STAFF-CHANNEL:
+  NOT-PLAYER: '&8[&3Tr&bChat&8] &c你必须是一个玩家才能执行此操作.'
+  NO-MESSAGE:
+    - ==: ACTION
+      text: '&7&l你必须提供聊天内容'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+  JOIN:
+    - ==: ACTION
+      text: '&a&l已加入到管理频道聊天'
+    - ==: TEXT
+      text: '&8[&3Tr&bChat&8] &3你已经加入到管理频道, 再次输入相同命令即可退出.'
+    - ==: SOUND
+      sound: 'BLOCK_NOTE_BLOCK_PLING-1-0'
+  QUIT:
+    - ==: ACTION
+      text: '&3&l离开管理频道聊天'
+    - ==: TEXT
+      text: '&8[&3Tr&bChat&8] &7你已离开管理频道, 但仍会收到管频的消息.'
+    - ==: SOUND
+      sound: 'BLOCK_ANVIL_LAND-1-0'

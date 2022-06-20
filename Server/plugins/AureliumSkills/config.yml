@@ -3,11 +3,11 @@
 # |                                                                            | #
 # |                    Discord: https://discord.gg/Bh2EZfB                     | #
 # |            Source Code: https://github.com/Archy-X/AureliumSkills          | #
-# |      Config Guide: https://wiki.aurelium.dev/skills/config/main-config     | #
+# | Config Guide: https://github.com/Archy-X/AureliumSkills/wiki/Configuration | #
 # +----------------------------------------------------------------------------+ #
+# This file was generated on version Alpha 1.5.4
 # Plugin made by Archy
-# 
-# MySql Options
+
 default-language: zh-CN
 try-detect-client-language: false
 languages:
@@ -21,13 +21,22 @@ languages:
 - pl
 - pt-BR
 - de
-- lt
-- ru
-- it
+data-save-period: 6000
+enable-action-bar: true
+action-bar-update-period: 2
+enable-health-on-action-bar: true
+health-text-color: RED
+enable-mana-on-action-bar: true
+mana-text-color: AQUA
+skill-xp-text-color: GOLD
+xp-progress-text-color: GRAY
+prefix-bracket-color: DARK_GRAY
+prefix-text: '&bSkills'
 base-mana: 20
 enable-roman-numerals: true
 damage-holograms: true
 damage-holograms-scaling: true
+skill-level-requirements-multiplier: 100
 enable-skill-commands: true
 check-block-replace: true
 blocked-check-block-replace-worlds:
@@ -41,7 +50,17 @@ blocked-regions:
 disabled-worlds:
 - Example
 disable-in-creative-mode: false
-check-for-updates: false
+skill-level-up-message:
+- '&3&l----------------------------------------'
+- ' &3Skill Level Up! &b&l$skill_name$ &8$level_old$➜&3&l$level_new$'
+- ' '
+- ' &bRewards:'
+- '  $primary_stat_color$+1$primary_stat_symbol$ $primary_stat_name$'
+- '  $secondary_stat_color$+1$secondary_stat_symbol$ $secondary_stat_name$'
+- '  $ability_unlock$'
+- '  $ability_level_up$'
+- '  &a$$money_amount$'
+- '&3&l----------------------------------------'
 mysql:
   enabled: false
   host: localhost
@@ -49,25 +68,541 @@ mysql:
   database: aureliumskills
   username: root
   password: pass
-  load-delay: 0
-  always-load-on-join: false
-  ssl: false
+skill-money-rewards:
+  enabled: false
+  base: 100
+  multiplier: 10
+critical:
+  base-multiplier: 1.5
+  enabled:
+    sword: true
+    bow: true
+    axe: true
+    pickaxe: true
+    shovel: true
+    hoe: true
+    hand: false
+    other: false
+farming:
+  max-level: 97
+  enabled: true
+  check-cancelled: true
+  types:
+    wheat: 2.0
+    potato: 2.5
+    carrot: 2.7
+    beetroot: 3.0
+    nether-wart: 3.0
+    pumpkin: 3.4
+    melon: 3.4
+    sugar-cane: 1.7
+foraging:
+  max-level: 97
+  enabled: true
+  check-cancelled: true
+  types:
+    oak-log: 4
+    spruce-log: 4
+    birch-log: 4
+    jungle-log: 4
+    acacia-log: 4
+    dark-oak-log: 4
+    oak-leaves: 0.4
+    spruce-leaves: 0.4
+    birch-leaves: 0.4
+    jungle-leaves: 0.4
+    acacia-leaves: 0.4
+    dark-oak-leaves: 0.4
+    crimson-stem: 5.0
+    warped-stem: 5.0
+    nether-wart-block: 0.5
+    warped-wart-block: 0.5.
+mining:
+  max-level: 97
+  enabled: true
+  check-cancelled: true
+  types:
+    stone: 0.2
+    cobblestone: 0.2
+    andesite: 0.2
+    diorite: 0.2
+    granite: 0.2
+    coal-ore: 1
+    quartz-ore: 1.8
+    iron-ore: 1.8
+    lapis-ore: 40.6
+    redstone-ore: 5.7
+    gold-ore: 17.8
+    diamond-ore: 47.3
+    emerald-ore: 142
+    terracotta: 0.5
+    white-terracotta: 0.5
+    orange-terracotta: 0.5
+    yellow-terracotta: 0.5
+    light-gray-terracotta: 0.5
+    brown-terracotta: 0.5
+    red-terracotta: 0.5
+    netherrack: 0.1
+    blackstone: 0.3
+    basalt: 0.4
+    magma-block: 0.7
+    nether-gold-ore: 10.0
+    ancient-debris: 500.0
+    end-stone: 0.5
+    obsidian: 10.0
+fishing:
+  max-level: 97
+  enabled: true
+  check-cancelled: true
+  types:
+    raw-fish: 25
+    raw-salmon: 60
+    clownfish: 750
+    pufferfish: 115
+    treasure: 1000
+    junk: 30
+    rare: 2000
+    epic: 5000
+excavation:
+  max-level: 97
+  enabled: true
+  check-cancelled: true
+  types:
+    dirt: 0.3
+    grass-block: 0.7
+    sand: 0.4
+    gravel: 1.5
+    mycelium: 3.7
+    clay: 2.4
+    soul-sand: 2.7
+    coarse-dirt: 2.3
+    podzol: 2.5
+    soul-soil: 3.0
+    red-sand: 0.7
+archery:
+  max-level: 97
+  enabled: true
+  types:
+    small-passive: 1
+    passive: 2
+    weak-hostile: 5
+    common-hostile: 7
+    uncommon-hostile: 10
+    strong-hostile: 17
+    stronger-hostile: 35
+    mini-boss: 100
+    boss: 7000
+    player: 50
+defense:
+  max-level: 97
+  enabled: true
+  check-cancelled: true
+  max: 100.0
+  min: 0
+  types:
+    mob-damage: 1
+    player-damage: 2
+fighting:
+  max-level: 97
+  enabled: true
+  types:
+    small-passive: 1
+    passive: 2
+    weak-hostile: 5
+    common-hostile: 7
+    uncommon-hostile: 10
+    strong-hostile: 17
+    stronger-hostile: 35
+    mini-boss: 100
+    boss: 7000
+    player: 50
+endurance:
+  max-level: 97
+  xp-gain-period: 12000
+  enabled: true
+  types:
+    walk-per-meter: 0.333
+    sprint-per-meter: 0.1
+    swim-per-meter: 1
+agility:
+  max-level: 97
+  enabled: true
+  check-cancelled: true
+  types:
+    jump-per-100: 10
+    fall-damage: 2
+alchemy:
+  max-level: 97
+  enabled: true
+  check-cancelled: true
+  types:
+    awkward: 10
+    regular: 15
+    extended: 25
+    upgraded: 25
+    splash: 35
+    lingering: 50
+enchanting:
+  max-level: 97
+  enabled: true
+  check-cancelled: true
+  types:
+    weapon-per-level: 2
+    armor-per-level: 2
+    tool-per-level: 2
+    book-per-level: 2
+sorcery:
+  max-level: 97
+  enabled: true
+healing:
+  max-level: 97
+  enabled: true
+  check-cancelled: true
+  types:
+    drink-regular: 10
+    drink-extended: 15
+    drink-upgraded: 15
+    splash-regular: 20
+    splash-extended: 25
+    splash-upgraded: 25
+forging:
+  max-level: 97
+  enabled: true
+  check-cancelled: true
+  types:
+    combine-books-per-level: 10
+    combine-weapon-per-level: 15
+    combine-armor-per-level: 20
+    combine-tool-per-level: 25
+health:
+  update-delay: 0
+  force-base-health: false
+  modifier: 0.5
+  health-scaling: true
+  hp-indicator-scaling: 5
+strength:
+  use-percent: false
+  modifier: 0.05
+  hand-damage: true
+  bow-damage: true
+  display-damage-with-health-scaling: true
+toughness:
+  new-modifier: 0.3
+  reset-armor-attribute: true
+regeneration:
+  custom-regen-mechanics: false
+  base-regen: 1
+  saturated-modifier: 0.007
+  hunger-full-modifier: 0.006
+  hunger-almost-full-modifier: 0.005
+  mana-modifier: 0.25
+  base-mana-regen: 1
+  custom-regen-options:
+    saturated-delay: 20
+    hunger-delay: 60
+luck:
+  modifier: 0.1
+  double-drop-enabled: true
+  double-drop-modifier: 0.005
+  double-drop-percent-max: 100
+wisdom:
+  allow-over-max-mana: false
+  anvil-cost-modifier: 0.25
+  experience-modifier: 0.01
+abilities:
+  bountiful-harvest:
+    enabled: true
+    base: 10.0
+    per-level: 5.0
+  farmer:
+    enabled: true
+    base: 10.0
+    per-level: 10.0
+  scythe-master:
+    enabled: true
+    base: 3.0
+    per-level: 2.0
+  geneticist:
+    enabled: true
+    base: 1.0
+    per-level: 2.0
+  triple-harvest:
+    enabled: true
+    base: 5.0
+    per-level: 3.0
+  lumberjack:
+    enabled: true
+    base: 10.0
+    per-level: 5.0
+  forager:
+    enabled: true
+    base: 10.0
+    per-level: 10.0
+  axe-master:
+    enabled: true
+    base: 4.0
+    per-level: 3.0
+  shredder:
+    enabled: true
+    base: 3.0
+    per-level: 3.0
+  lucky-miner:
+    enabled: true
+    base: 3.0
+    per-level: 3.0
+  miner:
+    enabled: true
+    base: 10.0
+    per-level: 10.0
+  pick-master:
+    enabled: true
+    base: 3.0
+    per-level: 2.0
+  hardened-armor:
+    enabled: true
+    base: 3.0
+    per-level: 3.0
+  lucky-catch:
+    enabled: true
+    base: 10.0
+    per-level: 5.0
+  fisher:
+    enabled: true
+    base: 10.0
+    per-level: 10.0
+  treasure-hunter:
+    enabled: true
+    base: 1.0
+    per-level: 1.0
+  grappler:
+    enabled: true
+    base: 50.0
+    per-level: 100.0
+  epic-catch:
+    enabled: true
+    base: 0.4
+    per-level: 0.4
+  metal-detector:
+    enabled: true
+    base: 0.5
+    per-level: 0.4
+  excavator:
+    enabled: true
+    base: 10.0
+    per-level: 10.0
+  spade-master:
+    enabled: true
+    base: 3.0
+    per-level: 2.0
+  bigger-scoop:
+    enabled: true
+    base: 3.0
+    per-level: 3.0
+  lucky-spades:
+    enabled: true
+    base: 0.1
+    per-level: 0.05
+  crit-chance:
+    enabled: true
+    base: 5
+    per-level: 5
+  archer:
+    enabled: true
+    base: 10.0
+    per-level: 10.0
+  bow-master:
+    enabled: true
+    base: 3.0
+    per-level: 2.0
+  piercing:
+    enabled: true
+    base: 3.0
+    per-level: 3.0
+  stun:
+    enabled: true
+    base: 2.0
+    per-level: 1.0
+  shielding:
+    enabled: true
+    base: 2.0
+    per-level: 3.0
+  defender:
+    enabled: true
+    base: 10.0
+    per-level: 10.0
+  mob-master:
+    enabled: true
+    base: 2.0
+    per-level: 3.0
+  immunity:
+    enabled: true
+    base: 0.5
+    per-level: 0.4
+  no-debuff:
+    enabled: true
+    base: 5.0
+    per-level: 5.0
+  crit-damage:
+    enabled: true
+    base: 5.0
+    per-level: 4.0
+  fighter:
+    enabled: true
+    base: 10.0
+    per-level: 10.0
+  sword-master:
+    enabled: true
+    base: 3.0
+    per-level: 2.0
+  first-strike:
+    enabled: true
+    base: 20.0
+    per-level: 10.0
+  bleed:
+    enabled: true
+    base: 3.0
+    per-level: 4.0
+    base-2: 0.5
+    per-level-2: 0.5
+  anti-hunger:
+    enabled: true
+    base: 5.0
+    per-level: 5.0
+  runner:
+    enabled: true
+    base: 10.0
+    per-level: 10.0
+  golden-heal:
+    enabled: true
+    base: 5.0
+    per-level: 6.0
+  recovery:
+    enabled: true
+    base: 10.0
+    per-level: 10.0
+  meal-steal:
+    enabled: true
+    base: 1.0
+    per-level: 2.0
+  valor:
+    enabled: true
+    base: 1.0
+    per-level: 1.0
+  light-fall:
+    enabled: true
+    base: 2.0
+    per-level: 1.5
+  jumper:
+    enabled: true
+    base: 10.0
+    per-level: 10.0
+  sugar-rush:
+    enabled: true
+    base: 5.0
+    per-level: 7.0
+  fleeting:
+    enabled: true
+    base: 5.0
+    per-level: 4.0
+  thunder-fall:
+    enabled: true
+    base: 3.0
+    per-level: 2.0
+    base-2: 10.0
+    per-level-2: 5.0
+  alchemist:
+    enabled: true
+    base: 3.0
+    per-level: 4.0
+  brewer:
+    enabled: true
+    base: 10.0
+    per-level: 10.0
+  splasher:
+    enabled: true
+    base: 0.5
+    per-level: 0.25
+  lingering:
+    enabled: true
+    base: 5.0
+    per-level: 4.0
+    base-2: 3.0
+    per-level-2: 2.0
+  wise-effect:
+    enabled: true
+    base: 1.0
+    per-level: 1.0
+mana-abilities:
+  speed-mine:
+    enabled: true
+    base-value: 5.0
+    value-per-level: 5.0
+    cooldown: 200
+    cooldown-per-level: -5
+    mana-cost: 20
+    mana-cost-per-level: 20
+  treecapitator:
+    enabled: true
+    base-value: 5.0
+    value-per-level: 5.0
+    cooldown: 200
+    cooldown-per-level: -5
+    mana-cost: 20
+    mana-cost-per-level: 20
+  replenish:
+    enabled: true
+    base-value: 5.0
+    value-per-level: 5.0
+    cooldown: 200
+    cooldown-per-level: -5
+    mana-cost: 20
+    mana-cost-per-level: 20
+  sharp-hook:
+    enabled: true
+    base-value: 0.5
+    value-per-level: 0.5
+    cooldown: 2
+    cooldown-per-level: -0.1
+    mana-cost: 5
+    mana-cost-per-level: 2
+    display-damage-with-scaling: true
+    enable-sound: true
+damage-holograms-decimal:
+  display-when-less-than: 1
+  decimal-max-amount: 1
+damage-holograms-offset:
+  x: 0
+  y: 0
+  z: 0
+  random:
+    enabled: false
+    x-min: -0.5
+    x-max: 0.5
+    y-min: 0
+    y-max: 0
+    z-min: -0.5
+    z-max: 0.5
+modifier:
+  armor:
+    equip-blocked-materials:
+    - EXAMPLE
+  item:
+    enable-off-hand: true
+    check-period: 2
 action-bar:
   enabled: true
   idle: true
-  ability: true
-  xp: false
-  maxed: false
+  xp: true
+  maxed: true
   update-period: 5
   round-xp: false
   placeholder-api: true
 boss-bar:
-  enabled: true
+  enabled: false
   mode: multi
   stay-time: 60
   update-every: 1
   round-xp: false
-  display-maxed: true
   format:
   - FARMING GREEN SOLID
   - FORAGING RED SOLID
@@ -84,31 +619,9 @@ boss-bar:
   - SORCERY BLUE SOLID
   - HEALING WHITE SOLID
   - FORGING YELLOW SOLID
-damage-holograms-decimal:
-  display-when-less-than: 1
-  decimal-max-amount: 1
-damage-holograms-offset:
-  x: 0
-  y: 0
-  z: 0
-  random:
-    enabled: false
-    x-min: -0.5
-    x-max: 0.5
-    y-min: 0
-    y-max: 0
-    z-min: -0.5
-    z-max: 0.5
 leaderboards:
   update-period: 6000
   update-delay: 6000
-auto-save:
-  enabled: false
-  interval-ticks: 12000
-skill-money-rewards:
-  enabled: false
-  base: 100
-  multiplier: 10
 leveler:
   double-check-delay: 20
   title:
@@ -122,170 +635,10 @@ leveler:
     category: MASTER
     volume: 1.0
     pitch: 0.5
-modifier:
-  auto-convert-from-legacy: true
-  armor:
-    equip-blocked-materials:
-    - EXAMPLE
-    timer:
-      enabled: false
-      check-period: 3
-  item:
-    check-period: 3
-    enable-off-hand: true
-  multiplier:
-    enabled: true
 requirement:
-  enabled: true
   item:
     prevent-tool-use: true
     prevent-weapon-use: true
     prevent-block-place: true
   armor:
     prevent-armor-equip: true
-critical:
-  base-multiplier: 1.5
-  enabled:
-    sword: true
-    bow: true
-    axe: true
-    pickaxe: true
-    shovel: true
-    hoe: true
-    hand: false
-    other: false
-menus:
-  placeholder-api: true
-automatic-backups:
-  enabled: true
-  minimum-interval-hours: 24
-farming:
-  enabled: true
-  max-level: 97
-  check-cancelled: true
-  check-multiplier-permissions: true
-foraging:
-  enabled: true
-  max-level: 97
-  check-cancelled: true
-  check-multiplier-permissions: true
-mining:
-  enabled: true
-  max-level: 97
-  check-cancelled: true
-  check-multiplier-permissions: true
-fishing:
-  enabled: true
-  max-level: 97
-  check-cancelled: true
-  check-multiplier-permissions: true
-excavation:
-  enabled: true
-  max-level: 97
-  check-cancelled: true
-  check-multiplier-permissions: true
-archery:
-  enabled: true
-  max-level: 97
-  damage-based: false
-  spawner-multiplier: 1
-  check-multiplier-permissions: true
-defense:
-  enabled: true
-  max-level: 97
-  check-cancelled: true
-  max: 100.0
-  min: 0
-  allow-shield-blocking: false
-  check-multiplier-permissions: true
-fighting:
-  enabled: true
-  max-level: 97
-  damage-based: false
-  spawner-multiplier: 1
-  check-multiplier-permissions: true
-endurance:
-  enabled: true
-  max-level: 97
-  xp-gain-period: 12000
-  check-multiplier-permissions: true
-agility:
-  enabled: true
-  max-level: 97
-  check-cancelled: true
-  check-multiplier-permissions: true
-alchemy:
-  enabled: true
-  max-level: 97
-  check-cancelled: true
-  give-xp-on-takeout: false
-  give-xp-on-potion-combat: false
-  check-multiplier-permissions: true
-enchanting:
-  enabled: true
-  max-level: 97
-  check-cancelled: true
-  check-multiplier-permissions: true
-sorcery:
-  enabled: true
-  max-level: 97
-  check-multiplier-permissions: true
-healing:
-  enabled: true
-  check-cancelled: true
-  max-level: 97
-  exclude-negative-potions: false
-  check-multiplier-permissions: true
-forging:
-  enabled: true
-  max-level: 97
-  check-cancelled: true
-  check-multiplier-permissions: true
-health:
-  modifier: 0.4
-  health-scaling: true
-  hp-indicator-scaling: 1
-  update-delay: 0
-  force-base-health: false
-  keep-full-on-increase: false
-  hearts:
-    '10': 20
-    '11': 22
-    '12': 26
-    '13': 32
-    '14': 40
-    '15': 52
-    '16': 66
-    '17': 84
-    '18': 104
-    '19': 126
-    '20': 150
-strength:
-  modifier: 0.5
-  hand-damage: true
-  bow-damage: true
-  display-damage-with-health-scaling: true
-  use-percent: true
-toughness:
-  new-modifier: 0.3
-regeneration:
-  custom-regen-mechanics: false
-  base-regen: 1
-  saturated-modifier: 0.007
-  hunger-full-modifier: 0.006
-  hunger-almost-full-modifier: 0.005
-  mana-modifier: 0.1
-  base-mana-regen: 1
-  custom-regen-options:
-    saturated-delay: 20
-    hunger-delay: 60
-luck:
-  modifier: 0.1
-  double-drop-enabled: true
-  double-drop-modifier: 0.005
-  double-drop-percent-max: 100
-wisdom:
-  anvil-cost-modifier: 0.25
-  experience-modifier: 0.01
-  allow-over-max-mana: true
-  max-mana-per-wisdom: 2.0

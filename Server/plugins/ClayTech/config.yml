@@ -1,0 +1,8 @@
+Locale: zh-CN
+highrailspeed: '3'
+overworld: world
+disable-auto-updater: true
+replace-when-server-stops: true
+update-branch: ALL
+space-travel-need-perm: false
+clay-air-lock-block-texture: IRON_BLOCK

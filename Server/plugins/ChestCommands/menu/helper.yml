@@ -1,0 +1,158 @@
+menu-settings:
+  name: '&1&l游戏帮助'
+  rows: 6
+  
+item-1-1:
+  POSITION-X: 1
+  POSITION-Y: 1
+  NAME: '装饰物品'
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-1-2:
+  POSITION-X: 1
+  POSITION-Y: 2
+  NAME: '装饰物品'
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-1-3:
+  POSITION-X: 1
+  POSITION-Y: 3
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-1-4:
+  POSITION-X: 1
+  POSITION-Y: 4
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-1-5:
+  POSITION-X: 1
+  POSITION-Y: 5
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-1-6:
+  POSITION-X: 1
+  POSITION-Y: 6
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-1:
+  POSITION-X: 9
+  POSITION-Y: 1
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-2:
+  POSITION-X: 9
+  POSITION-Y: 2
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-3:
+  POSITION-X: 9
+  POSITION-Y: 3
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-4:
+  POSITION-X: 9
+  POSITION-Y: 4
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-5:
+  POSITION-X: 9
+  POSITION-Y: 5
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-6:
+  POSITION-X: 9
+  POSITION-Y: 6
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+
+slimefun:
+  POSITION-X: 3
+  POSITION-Y: 2
+  MATERIAL: book
+  NAME: '&f&l粘液科技'
+  LORE:
+    - '&e指令/sf guide可以获得粘液科技指南(slimefun 指南)'
+    - '&e通过经验等级解锁物品'
+    - '&e更多粘液科技帮助请前往粘液科技指南(slimefun 指南)查找'
+  KEEP-OPEN: true
+home:
+  POSITION-X: 5
+  POSITION-Y: 2
+  MATERIAL: book
+  NAME: '&f&l家'
+  LORE:
+    - '&e指令/sethome来设置家'
+    - '&e指令/home回家'
+    - '&e你不可以设置多个家'
+  KEEP-OPEN: true
+tp:
+  POSITION-X: 7
+  POSITION-Y: 2
+  MATERIAL: book
+  NAME: '&f&l传送'
+  LORE:
+    - '&e指令/tpa 玩家 来请求tp你想要tp的玩家'
+    - '&e指令/tpaccept 来接受请求'
+    - '&e指令/tpadeny 来拒绝请求(实际上你不理请求也可以qwq)'
+  KEEP-OPEN: true
+res:
+  POSITION-X: 3
+  POSITION-Y: 3
+  MATERIAL: book
+  NAME: '&f&l领地'
+  LORE:
+    - '&e用木锄头选择你要圈地的区域'
+    - '&e指令/res create 领地名称 来圈地'
+    - '&e圈地需要一定的金钱，你可以去系统商店出售物品获得金钱'
+    - '&e你最多可以创建30个长为500，宽为500，高为256的领地'
+    - '&e指令/res padd 玩家 来给与你所在的领地想要的玩家基础权限(需要领地admin及以上权限)'
+    - '&e指令/res pset 玩家 来设置你所在的领地想要的玩家的权限(需要领地admin及以上权限)'
+    - '&e指令/res set 来设置你所在领地的公共权限(需要领地admin及以上权限)'
+    - '&e指令/res remove 领地 来移除你想要删除的领地(需要有领地主人权限)'
+  KEEP-OPEN: true
+quickshop:
+  POSITION-X: 5
+  POSITION-Y: 3
+  MATERIAL: book
+  NAME: '&f&l快捷商店'
+  LORE:
+    - '&e你可以使用箱子\陷阱箱来创建商店'
+    - '&e按下潜行时左键箱子后再聊天框输入价格来创建商店'
+    - '&e你需要及时补货,否则别人将无法从你这购买物品'
+    - '&e指针对着商店输入指令/qs buy可以切换收购模式'
+    - '&e你最多可以创建500个商店'
+  KEEP-OPEN: true
+other:
+  POSITION-X: 7
+  POSITION-Y: 3
+  MATERIAL: book
+  NAME: '&f&l其他'
+  LORE:
+    - '&e指令/pay 玩家 数量 来给指定的玩家付钱'
+    - '&e指令/spawn 来回到主城'
+    - '&e1.12.2版本可能会显示不出npc和玩家，遇到这种情况请重新进入游戏'
+    - '&eNPC皮肤可能会失效'
+  KEEP-OPEN: true
+  

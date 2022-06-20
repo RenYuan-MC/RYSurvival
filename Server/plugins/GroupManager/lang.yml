@@ -1,0 +1,14 @@
+#
+#
+# You can edit the messages here!
+#
+# Placeholders:
+# %group% - Show the group for not exist messages
+#
+prefix: '&8[&c&lGM&f&l+&8] '
+no_permission: '&cYou dont have permission to do that!'
+reload: '&aAll settings and worlds were reloaded!'
+
+manuadd_error: '&cReview your arguments count! (/manuadd <player> <group> | optional [world])'
+manuadd_group_not_exist: '&cGroup "%group%" is doesnt exist!'
+    

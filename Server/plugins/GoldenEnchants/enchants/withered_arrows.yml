@@ -1,0 +1,20 @@
+name: 'Withered Arrows'
+tier: 'rare'
+description: '%chance%% chance to launch %potion-effect% %potion-level% arrow with %potion-duration%s. duration.'
+level:
+  min: 1
+  max: 3
+enchantment-table:
+  min-player-level: 15
+  chance: 25.0
+anvil:
+  merge-cost: '%level%'
+villagers:
+  chance: 20.0
+loot-generation:
+  chance: 20.0
+settings:
+  enchant-trigger-chance: '30.0'
+  arrow-trail: 'SPELL_WITCH'
+  effect-level: '%level%'
+  effect-duration: '2.0 * %level%'

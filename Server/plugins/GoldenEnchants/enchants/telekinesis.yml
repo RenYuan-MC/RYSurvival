@@ -1,0 +1,21 @@
+name: 'Telekinesis'
+tier: 'rare'
+description: 'Moves all items to you in %radius% block radius.'
+level:
+  min: 1
+  max: 3
+enchantment-table:
+  min-player-level: 30
+  chance: 15.0
+anvil:
+  merge-cost: '%level%'
+villagers:
+  chance: 15.0
+loot-generation:
+  chance: 15.0
+settings:
+  enchant-trigger-chance: '100.0'
+  radius:
+    horizontal: '2.0 + %level%'
+    vertial: '0.5 + %level / 2%'
+  power: '1.2 + %level% / 5'

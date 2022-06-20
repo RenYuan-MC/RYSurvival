@@ -1,0 +1,5 @@
+settings:
+  craftingTableEnabled: true
+  permissions:
+    craftCommandOp: true
+    craftNewCommandOp: true

@@ -1,0 +1,75 @@
+#
+# ChestSort Default Category File
+#
+# If you want to change this file, rename it.
+# Please do NOT use file prefixed between 900 and 999 for
+# your custom files because ChestSort will overwrite them
+#
+
+# When sticky is set to true, order the items in this
+# category exactly as defined in this file.
+# When set to false, the items are only grouped together
+# and then sorted according to the other variables
+# in your sorting-method
+sticky=false
+
+*_planks
+*_log
+*_wood
+*_leaves
+*_sign
+barrel
+oak_sapling
+spruce_sapling
+birch_sapling
+jungle_sapling
+acacia_sapling
+dark_oak_sapling
+acacia_slab
+birch_slab
+jungle_slab
+oak_slab
+dark_oak_slab
+spruce_slab
+acacia_fence
+birch_fence
+jungle_fence
+campfire
+chest
+composter
+stick
+ladder
+crafting_table
+oak_fence
+dark_oak_fence
+spruce_fence
+acacia_fence_gate
+birch_fence_gate
+jungle_fence_gate
+oak_fence_gate
+dark_oak_fence_gate
+spruce_fence_gate
+acacia_trapdoor
+birch_trapdoor
+jungle_trapdoor
+oak_trapdoor
+dark_oak_trapdoor
+spruce_trapdoor
+acacia_stairs
+birch_stairs
+jungle_stairs
+oak_stairs
+dark_oak_stairs
+spruce_stairs
+acacia_door
+birch_door
+jungle_door
+oak_door
+dark_oak_door
+spruce_door
+acacia_boat
+birch_boat
+jungle_boat
+oak_boat
+dark_oak_boat
+spruce_boat

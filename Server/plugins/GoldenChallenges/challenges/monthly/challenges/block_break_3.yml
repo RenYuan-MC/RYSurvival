@@ -1,0 +1,49 @@
+name: '%generator-name% &7Lv. %generator-level%'
+type: BLOCK_BREAK
+icon:
+  material: GOLDEN_PICKAXE
+  name: '%name%'
+  lore: []
+  item-flags:
+  - '*'
+generator:
+  names:
+  - '&c下界挖矿'
+  levels:
+    minimum: 1
+    maximum: 5
+  objectives:
+    amount:
+      minimum: '1'
+      maximum: '3'
+      list:
+        '1':
+        - NETHER_GOLD_ORE
+        - NETHER_QUARTZ_ORE
+        - NETHERRACK
+    progress:
+      default:
+        minimum: 30 * %level%
+        maximum: 50 * %level%
+      NETHERRACK:
+        minimum: 100 * 1 + %level% / 10
+        maximum: 200 * 1 + %level% / 10
+      NETHER_GOLD_ORE:
+        minimum: 25 * 1 + %level% / 10
+        maximum: 40 * 1 + %level% / 10
+      NETHER_QUARTZ_ORE:
+        minimum: 40 * 1 + %level% / 10
+        maximum: 60 * 1 + %level% / 10
+  affected-worlds:
+    minimum: '1'
+    maximum: '1'
+    list:
+      '1':
+      - world_nether
+  rewards:
+    minimum: '1'
+    maximum: '2'
+    list:
+      '1':
+      - reward1
+      - reward2

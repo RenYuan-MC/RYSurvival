@@ -1,0 +1,67 @@
+# Configuration file
+# https://github.com/connection-lost/LockettePro/wiki/*-config.yml
+# If there are missing entries, you can add them manually.
+
+language-file-name: lang.yml
+enable-quick-protect: true
+enable-uuid-support: false
+protocollib: true
+worldguard: true
+coreprotect: true
+block-interfere-placement: true
+block-item-transfer-in: false
+block-item-transfer-out: true
+block-hopper-minecart: remove
+cache-time-seconds: 0
+lock-expire: false
+lock-expire-days: 999.9
+lock-default-create-time-unix: -1
+lock-expire-string: '&3[Expired]'
+private-signs:
+- '[Private]'
+- '[private]'
+additional-signs:
+- '[More Users]'
+- '[more users]'
+everyone-signs:
+- '[Everyone]'
+- '[everyone]'
+timer-signs:
+- '[Timer:@]'
+- '[timer:@]'
+lockables:
+- CHEST
+- TRAPPED_CHEST
+- BARREL
+- FURNACE
+- SMOKER
+- BLAST_FURNACE
+- HOPPER
+- BREWING_STAND
+- DIAMOND_BLOCK
+- OAK_DOOR
+- SPRUCE_DOOR
+- BIRCH_DOOR
+- JUNGLE_DOOR
+- ACACIA_DOOR
+- DARK_OAK_DOOR
+- IRON_DOOR
+- LECTERN
+- CRIMSON_DOOR
+- WARPED_DOOR
+- OAK_FENCE_GATE
+- SPRUCE_FENCE_GATE
+- BIRCH_FENCE_GATE
+- CRIMSON_FENCE_GATE
+- WARPED_FENCE_GATE
+- ACACIA_FENCE_GATE
+- JUNGLE_FENCE_GATE
+- CRIMSON_TRAPDOOR
+- WARPED_TRAPDOOR
+- SPRUCE_TRAPDOOR
+- OAK_TRAPDOOR
+- BIRCH_TRAPDOOR
+- DARK_OAK_TRAPDOOR
+- ACACIA_TRAPDOOR
+protection-exempt:
+- nothing

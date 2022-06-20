@@ -1,0 +1,44 @@
+# Plugin develloped by GFelberg 
+# Config.yml		        
+
+# language: en
+# Thanks for downloading my plugin. For more plugins, dont forget to look my updates!
+# If you find any bugs or ideas to the plugin, pm me at spigot.
+
+# language: br/pt
+# Obrigado por baixar meu plugin. Para mais plugins, não esqueça de olhar as atualizações!
+# Se você encontrar algum problema ou ter alguma ideia para o plugin, pm no spigot.
+
+# Permissions
+
+# totem.admin = Access to the Totem Command and Allow or Deny permission to a Player use the Totem
+# totem.bypasscooldown = Access to use the Totem without cooldown
+# totem.reload = Access to Reload the Plugin
+
+update-check: true
+# https://www.spigotmc.org/resources/nototemhand.81271/
+
+# Configuration 1.0
+# This area will be used to manage the NoTotemHand Prefix and Timer
+
+# If Timer = 0 (Seconds), the cooldown will be disabled.
+
+Totem:
+  Prefix: '&b&l[&aTotem&b&l]&r'
+  Timer: 10
+
+# Configuration 1.1
+# This area will be used to manage the TotemSystem 
+ 
+TotemSystem:
+  RecievePerm: '&aPlayer gets permission to use the Totem'
+  TakePerm: '&aPlayer lost permission to use the Totem'
+  HasPerm: '&cThis player already have permission to use the Totem'
+  NoPerm: '&cThis player doesnt have already permission to use the Totem'
+  
+# This area will be used to manage the Players Toggle Messages
+
+Player:
+  ToggleOn: '&eYou enabled the Totem to be activated from your inventory'
+  ToggleOff: '&eYou disabled the Totem to be activated from your inventory'
+    

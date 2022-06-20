@@ -1,0 +1,50 @@
+name: '%generator-name% &aLv. %generator-level%'
+type: POTION_BREW
+icon:
+  material: 'BREWING_STAND'
+  name: '%name%'
+  lore: []
+
+generator:
+  names:
+  - '&e绝命毒师'
+  
+  levels:
+    minimum: 1
+    maximum: 5
+  
+  objectives:
+    amount:
+      minimum: '1' # Formula
+      maximum: '3' # Formula
+      list:
+        '1': # Quest level
+        - 'WEAKNESS'
+        - 'INCREASE_DAMAGE'
+        - 'REGENERATION'
+        - 'SPEED'
+    
+    progress:
+      default: # Objective name
+        minimum: '5 * %level%' # Formula
+        maximum: '10 * %level%' # Formula
+    
+  affected-worlds:
+    minimum: '1' # Formula
+    maximum: '1' # Formula
+    list:
+      '1': # Quest level
+      - 'world'
+      - 'world_nether'
+      - 'world_the_end'
+  
+  rewards:
+    '1': # Quest level
+      minimum: '1' # Formula
+      maximum: '2' # Formula
+      list:
+        reward1:
+          lore:
+          - '&e&l$500'
+          commands: []
+          custom-actions: {}

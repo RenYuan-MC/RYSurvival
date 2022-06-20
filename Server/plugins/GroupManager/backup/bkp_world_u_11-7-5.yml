@@ -1,0 +1,6 @@
+users:
+  example:
+    group: Builder
+    subgroups: []
+    permissions:
+    - example

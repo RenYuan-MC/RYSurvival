@@ -1,0 +1,18 @@
+name: 'Rocket'
+tier: 'exotic'
+description: '%chance%% chance to launch your enemy into the space.'
+level:
+  min: 1
+  max: 4
+enchantment-table:
+  min-player-level: 30
+  chance: 20.0
+anvil:
+  merge-cost: '%level%'
+villagers:
+  chance: 20.0
+loot-generation:
+  chance: 20.0
+settings:
+  enchant-trigger-chance: '2.0 * %level%'
+  firework-power: '%level%'

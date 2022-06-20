@@ -1,0 +1,39 @@
+# Przetłumaczone przez nitolar play
+# Tłumaczenie utworzono: 06.11.2020
+Command:
+  Enchant:
+    Usage: <zaklęcie> <poziom>
+    Desc: Zaklnij przedmiot w swojej ręce.
+    Done: '&aSukcesywnie Zaklnięto!'
+  List:
+    Desc: Lista złotych enchantów
+    Format:
+      List:
+      - ''
+      - '&8&m-------- &e Lista złotych enchantów &8&m--------'
+      - '%enchant% %button_book% %button_enchant%'
+      - '&8&m-------- &e Strona &7%page% &e z &7 %pages% &8&m--------'
+    Enchant:
+      Hint:
+      - '&7Poziom: &f%tier%'
+      - '&7Szansa na zdobycie: &f%chance%'
+      - '&7Min Poziom: &f%min-level%'
+      - '&7Max Poziom: &f%max-level%'
+    Button:
+      Book:
+        Name: '&e&l[Daj Książke]'
+        Hint: '&7Dodano zaklniętą książke do ekwipunku.'
+      Enchant:
+        Name: '&b&l[Zaklnij Przedmiot]'
+        Hint: '&7Zaklnięto przedmiot w twojej ręce.'
+  Book:
+    Usage: <gracz> <zaklęcie> <poziom>
+    Desc: Dodaje niestandardowo zaklniętą książke.
+    Done: Dodano zaklniętą ksiązke z zaklęciem &6%enchant%&7 do gracza &6%player%&7.
+  TierBook:
+    Usage: <gracz> <żadkość> <poziom>
+    Desc: Dodaje zaklniętą książke.
+    Error: '&cZły poziom żadkości!'
+    Done: Dodano zaklniętą ksiązke z zaklęciem &6%enchant%&7 do gracza &6%player%&7.
+Error:
+  NoEnchant: '&cNie ma takiego zaklęcia.'

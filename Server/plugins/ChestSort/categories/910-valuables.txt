@@ -1,0 +1,62 @@
+#
+# ChestSort Default Category File
+#
+# If you want to change this file, rename it.
+# Please do NOT use file prefixed between 900 and 999 for
+# your custom files because ChestSort will overwrite them
+#
+
+# When sticky is set to true, order the items in this
+# category exactly as defined in this file.
+# When set to false, the items are only grouped together
+# and then sorted according to the other variables
+# in your sorting-method
+sticky=false
+
+diamond
+emerald
+diamond_ore
+emerald_ore
+emerald_block
+iron_ingot
+iron_ore
+gold_ingot
+gold_ore
+gold_block
+diamond_block
+iron_block
+lapis_lazuli
+lapis_block
+lapis_ore
+obsidian
+nether_quartz_ore
+nether_star
+beacon
+prismarine_crystals
+conduit
+scute
+elytra
+enchanted_golden_apple
+enchanting_table
+experience_bottle
+firework_rocket
+firework_star
+glowstone*
+name_tag
+jukebox
+golden_apple
+ender_chest
+end_crystal
+end_gateway
+end_portal_frame
+end_rod
+ender_pearl
+ender_eye
+*_horse_armor
+music_disc_*
+heart_of_the_sea
+nautilus_shell
+gold_nugget
+iron_nugget
+saddle
+enchanted_book

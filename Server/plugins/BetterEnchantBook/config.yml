@@ -1,0 +1,40 @@
+# 经验乘数 | 铁毡消耗的经验 = 经验乘数*物品等级 + 原版要的经验
+expMultiplier: 3.14
+
+# 附魔给物品的乘数 | 铁毡消耗的经验 = 乘数*附魔等级 + 原版要的经验
+itemExpMultiplier: 2.33
+
+# 高级附魔书 lore 的名字 | 留空不启用
+bookLore: ''
+
+# 附魔后的粒子效果 | 开关 true false
+# 其中包括: 末影效果 + 烟雾 + 末影龙叫声
+enchantEffect: true
+
+# 铁毡损坏几率 | 0-100 | 设置为 0 禁用
+# 比如说: 铁毡 -> 轻微损坏的铁毡 -> 重度损坏的铁毡
+anvilDamageProb: 30
+
+# 铁毡损坏几率等级加成 | 设置为 0 禁用
+# 结合上面的损坏几率根据等级增加
+# 铁毡损坏几率 = 铁毡损坏几率 + 铁毡损坏几率等级加成 * 等级
+levelDamageMultiplier: 1
+
+# 铁毡直接损坏几率 | 设置为 0 禁用
+anvilBreakProb: 5
+
+# 铁毡直接损坏几率等级加成 | 设置为 0 禁用
+# 结合上面的损坏几率的几率相加
+# 铁毡直接损坏几率 = 铁毡直接损坏几率 + 铁毡直接损坏几率等级加成 * 等级
+anvilBreakProbMultiplier: 1
+
+# 禁止叠加的附魔类型
+# 附魔的名字可以从这里找到: https://bukkit.windit.net/javadoc/org/bukkit/enchantments/Enchantment.html
+banEnchants:
+  # 附魔：经验修补
+  - MENDING
+
+# 限制最高等级的附魔
+maxLevelLimit:
+  # 附魔：锋利 | 最高 6 级
+  DAMAGE_ALL: 7

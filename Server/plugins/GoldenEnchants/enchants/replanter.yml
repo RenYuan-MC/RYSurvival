@@ -1,0 +1,20 @@
+name: 'Replanter'
+tier: 'common'
+description: 'Automatically replants growth plants on click.'
+level:
+  min: 1
+  max: 1
+enchantment-table:
+  min-player-level: 15
+  chance: 20.0
+anvil:
+  merge-cost: '%level%'
+villagers:
+  chance: 20.0
+loot-generation:
+  chance: 20.0
+settings:
+  enchant-trigger-chance: '100.0'
+  replant:
+    on-right-click: true
+    on-plant-break: true

@@ -1,0 +1,21 @@
+name: 'Smelter'
+tier: 'rare'
+description: '%chance%% chance to smelt ore on mining.'
+level:
+  min: 1
+  max: 7
+enchantment-table:
+  min-player-level: 30
+  chance: 40.0
+anvil:
+  merge-cost: '%level%'
+villagers:
+  chance: 40.0
+loot-generation:
+  chance: 40.0
+settings:
+  enchant-trigger-chance: '15.0 * %level%'
+  smelting-table:
+    IRON_ORE: 'IRON_INGOT'
+    GOLD_ORE: 'GOLD_INGOT'
+    SAND: 'GLASS'

@@ -1,0 +1,2 @@
+2021-05-03 23:53:14 [DraylarBattleTower Dungeon @ world_the_end] x=109831, z=99559
+2021-05-03 23:53:27 [BattleTower Dungeon @ world_the_end] x=109831, z=99911

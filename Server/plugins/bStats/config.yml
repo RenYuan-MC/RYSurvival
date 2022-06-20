@@ -1,5 +1,7 @@
-#bStats为插件作者收集一些数据，比如有多少服务器在使用他们的插件。
-#查看 https://bStats.org/ 要了解更多信息:)
-enabled: false
-serverUuid: 8076d045-9ea3-4281-87a2-6bbe8f46cf4f
+# bStats collects some data for plugin authors like how many servers are using their plugins.
+# To honor their work, you should not disable it.
+# This has nearly no effect on the server performance!
+# Check out https://bStats.org/ to learn more :)
+enabled: true
+serverUuid: 71a33121-37c4-472f-a46a-53b1a4659e43
 logFailedRequests: false

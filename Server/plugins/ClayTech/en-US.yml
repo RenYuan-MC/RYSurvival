@@ -1,0 +1,697 @@
+General:
+  startTip: ClayTech By ClayCoffee.
+  registeringItems: Registering items..
+  registeringError: 'There is an error when registering items:'
+  Info_1: '###########################################################'
+  Info_2: Successfully loaded ClayTech v{version}.
+  Info_3: 'Author: {author}'
+  Info_4: ''
+  Info_5: 'Issue Tracker: {issue_tracker}'
+  Info_6: '###########################################################'
+  Auto-updater_disabled: You have disabled the auto updater! This may cause certain
+    issues to be unable to be automatically repaired.
+  update_done: '&aSuccessfully updated from version &c{old_version} &ato &6{new_version}.
+    &aPlease restart your server to apply the changes!'
+  DEV_VERSION: '&eClayTech detected that you are using a development version. If you
+    encounter any bugs, please submit them to our Issue Tracker!'
+  command_not_found: §b[ClayTech] §c The command was not found.
+  basic_command: '&3ClayTech {version} &eBy &6ClayCoffee'
+  LatestVersion: '&aYou are currently using the latest version of &6ClayTech &a.'
+  CantPlaceLore: '&eCan''t Place'
+  no_permission: §cYou don't have permission.
+  CantPlace: '&b[ClayTech]&cYou cannot place this!'
+  CantBreak: §b[ClayTech]§cYou cannot break this!
+  Blind_5_effect: '&7Blind V'
+  Slowness_5_effect: '&7Slowness V'
+  Confusion_5_effect: '&7Nausea V'
+  Poison_3_effect: '&7Poison III'
+  Anti_Slowness_3_effect: '&7Anti Slowness III'
+  Drink_Message: '&6Gudugudu...Good to drink!'
+  Eat_Message: '&6Kachikachi...Yummy!'
+  Cant_Drink_Message: '&cYou''re already full!'
+  Cant_Eat_Message: '&cYou''re already full!'
+  Wash_Message: '&6Completed!'
+  Cant_Wash_Message: '&cYou need a water bucket to do this.'
+  Before_115: '&cYour server api version is before 1.15,the plugin also can run, but
+    might cause some items can''t register.'
+  Not_compatible: '&cSorry.The plugin doesn''t compatible your server version.Supported
+    Server Version: 1.14.x, 1.15.x, 1.16.x.Please upgrade your server!'
+  TNT_EXPLOSION_CREATER_WAIT: '&aTNT will place 5 seconds later...'
+  TNT_EXPLOSION_CREATER_NO_TNT: '&cThere''s no TNT in your inventory.'
+  TNT_EXPLOSION_CREATER_SUCCESS: '&aTNT exploded successfully.'
+  TNT_EXPLOSION_CREATER_FATAL: '&cTNT exploded failed.Might residence?'
+  TNT_EXPLOSION_CREATER_CD: '&cPlease wait for the CD..'
+  Durability: '&bDurability'
+  CantEat: '&7Can''t eat'
+  CantEatMessage: '&cYou can''t eat this item.'
+  CantInteract: '&7Can''t Interact'
+  CantInteractMessage: '&cYou can''t interact with this item.'
+  Rocket: '&9Rocket'
+  SpaceSuit: '&9Spacesuit'
+  Fuel: '&bCurrent Fuel Level:'
+  Oxygen: '&bCurrent Oxygen Level:'
+  ProtectLevel: '&bProtecting Level:'
+  SpaceSuitError: '&c&lRequire Oxygen'
+  SpaceSuitError_Sub: '&6Please wear the correct space suits and inject the enough
+    oxygen in!'
+  NotRocket: '&cSorry. You need hand a rocket in your main hand.'
+  NotEnoughFuel: '&cSorry. The fuel is not enough.'
+  RocketOK: '&eLaunching, move your main hand item to cancel.'
+  RocketArrived: '&aArrived target planet!'
+  RocketCountdown: '&6%seconds% &bseconds left to reach the target planet.'
+  SamePlanet: '&cYou''ve already in this planet!'
+  StakingRockets: '&cYou can''t stack rockets!'
+  CantUseOtherTeleportInUniverse: '&cSorry, you can''t use teleport in space or teleport
+    to space.'
+  BaseCompleted: '&3Base setuped!'
+  BaseExists: '&cThe base already exists.Please destroy it.'
+  BaseDestroyed: '&6Destroy Completed!'
+  TeleportedToBase: '&aTeleported to the base'
+  TeleportedToBase_Sub: '&aWelcome to the base'
+  OxygenDistributer: '&9Oxygen Distributer'
+  SPACESUIT_NOT_OK: '&cYour spacesuits aren''t intact!'
+  SPACESUIT_4: '&cYou need 4 oxygen level in your oxygen distributer.'
+  SPACESUIT_DISTRIBUTER_OK: '&3Done!'
+  SPACESUIT_DISTRIBUTER_FULL: '&3Spacesuit is full of oxygen.'
+  NotInPlanet: '&cSorry. You are not in a planet.So you can''t set up a base.'
+  NotYourBase: '&cSorry. You can''t destroy other people''s base.'
+  notOwner: '&cYou can only open your Rocket Launcher!'
+  SpaceSuitFall: '&6>> Your spacesuit protected you.'
+  AlreadyInRocket: '&cYou are already in the rocket!'
+  LocationFatal: '&cThere isn''t a safe location to land.You can retry once.'
+  NotAtAPlanet: '&cSorry,you have to launch your rocket in a planet(like overworld).'
+  Cant_Drink_Milk: '&cYou cannot drink milk on this planet to dispel the effect.'
+  Yes_1: 'Yes'
+  No_1: 'No'
+  WorldBorder: '&eDetected WorldBorder.'
+Categories:
+  Basic: '&bClayTech - Basic'
+  Weapons: '&bClayTech - Weapons'
+  Food: '&bClayTech - Food'
+  FoodMakings: '&bClayTech - FoodMakings'
+  Drink: '&bClayTech - Drink'
+  Makings: '&bClayTech - Makings'
+  Armors: '&bClayTech - Armors'
+  Decorates: '&bClayTech - Decorates'
+  Elements: '&bClayTech - Elements'
+  Machines: '&bClayTech - Machines'
+  Other: '&bClayTech - Others'
+  Tools: '&bClayTech - Tools'
+  OreThings: '&bClayTech - Ores'
+Items:
+  USEFUL_DIRT: '&6Useful Dirt'
+  USEFUL_DIRT_LORE:
+  - '&bA dirt from the Earth.'
+  - '&bIt has a lot of useful resources.'
+  ORE_DIAMOND: '&bOre Diamond'
+  MAGIC_CLAY: '&6Magic Clay'
+  MAGIC_CLAY_LORE:
+  - '&bThe basic item of ClayTech.'
+  CLAY_STICK: '&6Clay Stick'
+  CLAY_STICK_LORE:
+  - '&bThe basic item of ClayTech.'
+  ARTIFICIAL_GOLD_NUGGET: '&6Artificial Gold Nugget'
+  ARTIFICIAL_GOLD_INGOT_O: '&6Artificial Gold Ingot Ore'
+  ARTIFICIAL_GOLD_INGOT: '&6Artificial Gold Ingot'
+  ARTIFICIAL_GOLD_BLOCK: '&6Artificial Gold Block'
+  ARTIFICIAL_ENCHANTED_GOLDEN_APPLE: '&5&lArtificial Enchanted Golden Apple'
+  BLIND_CORE: '&7Blind Core'
+  BLIND_SWORD: '&7Blind Sword'
+  BLIND_SWORD_LORE:
+  - '&6Give the target player Blind V effect'
+  - '&6for 5 seconds after attack'
+  - <blindfive>
+  CONFUSION_CORE: '&7Nausea Core'
+  BLACK_ROCK_BLOCK: '&7Black Rock Block'
+  SLOWNESS_CORE: '&7Slowness Core'
+  POISON_EYE: '&7Poison Eye'
+  POISON_CORE: '&7Poison Core'
+  ADVANCED_BLIND_CORE: '&7Advanced Blind Core'
+  ADVANCED_CONFUSION_CORE: '&7Advanced Nausea Core'
+  ADVANCED_SLOWNESS_CORE: '&7Advanced Slowness Core'
+  ADVANCED_POISON_CORE: '&7Advanced Poison Core'
+  FOUR_BOW: '&7Four Bound Bow'
+  FOUR_BOW_LORE:
+  - '&6Give the target player 5 seconds of Blind V,'
+  - '&6Slowness V and Nausea V effect and '
+  - '&62 seconds of Poison III affect'
+  - <blindfive>
+  - <slownessfive>
+  - <confusionfive>
+  - <poisonthree>
+  POISON_SWORD: '&7Poison Sword'
+  POISON_SWORD_LORE:
+  - '&6Give the target player Poison III effect'
+  - '&6for 2 seconds after attack'
+  - <poisonthree>
+  ANTI_SLOWNESS_BOOTS: '&7Anti Slowness Boots'
+  ANTI_SLOWNESS_BOOTS_LORE:
+  - '&6Give the attacker player 2 seconds of'
+  - '&6Slowness III affect when you got a hit.'
+  - <antislownessthree>
+  COCOA_BEAN: '&eCocoa Bean'
+  COCOA_BEAN_LORE:
+  - '&6Yay!Yummy Cocoa Beans!'
+  - '&7Can craft chocolate and coffee etc.'
+  PLASTIC: '&ePlastic'
+  PLASTIC_LORE:
+  - '&6Let us keep the environment clean!'
+  - '&7Can craft drink bottles.'
+  RAW_CHICKEN_FOOT: '&eChicken Drumstick'
+  RAW_CHICKEN_FOOT_LORE:
+  - '&6Chicken Drumstick'
+  - '&7Uneatable,Please cook in the'
+  - '&7Food Cauldron before eating.'
+  FRIED_CHICKEN_FOOT: '&eFried Chicken Drumstick'
+  FRIED_CHICKEN_FOOT_LORE:
+  - '&6Fried Chicken Drumstick'
+  - '&7Increase 8 hunger value after eating.'
+  RAW_BREAD: '&eBread'
+  RAW_BREAD_LORE:
+  - '&6Bread'
+  - '&7Increase 6 hunger value after eating.'
+  DIRTY_TEA: '&eDirty Raw Tea'
+  DIRTY_TEA_LORE:
+  - '&6Dirty Raw Tea'
+  - '&7It''s dirty.Right click me to clean!'
+  - '&7Gain this by breaking grasses.'
+  TEA: '&eRaw Tea'
+  TEA_LORE:
+  - '&6Raw Tea'
+  - '&7Can craft tea powder.'
+  - '&7Gain this by cleaning the Dirty Raw Tea.'
+  TEA_POWDER: '&eTea Powder'
+  TEA_POWDER_LORE:
+  - '&6Tea Powder'
+  - '&7Can craft tea.'
+  LEMON_POWDER: '&eLemon Powder'
+  LEMON_POWDER_LORE:
+  - '&6Lemon Powder'
+  - '&7Can craft lemon juice.'
+  FLOUR: '&eFlour'
+  FLOUR_LORE:
+  - '&6Flour'
+  - '&7Can do a lot of things.'
+  - '&7May gain this by harvesting wheats.'
+  STARCH: '&eStarch'
+  STARCH_LORE:
+  - '&6Starch'
+  - '&7Can do a lot of things.'
+  - '&7May gain this by harvesting potatoes.'
+  SNAIL_HEALTHY: '&eSnail'
+  SNAIL_HEALTHY_LORE:
+  - '&6Snail'
+  - '&7Can craft snail rice noddles.'
+  - '&7May gain this by fishing.'
+  SNAIL_BAD: '&eBad Snail'
+  SNAIL_BAD_LORE:
+  - '&6Bad Snail'
+  - '&7Try to eat this!'
+  - '&7May gain this by fishing.'
+  HONEY_SWEET: '&eHoney Sweet'
+  HONEY_SWEET_LORE:
+  - '&6Honey Sweet'
+  - '&7It''s too sweet...'
+  - '&7Increase 8 hunger value after eating.'
+  GREEN_GRASS: '&2Green Grass'
+  GREEN_GRASS_LORE:
+  - '&7I am a sheep!'
+  - '&7If you don''t have enough food,'
+  - '&7Please try this!'
+  - '&7Increase 1 hunger value after eating'
+  ELEMENT_UNIT: '&eElement Unit'
+  ELEMENT_UNIT_LORE:
+  - '&6Element Unit'
+  - '&7Can cover elements!'
+  - <cantplace>
+  ELEMENT_OXYGEN: '&eElement O'
+  ELEMENT_OXYGEN_LORE:
+  - '&eElement O'
+  - '&74P + 5O2 =Light=2P2O5'
+  - '&7Gain this by putting three grass blocks'
+  - '&7in the Element Extracter.'
+  - <cantplace>
+  ELEMENT_CARBON: '&eElement C'
+  ELEMENT_CARBON_LORE:
+  - '&6Element C'
+  - '&7Can do a lot of things.'
+  - '&7Gain this by putting eight coals'
+  - '&7in the Element Extracter.'
+  - <cantplace>
+  ELEMENT_SILICON: '&eElement Si'
+  ELEMENT_SILICON_LORE:
+  - '&6Element Si'
+  - '&7Can craft Silicon Ingots.'
+  - '&7Gain this by putting ten blocks of sand'
+  - '&7in the Element Extracter.'
+  - <cantplace>
+  BLISTERING_CORE: '&eBlistering Core'
+  AUTHOR_HEAD: '&6Author''s Head'
+  STALIN_HEAD: '&bStalin''s Head'
+  MARX_HEAD: '&bMarx''s Head'
+  LANTERN: '&bLantern'
+  BLACK_CLOCK: '&bBlack Clock'
+  CLAY_COFFEE: '&eClay Coffee'
+  CLAY_COFFEE_LORE:
+  - '&eClay Coffee'
+  - '&7Increase 5 hunger value and gain three minutes'
+  - '&7of night vision effect after drinking.'
+  - <cantplace>
+  DRINK_BOTTLE: '&eDrink Bottle'
+  DRINK_BOTTLE_LORE:
+  - '&6Drink Bottle'
+  - '&7Can craft drink.'
+  - '&7No bottle no drink!'
+  - <cantplace>
+  DIRTY_DRINK_BOTTLE: '&eDirty Drink Bottle'
+  DIRTY_DRINK_BOTTLE_LORE:
+  - '&6Dirty Drink Bottle'
+  - '&7Right click to clean!'
+  - '&7Which boy likes to drink dirty drink?'
+  - <cantplace>
+  SPICY_CHICKEN_BURGER: '&eSpicy Chicken Burger'
+  SPICY_CHICKEN_BURGER_LORE:
+  - '&6Spicy Chicken Burger'
+  - '&7Increase 15 hunger value and gain'
+  - '&7twenty seconds of strength effect after eating.'
+  - '&7KFC?'
+  - <cantplace>
+  BABA_BURGER: '&eShit Burger'
+  BABA_BURGER_LORE:
+  - '&6Shit Burger'
+  - '&7Try this!'
+  - <cantplace>
+  LETTUSE: '&eLettuce'
+  LETTUSE_LORE:
+  - '&6Lettuce'
+  - '&7Increase 1 hunger value after eat'
+  - <cantplace>
+  LEMON: '&eLemon'
+  LEMON_LORE:
+  - '&6Lemon'
+  - '&7Increase 1 hunger value and gain 10 seconds'
+  - '&7of nausea IV affect after eating.'
+  - '&7Well.'
+  - '&7Gain this by breaking oak leaves.'
+  - <cantplace>
+  LEMON_POWDER_DRINK: '&eLemon Juice'
+  LEMON_POWDER_DRINK_LORE:
+  - '&6Lemon Juice'
+  - '&7Increase 6 hunger value and gain 10 seconds'
+  - '&7of nausea IV affect after drinking.'
+  - '&7Well.'
+  - <cantplace>
+  TEA_DRINK: '&eTea'
+  TEA_DRINK_LORE:
+  - '&6Tea'
+  - '&7Increase 6 hunger value and gain 30 seconds of'
+  - '&7resistance III affect after drinking.'
+  - <cantplace>
+  LEMON_TEA_DRINK: '&eLemon Tea'
+  LEMON_TEA_DRINK_LORE:
+  - '&6Lemon Tea'
+  - '&7Increase 12 hunger value and gain 60 seconds of'
+  - '&7resistance III affect after drinking.'
+  - '&7Coldder and Coldder!'
+  - <cantplace>
+  CHOCOLATE: '&eChocolate'
+  CHOCOLATE_LORE:
+  - '&6Chocolate'
+  - '&7Increase 15 hunger value and gain 30 seconds'
+  - '&7of resistance III affect after eating.'
+  - '&7Try some chocolate!'
+  - <cantplace>
+  LUOSI_RICE_NOODLE: '&eSnail Rice Noddle'
+  LUOSI_RICE_NOODLE_LORE:
+  - '&6Snail Rice Noddle'
+  - '&7Increase 12 hunger value and gain 30 seconds of'
+  - '&7resistance III affect after eating.'
+  - '&7Yummy!But it''s stinking..'
+  - <cantplace>
+  CLAY_FUSION_MACHINE: '&eClay Fusing Machine'
+  CLAY_FUSION_MACHINE_LORE:
+  - ''
+  - '&fCan craft some ClayTech items.'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &716 J/s'
+  CLAY_ELETRIC_CAULDRON: '&eElectric Cauldron'
+  CLAY_ELETRIC_CAULDRON_LORE:
+  - ''
+  - '&fCan craft some food of ClayTech.'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &732 J/s'
+  CLAY_FOOD_CHALKING_MACHINE: '&eFood Chalking Machine'
+  CLAY_FOOD_CHALKING_MACHINE_LORE:
+  - ''
+  - '&fCan craft some powder of ClayTech.'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &732 J/s'
+  CLAY_ELEMENT_EXTRACTER: '&eElement Extracter'
+  CLAY_ELEMENT_EXTRACTER_LORE:
+  - ''
+  - '&fCan extract elements.'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &764 J/s'
+  CLAY_ELECTRIC_STONE_CRUSHER: '&eElectric Stone Crusher'
+  CLAY_ELECTRIC_STONE_CRUSHER_LORE:
+  - ''
+  - '&fCan crush cobblestones into gravels.'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &716 J/s'
+  CLAY_ELECTRIC_COPIER: '&eClay Electric Copier'
+  CLAY_ELECTRIC_COPIER_LORE:
+  - ''
+  - '&fCan copy books'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &740 J/s'
+  COPYING_MODULE: '&bCopying Module'
+  COPYING_MODULE_LORE:
+  - '&6The module to copy books.'
+  INK_MODULE: '&bInk Module'
+  INK_MODULE_LORE:
+  - '&6There is a lot of ink in it.'
+  HIGHSPEED_RAILWAY: '&bHigh Speed Rail'
+  HIGHSPEED_RAILWAY_LORE:
+  - '&6The minecart which is running on this kind of rail'
+  - '&6Its max speed can be three times!'
+  ELECTRIC_MOTOR_8: '&cElectric Motor Fragment'
+  TNT_EXPLOSION_CREATER: '&6TNT Explosion Creater'
+  TNT_EXPLOSION_CREATER_LORE:
+  - '&bPut a lighted TNT on your location when right click'
+  - '&bWill affect the durability'
+  - '&bWon''t break containers.'
+  - '<durability>: &632'
+  - <cantinteract>
+  SWEET_POTATO: '&eSweet Potato'
+  SWEET_POTATO_LORE:
+  - '&6Sweet Potato'
+  - '&7Gain this by harvesting potatoes'
+  - <canteat>
+  COOKED_SWEET_POTATO: '&eRoasted Sweet Potato'
+  COOKED_SWEET_POTATO_LORE:
+  - '&6Roasted Sweet Potato'
+  - '&7Increase 6 hunger value after eating'
+  REINFORCED_ALLOY_PICKAXE: '&9Reinforced Alloy Pickaxe'
+  CLAY_FUSION_INGOT: '&b&lClay Fusion Ingot'
+  CLAY_ALLOY_INGOT: '&9&lClay Alloy Ingot'
+  CLAY_ALLOY_PICKAXE: '&9Clay Alloy Pickaxe'
+  CLAY_ALLOY_HELMET: '&9Clay Alloy Helmet'
+  CLAY_ALLOY_CHESTPLATE: '&9Clay Alloy Chestplate'
+  CLAY_ALLOY_LEGGINGS: '&9Clay Alloy Leggings'
+  CLAY_ALLOY_BOOTS: '&9Clay Alloy Boots'
+  CLAY_EXPERIMENT_TABLE_NORMAL: '&eExperiment Table(Basic)'
+  CLAY_EXPERIMENT_TABLE_NORMAL_LORE:
+  - ''
+  - '&fCan do some basic experiments'
+  - '&for crafting new matter.'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &780 J/s'
+  SILICON_INGOT: '&bSilicon Ingot'
+  ROCKET_LAUNCHER: '&6Rocket Launcher'
+  ROCKET: <rocket> (Tier I)
+  ROCKET_LORE:
+  - <fuel> &60&9/&a125
+  - '&c&lDon''t stack'
+  - <cantplace>
+  MOTOR_CORE: '&eMotor Core'
+  TEMPERATURE_RESISTANCE_OBSIDIAN: '&3Temperature Resistance Obsidian(Tier I)'
+  TEMPERATURE_RESISTANCE_OBSIDIAN_LORE:
+  - '&6This kind of obsidian has high-temperature stability.'
+  - <cantplace>
+  ROCKET_ENGINE_SHELL: '&6Rocket Engine Shell(Tier I)'
+  FUEL_TANK: '&6Fuel Tank'
+  FUEL_TANK_LORE:
+  - '&3Can cover fuel!'
+  - '&bCan save &610&b points of fuel'
+  - <cantplace>
+  ROCKET_ENGINE: '&9Rocket Engine(Tier I)'
+  ROCKET_ENGINE_LORE:
+  - <cantplace>
+  ROCKET_ANTENNA: '&9Rocket Antenna(Tier I)'
+  ROCKET_ANTENNA_LORE:
+  - '&3Used for transmitting informations on the orbit'
+  - <cantplace>
+  ROCKET_CPU: '&9Rocket CPU(Tier I)'
+  ROCKET_CPU_LORE:
+  - '&3Used for processing informations.'
+  ROCKET_CONTROL_CORE: '&9Rocket Control Core(Tier I)'
+  ROCKET_CONTROL_CORE_LORE:
+  - '&3The brain of a rocket.'
+  ROCKET_FUEL_TANK: '&9Rocket Fuel Tank(Tier I)'
+  ROCKET_FUEL_TANK_LORE:
+  - '&3Can cover fuel!'
+  - '&bCan save &6125&b points of fuel'
+  - <cantplace>
+  ROCKET_GLASS: '&9Rocket Glass(Tier I)'
+  ROCKET_GLASS_LORE:
+  - '&3This kind of glass is unusual.'
+  - '&3It can use in the space!'
+  - <cantplace>
+  ROCKET_STEEL_PLATE: '&9Rocket Steel Plate(Tier I)'
+  ROCKET_STEEL_PLATE_LORE:
+  - '&3It''s so ''steel''.'
+  CLAY_ROCKET_ASSEMBLING_MACHINE: '&9Rocket Assembling Machine'
+  CLAY_ROCKET_ASSEMBLING_MACHINE_LORE:
+  - ''
+  - '&3Can assemble rockets'
+  - '&4Are you ready for it?'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &7128 J/s'
+  CLAY_FUEL: '&6Clay Fuel'
+  MIXED_ROCKET_FUEL: '&6Mixed Rocket Fuel'
+  MIXED_ROCKET_FUEL_LORE:
+  - '&9Can inject into the rocket'
+  - '&9so you can go to the deeper universe'
+  - <cantplace>
+  CLAY_ROCKET_FUEL_GENERATOR: '&9Rocket Fuel Generator'
+  CLAY_ROCKET_FUEL_GENERATOR_LORE:
+  - ''
+  - '&3Can generate rocket fuel'
+  - '&4Are you ready for it?'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &764 J/s'
+  CLAY_ROCKET_FUEL_INJECTOR: '&9Rocket Fuel Injector'
+  CLAY_ROCKET_FUEL_INJECTOR_LORE:
+  - ''
+  - '&3Can inject rocket fuel'
+  - '&4Are you ready for it?'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &764 J/s'
+  OXYGEN_TANK: '&9Oxygen Tank'
+  OXYGEN_TANK_LORE:
+  - '&3A normal oxygen tank..'
+  - '&bCan save &65&b points of oxygen'
+  - <cantplace>
+  SPACESUIT_OXYGEN_TANK: '&9Spacesuit Oxygen Tank'
+  SPACESUIT_OXYGEN_TANK_LORE:
+  - '&3Used to craft the space suit'
+  - '&bCan save &640&b points of oxygen'
+  - <cantplace>
+  SPACESUIT_HELMET: '&9Spacesuit Helmet'
+  SPACESUIT_HELMET_LORE:
+  - <protectlevel> &61
+  - <oxygen> &60&9/&a40
+  SPACESUIT_CHESTPLATE: '&9Spacesuit Chestplate'
+  SPACESUIT_CHESTPLATE_LORE:
+  - <protectlevel> &61
+  - <oxygen> &60&9/&a40
+  SPACESUIT_LEGGINGS: '&9Spacesuit Leggings'
+  SPACESUIT_LEGGINGS_LORE:
+  - <protectlevel> &61
+  - <oxygen> &60&9/&a40
+  SPACESUIT_BOOTS: '&9Spacesuit Boots'
+  SPACESUIT_BOOTS_LORE:
+  - <protectlevel> &61
+  - <oxygen> &60&9/&a40
+  CLAY_SPACESUIT_OXYGEN_INJECTOR: '&9Spacesuit Oxygen Injector'
+  CLAY_SPACESUIT_OXYGEN_INJECTOR_LORE:
+  - ''
+  - '&3Can inject oxygen into the spacesuits'
+  - '&3During the operation, oxygen will be'
+  - '&3automatically extracted from the leaves above'
+  - '&3the machine and inject into the spacesuit'
+  - '&4Are you ready for it?'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &780 J/s'
+  KREEP_ROCK: '&9Kreep Rock'
+  KREEP_ROCK_LORE:
+  - '&3Rare on the moon'
+  - '&3Can upgrade rockets'
+  KREEP_INGOT: '&9Kreep Ingot'
+  KREEP_INGOT_LORE:
+  - '&3Rare on the moon'
+  - '&3Can upgrade rockets'
+  PLANET_BASE_SIGNER: '&9Planetary Base Marker'
+  PLANET_BASE_SIGNER_LORE:
+  - '&3Can sign your current location.'
+  - '&3When you teleport to the planet you signed'
+  - '&3It will teleport to here'
+  TUBE: '&9Tube'
+  OXYGEN_DISTRIBUTER: <oxygendistributer>(Tier I)
+  OXYGEN_DISTRIBUTER_LORE:
+  - '&3When you use this item,It will share its'
+  - '&3oxygen level to your spacesuits averagely.'
+  - <oxygen> &60&9/&a120
+  COPPER_ORE: '&6Copper Ore'
+  COPPER_ORE_LORE:
+  - '&3Put this in the middle slot of the'
+  - '&3Clay Crafting table to gain the dust.'
+  CLAY_FUSION_ORE: '&6Clay Fusion Ore'
+  CLAY_FUSION_ORE_LORE:
+  - '&3Put this in the middle slot of the'
+  - '&3Clay Crafting table to gain the ingot.'
+  TUNA_FISH: '&eTuna Fish'
+  TUNA_FISH_LORE:
+  - '&9Get this by fishing'
+  - '&6Increase 6 hunger value after eating'
+  CLAY_COBBLESTONE_GENERATOR: '&bCobblestone Generator'
+  CLAY_COBBLESTONE_GENERATOR_LORE:
+  - ''
+  - '&3Can automatically generate cobblestones'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &750 J/s'
+  CLAY_ELECTRIC_WATER_PUMP: '&bElectric Water Pump'
+  CLAY_ELECTRIC_WATER_PUMP_LORE:
+  - ''
+  - '&3Can pump water into the machine'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &726 J/s'
+  CLAY_WITHER_KILLER: '&eWither Killer'
+  CLAY_WITHER_KILLER_LORE:
+  - ''
+  - '&3Can kill withers automatically'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &75120 J per wither'
+  CLAY_AIR_LOCK_PLATE: '&eClay Airlock Plate'
+  CLAY_AIR_LOCK_PLATE_LORE:
+  - '&3Please place it on the ground'
+  - '&3Will automatically detect the front,'
+  - '&3rear, left, and right clay airlock blocks'
+  - '&3within a radius of 4'
+  - '&3Remember to align'
+  CLAY_AIR_LOCK_BLOCK: '&eClay Airlock Block'
+  CLAY_AIR_LOCK_BLOCK_LORE:
+  - '&3Use with clay airlock plate'
+  - '&3Active when the airlock plate is stepped on'
+Researches:
+  CLAYTECH_ARMORS_I: Basic Effect Armors
+  CLAYTECH_START: The start of ClayTech
+  CLAYTECH_ELECTRICMACHINE: Electric Machines I
+  CLAYTECH_ELEMENT_EXTRACTER_MACHINE: Element Extracter
+  CLAYTECH_DRINK_MAKINGS_I: Drink Makings I
+  CLAYTECH_DRINK_MAKINGS_II: Drink Makings II
+  CLAYTECH_DRINK_I: Drink!
+  CLAYTECH_ELEMENTS_I: Elements I
+  CLAYTECH_FOOD_MAKINGS_I: Food Makings I
+  CLAYTECH_FOOD_MAKINGS_II: Food Makings II
+  CLAYTECH_FRUIT_I: Fruit I
+  CLAYTECH_FOOD_I: Food I
+  CLAYTECH_FOOD_II: Food II
+  CLAYTECH_ARTIFICIAL_I: Artificial Items I
+  CLAYTECH_ARTIFICIAL_ORE_I: Artificial Items Ore I
+  CLAYTECH_ARTIFICIAL_ENCHANTED_GOLDEN_APPLE: Artificial Enchanted Golden Apple
+  CLAYTECH_BEFORE_ELEMENTS: Before Elements
+  CLAYTECH_BEFORE_AFFECT_WEAPONS: Before Affect Weapons
+  CLAYTECH_AFFECT_WEAPONS: Basic Affect Weapons
+  CLAYTECH_BEFORE_ADVANCED_AFFECT_WEAPONS: Before Advanced Affect Weapons
+  CLAYTECH_ADVANCED_AFFECT_WEAPONS: Advanced Affect Weapons
+  CLAYTECH_SKULL_I: Skull Craft
+  CLAYTECH_DECORATES_I: Decorates I
+  CLAYTECH_RAILWAY_I: Railways I
+  CLAYTECH_EFFECT_ITEM_I: Affect Items I
+  CLAYTECH_TOOLS_I: Tools I
+  CLAYTECH_OREINGOTS_I: Ore Ingots I
+  CLAYTECH_CLAY_ALLOY_ARMORS_I: Clay Alloy Armors
+  CLAYTECH_OREINGOTS_II: Ores on the moon
+  CLAYTECH_ROCKETS_I: Rocket (Tier I)
+  CLAYTECH_SPACESUIT_I: Spacesuit (Tier I)
+  CLAYTECH_UNIVERSE_MACHINE_I: Machines leading to the universe I
+  CLAYTECH_UNIVERSE_MACHINE_II: Machines leading to the universe II
+  CLAYTECH_BASE_I: Base I
+  CLAYTECH_FISH_I: Fish
+  CLAYTECH_COBBLESTONE_GENERATOR: Cobblestone Generator
+  CLAYTECH_ELECTRIC_WATER_PUMP: Electric Water Pump
+  CLAYTECH_COPIER: Electric Copier
+  CLAYTECH_WITHER_KILLER: Wither Killer
+  CLAYTECH_SPACETHINGS_I: Airlock blocks
+MachineRecipes:
+  CLAY_FUSION_MACHINE: '&a&oCraft this in Clay Fusing Machine'
+  CLAY_ELETRIC_CAULDRON: '&a&oCraft this in Electric Cauldron'
+  CLAY_FOOD_CHALKING_MACHINE: '&a&oCraft this in Food Chalking Machine'
+  CLAY_ELEMENT_EXTRACTER: '&a&oExtract this in Element Extracter'
+  CLAY_EXPERIMENT_TABLE_BASIC: '&a&oGet this by experimenting in the Experiment Table(Basic).'
+  CLAY_ROCKET_ASSEMBLING_MACHINE: '&a&oAssemble in the Rocket Assembling Machine.'
+  CLAY_ROCKET_FUEL_GENERATOR: '&a&oGenerate in the Rocket Fuel Generator.'
+  DIG_IN_THE_MOON: '&a&oDig in the moon.'
+  DIG_IN_NON_EARTH: '&a&oDig in other planets except earth.'
+  FISHING: '&a&oGet this by fishing'
+  HARVEST: '&a&oGet this by harvesting some crops'
+  PLUCKING: '&a&oGet this by plucking leaves'
+  CLEANING: '&a&oGet this by cleaning items'
+Machines:
+  SPLIT_LINE: ' '
+  CLAY_FUSION_MACHINE: '&bClay Fusing Machine'
+  CLAY_ELEMENT_EXTRACTER: '&bElement Extracter'
+  CLAY_FOOD_CAULDRON: '&bElectric Cauldron'
+  CLAY_FOOD_CHALKING_MACHINE: '&bFood Chalking Machine'
+  CLAY_ELECTRIC_STONE_CRUSHER: '&bElectric Stone Crusher'
+  CLAY_EXPERIMENTTABLE_NORMAL: '&bExperiment Table(Basic)'
+  CLAY_ROCKET_ASSEMBLING_MACHINE: '&bRocket Assembling Machine'
+  CLAY_ROCKET_FUEL_GENERATOR: '&bRocket Fuel Generator'
+  CLAY_ROCKET_FUEL_INJECTOR: '&bRocket Fuel Injector'
+  CLAY_SPACESUIT_OXYGEN_INJECTOR: '&bSpacesuit Oxygen Injector'
+  CLAY_COBBLESTONE_GENERATOR: '&bCobblestone Generator'
+  CLAY_ELECTRIC_WATER_PUMP: '&bElectric Water Pump'
+  CLAY_ELECTRIC_COPIER: '&eClay Electric Copier'
+  CLAY_WITHER_KILLER: '&eWither Killer'
+  CLAY_AIRLOCK_PLATE: '&eAirlock Controller'
+  ROCKET_LAUNCHER: '&9Rocket Launcher'
+  DISTANCE_TO_PLANET: '&6%ly% &9light years to the planet you on'
+  FUEL_TO_PLANET: '&9Require &6%fuel% &9points of fuel to reach'
+  PLANET_HABITABLE: '&9Habitable: &6%habitable%'
+  PLANET_GRAVITY: '&9Gravity: &6%gravity%&9G'
+  PLANET_HARM_LEVEL: '&9Harm Level: &9Level &6%harm_level%'
+  PREVIOUS_PAGE_CANT_USE: '&bPrevious Page(Can''t use)'
+  NEXT_PAGE_CANT_USE: '&bNext Page(Can''t use)'
+  PREVIOUS_PAGE: '&bPrevious Page'
+  NEXT_PAGE: '&bNext Page'
+  ELEMENT_UNIT_DOWN: '&ePut element units below ↓'
+  ROCKET_ASSEMBLING_BLUEPRINT: '&ePut blueprints below ↓(Tier I rocket doesn''t require
+    this)'
+  add: '&3Click to &a+1'
+  sub: '&3Click to &c-1'
+  wait-time: §3Current wait time &b%TIME%
+Planets:
+  Earth: '&aEarth(Overworld)'
+  Moon: '&eMoon'
+  Mars: '&6Mars'
+Resources:
+  CLAY_FUEL: Clay Fuel

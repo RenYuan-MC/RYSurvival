@@ -1,0 +1,4 @@
+# 该选项默认为false，若设置为true，则插件需要Vault作为前置
+need-cost: false
+# 若need-cost项设置为true，则请务必设置cost项，否则插件会报错
+# cost: 50.0

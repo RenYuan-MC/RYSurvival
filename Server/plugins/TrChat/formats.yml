@@ -1,0 +1,132 @@
+######################################################################
+#
+#  ___________      _________ .__            __
+#  \__    __________\_   ___ \|  |__ _____ _/  |_
+#  |    |  \_  __ /    \  \/|  |  \\__  \\   __\
+#  |    |   |  | \\     \___|   Y  \/ __ \|  |
+#  |____|   |__|   \______  |___|  (____  |__|
+#  \/     \/     \/  TrChat Formats
+#
+# Advanced Json format chat
+#
+# FORMAT-EXAMPLE:
+#   example-part: # id
+#     text: 'ABC' # display text
+#     hover: '%player_name%' # hover display
+#     command: '/tpa %player_name%' # click execute command
+#
+######################################################################
+
+NORMAL:
+  # Requirement to use this format, for example: 'player.isOp()'
+  - requirement: null
+
+    # Message part
+    msg:
+      # Default chat color
+      # (when the player doesn't have any permission of trchat.color.force-defaultcolor.<CODE>)
+      default-color: '7'
+      hover: '&7Date: %server_time_h:mm:ss a%'
+
+    # Custom Json Format Parts (Before Message Part)
+    parts:
+      world:
+        text: '&8[&3%player_world%&8]'
+        hover: |-
+          &r
+          &8▪ &7Location: &3%player_world%&7, &2%player_x%/%player_y%/%player_z%
+          &r
+          &6▶ &eClick here to send a teleport request
+          &r
+        command: '/tpa %player_name%'
+        # (Optional) Requirement to display this JSON part for the player
+        requirement: null
+      part-before-player:
+        text: ' '
+      player:
+        text: '&7%player_name%'
+        hover: |-
+          &r
+          &8▪ &7Ping: &3%player_ping% Ms
+          &8▪ &7Health: &c%player_health_rounded% ❤
+          &r
+          &6▶ &eClick to chat with me
+          &r
+        suggest: '/msg %player_name% '
+      part-before-msg:
+        text: '&7: '
+
+######################################################################
+#
+# PRIVATE FORMAT (SENDER)
+#
+######################################################################
+PRIVATE_SEND:
+  - requirement: null
+    parts:
+      sender:
+        text: '&8[&a%player_name% &7➦ %toplayer_name%&3&8] '
+    msg:
+      default-color: 'f'
+      hover: '&7Date: %server_time_h:mm:ss a%'
+
+######################################################################
+#
+# PRIVATE FORMAT (RECEIVER)
+#
+######################################################################
+PRIVATE_RECEIVE:
+  - requirement: null
+    parts:
+      receive:
+        text: '&8[&6%player_name% &7➥ &2%toplayer_name%&8] '
+    msg:
+      default-color: 'f'
+      hover: '&7Date: %server_time_h:mm:ss a%'
+
+######################################################################
+#
+# GLOBAL CHAT FORMAT
+#
+######################################################################
+GLOBAL:
+  - requirement: null
+    parts:
+      server:
+        text: '&8[&3%server_name%&8] '
+        hover: |-
+          &7Server &3%server_name%
+          &r
+          &7Version: &6%server_version%
+          &7Online: &a%server_online%&7/&2%server_max_players%
+          &7TPS: &b%server_tps%
+      player:
+        text: '&e%player_name%&8: '
+    msg:
+      default-color: 'f'
+      hover: '&7Date: %server_time_h:mm:ss a%'
+
+######################################################################
+#
+# STAFF CHANNEL CHAT
+#
+######################################################################
+STAFF:
+  - requirement: null
+    parts:
+      staff:
+        text: '&8[&cSTAFF&8] '
+        hover: |-
+          &7Server &3%server_name%
+          &r
+          &7Version: &6%server_version%
+          &7Online: &a%server_online%&7/&2%server_max_players%
+          &7TPS: &b%server_tps%
+          &7
+          &a▶ &2Click to connect to this server
+        command: '/server %server_name%'
+      player:
+        text: '&e%player_name%&8: '
+    msg:
+      default-color: 'a'
+      hover: '&7Date: %server_time_h:mm:ss a%'

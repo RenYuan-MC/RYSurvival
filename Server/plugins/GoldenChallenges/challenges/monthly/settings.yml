@@ -1,0 +1,5 @@
+settings:
+  cooldown:
+    update-at-new-cycle: true
+    update-custom-time: 2629743
+  challenges-amount: 3

@@ -1,0 +1,20 @@
+options:
+  auto-update: false
+  instability-update-interval: 10
+  enable-instability-effects: true
+  daxi-regen-update-interval: 10
+  enable-daxi-regen-effects: true
+  give-guide-on-first-join: true
+  polarizer-affinity-chance: 40
+  unstable-death-message: ' tried to become unstable. They succeeded.'
+  daxi-message-intro: You feel power flowing through your veins.
+  daxi-message-strength: Your strikes are now more effective.
+  daxi-message-absorption: You feel healthier.
+  daxi-message-fortitude: Enemy strikes are now less effective.
+  daxi-message-saturation: You won't need food for a while.
+  daxi-message-regeneration: You've acquired permanent self-healing.
+  already-have-daxi-effect: You already have this Daxi effect!
+  droppable-unstable-ingots: true
+  unstable-ingots-message-undroppable: Unstable Ingots are undroppable!
+guide:
+  recieve-on-first-join: true

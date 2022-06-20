@@ -1,0 +1,8 @@
+# ChestCommands main configuration file.
+# Documentation: https://filoghost.me/docs/chest-commands
+
+default-color:
+  name: '&f'
+  lore: '&7'
+anti-click-spam-delay: 200
+update-notifications: true

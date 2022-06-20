@@ -1,0 +1,19 @@
+name: 'Haste'
+tier: 'rare'
+description: 'Grants permanent %potion-effect% %potion-level% effect.'
+level:
+  min: 1
+  max: 3
+enchantment-table:
+  min-player-level: 30
+  chance: 15.0
+anvil:
+  merge-cost: '%level%'
+villagers:
+  chance: 15.0
+loot-generation:
+  chance: 15.0
+settings:
+  enchant-trigger-chance: '100.0'
+  effect-level: '%level%'
+  effect-duration: '%level% + 5.0'

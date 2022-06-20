@@ -1,15 +1,15 @@
 worlds:
-  world:
+  spawn:
     ==: MVWorld
     hidden: 'false'
-    alias: '&3生存世界'
+    alias: spawn
     color: WHITE
     style: NORMAL
-    pvp: 'true'
+    pvp: 'false'
     scale: '1.0'
     respawnWorld: ''
     allowWeather: 'true'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -33,23 +33,23 @@ worlds:
     keepSpawnInMemory: 'false'
     spawnLocation:
       ==: MVSpawnLocation
-      x: 0.0
-      y: 63.0
-      z: 18.0
+      x: 0.5
+      y: 106.0
+      z: 7.5
       pitch: 0.0
       yaw: 0.0
     autoLoad: 'true'
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NORMAL
-    seed: '7538773960564921924'
+    seed: '-4265283948009399314'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
   world_the_end:
     ==: MVWorld
     hidden: 'false'
-    alias: '&3末地'
+    alias: world_the_end
     color: WHITE
     style: NORMAL
     pvp: 'true'
@@ -77,11 +77,11 @@ worlds:
     adjustSpawn: 'true'
     portalForm: ALL
     gameMode: SURVIVAL
-    keepSpawnInMemory: 'false'
+    keepSpawnInMemory: 'true'
     spawnLocation:
       ==: MVSpawnLocation
       x: 0.0
-      y: 62.0
+      y: 61.0
       z: 0.0
       pitch: 0.0
       yaw: 0.0
@@ -89,14 +89,14 @@ worlds:
     bedRespawn: 'true'
     worldBlacklist: []
     environment: THE_END
-    seed: '7538773960564921924'
+    seed: '8376107343387992455'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
-  spawn:
+  world:
     ==: MVWorld
     hidden: 'false'
-    alias: '&3主城'
+    alias: world
     color: WHITE
     style: NORMAL
     pvp: 'true'
@@ -123,27 +123,27 @@ worlds:
     autoHeal: 'true'
     adjustSpawn: 'true'
     portalForm: ALL
-    gameMode: ADVENTURE
-    keepSpawnInMemory: 'false'
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'true'
     spawnLocation:
       ==: MVSpawnLocation
-      x: -30.0
-      y: 8.0
-      z: 46.0
+      x: -96.0
+      y: 63.0
+      z: 112.0
       pitch: 0.0
       yaw: 0.0
     autoLoad: 'true'
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NORMAL
-    seed: '-2259700092545745959'
+    seed: '-5456934116540583370'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
   world_nether:
     ==: MVWorld
     hidden: 'false'
-    alias: '&3下届'
+    alias: world_nether
     color: WHITE
     style: NORMAL
     pvp: 'true'
@@ -171,33 +171,33 @@ worlds:
     adjustSpawn: 'true'
     portalForm: ALL
     gameMode: SURVIVAL
-    keepSpawnInMemory: 'false'
+    keepSpawnInMemory: 'true'
     spawnLocation:
       ==: MVSpawnLocation
-      x: 28.0
-      y: 47.0
-      z: 3.0
+      x: -1.5
+      y: 66.0
+      z: 8.5
       pitch: 0.0
       yaw: 0.0
     autoLoad: 'true'
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NETHER
-    seed: '7538773960564921924'
+    seed: '8243351540124652184'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
-  otd_dungeon:
+  world_resources:
     ==: MVWorld
     hidden: 'false'
-    alias: '&3资源'
+    alias: world_resources
     color: WHITE
     style: NORMAL
     pvp: 'true'
     scale: '1.0'
     respawnWorld: ''
     allowWeather: 'true'
-    difficulty: HARD
+    difficulty: EASY
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -221,16 +221,16 @@ worlds:
     keepSpawnInMemory: 'false'
     spawnLocation:
       ==: MVSpawnLocation
-      x: 8.0
-      y: 64.0
-      z: -168.0
+      x: -160.0
+      y: 74.0
+      z: 144.0
       pitch: 0.0
       yaw: 0.0
     autoLoad: 'true'
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NORMAL
-    seed: '919862014356930365'
+    seed: '-3077475504478968751'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'

@@ -1,0 +1,9 @@
+core:
+  lang: cn
+  command-aliases: nexengine
+  prefix: NexEngine
+locale:
+  world-names:
+    world: 主世界
+    world_nether: 地狱
+    world_the_end: 末地

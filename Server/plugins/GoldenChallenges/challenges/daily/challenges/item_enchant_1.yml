@@ -1,0 +1,39 @@
+name: '%generator-name% &7Lv. %generator-level%'
+type: ITEM_ENCHANT
+icon:
+  material: DIAMOND_SWORD
+  name: '%name%'
+  lore: []
+  enchanted: true
+  item-flags:
+  - '*'
+generator:
+  names:
+  - '&b准备战斗'
+  levels:
+    minimum: 1
+    maximum: 2
+  objectives:
+    amount:
+      minimum: '1'
+      maximum: '2'
+      list:
+        '1':
+        - SHARPNESS
+        - FIRE_ASPECT
+        - SMITE
+    progress:
+      default:
+        minimum: 1 * %level%
+        maximum: 3 * %level%
+  affected-worlds:
+    minimum: '1'
+    maximum: '1'
+    list: {}
+  rewards:
+    minimum: '1'
+    maximum: '2'
+    list:
+      '1':
+      - reward1
+      - reward2

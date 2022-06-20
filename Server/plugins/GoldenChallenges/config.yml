@@ -1,0 +1,52 @@
+core:
+  command-aliases: goldenchallenges,challenges
+  lang: cn
+  prefix: GoldenChallenges
+data:
+  auto-save: 15
+  storage:
+    type: sqlite
+    username: none
+    password: none
+    host: none
+    database: none
+  purge:
+    enabled: false
+    days: 60
+  instant-save: false
+challenge-types:
+  DAILY: true
+  WEEKLY: true
+  MONTHLY: true
+gui:
+  title: 挑战列表
+  size: 27
+  content:
+    daily:
+      material: PLAYER_HEAD
+      name: '&e&l每日挑战'
+      lore:
+      - '&b可完成: &a%available-daily%'
+      skull-hash: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjA4NmE5NTBkMGEzMDNmNDhhYWIzYTVmMmY2YTQwMzNlODBiYWZjYWY3Y2I1YmRhMTM5N2I4M2U1MjlmNjNiNSJ9fX0=
+      slots: 10
+      type: DAILY
+    weekly:
+      material: PLAYER_HEAD
+      name: '&c&l每周挑战'
+      lore:
+      - '&b可完成: &a%available-weekly%'
+      skull-hash: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThkYjBhMWUxNTA1YTc3OTA1YjczNDgwNjdkZDJlYjRmODdmMWFhZjllNDg5ZjY3MGQ4MmQzYjdkNGM0YWU1MCJ9fX0=
+      slots: 13
+      type: WEEKLY
+    monthly:
+      material: PLAYER_HEAD
+      name: '&d&l每月挑战'
+      lore:
+      - '&b可完成: &a%available-monthly%'
+      skull-hash: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzY3N2U2NWRmMjk5OWQwMzE5ZmRiY2JhM2MwOTJmMTYwYjk5YjRiNDY3OTgzYWY4MWZjZmExZWI0NWQzOWEzIn19fQ==
+      slots: 16
+      type: MONTHLY
+settings:
+  objectives:
+    kill-entity:
+      count-spawner-mobs: false

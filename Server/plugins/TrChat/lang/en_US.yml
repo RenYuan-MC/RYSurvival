@@ -1,0 +1,155 @@
+PLUGIN:
+  LOADED:
+    - ''
+    - '&3Tr&bChat &7loading...'
+    - ''
+  LOADED-CHAT-FORMATS: '&8[&3Tr&bChat&8] &bCHAT &8| &3Loaded chat formats... &8[{0} Ms]'
+  LOADED-FUNCTIONS: '&8[&3Tr&bChat&8] &bCHAT &8| &3Loaded chat functions... &8[{0} Ms]'
+  LOADED-FILTER-LOCAL: '&8[&3Tr&bChat&8] &aFILTER &8| &3Loaded local filter words &b{0} &3.'
+  LOADED-FILTER-CLOUD: '&8[&3Tr&bChat&8] &aFILTER &8| &3Loaded cloud filter words &a{0} &3. &8[{1} - {2}]'
+  RELOADED: '&8[&3Tr&bChat&8] &7Settings changed, reloaded...'
+  FAILED-LOAD-FILTER-CLOUD: '&8[&3Tr&bChat&8] &8Unable to update filter thesaurus from the cloud...'
+  REGISTERED-BUNGEE: '&8[&3Tr&bChat&8] &6Hooked &eBungee &6chat support.'
+  NONE-BUNGEE: '&8[&3Tr&bChat&8] &7No Bungee support currently'
+  DEPEND:
+    DOWNLOAD: '&8[&3Tr&bChat&8] &eDEPEND &8| &7Downloading depend plugin &f{0} &7...'
+    INSTALL: '&8[&3Tr&bChat&8] &eDEPEND &8| &7Successfullly downloaded &3{0} &7, restarting the server...'
+    INSTALL-FAILED: '&8[&3Tr&bChat&8] &eDEPEND &8| &7Failed to install depend plugin &c{0} &7...'
+  ENABLED:
+    - '&8[&3Tr&bChat&8] &bINFO &8| &3Loaded. TrChat &av{0} &3has been enabled.'
+  DISABLED:
+    - '&8[&3Tr&bChat&8] &bINFO &8| &7Disabled. Thanks for using :)'
+  COMMAND-TITLE: '&3「&8&m--------------------------------------------------&3」'
+  UPDATE-NOTIFY:
+    LATEST: '&8[&3Tr&bChat&8] &2You''re running the latest version of &3TrChat&a.'
+    DEV: '&8[&3Tr&bChat&8] &6You''re running the development version of &3TrChat&6.'
+    TOO-OLD:
+      - "&8--------------------------------------------------"
+      - "&r"
+      - "&8# &4The version of &cTrChat &4you are running is too old"
+      - "&8# &4Please update to the latest version in time!"
+      - "&8# &r"
+      - "&8# &4SpigotMC: &chttps://www.spigotmc.org/members/435323"
+      - "&8# &r"
+      - "&8# &r"
+      - "&8# &4The server will start in &c&l{0} secs &4..."
+      - "&r"
+      - "&8--------------------------------------------------"
+    HEADER:
+      - ''
+      - '§3--------------------------------------------------'
+      - '&7▪ &3TrChat &aUpdate Notify &8{0} &7➦ &8{1}'
+    FOOTER:
+      - '&7▪ &2Github: &a&nhttps://github.com/Arasple/TrChat/releases/latest'
+      - '§3--------------------------------------------------'
+
+  DEBUG:
+    'ON':
+      - ==: TITLE
+        title: '&7&lDEBUG MODE'
+        subtitle: '&3&lis now &a&lEnabled&3&l.'
+      - ==: SOUND
+        sound: 'BLOCK_NOTE_BLOCK_PLING-1-0'
+    'OFF':
+      - ==: TITLE
+        title: '&7&lDEBUG MODE'
+        subtitle: '&3&lis now &c&lDisabled&3&l.'
+      - ==: SOUND
+        sound: 'BLOCK_ANVIL_LAND-1-0'
+
+ERROR:
+  VERSION: '&8[&3Tr&bMenu&8] &cERROR &8| &7Plugin version error. Please re-download the plugin.'
+  JS:
+    - '&8[&3Tr&bMenu&8] &cERROR &8| &cExpression error: &2{0}'
+    - '&6{1}'
+    - '&8{2}'
+
+GENERAL:
+  TOO-LONG: '&8[&3Tr&bChat&8] &7Message is too long. &8[&6{0}&8/&2{1}&8]'
+  TOO-SIMILAR: '&8[&3Tr&bChat&8] &7Please do not repeat your message.'
+  NO-PERMISSION: '&8[&3Tr&bChat&8] &7You do not have enough permission to do this.'
+  NOT-PLAYER: '&8[&3Tr&bChat&8] &cYou must be a player to do this.'
+
+COOLDOWNS:
+  CHAT:
+    - ==: ACTION
+      text: '&7&lYou need to wait after &6{0} secs &7&lbefore chatting again.'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-2'
+  ITEM-SHOW:
+    - ==: ACTION
+      text: '&3&lYou need to wait after &a{0} secs &3&lbefore showing your item again.'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+
+COMMAND-CONTROLLER:
+  DENY: '&c&lYou can not use this command.'
+
+MENTIONS:
+  NOTIFY:
+    - ==: ACTION
+      text: '&d&l&k|&r &3&lPlayer &a&l{0} &3&lmentioned you in the chat &d&l&k|'
+    - ==: SOUND
+      sound: 'BLOCK_NOTE_BLOCK_PLING-1-0'
+
+PRIVATE-MESSAGE:
+  SPY-FORMAT: '&8[&3Spy&8] &6{0} &2-> &3{1}&f: &7{2}'
+  SPY:
+    'ON':
+      - ==: ACTION
+        text: '&c&l&k|&r &a&lSpy Mode Enabled &c&l&k|'
+      - ==: SOUND
+        sound: 'BLOCK_NOTE_BLOCK_PLING-1-0'
+    'OFF':
+      - ==: ACTION
+        text: '&c&l&k|&r &c&lSpy Mode Disabled &c&l&k|'
+      - ==: SOUND
+        sound: 'BLOCK_ANVIL_LAND-1-0'
+  NOT-PLAYER: '&8[&3Tr&bChat&8] &cYou must be a player to do this'
+  NO-PLAYER:
+    - ==: ACTION
+      text: '&3&lPlayer name required'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+  NO-MESSAGE:
+    - ==: ACTION
+      text: '&7&lChat context required'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+  NOT-EXIST: '&8[&3Tr&bChat&8] &7The target player is not online or does not exist.'
+  RECEIVE:
+    - ==: ACTION
+      text: '&8[ &a! &8] &3You''ve received a message from &a{0} &3.'
+    - ==: SOUND
+      sound: 'BLOCK_NOTE_BLOCK_PLING-1-2'
+
+GLOBAL-MESSAGE:
+  NOT-PLAYER: '&8[&3Tr&bChat&8] &cYou must be a player to do this.'
+  NOT-ENABLE: '&8[&3Tr&bChat&8] &7Unabled to connect &eBungeeCord &7.'
+  NO-MESSAGE:
+    - ==: ACTION
+      text: '&7&lMessage required'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+
+STAFF-CHANNEL:
+  NOT-PLAYER: '&8[&3Tr&bChat&8] &cYou must be a player to do this.'
+  NO-MESSAGE:
+    - ==: ACTION
+      text: '&7&lMessage required'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+  JOIN:
+    - ==: ACTION
+      text: '&a&lStaff chat mode enabled.'
+    - ==: TEXT
+      text: '&8[&3Tr&bChat&8] &3You''ve been into the staff chat channel, Re-type the command to exit'
+    - ==: SOUND
+      sound: 'BLOCK_NOTE_BLOCK_PLING-1-0'
+  QUIT:
+    - ==: ACTION
+      text: '&3&lStaff chat mode disabled.'
+    - ==: TEXT
+      text: '&8[&3Tr&bChat&8] &7You''ve left the staff chat channel...'
+    - ==: SOUND
+      sound: 'BLOCK_ANVIL_LAND-1-0'

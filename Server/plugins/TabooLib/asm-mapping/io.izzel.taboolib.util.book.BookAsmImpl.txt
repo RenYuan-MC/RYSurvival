@@ -1,0 +1,16 @@
+net/minecraft/server/v1_16_R1/IChatBaseComponent$ChatSerializer -> net/minecraft/server/v1_16_R3/IChatBaseComponent$ChatSerializer
+net/minecraft/server/v1_16_R1/IChatBaseComponent                -> net/minecraft/server/v1_16_R3/IChatBaseComponent
+net/minecraft/server/v1_16_R1/IChatBaseComponent$ChatSerializer -> net/minecraft/server/v1_16_R3/IChatBaseComponent$ChatSerializer
+net/minecraft/server/v1_12_R1/IChatBaseComponent$ChatSerializer -> net/minecraft/server/v1_16_R3/IChatBaseComponent$ChatSerializer
+net/minecraft/server/v1_12_R1/IChatBaseComponent                -> net/minecraft/server/v1_16_R3/IChatBaseComponent
+net/minecraft/server/v1_12_R1/IChatBaseComponent$ChatSerializer -> net/minecraft/server/v1_16_R3/IChatBaseComponent$ChatSerializer
+org/bukkit/craftbukkit/v1_16_R1/inventory/CraftMetaBook         -> org/bukkit/craftbukkit/v1_16_R3/inventory/CraftMetaBook
+org/bukkit/craftbukkit/v1_16_R1/inventory/CraftMetaBook         -> org/bukkit/craftbukkit/v1_16_R3/inventory/CraftMetaBook
+org/bukkit/craftbukkit/v1_16_R1/inventory/CraftMetaBook         -> org/bukkit/craftbukkit/v1_16_R3/inventory/CraftMetaBook
+org/bukkit/craftbukkit/v1_16_R1/inventory/CraftMetaBook         -> org/bukkit/craftbukkit/v1_16_R3/inventory/CraftMetaBook
+net/minecraft/server/v1_16_R1/IChatBaseComponent$ChatSerializer -> net/minecraft/server/v1_16_R3/IChatBaseComponent$ChatSerializer
+net/minecraft/server/v1_16_R1/IChatMutableComponent             -> net/minecraft/server/v1_16_R3/IChatMutableComponent
+org/bukkit/craftbukkit/v1_12_R1/inventory/CraftMetaBook         -> org/bukkit/craftbukkit/v1_16_R3/inventory/CraftMetaBook
+org/bukkit/craftbukkit/v1_12_R1/inventory/CraftMetaBook         -> org/bukkit/craftbukkit/v1_16_R3/inventory/CraftMetaBook
+net/minecraft/server/v1_12_R1/IChatBaseComponent$ChatSerializer -> net/minecraft/server/v1_16_R3/IChatBaseComponent$ChatSerializer
+net/minecraft/server/v1_12_R1/IChatBaseComponent                -> net/minecraft/server/v1_16_R3/IChatBaseComponent

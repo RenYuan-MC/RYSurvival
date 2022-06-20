@@ -1,0 +1,3 @@
+net/minecraft/server/v1_8_R3/PathfinderGoal -> net/minecraft/server/v1_16_R3/PathfinderGoal
+net/minecraft/server/v1_8_R3/PathfinderGoal -> net/minecraft/server/v1_16_R3/PathfinderGoal
+net/minecraft/server/v1_8_R3/PathfinderGoal -> net/minecraft/server/v1_16_R3/PathfinderGoal

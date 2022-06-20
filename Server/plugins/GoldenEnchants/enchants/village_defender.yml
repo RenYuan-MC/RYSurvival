@@ -1,0 +1,21 @@
+name: 'Village Defender'
+tier: 'common'
+description: '%chance%% chance to inflict %damage% more damage on Pillagers.'
+level:
+  min: 1
+  max: 4
+enchantment-table:
+  min-player-level: 30
+  chance: 15.0
+anvil:
+  merge-cost: '%level%'
+villagers:
+  chance: 15.0
+loot-generation:
+  chance: 15.0
+settings:
+  enchant-trigger-chance: '100.0'
+  damage-add:
+    as-multiplier: false
+    formula: '0.75 * %level%'
+  effect-particle: 'VILLAGER_ANGRY'

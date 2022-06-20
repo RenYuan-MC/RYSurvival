@@ -1,0 +1,55 @@
+skillData:
+  2cbd024d-58dd-3120-beed-4a509bd4fb63:
+    name: F_XH
+    skills:
+      SORCERY: '1:0.0'
+      FORGING: '1:0.0'
+      ARCHERY: '1:0.0'
+      EXCAVATION: '1:51.5'
+      AGILITY: '3:30.0'
+      FORAGING: '1:29.8'
+      FISHING: '1:0.0'
+      DEFENSE: '1:21.5'
+      ENDURANCE: 3:497.0
+      FARMING: '1:0.0'
+      ALCHEMY: '1:0.0'
+      HEALING: '1:0.0'
+      MINING: '1:55.8'
+      ENCHANTING: '1:0.0'
+      FIGHTING: '1:0.0'
+  c0b6656c-97bd-385d-b6ee-c662bf8dbfec:
+    name: DOALS2
+    skills:
+      AGILITY: '1:10.0'
+      DEFENSE: '1:0.0'
+      SORCERY: '1:0.0'
+      FARMING: '1:0.0'
+      FORGING: '1:0.0'
+      ENCHANTING: '1:0.0'
+      ALCHEMY: '1:0.0'
+      FISHING: '1:0.0'
+      ENDURANCE: '1:21.0'
+      FORAGING: '1:0.0'
+      HEALING: '1:0.0'
+      MINING: '1:0.0'
+      EXCAVATION: '1:0.0'
+      ARCHERY: '1:0.0'
+      FIGHTING: '1:0.0'
+  abba84a1-b36a-3187-aa94-0fc726d45098:
+    name: RENaa
+    skills:
+      MINING: '2:42.6'
+      DEFENSE: '1:0.0'
+      AGILITY: '1:24.0'
+      FORGING: '1:0.0'
+      FARMING: '1:0.0'
+      ARCHERY: '1:0.0'
+      ENDURANCE: '2:39.0'
+      ALCHEMY: '1:0.0'
+      HEALING: '1:0.0'
+      SORCERY: '1:0.0'
+      FORAGING: '1:0.0'
+      ENCHANTING: '1:0.0'
+      EXCAVATION: '1:3.0'
+      FISHING: '1:0.0'
+      FIGHTING: '1:0.0'

@@ -1,0 +1,39 @@
+name: '%generator-name% &7Lv. %generator-level%'
+type: ENTITY_KILL
+icon:
+  material: ZOMBIE_HEAD
+  name: '%name%'
+  lore: []
+  enchanted: true
+  item-flags:
+  - '*'
+generator:
+  names:
+  - '&3怪物猎人'
+  levels:
+    minimum: 1
+    maximum: 6
+  objectives:
+    amount:
+      minimum: '1'
+      maximum: '3'
+      list:
+        '1':
+        - ZOMBIE
+        - SKELETON
+        - SPIDER
+    progress:
+      default:
+        minimum: 6 * %level%
+        maximum: 9 * %level%
+  affected-worlds:
+    minimum: '1'
+    maximum: '1'
+    list: {}
+  rewards:
+    minimum: '1'
+    maximum: '2'
+    list:
+      '1':
+      - reward1
+      - reward2

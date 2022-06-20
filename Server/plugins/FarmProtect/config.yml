@@ -1,0 +1,18 @@
+# ================= [FarmProtect] ================== #
+
+# Copyright 2012 Licence LinCraft(?)
+# http://dev.bukkit.org/licenses/2049-lin-craft-license/
+
+# Protect from explosions?
+ExplosionProtect: true
+
+# Multi world support?
+MultiWorld: false
+Worlds:
+   - world
+   - world_nether
+
+# Check for updates?
+UpdateCheck: false
+# AutoUpdate? If update is avaliable download it ready for the next startup
+AutoUpdate: false

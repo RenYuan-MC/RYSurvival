@@ -1,0 +1,47 @@
+######################################################################
+#
+#  ___________      _________ .__            __
+#  \__    __________\_   ___ \|  |__ _____ _/  |_
+#  |    |  \_  __ /    \  \/|  |  \\__  \\   __\
+#  |    |   |  | \\     \___|   Y  \/ __ \|  |
+#  |____|   |__|   \______  |___|  (____  |__|
+#  \/     \/     \/  TrChat 1.7
+#                                ------ by Arasple
+#
+######################################################################
+
+# Locale Priority
+LOCALE-PRIORITY:
+  - zh_CN
+  - en_US
+  - zh_TW
+
+# General options
+GENERAL:
+  DEBUG: false
+  DISABLED-WORLDS: [PUT_YOUR_WORLD_NAME_HERE, ANOTHER_WORLD]
+  LOG: '[{0}] {1}: {2}'
+  DEPEND-EXPANSIONS:
+    - 'player'
+    - 'server'
+    - 'vault'
+    - 'multiverse'
+
+# Chat Color
+# Perm Node: trchat.color.<CODE>
+#
+# Enable options
+CHAT-COLOR:
+  CHAT: true
+  SIGN: true
+  ANVIL: true
+  BOOK: true
+
+# Chat Control
+CHAT-CONTROL:
+  # Anti similar text repeat (Maximum similarity 0-1)
+  ANTI-REPEAT: 0.85
+  # Chat cooldown
+  COOLDOWN: 2.0
+  # Chat text length limit
+  LENGTH-LIMIT: 100

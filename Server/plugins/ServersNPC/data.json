@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "hasGlow": false,
+    "hasToggleName": false,
+    "hasLookAt": true,
+    "hasMirror": false,
+    "isReversePath": false,
+    "hasToggleHolo": true,
+    "save": false,
+    "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYyMzQwOTAxNTQ3MCwKICAicHJvZmlsZUlkIiA6ICI2MDU5NGE5NmU5M2M0ODE1ODBhZGNhMTVjMDlmNzllZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJGX1hIIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzljMDE4YzFhMzYzYzEwNDA0NzIxMmMzZTc0ZmIzN2ZkMTUzZWRmMWY3MmE4MzUyODEwYWQ4MGQ4NzllMjg4M2UiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ\u003d\u003d",
+    "signature": "Qo9K76BHDYvLFX7YQYTXZuqgfqLLSUtQuj26xDnM1/UAltptzQrUuLeBL7lm3Rcy+NMKQp+UYmAlY93ULBI/aCVKW2hca8EBJMPOFDu3MI7m+o63h/VV3VFco5RZ638bffY0/ltVBLKibKe49M5VE+9+ZXwBDT4o2G68WtSmEN+/+XHJ3kOASQqSqtOOYM56/AmDgBBRmasUcQgJvDvZnXjbgVAEz5T5Warh/AwI5LM0OQNplYw2dRM0D7vV/1O07HIpucGwH8FhQ2E1dLzkqS5mpmgbLklSZInc7+a/oBjiBMeQXymXNzpXs6fi9fbx8PYe9QfFgF3z7/QHx1ff/VOP8GuXBQEcTBz+Wu98ELJW+IQmRK6wOy4aAdzo4pDdWZrzIPEVZhTzZrL5fZjwii5iVUwF/ieLSrstNR/OT3A7sSo4ffOQpBnDpMiVdqUVwx/COpC3Ld2B6Tzi0fQ7SseSa9+JIp8pe3NrtvONddmJs5WDKMfurlIHrab0mFhNcEcaC3GfnZCsUVz4FcPDiSvqmN5uCZORXnxfFZ+F97eu+3NWYnEdsODi+2qXAqU+qDPe5YPtAxAj7sDA/EC9uXLQM/kj1xbJ3BBqTI8WM29Wx38gn+MzaOAu09OvPsY8VuQmGekAkPB1QUDibYuSysf0floVY/pXdJdIiqqbdRc\u003d",
+    "lines": "生存世界传送",
+    "glowName": "WHITE",
+    "location": {
+      "world": "spawn",
+      "x": -18.5,
+      "y": 105.0,
+      "z": 77.5,
+      "yaw": -39.151157,
+      "pitch": 17.549908
+    },
+    "npcType": "PLAYER",
+    "actions": [
+      "CMD:res tp world"
+    ],
+    "npcEquipments": {},
+    "customizationMap": {}
+  },
+  {
+    "id": 2,
+    "hasGlow": false,
+    "hasToggleName": false,
+    "hasLookAt": true,
+    "hasMirror": false,
+    "isReversePath": false,
+    "hasToggleHolo": true,
+    "save": false,
+    "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYyMzQxNzEyMTcyNCwKICAicHJvZmlsZUlkIiA6ICI4OGZkNjhlZjdlNDI0ZjQ2YWMyMTEwODhkYmEyNWZhMSIsCiAgInByb2ZpbGVOYW1lIiA6ICJtZTB3c2t5IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzgxNjhiNDkwZWFhMjY3MzcxMzNiNDllOGYxNzA1NmIyMGYyOTEyODdiOTFhY2RhMTRjN2Y4ZDU1OTM0NTI0OTciCiAgICB9CiAgfQp9",
+    "signature": "Trc5tZ1N5uMofbuBS7I93YAe4gdR5OIXa33pM76TOI6KkAF+XxStndGdpa/7bydhCV4FJGIoB1u6ZryeP8/HkxDLgCMkVbaxiGvnTIci3sTnrmd0q26D69wBA9vaTWZimw1buavm0zgMwWzQEnv8zkfaPhru2ccQ414RuEtZcBbjw06uvv2DqmBduzZXQJJX2BdnViRxqwbBY2NF+Yaej2YJSm7ZoL/p50sQ4se6XjhlqN5gk5qv57s8t65w+26a20EmgT0nuaVD+d2raoouF2uhp/5OhF8SCDh+qPYAg1yOrHlYaumF6ENOvNIAHEbTh0jBOzyA2WxwyCwnc3TYkYMLVno2Hxq3lLrPnnU0x3tzbUhOWL9v9QQNngfri1DRyzzrspNQh9HHAtYf139dbYzh8llmNn2yD6pUuVrvOEcdSyVQFzMI4hE1+XcCu9ahFsBKTtOTNyXZyZtz84rR0ZB+xrvbXvUavtvEy8Zk5795Es57TEt6wkOsSHchVMCFydEcgCvXdY0w0NdqZbTYE3C/JvlTAX76hhAZtOdh6VWwXhq/MYwdEJ3awYgxHb6S6F21eLW9CF5BvcGl5gfvCRm0O11qOiSAWLqEOXKiZm2UM1ag04KvH2/8iDRG/kb6Ke4h4L6SJxVm9hgZHBsoe8vdattoldPjUHHrp7h/XyI\u003d",
+    "lines": "地狱世界传送",
+    "glowName": "WHITE",
+    "location": {
+      "world": "spawn",
+      "x": -8.5,
+      "y": 105.0,
+      "z": 77.5,
+      "yaw": 50.699852,
+      "pitch": 1.6499625
+    },
+    "npcType": "PLAYER",
+    "actions": [
+      "CMD:res tp nether"
+    ],
+    "npcEquipments": {},
+    "customizationMap": {}
+  },
+  {
+    "id": 3,
+    "hasGlow": false,
+    "hasToggleName": false,
+    "hasLookAt": true,
+    "hasMirror": false,
+    "isReversePath": false,
+    "hasToggleHolo": true,
+    "save": false,
+    "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYyMzQxNzU3Njg2MiwKICAicHJvZmlsZUlkIiA6ICJlMDY4ODIxMzQyZDA0NDBjOWI1MjJmMmM2MjJlNmE2NCIsCiAgInByb2ZpbGVOYW1lIiA6ICJJdnl3b29kbGFuZGVyIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2VmMjQ4MDA1ZmI4ZTViMTkwN2RlMTg0MmM2MDZlZmU0YWU5NjZiYTdmMGZiYWJjZmUyY2E4MDkxMmYxYzE5ZjEiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ\u003d\u003d",
+    "signature": "WTTKbbhIyiux0CG8ivKTDiPVlTVJ8lJImuBbsB6ghZNIoXd8PXCji48/z7AJYWveZtiCucK1wAh0+aymiP8pHutgq/pd5mr/5yszUa3re7/DS6kUzZlFG+85AR7InABxMIYZUPP9FM3amOf/YPZ5gA4vciW+U08S4UNa9H1/LpnwiU/t1Tx0XlLBzsCotzj2QgBFviqL5c3ngl2Hb1ICbiyD6NaQKOKwmtttQIYqRHb+/I+a9/4y0+JefnkFtcG/LcHsNYavLYhBoJd1bMmg8eMxzayPuvjtkdS6Qli/wSGWuoJEx6/YPdKHNdiP44gBhzxTcAdPqWI/WgBHmWcysed3jYseGaKCTWjXeQpvJzWoEonE++wW8xC2DK4soFbwQqwCfnzptJjViewT5xpxpvKz2CJP8WZyXybwexANzNhCY6uxuG15Sfvvyq4e4hzcy0Oftg5wwMNMEU9RG69qsTVidrzfutt3b9xU9JMWn48KToBuXyX0ALXut4h8boX0wEcrGxWOsXKRknYZrW6Z4+hGE5TMK+xQWF92UG7oiPZ+QHUVG9arIdl30uLjC2ZAoj8XyvIJKZk7qI1erAanKjtGiKqVvhF1lAE4fj9sLn8iF7w82mRf0XMZSGeWIJisWXccrvkvPJop9kAU2RGlwfJ+PGohwNRLfK8JBCPr6rk\u003d",
+    "lines": "末地世界传送",
+    "glowName": "WHITE",
+    "location": {
+      "world": "spawn",
+      "x": -18.5,
+      "y": 105.0,
+      "z": 87.5,
+      "yaw": -128.40007,
+      "pitch": -0.30002475
+    },
+    "npcType": "PLAYER",
+    "actions": [
+      "CMD:res tp theend"
+    ],
+    "npcEquipments": {},
+    "customizationMap": {}
+  },
+  {
+    "id": 4,
+    "hasGlow": false,
+    "hasToggleName": false,
+    "hasLookAt": true,
+    "hasMirror": false,
+    "isReversePath": false,
+    "hasToggleHolo": true,
+    "save": false,
+    "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYyMzQxNzk3OTMzNCwKICAicHJvZmlsZUlkIiA6ICJhZDRmZWFlYjU1NjM0Y2MzOGU2OTUyMWEyM2U5YTRkNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJLaW5nTG9vcDE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2RmNzBhMmEwMDk0NGMzNzYwMDk0ZDgyZjE2NmY4ZTkzMGMyM2FkZTMxNjVhODY4YmI0ODMzNWI3MGRkYzMxODAiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ\u003d\u003d",
+    "signature": "eFvrE3TroF07hgslOZKQM9w6XEhGVH0e0TIPz4a42J3fit9znRssy4+XRP4WRTHBQisSQhn0dQYKK8XpXkRbUHD57skzQcz65nXTAW9vD52aegnxut34GT4+JbHS/iEU8p4Cs8o+Qja8ruTVbZd83l5pMGy6g6FTqrq2l0DYYeOt1BhA3J+bveMQJYu2yHoSA+q8Tob0OiTqtLCkjxZCgFF0O818JMUkWn4ugJyKnTxBbg0NJv8q0FN9UOElqmjLpPc5XVp/TkPum9rNoJiNi/6RqXPwJIjxZG0okw54zTz53N5cAvKAH9jX9T4sVjzXy3sUsu1T6i3aCdcD45wucysUaDugtC7k/qQkEn8+sOSDdizmEpxBoJbwTUKMBrzEN0PM2/lH5VoRujg/mUOA7iasxf7+SN04QR8FuitN4oTK9RPAou7lPrAW6XU4qnVmjFOEGJZD7QCzVYCTxBM7XarnnIcEH63q7WFjD9jDgsYFOVygoH4h2K42aGt93sCpkY2ahd47sgfjZl3p15LZKDK1q5VPup4UyhktI7lZnmkm5mERmRECrhJr2BpCWp5gNueOo7DJdyWwka8hmr4kL9/b9bsyT+hz9nSxFFgUOaCwXNC8GMjPPuf/nAHKyLBYz3BN/kt+Wmj5vrQDjPpMoHustIhlBnDc0hDjSyAWgog\u003d",
+    "lines": "资源世界传送",
+    "glowName": "WHITE",
+    "location": {
+      "world": "spawn",
+      "x": -8.5,
+      "y": 105.0,
+      "z": 87.5,
+      "yaw": 129.4498,
+      "pitch": 17.85
+    },
+    "npcType": "PLAYER",
+    "actions": [
+      "CMD:res tp resources"
+    ],
+    "npcEquipments": {},
+    "customizationMap": {}
+  },
+  {
+    "id": 5,
+    "hasGlow": false,
+    "hasToggleName": false,
+    "hasLookAt": true,
+    "hasMirror": false,
+    "isReversePath": false,
+    "hasToggleHolo": true,
+    "save": false,
+    "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYyMzQxODQwNDc0OSwKICAicHJvZmlsZUlkIiA6ICIyOTZhZWZjMGQxZDk0MzY0OTlkZGM0ZTgxZTg4NDlmMCIsCiAgInByb2ZpbGVOYW1lIiA6ICJMZXZlbDVfUmFpbGd1biIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iZjhmNzg4ZGI4N2FkYzFmNmYzOGQzODE5NmJkMDJiNWI4NjM0ZTQ4YjczNDNjM2M4ZWJmMjJjMjZhOWY3ODVhIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0\u003d",
+    "signature": "UndN7pjza6VrQChhGB66/PD4/FkYIXd4o8KKtInxnYCIRpZQz+NIgG5YwKepnQcnNFWXHMvnsjcX2oiPNqn5jGsl4yH/KVepgwT/d0l0dfGwax7ZBCe6jWO8Qo0XtisdcMK7uugIyyKyyWEOzBOn/8O6fIHjkUXP9JUMH6i7kpGclneW/0IVThp6rX2aEv0W6CVK7YM5znUUNmfqBSW1pifIhWmR40QKu/9pI3QcI8R7BNB7Ldd5I0VuD1tx/9TQOdI1s4HIWIPo3yTTLxXTyHQ1bGmS7Bn2pLR/A/yK5N79ad8UcXlsjv+NlpePq2jOB/N+TecrUp3ZahEc2DtGtC8xUo+AulRnbe0yHlLYV2wRkM+M81uX1uYATB728O7/eFyKIisZe94qrsHioXsef4u7a0hWQZTJ06JRiC9zqzJYQ37YG5QRN1BsQRKjCSX7SYiizZ8uMGHSTCX6jISr1mcl7AjEm5wcz1NSh1/y8sV1lBDSqPn+JaIqDp4vZFfTWvQXhZJwMdTSFEXf7/2iMSDB2wciCa65ie15zqtAv5cGU0wiDqWVOJPwkG0AlJulDGYzkcT468BcF0Fur5R7v1keBWoX0g0/KJqVOWgn8rWcP1A9nh6nw83sxsa0X9pOSgY9pS1LEhkySJyNtvj7UsDe8JaUdmRdAhFePiRGLF4\u003d",
+    "lines": "回主城",
+    "glowName": "WHITE",
+    "location": {
+      "world": "world",
+      "x": -93.5,
+      "y": 63.0,
+      "z": 110.5,
+      "yaw": -305.39996,
+      "pitch": 19.349964
+    },
+    "npcType": "PLAYER",
+    "actions": [
+      "CMD:spawn"
+    ],
+    "npcEquipments": {},
+    "customizationMap": {}
+  },
+  {
+    "id": 6,
+    "hasGlow": false,
+    "hasToggleName": false,
+    "hasLookAt": true,
+    "hasMirror": false,
+    "isReversePath": false,
+    "hasToggleHolo": true,
+    "save": false,
+    "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYyMzQxODQwNDc0OSwKICAicHJvZmlsZUlkIiA6ICIyOTZhZWZjMGQxZDk0MzY0OTlkZGM0ZTgxZTg4NDlmMCIsCiAgInByb2ZpbGVOYW1lIiA6ICJMZXZlbDVfUmFpbGd1biIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iZjhmNzg4ZGI4N2FkYzFmNmYzOGQzODE5NmJkMDJiNWI4NjM0ZTQ4YjczNDNjM2M4ZWJmMjJjMjZhOWY3ODVhIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0\u003d",
+    "signature": "UndN7pjza6VrQChhGB66/PD4/FkYIXd4o8KKtInxnYCIRpZQz+NIgG5YwKepnQcnNFWXHMvnsjcX2oiPNqn5jGsl4yH/KVepgwT/d0l0dfGwax7ZBCe6jWO8Qo0XtisdcMK7uugIyyKyyWEOzBOn/8O6fIHjkUXP9JUMH6i7kpGclneW/0IVThp6rX2aEv0W6CVK7YM5znUUNmfqBSW1pifIhWmR40QKu/9pI3QcI8R7BNB7Ldd5I0VuD1tx/9TQOdI1s4HIWIPo3yTTLxXTyHQ1bGmS7Bn2pLR/A/yK5N79ad8UcXlsjv+NlpePq2jOB/N+TecrUp3ZahEc2DtGtC8xUo+AulRnbe0yHlLYV2wRkM+M81uX1uYATB728O7/eFyKIisZe94qrsHioXsef4u7a0hWQZTJ06JRiC9zqzJYQ37YG5QRN1BsQRKjCSX7SYiizZ8uMGHSTCX6jISr1mcl7AjEm5wcz1NSh1/y8sV1lBDSqPn+JaIqDp4vZFfTWvQXhZJwMdTSFEXf7/2iMSDB2wciCa65ie15zqtAv5cGU0wiDqWVOJPwkG0AlJulDGYzkcT468BcF0Fur5R7v1keBWoX0g0/KJqVOWgn8rWcP1A9nh6nw83sxsa0X9pOSgY9pS1LEhkySJyNtvj7UsDe8JaUdmRdAhFePiRGLF4\u003d",
+    "lines": "回主城",
+    "glowName": "WHITE",
+    "location": {
+      "world": "world_nether",
+      "x": -42.5,
+      "y": 94.0,
+      "z": -168.5,
+      "yaw": 58.949993,
+      "pitch": 38.85002
+    },
+    "npcType": "PLAYER",
+    "actions": [
+      "CMD:spawn"
+    ],
+    "npcEquipments": {},
+    "customizationMap": {}
+  },
+  {
+    "id": 7,
+    "hasGlow": false,
+    "hasToggleName": false,
+    "hasLookAt": true,
+    "hasMirror": false,
+    "isReversePath": false,
+    "hasToggleHolo": true,
+    "save": false,
+    "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYyMzQxODQwNDc0OSwKICAicHJvZmlsZUlkIiA6ICIyOTZhZWZjMGQxZDk0MzY0OTlkZGM0ZTgxZTg4NDlmMCIsCiAgInByb2ZpbGVOYW1lIiA6ICJMZXZlbDVfUmFpbGd1biIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iZjhmNzg4ZGI4N2FkYzFmNmYzOGQzODE5NmJkMDJiNWI4NjM0ZTQ4YjczNDNjM2M4ZWJmMjJjMjZhOWY3ODVhIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0\u003d",
+    "signature": "UndN7pjza6VrQChhGB66/PD4/FkYIXd4o8KKtInxnYCIRpZQz+NIgG5YwKepnQcnNFWXHMvnsjcX2oiPNqn5jGsl4yH/KVepgwT/d0l0dfGwax7ZBCe6jWO8Qo0XtisdcMK7uugIyyKyyWEOzBOn/8O6fIHjkUXP9JUMH6i7kpGclneW/0IVThp6rX2aEv0W6CVK7YM5znUUNmfqBSW1pifIhWmR40QKu/9pI3QcI8R7BNB7Ldd5I0VuD1tx/9TQOdI1s4HIWIPo3yTTLxXTyHQ1bGmS7Bn2pLR/A/yK5N79ad8UcXlsjv+NlpePq2jOB/N+TecrUp3ZahEc2DtGtC8xUo+AulRnbe0yHlLYV2wRkM+M81uX1uYATB728O7/eFyKIisZe94qrsHioXsef4u7a0hWQZTJ06JRiC9zqzJYQ37YG5QRN1BsQRKjCSX7SYiizZ8uMGHSTCX6jISr1mcl7AjEm5wcz1NSh1/y8sV1lBDSqPn+JaIqDp4vZFfTWvQXhZJwMdTSFEXf7/2iMSDB2wciCa65ie15zqtAv5cGU0wiDqWVOJPwkG0AlJulDGYzkcT468BcF0Fur5R7v1keBWoX0g0/KJqVOWgn8rWcP1A9nh6nw83sxsa0X9pOSgY9pS1LEhkySJyNtvj7UsDe8JaUdmRdAhFePiRGLF4\u003d",
+    "lines": "回主城",
+    "glowName": "WHITE",
+    "location": {
+      "world": "world_the_end",
+      "x": 99998.5,
+      "y": 57.0,
+      "z": 100002.5,
+      "yaw": -139.34998,
+      "pitch": 33.300007
+    },
+    "npcType": "PLAYER",
+    "actions": [
+      "CMD:spawn"
+    ],
+    "npcEquipments": {},
+    "customizationMap": {}
+  },
+  {
+    "id": 8,
+    "hasGlow": false,
+    "hasToggleName": false,
+    "hasLookAt": true,
+    "hasMirror": false,
+    "isReversePath": false,
+    "hasToggleHolo": true,
+    "save": false,
+    "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYyMzQxODQwNDc0OSwKICAicHJvZmlsZUlkIiA6ICIyOTZhZWZjMGQxZDk0MzY0OTlkZGM0ZTgxZTg4NDlmMCIsCiAgInByb2ZpbGVOYW1lIiA6ICJMZXZlbDVfUmFpbGd1biIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iZjhmNzg4ZGI4N2FkYzFmNmYzOGQzODE5NmJkMDJiNWI4NjM0ZTQ4YjczNDNjM2M4ZWJmMjJjMjZhOWY3ODVhIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0\u003d",
+    "signature": "UndN7pjza6VrQChhGB66/PD4/FkYIXd4o8KKtInxnYCIRpZQz+NIgG5YwKepnQcnNFWXHMvnsjcX2oiPNqn5jGsl4yH/KVepgwT/d0l0dfGwax7ZBCe6jWO8Qo0XtisdcMK7uugIyyKyyWEOzBOn/8O6fIHjkUXP9JUMH6i7kpGclneW/0IVThp6rX2aEv0W6CVK7YM5znUUNmfqBSW1pifIhWmR40QKu/9pI3QcI8R7BNB7Ldd5I0VuD1tx/9TQOdI1s4HIWIPo3yTTLxXTyHQ1bGmS7Bn2pLR/A/yK5N79ad8UcXlsjv+NlpePq2jOB/N+TecrUp3ZahEc2DtGtC8xUo+AulRnbe0yHlLYV2wRkM+M81uX1uYATB728O7/eFyKIisZe94qrsHioXsef4u7a0hWQZTJ06JRiC9zqzJYQ37YG5QRN1BsQRKjCSX7SYiizZ8uMGHSTCX6jISr1mcl7AjEm5wcz1NSh1/y8sV1lBDSqPn+JaIqDp4vZFfTWvQXhZJwMdTSFEXf7/2iMSDB2wciCa65ie15zqtAv5cGU0wiDqWVOJPwkG0AlJulDGYzkcT468BcF0Fur5R7v1keBWoX0g0/KJqVOWgn8rWcP1A9nh6nw83sxsa0X9pOSgY9pS1LEhkySJyNtvj7UsDe8JaUdmRdAhFePiRGLF4\u003d",
+    "lines": "回主城",
+    "glowName": "WHITE",
+    "location": {
+      "world": "world_resources",
+      "x": 8.5,
+      "y": 71.0,
+      "z": 66.5,
+      "yaw": -25.199986,
+      "pitch": 13.950005
+    },
+    "npcType": "PLAYER",
+    "actions": [
+      "CMD:spawn"
+    ],
+    "npcEquipments": {},
+    "customizationMap": {}
+  }
+]

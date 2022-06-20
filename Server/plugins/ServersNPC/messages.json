@@ -1,0 +1,9 @@
+{
+  "SUCCESS": "\u0026aDone...",
+  "COMMAND_ERROR": "\u0026cThere was an error executing the command, see the console for more information.",
+  "NPC_NOT_FOUND": "\u0026cHey!, I couldnt find a npc with this id.",
+  "COMMAND_NOT_FOUND": "\u0026cThis command was not found.",
+  "INVALID_NUMBER": "\u0026cHey!, The inserted number/id does not look like a number..",
+  "INCORRECT_USAGE": "\u0026cIncorrect use of command.",
+  "NO_PERMISSION": "\u0026cYou do not have permission to execute this command."
+}

@@ -1,0 +1,281 @@
+menu-settings:
+  name: '&1&l主菜单&f&l（&e/menu&f&l）'
+  commands:
+  - 'menu'
+  rows: 6
+  
+item-1-1:
+  POSITION-X: 1
+  POSITION-Y: 1
+  NAME: '装饰物品'
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-1-2:
+  POSITION-X: 1
+  POSITION-Y: 2
+  NAME: '装饰物品'
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-1-3:
+  POSITION-X: 1
+  POSITION-Y: 3
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-1-4:
+  POSITION-X: 1
+  POSITION-Y: 4
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-1-5:
+  POSITION-X: 1
+  POSITION-Y: 5
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-1-6:
+  POSITION-X: 1
+  POSITION-Y: 6
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-1:
+  POSITION-X: 9
+  POSITION-Y: 1
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-2:
+  POSITION-X: 9
+  POSITION-Y: 2
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-3:
+  POSITION-X: 9
+  POSITION-Y: 3
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-4:
+  POSITION-X: 9
+  POSITION-Y: 4
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-5:
+  POSITION-X: 9
+  POSITION-Y: 5
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-6:
+  POSITION-X: 9
+  POSITION-Y: 6
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+
+sf-guide:
+  POSITION-X: 3
+  POSITION-Y: 2
+  MATERIAL: enchanted_book
+  NAME: '&f&l获取粘液科技指南'
+  LORE:
+    - '&e&l获取粘液科技指南'
+  ACTIONS:
+    - 'sf guide'
+  KEEP-OPEN: true
+chestsort:
+  POSITION-X: 4
+  POSITION-Y: 2
+  MATERIAL: chest
+  NAME: '&f&l启用/关闭自动箱子整理'
+  LORE:
+    - '&e&l能整理箱子哦:D'
+  ACTIONS:
+    - 'chestsort'
+  KEEP-OPEN: true
+invsort:
+  POSITION-X: 5
+  POSITION-Y: 2
+  MATERIAL: shulker_box
+  NAME: '&f&l快速整理背包'
+  LORE:
+    - '&e&l背包乱了？:D'
+  ACTIONS:
+    - 'invsort'
+  KEEP-OPEN: true
+light:
+  POSITION-X: 6
+  POSITION-Y: 2
+  MATERIAL: potion
+  NAME: '&f&l无限夜视'
+  LORE:
+    - '&e&l挖矿不怕黑了:D'
+  ACTIONS:
+    - 'light'
+  KEEP-OPEN: true
+random-tp:
+  POSITION-X: 7
+  POSITION-Y: 2
+  MATERIAL: ender_pearl
+  NAME: '&f&l随机传送'
+  LORE:
+    - '&e&l:D'
+  ACTIONS:
+    - 'res rt'
+
+
+world:
+  POSITION-X: 3
+  POSITION-Y: 3
+  MATERIAL: grass_block
+  NAME: '&f&l生存世界传送'
+  LORE:
+    - '&e&l圈地做家的好地方:D'
+  ACTIONS:
+    - 'op:warp world'
+    - 'dragon-bar: 3 | &l{player},你已进入生存世界,服务端作者QQ:1593713272'
+world-nether:
+  POSITION-X: 4
+  POSITION-Y: 3
+  MATERIAL: netherrack
+  NAME: '&f&l地狱世界传送'
+  LORE:
+    - '&e&l探索地狱吧:D'
+  ACTIONS:
+    - 'op:warp nether'
+    - 'dragon-bar: 3 | &l{player},你已进入地狱世界,服务端作者QQ:1593713272'
+world-the-end:
+  POSITION-X: 5
+  POSITION-Y: 3
+  MATERIAL: end_stone
+  NAME: '&f&l末地世界传送'
+  LORE:
+    - '&e&l来探索末地城吧:D'
+  ACTIONS:
+    - 'op:warp theend'
+    - 'dragon-bar: 3 | &l{player},你已进入末地世界,服务端作者QQ:1593713272'
+world-resources:
+  POSITION-X: 6
+  POSITION-Y: 3
+  MATERIAL: emerald_block
+  NAME: '&f&l资源世界传送'
+  LORE:
+    - '&e&l获取资源的好去处,不定期更新:D'
+  ACTIONS:
+    - 'op:warp resources'
+    - 'dragon-bar: 3 | &l{player},你已进入资源世界,服务端作者QQ:1593713272'
+spawn:
+  POSITION-X: 7
+  POSITION-Y: 3
+  MATERIAL: oak_planks
+  NAME: '&f&l回主城'
+  LORE:
+    - '&e&l你的出生点:D'
+  ACTIONS:
+    - 'spawn'
+    - 'dragon-bar: 3 | &l{player},你已回到主城,服务端作者QQ:1593713272'
+
+scordboard:
+  POSITION-X: 3
+  POSITION-Y: 4
+  MATERIAL: beacon
+  NAME: '&f&l启用/隐藏计分板'
+  LORE:
+    - '&e&l如果觉得计分板碍眼可以隐藏:D'
+  ACTIONS:
+    - 'op: sb toggle'
+  KEEP-OPEN: true
+wgsb:
+  POSITION-X: 4
+  POSITION-Y: 4
+  MATERIAL: glass
+  NAME: '&f&l清除幽灵方块'
+  LORE:
+    - '&e&l如果遇到莫名其妙无法放置方块建议使用:D'
+  ACTIONS:
+    - 'wgsb near 3'
+  KEEP-OPEN: true
+slime:
+  POSITION-X: 5
+  POSITION-Y: 4
+  MATERIAL: slime_ball
+  NAME: '&f&l看查史莱姆区块'
+  LORE:
+    - '&e&l史莱姆农场？:D'
+  ACTIONS:
+    - 'scm'
+  KEEP-OPEN: true
+gc:
+  POSITION-X: 6
+  POSITION-Y: 4
+  MATERIAL: stone
+  NAME: '&f&l服务器占用查看'
+  LORE:
+    - '&e&l可以看tps:D'
+  ACTIONS:
+    - 'op:gc'
+  KEEP-OPEN: true
+skill:
+  POSITION-X: 7
+  POSITION-Y: 4
+  MATERIAL: diamond_axe
+  NAME: '&f&l打开技能菜单'
+  LORE:
+    - '&e&l技能:D'
+  ACTIONS:
+    - 'skills'
+  KEEP-OPEN: true
+    
+back:
+  POSITION-X: 7
+  POSITION-Y: 5
+  NAME: 返回引导菜单
+  ACTIONS:
+    - 'clock'
+  MATERIAL: barrier
+  AMOUNT: 1
+  KEEP-OPEN: true
+version:
+  POSITION-X: 3
+  POSITION-Y: 5
+  MATERIAL: paper
+  NAME: '&f&l服务端详细版本查看'
+  LORE:
+    - '&e&l:D'
+  ACTIONS:
+    - 'helper'
+pagedown:
+  POSITION-X: 4
+  POSITION-Y: 5
+  MATERIAL: arrow
+  NAME: '&f&l上一页'
+  LORE:
+    - '&e&l已经是第一页了,不能再翻了哦:D'
+  KEEP-OPEN: true
+pageup:
+  POSITION-X: 6
+  POSITION-Y: 5
+  MATERIAL: arrow
+  NAME: '&f&l下一页'
+  LORE:
+    - '&e&l第二页:D'
+  ACTIONS:
+    - 'op:cc open menu2'
+  KEEP-OPEN: true
+  

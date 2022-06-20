@@ -1,0 +1,674 @@
+General:
+  startTip: 粘土科技 By ClayCoffee.
+  registeringItems: 注册粘液科技物品中...
+  registeringError: '在注册物品时发生错误:'
+  Info_1: '###########################################################'
+  Info_2: 成功加载 ClayTech v{version}.
+  Info_3: '作者: {author}'
+  Info_4: ''
+  Info_5: '问题追踪器: {issue_tracker}'
+  Info_6: '###########################################################'
+  Auto-updater_disabled: 您已经禁用了自动更新!这可能会导致某些问题无法被自动修复.
+  update_done: '&a已成功从版本 &c{old_version} &a更新至 &6{new_version}.&a请重启您的服务器以应用更新!'
+  DEV_VERSION: '&eClayTech检测到您正在使用开发版. 如遇任何BUG,请提交到我们的Issue Tracker!'
+  command_not_found: §b[粘土科技]§c未找到该命令.
+  basic_command: '&3粘土科技 {version} &eBy &6ClayCoffee'
+  LatestVersion: '&a您当前正在使用 &6ClayTech &a最新版本.'
+  CantPlaceLore: '&e不可放置'
+  no_permission: §c你没有权限.
+  CantPlace: §b[粘土科技]§c你不能放置该物品.
+  CantBreak: §b[粘土科技]§c你不能破坏该物品.
+  Blind_5_effect: '&7失明 V'
+  Slowness_5_effect: '&7缓慢 V'
+  Confusion_5_effect: '&7反胃 V'
+  Poison_3_effect: '&7中毒 III'
+  Anti_Slowness_3_effect: '&7反弹缓慢 III'
+  Drink_Message: '&6咕嘟咕嘟咕嘟...真好喝...'
+  Eat_Message: '&6嘎吱嘎吱嘎吱...嗯,太好吃了。'
+  Cant_Drink_Message: '&c您已经饱了,不用再喝东西了!'
+  Cant_Eat_Message: '&c您已经饱了,不用再吃东西了!'
+  Wash_Message: '&6清洗完毕!!'
+  Cant_Wash_Message: '&c无法清洗!你没有水桶!'
+  Before_115: '&c检测到您的服务器运行在1.15版本以下,可能导致有的物品无法注册,但仍可正常运行本插件.'
+  Not_compatible: '&c对不起,本插件仅限1.14.x,1.15.x,1.16.x的服务器使用!请尽快升级您的服务器..'
+  TNT_EXPLOSION_CREATER_WAIT: '&aTNT将在5秒钟后放置。 请尽快逃离，避免受到伤害。'
+  TNT_EXPLOSION_CREATER_NO_TNT: '&c您的背包里没有TNT，无法放置!'
+  TNT_EXPLOSION_CREATER_SUCCESS: '&aTNT成功爆炸。'
+  TNT_EXPLOSION_CREATER_FATAL: '&cTNT爆炸失败。可能是由于领地保护等原因。'
+  TNT_EXPLOSION_CREATER_CD: '&c请等待冷却..'
+  Durability: '&b耐久'
+  CantEat: '&7不可食用'
+  CantEatMessage: '&c您不能食用本物品。'
+  CantInteract: '&7不可交互'
+  CantInteractMessage: '&c您不能对本物品进行交互.'
+  Rocket: '&9火箭'
+  SpaceSuit: '&9宇航服'
+  Fuel: '&b当前燃料:'
+  Oxygen: '&b当前氧气:'
+  ProtectLevel: '&b防护等级:'
+  SpaceSuitError: '&c&l氧气不足'
+  SpaceSuitError_Sub: '&6您可能未穿戴宇航服或宇航服防护等级不够或氧气不足!'
+  NotRocket: '&c抱歉,您需要手中拿火箭才能继续本操作!'
+  NotEnoughFuel: '&c抱歉,火箭燃料不足,无法起飞!'
+  RocketOK: '&e起飞中!&610&e秒钟后发射,如果想取消请移动手中的物品.'
+  RocketArrived: '&a已到达目标星球!'
+  RocketCountdown: '&b还剩 &6%seconds% &b秒到达目标星球!移动物品以取消。'
+  SamePlanet: '&c您已经在这颗星球了!'
+  StakingRockets: '&c您不能堆叠火箭!'
+  CantUseOtherTeleportInUniverse: '&c对不起.您不能在外太空使用传送或传送到外太空!'
+  BaseCompleted: '&3基地设置完毕!'
+  BaseExists: '&c您在该星球已经有一个基地了!请先破坏后再试。'
+  BaseDestroyed: '&6基地摧毁成功!'
+  TeleportedToBase: '&a已传送到基地'
+  TeleportedToBase_Sub: '&a基地欢迎您'
+  OxygenDistributer: '&9氧气分配器'
+  SPACESUIT_NOT_OK: '&c您的宇航服没有穿齐!'
+  SPACESUIT_4: '&c分配器内至少要求有4点氧气!'
+  SPACESUIT_DISTRIBUTER_OK: '&3分配成功!'
+  SPACESUIT_DISTRIBUTER_FULL: '&3宇航服氧气已全满.'
+  NotInPlanet: '&c抱歉,您当前不在星球中!无法设立基地。'
+  NotYourBase: '&c抱歉,这不是你的基地,你不能拆除!'
+  notOwner: '&c您只能打开你自己的火箭发射器!'
+  SpaceSuitFall: '&6>> 您的宇航服免除了您的摔落伤害'
+  AlreadyInRocket: '&c您已经在火箭中了! 移动物品取消发射.'
+  LocationFatal: '&c着陆失败!但是燃料并没有被消耗.'
+  NotAtAPlanet: '&c对不起,你需要在一颗星球起飞!(如主世界)'
+  Cant_Drink_Milk: '&c你不能在此星球上喝牛奶来解除效果.'
+  Yes_1: 是
+  No_1: 否
+  WorldBorder: '&e检测到 WorldBorder.'
+Categories:
+  Basic: '&b粘土科技 - 基础'
+  Weapons: '&b粘土科技 - 武器'
+  Food: '&b粘土科技 - 食物'
+  FoodMakings: '&b粘土科技 - 食物饮料材料'
+  Drink: '&b粘土科技 - 饮料'
+  Makings: '&b粘土科技 - 材料'
+  Armors: '&b粘土科技 - 装备'
+  Decorates: '&b粘土科技 - 装饰品'
+  Elements: '&b粘土科技 - 元素'
+  Machines: '&b粘土科技 - 机器'
+  Other: '&b粘土科技 - 其他'
+  Tools: '&b粘土科技 - 工具'
+  OreThings: '&b粘土科技 - 矿物资源'
+Items:
+  USEFUL_DIRT: '&6有用的泥土'
+  USEFUL_DIRT_LORE:
+  - '&b来自地球上的泥土...'
+  - '&b它充满了有用的矿物质...'
+  ORE_DIAMOND: '&b矿物钻石'
+  MAGIC_CLAY: '&6魔法の粘土'
+  MAGIC_CLAY_LORE:
+  - '&b粘土科技的基础物品,许多粘土科技的合成都需要这个'
+  CLAY_STICK: §6克莱の木棍
+  CLAY_STICK_LORE:
+  - '&b作者克莱咖啡收藏的木棍,可以做某些工具'
+  ARTIFICIAL_GOLD_NUGGET: '&6人造金粒'
+  ARTIFICIAL_GOLD_INGOT_O: '&6人造金锭原矿'
+  ARTIFICIAL_GOLD_INGOT: '&6人造金锭'
+  ARTIFICIAL_GOLD_BLOCK: '&6人造金块'
+  ARTIFICIAL_ENCHANTED_GOLDEN_APPLE: '&5&l人造附魔金苹果'
+  BLIND_CORE: '&7失明核心'
+  BLIND_SWORD: '&7失明剑'
+  BLIND_SWORD_LORE:
+  - '&6在攻击后给予被攻击玩家5秒钟的失明V效果'
+  - <blindfive>
+  CONFUSION_CORE: '&7反胃核心'
+  BLACK_ROCK_BLOCK: '&7黑岩块'
+  SLOWNESS_CORE: '&7缓慢核心'
+  POISON_EYE: '&7剧毒之眼'
+  POISON_CORE: '&7剧毒核心'
+  ADVANCED_BLIND_CORE: '&7高级失明核心'
+  ADVANCED_CONFUSION_CORE: '&7高级反胃核心'
+  ADVANCED_SLOWNESS_CORE: '&7高级缓慢核心'
+  ADVANCED_POISON_CORE: '&7高级剧毒核心'
+  FOUR_BOW: '&7灵气四合弓'
+  FOUR_BOW_LORE:
+  - '&6在攻击后给予被攻击玩家5秒钟的失明V、缓慢V、反胃V和2秒钟的中毒III效果'
+  - <blindfive>
+  - <slownessfive>
+  - <confusionfive>
+  - <poisonthree>
+  POISON_SWORD: '&7梓毒剑'
+  POISON_SWORD_LORE:
+  - '&6在攻击后给予被攻击玩家2秒钟的中毒III效果'
+  - <poisonthree>
+  ANTI_SLOWNESS_BOOTS: '&7反缓慢靴'
+  ANTI_SLOWNESS_BOOTS_LORE:
+  - '&6别人打你会获得缓慢3效果2秒'
+  - <antislownessthree>
+  COCOA_BEAN: '&e可可豆'
+  COCOA_BEAN_LORE:
+  - '&6Yay!美味的可可豆!'
+  - '&7可用于制作咖啡和巧克力等'
+  PLASTIC: '&e塑料'
+  PLASTIC_LORE:
+  - '&6爱护环境,请勿随意丢弃'
+  - '&7可用于制作饮料瓶'
+  RAW_CHICKEN_FOOT: '&e鸡腿'
+  RAW_CHICKEN_FOOT_LORE:
+  - '&6鸡腿'
+  - '&7不可食用，请放电锅里烤后再食用。'
+  FRIED_CHICKEN_FOOT: '&e炸鸡腿'
+  FRIED_CHICKEN_FOOT_LORE:
+  - '&6炸鸡腿'
+  - '&7食用后增加8点饱食度.'
+  RAW_BREAD: '&e面包胚'
+  RAW_BREAD_LORE:
+  - '&6面包胚'
+  - '&7食用后增加6点饱食度.'
+  DIRTY_TEA: '&e脏茶叶'
+  DIRTY_TEA_LORE:
+  - '&6脏茶叶'
+  - '&7右键来清洗,变成茶叶!'
+  - '&7打草有几率获得'
+  TEA: '&e茶叶'
+  TEA_LORE:
+  - '&6茶叶'
+  - '&7可以制作茶叶粉'
+  - '&7脏茶叶清洗获得'
+  TEA_POWDER: '&e茶叶粉'
+  TEA_POWDER_LORE:
+  - '&6茶叶粉'
+  - '&7可以制作茶'
+  LEMON_POWDER: '&e柠檬粉'
+  LEMON_POWDER_LORE:
+  - '&6柠檬粉'
+  - '&7可以制作柠檬汁'
+  FLOUR: '&e面粉'
+  FLOUR_LORE:
+  - '&6面粉'
+  - '&7可以用来做好多东西'
+  - '&7收获小麦有几率获得'
+  STARCH: '&e淀粉'
+  STARCH_LORE:
+  - '&6淀粉'
+  - '&7可以用来做好多东西'
+  - '&7收获马铃薯有几率获得'
+  SNAIL_HEALTHY: '&e螺蛳'
+  SNAIL_HEALTHY_LORE:
+  - '&6螺蛳'
+  - '&7可以用来做螺蛳粉'
+  - '&7钓鱼有几率获得'
+  SNAIL_BAD: '&e福寿螺'
+  SNAIL_BAD_LORE:
+  - '&6福寿螺'
+  - '&7吃一个试试?'
+  - '&7钓鱼有几率获得'
+  HONEY_SWEET: '&e蜂蜜糖'
+  HONEY_SWEET_LORE:
+  - '&6蜂蜜糖'
+  - '&7介个东西太甜了⑧..'
+  - '&7食用后增加8点饱食度.'
+  GREEN_GRASS: '&2青草'
+  GREEN_GRASS_LORE:
+  - '&7别看我就是一只羊'
+  - '&7带饥荒?试试这个!'
+  - '&7食用后增加1点饱食度.'
+  ELEMENT_UNIT: '&e元素单元'
+  ELEMENT_UNIT_LORE:
+  - '&6元素单元'
+  - '&7可以容纳元素!'
+  - <cantplace>
+  ELEMENT_OXYGEN: '&e氧元素'
+  ELEMENT_OXYGEN_LORE:
+  - '&e氧元素'
+  - '&74P + 5O2 =点燃=2P2O5'
+  - '&7在元素提取机中放入草方块三个获得'
+  - <cantplace>
+  ELEMENT_CARBON: '&e碳元素'
+  ELEMENT_CARBON_LORE:
+  - '&6碳元素'
+  - '&7可以做很多东西呢~'
+  - '&7在元素提取机中放入八个煤炭获得'
+  - <cantplace>
+  ELEMENT_SILICON: '&e硅元素'
+  ELEMENT_SILICON_LORE:
+  - '&6硅元素'
+  - '&7用来合成硅锭,制造电路板!'
+  - '&7在元素提取机中放入十个沙子获得'
+  - <cantplace>
+  BLISTERING_CORE: '&e起泡核心'
+  AUTHOR_HEAD: '&6作者的头'
+  STALIN_HEAD: '&b斯大林的头'
+  MARX_HEAD: '&b马克思的头'
+  LANTERN: '&b灯笼'
+  BLACK_CLOCK: '&b黑色时钟'
+  CLAY_COFFEE: '&e粘土咖啡'
+  CLAY_COFFEE_LORE:
+  - '&e粘土咖啡!'
+  - '&7食用后可增加5点饱食度和3分钟夜视效果'
+  - <cantplace>
+  DRINK_BOTTLE: '&e饮料瓶'
+  DRINK_BOTTLE_LORE:
+  - '&6饮料瓶'
+  - '&7制作饮料的必备物品'
+  - '&7没有瓶子怎么装饮料呢?拿嘴装吗?'
+  - <cantplace>
+  DIRTY_DRINK_BOTTLE: '&e脏饮料瓶'
+  DIRTY_DRINK_BOTTLE_LORE:
+  - '&6脏饮料瓶'
+  - '&7这个饮料瓶需要用洗矿机洗洗..'
+  - '&7哪个小男孩会喝脏饮料瓶呢?右键我来清洗吧!(需要一个水桶)'
+  - <cantplace>
+  SPICY_CHICKEN_BURGER: '&e香辣鸡腿堡'
+  SPICY_CHICKEN_BURGER_LORE:
+  - '&6香辣鸡腿堡'
+  - '&7食用后增加15饱食度和20秒力量II效果'
+  - '&7宁难道在抄袭CFC?'
+  - <cantplace>
+  BABA_BURGER: '&e老八秘制小憨包'
+  BABA_BURGER_LORE:
+  - '&6老八秘制小憨包'
+  - '&7吃个试试?'
+  - <cantplace>
+  LETTUSE: '&e生菜'
+  LETTUSE_LORE:
+  - '&6生菜'
+  - '&7食用后增加1点饱食度'
+  - <cantplace>
+  LEMON: '&e柠檬'
+  LEMON_LORE:
+  - '&6柠檬'
+  - '&7食用后增加1点饱食度和10秒反胃IV效果'
+  - '&7我柠檬了'
+  - '&7破坏树叶有几率获得'
+  - <cantplace>
+  LEMON_POWDER_DRINK: '&e柠檬汁'
+  LEMON_POWDER_DRINK_LORE:
+  - '&6柠檬汁'
+  - '&7食用后增加6点饱食度和10秒反胃IV效果'
+  - '&7我柠檬了'
+  - <cantplace>
+  TEA_DRINK: '&e茶'
+  TEA_DRINK_LORE:
+  - '&6茶'
+  - '&7食用后增加6点饱食度和30秒抗性提升III效果'
+  - <cantplace>
+  LEMON_TEA_DRINK: '&e柠檬茶'
+  LEMON_TEA_DRINK_LORE:
+  - '&6柠檬茶'
+  - '&7食用后增加12点饱食度和60秒抗性提升III效果'
+  - '&7这东西冷一点可能就是冰红茶了..'
+  - <cantplace>
+  CHOCOLATE: '&e巧克力'
+  CHOCOLATE_LORE:
+  - '&6巧克力'
+  - '&7食用后增加15点饱食度和30秒抗性提升III效果'
+  - '&7饿货!来条憨力架!横扫饥饿,做回憨逼~'
+  - <cantplace>
+  LUOSI_RICE_NOODLE: '&e螺蛳粉'
+  LUOSI_RICE_NOODLE_LORE:
+  - '&6螺蛳粉'
+  - '&7食用后增加12点饱食度和30秒抗性提升III效果'
+  - '&7好臭啊..不过挺好吃的.'
+  - <cantplace>
+  CLAY_FUSION_MACHINE: '&e粘土融合器'
+  CLAY_FUSION_MACHINE_LORE:
+  - ''
+  - '&f能够制作某些粘土科技物品'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &716 J/s'
+  CLAY_ELETRIC_CAULDRON: '&e电锅'
+  CLAY_ELETRIC_CAULDRON_LORE:
+  - ''
+  - '&f能够制作粘土科技中的食物'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &732 J/s'
+  CLAY_FOOD_CHALKING_MACHINE: '&e食物打粉机'
+  CLAY_FOOD_CHALKING_MACHINE_LORE:
+  - ''
+  - '&f能够制作粘土科技中的某些粉末'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &732 J/s'
+  CLAY_ELEMENT_EXTRACTER: '&e元素提取机'
+  CLAY_ELEMENT_EXTRACTER_LORE:
+  - ''
+  - '&f能够提取化学元素'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &764 J/s'
+  CLAY_ELECTRIC_STONE_CRUSHER: '&e电力碎石机'
+  CLAY_ELECTRIC_STONE_CRUSHER_LORE:
+  - ''
+  - '&f能够将圆石粉碎成沙砾'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &716 J/s'
+  CLAY_ELECTRIC_COPIER: '&e电力复印机'
+  CLAY_ELECTRIC_COPIER_LORE:
+  - ''
+  - '&f能够复印书本'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &740 J/s'
+  COPYING_MODULE: '&b复印模块'
+  COPYING_MODULE_LORE:
+  - '&6用来复印书本的模块.'
+  INK_MODULE: '&b墨水模块'
+  INK_MODULE_LORE:
+  - '&6储存着墨水.'
+  HIGHSPEED_RAILWAY: '&b高速铁路'
+  HIGHSPEED_RAILWAY_LORE:
+  - '&6在这种铁路上行驶的矿车'
+  - '&6最快速度可翻三倍!'
+  ELECTRIC_MOTOR_8: '&c电力马达碎片'
+  TNT_EXPLOSION_CREATER: '&6TNT爆炸发生器'
+  TNT_EXPLOSION_CREATER_LORE:
+  - '&b按右键从背包中在你当前位置放置一个点燃的TNT'
+  - '&b每次使用后会减1耐久.'
+  - '&b(不会破坏容器)'
+  - '<durability>: &632'
+  - <cantinteract>
+  SWEET_POTATO: '&e红芋'
+  SWEET_POTATO_LORE:
+  - '&6红芋'
+  - '&7收获马铃薯有几率获得'
+  - <canteat>
+  COOKED_SWEET_POTATO: '&e烤红芋'
+  COOKED_SWEET_POTATO_LORE:
+  - '&6烤红芋'
+  - '&7食用后增加6点饱食度'
+  REINFORCED_ALLOY_PICKAXE: '&9强化合金镐'
+  CLAY_FUSION_INGOT: '&b&l粘土融合锭'
+  CLAY_ALLOY_INGOT: '&9&l粘土合金锭'
+  CLAY_ALLOY_PICKAXE: '&9粘土合金镐'
+  CLAY_ALLOY_HELMET: '&9粘土合金头盔'
+  CLAY_ALLOY_CHESTPLATE: '&9粘土合金胸甲'
+  CLAY_ALLOY_LEGGINGS: '&9粘土合金护腿'
+  CLAY_ALLOY_BOOTS: '&9粘土合金靴子'
+  CLAY_EXPERIMENT_TABLE_NORMAL: '&e实验台(基本)'
+  CLAY_EXPERIMENT_TABLE_NORMAL_LORE:
+  - ''
+  - '&f能够做某些基本实验,获得新物质'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &780 J/s'
+  SILICON_INGOT: '&b硅锭'
+  ROCKET_LAUNCHER: '&6火箭发射器'
+  ROCKET: <rocket> (一阶)
+  ROCKET_LORE:
+  - '&3一阶的火箭'
+  - <fuel> &60&9/&a125
+  - '&c&l不要堆叠'
+  - <cantplace>
+  MOTOR_CORE: '&e马达核心'
+  TEMPERATURE_RESISTANCE_OBSIDIAN: '&3一阶耐温黑曜石'
+  TEMPERATURE_RESISTANCE_OBSIDIAN_LORE:
+  - '&6这种黑曜石很耐高温'
+  - '&6非常适合造火箭!'
+  - <cantplace>
+  ROCKET_ENGINE_SHELL: '&6一阶火箭引擎外壳'
+  FUEL_TANK: '&6燃料桶'
+  FUEL_TANK_LORE:
+  - '&3可以用来装燃料!'
+  - '&b可储存&610&b点燃料'
+  - <cantplace>
+  ROCKET_ENGINE: '&9一阶火箭引擎'
+  ROCKET_ENGINE_LORE:
+  - '&3制造一阶火箭的必需品!'
+  - <cantplace>
+  ROCKET_ANTENNA: '&9一阶火箭天线'
+  ROCKET_ANTENNA_LORE:
+  - '&3用于在火箭轨道中的信息传输'
+  - <cantplace>
+  ROCKET_CPU: '&9一阶火箭中央处理器'
+  ROCKET_CPU_LORE:
+  - '&3处理火箭的基本信息'
+  ROCKET_CONTROL_CORE: '&9一阶火箭控制核心'
+  ROCKET_CONTROL_CORE_LORE:
+  - '&3火箭的大脑,没有它就没有火箭'
+  ROCKET_FUEL_TANK: '&9一阶火箭燃料罐'
+  ROCKET_FUEL_TANK_LORE:
+  - '&3可以用来装燃料!'
+  - '&b可储存&6125&b点燃料'
+  - <cantplace>
+  ROCKET_GLASS: '&9一阶火箭玻璃'
+  ROCKET_GLASS_LORE:
+  - '&3非同寻常的玻璃'
+  - '&3可以在宇宙使用!'
+  - <cantplace>
+  ROCKET_STEEL_PLATE: '&9一阶火箭钢板'
+  ROCKET_STEEL_PLATE_LORE:
+  - '&3制作一阶火箭的必备材料'
+  CLAY_ROCKET_ASSEMBLING_MACHINE: '&9火箭组装器'
+  CLAY_ROCKET_ASSEMBLING_MACHINE_LORE:
+  - ''
+  - '&3可以组装火箭'
+  - '&4准备迎接地狱了吗..'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &7128 J/s'
+  CLAY_FUEL: '&6粘土燃料'
+  MIXED_ROCKET_FUEL: '&6混合火箭燃料'
+  MIXED_ROCKET_FUEL_LORE:
+  - '&9可以给火箭注入燃料'
+  - '&9去往更深邃的宇宙'
+  - <cantplace>
+  CLAY_ROCKET_FUEL_GENERATOR: '&9火箭燃料制造机'
+  CLAY_ROCKET_FUEL_GENERATOR_LORE:
+  - ''
+  - '&3可以制造火箭燃料'
+  - '&4准备迎接地狱了吗..'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &764 J/s'
+  CLAY_ROCKET_FUEL_INJECTOR: '&9火箭燃料注入器'
+  CLAY_ROCKET_FUEL_INJECTOR_LORE:
+  - ''
+  - '&3可以注入火箭燃料'
+  - '&4准备迎接地狱了吗..'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &764 J/s'
+  OXYGEN_TANK: '&9氧气罐'
+  OXYGEN_TANK_LORE:
+  - '&3只是个普普通通的氧气罐..'
+  - '&b可储存&65&b点氧气'
+  - <cantplace>
+  SPACESUIT_OXYGEN_TANK: '&9宇航服氧气罐'
+  SPACESUIT_OXYGEN_TANK_LORE:
+  - '&3可以为宇航服提供氧气'
+  - '&b可储存&640&b点氧气'
+  - <cantplace>
+  SPACESUIT_HELMET: '&9<spacesuit>头盔'
+  SPACESUIT_HELMET_LORE:
+  - '&3可以阻挡来自宇宙中的高能射线'
+  - '&3上太空必备'
+  - <protectlevel> &61
+  - <oxygen> &60&9/&a40
+  SPACESUIT_CHESTPLATE: '&9<spacesuit>胸甲'
+  SPACESUIT_CHESTPLATE_LORE:
+  - '&3可以阻挡来自宇宙中的高能射线'
+  - '&3上太空必备'
+  - <protectlevel> &61
+  - <oxygen> &60&9/&a40
+  SPACESUIT_LEGGINGS: '&9<spacesuit>护腿'
+  SPACESUIT_LEGGINGS_LORE:
+  - '&3可以阻挡来自宇宙中的高能射线'
+  - '&3上太空必备'
+  - <protectlevel> &61
+  - <oxygen> &60&9/&a40
+  SPACESUIT_BOOTS: '&9<spacesuit>靴子'
+  SPACESUIT_BOOTS_LORE:
+  - '&3可以阻挡来自宇宙中的高能射线'
+  - '&3上太空必备'
+  - <protectlevel> &61
+  - <oxygen> &60&9/&a40
+  CLAY_SPACESUIT_OXYGEN_INJECTOR: '&9宇航服氧气注入器'
+  CLAY_SPACESUIT_OXYGEN_INJECTOR_LORE:
+  - ''
+  - '&3可以为宇航服注入氧气'
+  - '&3工作时会从上方的树叶中自动提取氧气并注入宇航服'
+  - '&3如果上方没有树叶将不会工作'
+  - '&4准备迎接地狱了吗..'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &780 J/s'
+  CLAY_COBBLESTONE_GENERATOR_LORE:
+  - ''
+  - '&3可以自动生成圆石'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &750 J/s'
+  CLAY_COBBLESTONE_GENERATOR: '&b圆石制造机'
+  CLAY_ELECTRIC_WATER_PUMP: '&b电动水泵'
+  CLAY_ELECTRIC_WATER_PUMP_LORE:
+  - ''
+  - '&3可以将水泵入机器中'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &726 J/s'
+  CLAY_WITHER_KILLER: '&e沙雕机'
+  CLAY_WITHER_KILLER_LORE:
+  - ''
+  - '&3可以杀死凋灵'
+  - ''
+  - '%TIER%'
+  - '%POWER%'
+  - '&8⇨ &e⚡ &75120 J/个凋灵'
+  KREEP_ROCK: '&9克里普岩'
+  KREEP_ROCK_LORE:
+  - '&3一种在月球上极其稀有的岩石'
+  - '&3可以升级火箭'
+  KREEP_INGOT: '&9克里普锭'
+  KREEP_INGOT_LORE:
+  - '&3一种在月球上极其稀有的岩石冶炼成的锭'
+  - '&3可以升级火箭'
+  PLANET_BASE_SIGNER: '&9星球基地标记器'
+  PLANET_BASE_SIGNER_LORE:
+  - '&3放置之后当你坐火箭到这个星球的时候就能直接传送到这个位置'
+  TUBE: '&9吸管'
+  OXYGEN_DISTRIBUTER: <oxygendistributer>(一阶)
+  OXYGEN_DISTRIBUTER_LORE:
+  - '&3当你右键该物品的时候会把储存在该物品中的氧气平均分配给宇航服'
+  - <oxygen> &60&9/&a120
+  COPPER_ORE: '&6铜矿石'
+  COPPER_ORE_LORE:
+  - '&3可以放入粘土融合器合成界面的中间位置,粉碎成铜粉'
+  CLAY_FUSION_ORE: '&6粘土融合锭矿石'
+  CLAY_FUSION_ORE_LORE:
+  - '&3可以放入粘土融合器合成界面的中间位置,粉碎成粘土融合锭'
+  TUNA_FISH: '&e金枪鱼'
+  TUNA_FISH_LORE:
+  - '&6可以做刺身'
+  - '&9钓鱼获得'
+  - '&7食用后增加6点饱食度'
+  CLAY_AIR_LOCK_PLATE: '&e气闸门'
+  CLAY_AIR_LOCK_PLATE_LORE:
+  - '&3放置在地面上'
+  - '&3将会自动检测半径4之内前后左右的气闸门方块'
+  - '&3请注意对准'
+  CLAY_AIR_LOCK_BLOCK: '&e气闸门方块'
+  CLAY_AIR_LOCK_BLOCK_LORE:
+  - '&3与气闸门一同使用'
+  - '&3当气闸门被踩时生效'
+Researches:
+  CLAYTECH_ARMORS_I: 基础效果装备
+  CLAYTECH_START: 嘿,粘土科技!爷来了!
+  CLAYTECH_ELECTRICMACHINE: 电器 I
+  CLAYTECH_ELEMENT_EXTRACTER_MACHINE: 元素提取机
+  CLAYTECH_DRINK_MAKINGS_I: 制作饮料的材料 I
+  CLAYTECH_DRINK_MAKINGS_II: 制作饮料的材料 II
+  CLAYTECH_DRINK_I: 这是..饮料!!
+  CLAYTECH_ELEMENTS_I: 元素 I
+  CLAYTECH_FOOD_MAKINGS_I: 制作食物的材料 I
+  CLAYTECH_FOOD_MAKINGS_II: 制作食物的材料 II
+  CLAYTECH_FRUIT_I: 水果 I
+  CLAYTECH_FOOD_I: 食物 I
+  CLAYTECH_FOOD_II: 食物 II
+  CLAYTECH_ARTIFICIAL_I: 人造物品 I
+  CLAYTECH_ARTIFICIAL_ORE_I: 人造物品原矿 I
+  CLAYTECH_ARTIFICIAL_ENCHANTED_GOLDEN_APPLE: 人造附魔金苹果
+  CLAYTECH_BEFORE_ELEMENTS: 元素热身
+  CLAYTECH_BEFORE_AFFECT_WEAPONS: 效果武器热身
+  CLAYTECH_AFFECT_WEAPONS: 初级效果武器
+  CLAYTECH_BEFORE_ADVANCED_AFFECT_WEAPONS: 高级效果武器热身
+  CLAYTECH_ADVANCED_AFFECT_WEAPONS: 高级效果武器
+  CLAYTECH_SKULL_I: 头颅工艺
+  CLAYTECH_DECORATES_I: 装饰品 I
+  CLAYTECH_RAILWAY_I: 铁路 I
+  CLAYTECH_EFFECT_ITEM_I: 效果物品 I
+  CLAYTECH_TOOLS_I: 工具 I
+  CLAYTECH_OREINGOTS_I: 矿锭 I
+  CLAYTECH_CLAY_ALLOY_ARMORS_I: 粘土合金装备
+  CLAYTECH_OREINGOTS_II: 月球上的矿物
+  CLAYTECH_ROCKETS_I: 一阶火箭
+  CLAYTECH_SPACESUIT_I: 一级宇航服
+  CLAYTECH_UNIVERSE_MACHINE_I: 通向宇宙的机器 I
+  CLAYTECH_UNIVERSE_MACHINE_II: 通向宇宙的机器 II
+  CLAYTECH_BASE_I: 基地 I
+  CLAYTECH_FISH_I: 鱼类
+  CLAYTECH_COBBLESTONE_GENERATOR: 圆石制造机
+  CLAYTECH_ELECTRIC_WATER_PUMP: 电动水泵
+  CLAYTECH_COPIER: 复印机
+  CLAYTECH_WITHER_KILLER: 沙雕机
+  CLAYTECH_SPACETHINGS_I: 气闸门
+MachineRecipes:
+  CLAY_FUSION_MACHINE: '&a&o在粘土融合器内合成'
+  CLAY_ELETRIC_CAULDRON: '&a&o在电锅内合成'
+  CLAY_FOOD_CHALKING_MACHINE: '&a&o在食物打粉机内合成'
+  CLAY_ELEMENT_EXTRACTER: '&a&o在元素提取机内提取'
+  CLAY_EXPERIMENT_TABLE_BASIC: '&a&o在实验台(基本)中实验获得'
+  CLAY_ROCKET_ASSEMBLING_MACHINE: '&a&o在火箭组装器中组装获得'
+  CLAY_ROCKET_FUEL_GENERATOR: '&a&o在火箭燃料制造机中制造'
+  DIG_IN_THE_MOON: '&a&o在月球上挖掘'
+  DIG_IN_NON_EARTH: '&a&o在非地球(主世界)的星球上挖掘'
+  FISHING: '&a&o通过钓鱼获得'
+  HARVEST: '&a&o通过收获某种作物获得'
+  PLUCKING: '&a&o通过在树叶上采摘获得'
+  CLEANING: '&a&o通过清洗获得'
+Machines:
+  SPLIT_LINE: ' '
+  CLAY_FUSION_MACHINE: '&b粘土融合器'
+  CLAY_ELEMENT_EXTRACTER: '&b元素提取机'
+  CLAY_FOOD_CAULDRON: '&b电锅'
+  CLAY_FOOD_CHALKING_MACHINE: '&b食物打粉机'
+  CLAY_ELECTRIC_STONE_CRUSHER: '&b电力碎石机'
+  CLAY_EXPERIMENTTABLE_NORMAL: '&b实验台(基础)'
+  CLAY_ROCKET_ASSEMBLING_MACHINE: '&b火箭组装器'
+  CLAY_ROCKET_FUEL_GENERATOR: '&b火箭燃料制造机'
+  CLAY_ROCKET_FUEL_INJECTOR: '&b火箭燃料注入器'
+  CLAY_SPACESUIT_OXYGEN_INJECTOR: '&b宇航服氧气注入器'
+  CLAY_COBBLESTONE_GENERATOR: '&b圆石制造机'
+  CLAY_ELECTRIC_WATER_PUMP: '&b电动水泵'
+  CLAY_ELECTRIC_COPIER: '&e电力复印机'
+  CLAY_WITHER_KILLER: '&e沙雕机'
+  CLAY_AIR_LOCKER: '&e气闸门'
+  ROCKET_LAUNCHER: '&9火箭发射器'
+  DISTANCE_TO_PLANET: '&9距离当前星球 &6%ly% &9光年'
+  FUEL_TO_PLANET: '&9到达需要燃料 &6%fuel% &9点'
+  PLANET_HABITABLE: '&9适合居住: &6%habitable%'
+  PLANET_GRAVITY: '&9重力: &6%gravity%&9G'
+  PLANET_HARM_LEVEL: '&9危害等级: &6%harm_level%&9级'
+  PREVIOUS_PAGE_CANT_USE: '&b上一页(不可使用!)'
+  NEXT_PAGE_CANT_USE: '&b下一页(不可使用!)'
+  PREVIOUS_PAGE: '&b上一页'
+  NEXT_PAGE: '&b下一页'
+  ELEMENT_UNIT_DOWN: '&e在下方放入元素单元 ↓'
+  ROCKET_ASSEMBLING_BLUEPRINT: '&e在下方放入图纸 ↓(初级物品不需要)'
+  add: '&3点击以 &a+1'
+  sub: '&3点击以 &c-1'
+  wait-time: §3当前等待时间 &b%TIME%
+Planets:
+  Earth: '&a地球(主世界)'
+  Moon: '&e月球'
+  Mars: '&6火星'
+Resources:
+  CLAY_FUEL: 粘土燃料

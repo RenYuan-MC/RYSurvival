@@ -1,0 +1,53 @@
+options:
+  auto-update: false
+worlds:
+- disabled_world
+world-filter-type: blacklist
+mechanics:
+  FOREST_FIRES:
+    enabled: true
+    chance: 0.3
+    fire-per-second: 10
+    min-temperature-in-celsius: 40.0
+  ICE_MELTING:
+    enabled: true
+    chance: 0.5
+    melt-per-second: 10
+    min-temperature-in-celsius: 2.0
+  SLOWNESS:
+    enabled: true
+    chance: 0.8
+  BURN:
+    enabled: true
+    chance: 0.8
+needed-research-for-player-mechanics: ENERGY_REGULATOR
+pollution:
+  production:
+    machine-recipe-input-items:
+      CHARCOAL: 0.0025
+      COAL: 0.005
+      CARBON: 0.01
+      COMPRESSED_CARBON: 0.013
+      CARBON_CHUNK: 0.015
+      SYNTHETIC_DIAMOND: 0.015
+      RAW_CARBONADO: 0.017
+      CARBONADO: 0.02
+      BUCKET_OF_OIL: 0.015
+      NETHER_ICE: 0.02
+      URANIUM: 0.02
+      BLISTERING_INGOT: 0.025
+      BLISTERING_INGOT_2: 0.027
+      BLISTERING_INGOT_3: 0.03
+    machines:
+      COAL_GENERATOR: 0.001
+      COAL_GENERATOR_2: 0.0015
+      NUCLEAR_REACTOR: 0.03
+      COMBUSTION_REACTOR: 0.015
+    animal-breed: 0.005
+  absorption:
+    machines:
+      AIR_COMPRESSOR: 0.05
+    tree-growth: 0.005
+temperature-options:
+  pollution-multiply: 0.002
+  temperature-drop-during-storms: 8

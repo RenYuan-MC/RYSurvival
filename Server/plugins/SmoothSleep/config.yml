@@ -1,0 +1,104 @@
+# More info: https://www.spigotmc.org/resources/smoothsleep.32043
+enable-stats: true
+update-notify-login: true
+logging-settings:
+  log-debug: false
+  log-warning: true
+  log-info: false
+worlds:
+  world:
+    min-night-speed-mult: 10
+    max-night-speed-mult: 20
+    night-speed-curve: 0.5
+    morning-sound: 'ENTITY_PLAYER_LEVELUP'
+    morning-particle-options:
+      particle: 'VILLAGER_HAPPY'
+      amount: 20
+      radius: 0.5
+      enabled: true
+      delay-ticks: 5
+      pattern: 'RANDOM'
+    sleep-reward:
+      required-hours: 3
+      potion-effects:
+    instant-day-if-all-sleeping: false
+    essentials-settings:
+      ignore-afk: true
+      ignore-vanish: true
+    replenish-settings:
+      heal-negative-statuses: true
+      hours-to-heal-negative: 3
+      heal-positive-statuses: false
+      hours-to-heal-positive: 3
+      ticks-per-heal: 1000
+      heal-amount: 1
+      heal-awake: false
+      ticks-per-feed: 1000
+      feed-amount: 0
+      feed-awake: false
+    clear-weather-when-morning: true
+    titles:
+      enabled: true
+      sleep-title: '&b{12H}:{MIN} {MER_UPPER}'
+      sleep-subtitle: '&a{SLEEPERS}/{TOTAL} 名玩家已入睡 &3({TIMESCALE}x 速度)'
+      morning-title: '&e{12H}:{MIN} {MER_UPPER}'
+      morning-subtitle: '&a起床了, {USERNAME}!'
+      stay-ticks: 20
+      fade-ticks: 40
+    action-bar:
+      enabled: true
+      show-if-awake: false
+      title: '&4血量: &c{HEALTH_BAR} &3饱食: &b{FOOD_BAR}'
+    boss-bar:
+      enabled: true
+      show-if-awake: true
+      color: 'BLUE'
+      title: '&a{SLEEPERS}/{TOTAL} 名玩家已入睡 &3- &b{12H}:{MIN} {MER_UPPER}'
+  world_resources:
+    min-night-speed-mult: 10
+    max-night-speed-mult: 20
+    night-speed-curve: 0.5
+    morning-sound: 'ENTITY_PLAYER_LEVELUP'
+    morning-particle-options:
+      particle: 'VILLAGER_HAPPY'
+      amount: 20
+      radius: 0.5
+      enabled: true
+      delay-ticks: 5
+      pattern: 'RANDOM'
+    sleep-reward:
+      required-hours: 3
+      potion-effects:
+    instant-day-if-all-sleeping: false
+    essentials-settings:
+      ignore-afk: true
+      ignore-vanish: true
+    replenish-settings:
+      heal-negative-statuses: true
+      hours-to-heal-negative: 3
+      heal-positive-statuses: false
+      hours-to-heal-positive: 3
+      ticks-per-heal: 1000
+      heal-amount: 1
+      heal-awake: false
+      ticks-per-feed: 1000
+      feed-amount: 0
+      feed-awake: false
+    clear-weather-when-morning: true
+    titles:
+      enabled: true
+      sleep-title: '&b{12H}:{MIN} {MER_UPPER}'
+      sleep-subtitle: '&a{SLEEPERS}/{TOTAL} 名玩家已入睡 &3({TIMESCALE}x 速度)'
+      morning-title: '&e{12H}:{MIN} {MER_UPPER}'
+      morning-subtitle: '&a起床了, {USERNAME}!'
+      stay-ticks: 20
+      fade-ticks: 40
+    action-bar:
+      enabled: true
+      show-if-awake: false
+      title: '&4血量: &c{HEALTH_BAR} &3饱食: &b{FOOD_BAR}'
+    boss-bar:
+      enabled: true
+      show-if-awake: true
+      color: 'BLUE'
+      title: '&a{SLEEPERS}/{TOTAL} 名玩家已入睡 &3- &b{12H}:{MIN} {MER_UPPER}'

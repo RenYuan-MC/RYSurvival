@@ -3,10 +3,10 @@ Global:
   # Starts UUID conversion on plugin startup
   # DONT change this if you are not sure what you doing
   UUIDConvertion: false
-  # If you running offline server. Suggestion would be to keep this at false and base residence ownership from UUID and not on players name
+  # If you running offline server, better to check this as true. This will help to solve issues with changing players UUID.
   OfflineMode: false
   # Players with residence.versioncheck permission node will be noticed about new residence version on login
-  versionCheck: false
+  versionCheck: true
   # This loads the <language>.yml file in the Residence Language folder
   # All Residence text comes from this file. (NOT DONE YET)
   Language: Chinese
@@ -20,10 +20,10 @@ Global:
     # When this set to false, selections inside existing residence will be exactly as they are
     IgnoreYInSubzone: false
     # Defines height of nether when creating residences. This mostly applies when performing commands like /res select vert or /res auto which will expand residence to defined height
-    # This cant be higher than 319 or lower than 1
+    # This cant be higher than 255 or lower than 1
     netherHeight: 128
     # By setting this to true, player will only pay for x*z blocks ignoring height
-    # This will lower residence price by up to 319 times, so adjust block price BEFORE enabling this
+    # This will lower residence price by up to 255 times, so adjust block price BEFORE enabling this
     NoCostForYBlocks: false
   # This determins which tool you can use to see info on residences, default is String.
   # Simply equip this tool and hit a location inside the residence and it will display the info for it.
@@ -32,8 +32,6 @@ Global:
     # When enabled we will load data from every single world file even if world doesn't exist but might be loaded later on
     # Usually only useful when you have multiverse plugin which loads worlds durring server work time
     LoadEveryWorld: false
-    # While enabled we will avoid showing extra feedback lines on startup
-    CleanerStartupLog: true
     # This will slightly change behavior of groups file CanTeleport section which will include server owner into check
     # When this is set to false and CanTeleport set to false, players will not have option to teleport to other player residences, only to their own
     # When this is set to true and CanTeleport set to false, players will not have option to teleport to residences in general
@@ -44,8 +42,7 @@ Global:
     DisabledWorlds:
       # List Of Worlds where this plugin is disabled
       List:
-      - otd_dungeon
-      - spawn
+      - world_resources
       # Disables all listeners in included worlds
       DisableListeners: true
       # Disabled any command usage in included worlds
@@ -60,8 +57,6 @@ Global:
       # Defines new residence name increment when using automatic residence creation command if residence with that name already exist
       IncrementFormat: _[number]
       Size:
-        # When enabled we will try to create region by defined bounds
-        Enabled: false
         # Value between 1 and 100 which will define size of residence we will create in percentage depending on players permission group
         Percentage: 50
         # Value in blocks. While previous percentage will determine general size, this can be used to avoid having tiny residences
@@ -166,6 +161,12 @@ Global:
         MinCoord: 500
         CenterX: 0
         CenterZ: 0
+      world_resources:
+        Enabled: false
+        MaxCoord: 1000
+        MinCoord: 500
+        CenterX: 0
+        CenterZ: 0
       spawn:
         Enabled: false
         MaxCoord: 1000
@@ -179,12 +180,6 @@ Global:
         CenterX: 0
         CenterZ: 0
       world_nether:
-        Enabled: true
-        MaxCoord: 1000
-        MinCoord: 500
-        CenterX: 0
-        CenterZ: 0
-      otd_dungeon:
         Enabled: true
         MaxCoord: 1000
         MinCoord: 500
@@ -260,7 +255,7 @@ Global:
       # With this set to true, lava flow outside residence is blocked
       NoLavaFlow: true
       # With this set to true, water flow outside residence is blocked
-      NoWaterFlow: false
+      NoWaterFlow: true
       Worlds:
       - world
     Place:
@@ -270,7 +265,7 @@ Global:
       # With this set to true, playrs cant place lava outside residence
       NoLavaPlace: true
       # With this set to true, playrs cant place water outside residence
-      NoWaterPlace: false
+      NoWaterPlace: true
       Worlds:
       - world
     BlockFall:
@@ -447,7 +442,7 @@ Global:
     #  droplet, take, mobappearance
 
     # If using spigot based server different particles can be used:
-    # click2, click1, bow_fire, door_toggle, iron_door_toggle, trapdoor_toggle, iron_trapdoor_toggle, fence_gate_toggle, door_close, iron_door_close, trapdoor_close, iron_trapdoor_close, fence_gate_close, extinguish, record_play, ghast_shriek, ghast_shoot, blaze_shoot, zombie_chew_wooden_door, zombie_chew_iron_door, zombie_destroy_door, smoke, step_sound, potion_break, instant_potion_break, ender_signal, mobspawner_flames, brewing_stand_brew, chorus_flower_grow, chorus_flower_death, portal_travel, endereye_launch, firework_shoot, villager_plant_grow, dragon_breath, anvil_break, anvil_use, anvil_land, enderdragon_shoot, wither_break_block, wither_shoot, zombie_infect, zombie_converted_villager, bat_takeoff, end_gateway_spawn, enderdragon_growl, phantom_bite, zombie_converted_to_drowned, husk_converted_to_zombie, grindstone_use, book_page_turn, smithing_table_use, pointed_dripstone_land, pointed_dripstone_drip_lava_into_cauldron, pointed_dripstone_drip_water_into_cauldron, skeleton_converted_to_stray, composter_fill_attempt, lava_interact, redstone_torch_burnout, end_portal_frame_fill, dripping_dripstone, bone_meal_use, ender_dragon_destroy_block, sponge_dry, electric_spark, copper_wax_on, copper_wax_off, oxidised_copper_scrape, wither_spawned, ender_dragon_death, end_portal_created_in_overworld, phantom_bites, zombie_converts_to_drowned, husk_converts_to_zombie, grindstone_used, book_page_turned, composter_composts, lava_converts_block, redstone_torch_burns_out, ender_eye_placed, ender_dragon_destroys_block, wet_sponge_vaporizes_in_nether, 
+    # click2, click1, bow_fire, door_toggle, iron_door_toggle, trapdoor_toggle, iron_trapdoor_toggle, fence_gate_toggle, door_close, iron_door_close, trapdoor_close, iron_trapdoor_close, fence_gate_close, extinguish, record_play, ghast_shriek, ghast_shoot, blaze_shoot, zombie_chew_wooden_door, zombie_chew_iron_door, zombie_destroy_door, smoke, step_sound, potion_break, instant_potion_break, ender_signal, mobspawner_flames, brewing_stand_brew, chorus_flower_grow, chorus_flower_death, portal_travel, endereye_launch, firework_shoot, villager_plant_grow, dragon_breath, anvil_break, anvil_use, anvil_land, enderdragon_shoot, wither_break_block, wither_shoot, zombie_infect, zombie_converted_villager, bat_takeoff, end_gateway_spawn, enderdragon_growl, wither_spawned, ender_dragon_death, end_portal_created_in_overworld, phantom_bites, zombie_converts_to_drowned, husk_converts_to_zombie, grindstone_used, book_page_turned, composter_composts, lava_converts_block, redstone_torch_burns_out, ender_eye_placed, ender_dragon_destroys_block, wet_sponge_vaporizes_in_nether, 
     Selected:
       Frame: happyVillager
       Sides: reddust
@@ -505,38 +500,6 @@ DynMap:
   Fill:
     Opacity: 0.3
     Color: '#FFFF00'
-    ForRent: '#33cc33'
-    Rented: '#99ff33'
-    ForSale: '#0066ff'
-  # Shows only regions on this list
-  VisibleRegions: []
-  # Hides region on map even if its not hidden in game
-  HiddenRegions: []
-Pl3xMap:
-  # Enables or disable Pl3xMap Support
-  Use: false
-  # When set to true we will hide residence areas by default on Pl3xMap window
-  # Residences can still be enabled throw provided Pl3xMap option on left top side
-  HideByDefault: false
-  # Shows or hides residence flags
-  ShowFlags: true
-  # When enabled default flags will not be included in residence overview
-  ExcludeDefaultFlags: true
-  # If set true, residence with hidden flag set to true will be hidden from Pl3xMap
-  HideHidden: true
-  Layer:
-    # How deep to go into subzones to show
-    SubZoneDepth: 2
-  Border:
-    # Color of border. Pick color from this page http://www.w3schools.com/colors/colors_picker.asp
-    Color: '#FF0000'
-    # Transparency. 0.3 means that only 30% of color will be visible
-    Opacity: 0.3
-    # Border thickness
-    Weight: 3
-  Fill:
-    Opacity: 0.3
-    Color: '#FF0000'
     ForRent: '#33cc33'
     Rented: '#99ff33'
     ForSale: '#0066ff'

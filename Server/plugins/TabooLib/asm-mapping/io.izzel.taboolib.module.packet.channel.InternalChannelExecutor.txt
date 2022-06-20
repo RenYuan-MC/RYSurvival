@@ -1,0 +1,17 @@
+net/minecraft/server/v1_8_R3/Packet               -> net/minecraft/server/v1_16_R3/Packet
+org/bukkit/craftbukkit/v1_8_R3/entity/CraftPlayer -> org/bukkit/craftbukkit/v1_16_R3/entity/CraftPlayer
+org/bukkit/craftbukkit/v1_8_R3/entity/CraftPlayer -> org/bukkit/craftbukkit/v1_16_R3/entity/CraftPlayer
+net/minecraft/server/v1_8_R3/EntityPlayer         -> net/minecraft/server/v1_16_R3/EntityPlayer
+net/minecraft/server/v1_8_R3/EntityPlayer         -> net/minecraft/server/v1_16_R3/EntityPlayer
+net/minecraft/server/v1_8_R3/PlayerConnection     -> net/minecraft/server/v1_16_R3/PlayerConnection
+net/minecraft/server/v1_8_R3/Packet               -> net/minecraft/server/v1_16_R3/Packet
+net/minecraft/server/v1_8_R3/PlayerConnection     -> net/minecraft/server/v1_16_R3/PlayerConnection
+net/minecraft/server/v1_8_R3/Packet               -> net/minecraft/server/v1_16_R3/Packet
+org/bukkit/craftbukkit/v1_8_R3/entity/CraftPlayer -> org/bukkit/craftbukkit/v1_16_R3/entity/CraftPlayer
+org/bukkit/craftbukkit/v1_8_R3/entity/CraftPlayer -> org/bukkit/craftbukkit/v1_16_R3/entity/CraftPlayer
+net/minecraft/server/v1_8_R3/EntityPlayer         -> net/minecraft/server/v1_16_R3/EntityPlayer
+net/minecraft/server/v1_8_R3/EntityPlayer         -> net/minecraft/server/v1_16_R3/EntityPlayer
+net/minecraft/server/v1_8_R3/PlayerConnection     -> net/minecraft/server/v1_16_R3/PlayerConnection
+net/minecraft/server/v1_8_R3/PlayerConnection     -> net/minecraft/server/v1_16_R3/PlayerConnection
+net/minecraft/server/v1_8_R3/NetworkManager       -> net/minecraft/server/v1_16_R3/NetworkManager
+net/minecraft/server/v1_8_R3/NetworkManager       -> net/minecraft/server/v1_16_R3/NetworkManager

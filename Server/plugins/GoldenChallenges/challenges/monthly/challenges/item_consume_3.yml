@@ -1,0 +1,38 @@
+name: '%generator-name% &7Lv. %generator-level%'
+type: ITEM_CONSUME
+icon:
+  material: POISONOUS_POTATO
+  name: '%name%'
+  lore: []
+  item-flags:
+  - '*'
+generator:
+  names:
+  - '&a它看起来不太好吃'
+  levels:
+    minimum: 1
+    maximum: 3
+  objectives:
+    amount:
+      minimum: '1'
+      maximum: '2'
+      list:
+        '1':
+        - POISONOUS_POTATO
+        - ROTTEN_FLESH
+        - SPIDER_EYE
+    progress:
+      default:
+        minimum: 5 * %level%
+        maximum: 10 * %level%
+  affected-worlds:
+    minimum: '1'
+    maximum: '1'
+    list: {}
+  rewards:
+    minimum: '1'
+    maximum: '2'
+    list:
+      '1':
+      - reward1
+      - reward2

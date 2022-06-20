@@ -1,0 +1,31 @@
+title: 'Editor: Actions Section'
+size: 36
+
+content:
+  return:
+    material: BARRIER
+    name: '&cReturn'
+    slots: 31
+    type: RETURN
+
+editor:
+  targets:
+    material: 'COMPASS'
+    name: '&e&lTarget Selectors'
+    lore: []
+    slots: 10
+    type: TARGETS
+
+  conditions:
+    material: 'COMPARATOR'
+    name: '&c&lConditions'
+    lore: []
+    slots: 13
+    type: CONDITIONS
+
+  actions:
+    material: 'COMMAND_BLOCK'
+    name: '&d&lAction Executors'
+    lore: []
+    slots: 16
+    type: ACTIONS

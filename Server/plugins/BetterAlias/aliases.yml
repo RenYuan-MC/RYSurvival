@@ -1,0 +1,16 @@
+cd:
+    0: /clock
+lobby:
+    0: /spawn
+ins:
+    0: /invsort
+chs:
+    0: /chestsort
+rr:
+    0: /res rt
+serverpack:
+    0: /helper
+pack:
+    0: /helper
+Pversion:
+    0: /helper

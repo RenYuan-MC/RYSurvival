@@ -1,0 +1,18 @@
+name: 'Lucky Miner'
+tier: 'common'
+description: '%chance%% chance to drop x%exp% more exp from ores.'
+level:
+  min: 1
+  max: 3
+enchantment-table:
+  min-player-level: 30
+  chance: 15.0
+anvil:
+  merge-cost: '%level%'
+villagers:
+  chance: 15.0
+loot-generation:
+  chance: 15.0
+settings:
+  enchant-trigger-chance: '10.0 * %level%'
+  exp-modifier: '1.0 + %level%'

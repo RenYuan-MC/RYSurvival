@@ -1,0 +1,20 @@
+lastAccountName: F_XH
+timestamps:
+  login: 1623419075733
+  logout: 1623419088296
+  lastteleport: 1623418549967
+ipAddress: 127.0.0.1
+lastlocation:
+  world: world_resources
+  x: 9.887990191197764
+  y: 71.0
+  z: 67.99221704034406
+  yaw: -219.60002
+  pitch: 12.600008
+logoutlocation:
+  world: spawn
+  x: -13.457291823837398
+  y: 105.0
+  z: 82.2692489171465
+  yaw: -183.37244
+  pitch: -5.549281

@@ -1,0 +1,40 @@
+# Plugin develloped by GFelberg 
+# Config.yml	
+
+# language: en
+# Thanks for downloading my plugin. For more plugins, dont forget to look my updates!
+# If you find any bugs or ideas to the plugin, pm me at spigot.
+
+# language: br/pt
+# Obrigado por baixar meu plugin. Para mais plugins, não esqueça de olhar as atualizações!
+# Se você encontrar algum problema ou ter alguma ideia para o plugin, pm no spigot.
+
+# Permissions
+
+# light.light = Access to Light
+# light.reload = Reloads the Plugin
+
+update-check: true
+# https://www.spigotmc.org/resources/light.74838/
+
+# Languages
+
+# If your language can be written in the same way as English, leave the default 'en-US'.
+# If your language cannot be written in the same way as English, choose your language from the available ones.
+
+# Languages List:
+
+# en-US = Default Language
+# zh-CN = Chinese
+
+Language: 'zh-CN'
+
+# Configuration 1.0
+# This area will be used to manage the Light Command
+
+# This area can be only used if your Language Option is 'en-US'!
+
+Light:
+  Prefix: '&b&l[&eLight&b&l]&r'
+  Enabled: '&bLight has been enabled!'
+  Disabled: '&bLight has been disabled!'

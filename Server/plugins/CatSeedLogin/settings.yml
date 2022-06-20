@@ -1,7 +1,7 @@
-IpCountLimit: 1000
+IpCountLimit: 100000
 LimitChineseID: true
 MinLengthID: 2
-MaxLengthID: 24
+MaxLengthID: 15
 BeforeLoginNoDamage: true
 ReenterInterval: 60
 AfterLoginBack: true
@@ -10,9 +10,4 @@ CommandWhiteList:
 - /(?i)l(ogin)?(\z| .*)
 - /(?i)reg(ister)?(\z| .*)
 - /(?i)resetpassword?(\z| .*)
-- /loadpack-1
-- /loadpack-2
-SpawnLocation: spawn:79.5:105.0:-148.5:0.0:0.0
-IpRegisterCountLimit: 1000
-AutoKick: 120
-DeathStateQuitRecordLocation: true
+SpawnLocation: spawn:-13.4:105.0:82.7:0.0:0.0

@@ -1,0 +1,20 @@
+name: 'Wither'
+tier: 'rare'
+description: '%chance%% chance to apply %potion-effect% %potion-level% for %potion-duration%s. on hit.'
+level:
+  min: 1
+  max: 2
+enchantment-table:
+  min-player-level: 30
+  chance: 25.0
+anvil:
+  merge-cost: '%level%'
+villagers:
+  chance: 20.0
+loot-generation:
+  chance: 20.0
+settings:
+  particle-effect: 'SPELL_WITCH'
+  enchant-trigger-chance: '20.0 * %level%'
+  effect-level: '%level%'
+  effect-duration: '%level% * 2'

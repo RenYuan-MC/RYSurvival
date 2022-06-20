@@ -1,0 +1,147 @@
+menu-settings:
+  name: '&1&l主菜单&f&l（&e/menu&f&l）'
+  rows: 6
+  
+item-1-1:
+  POSITION-X: 1
+  POSITION-Y: 1
+  NAME: '装饰物品'
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-1-2:
+  POSITION-X: 1
+  POSITION-Y: 2
+  NAME: '装饰物品'
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-1-3:
+  POSITION-X: 1
+  POSITION-Y: 3
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-1-4:
+  POSITION-X: 1
+  POSITION-Y: 4
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-1-5:
+  POSITION-X: 1
+  POSITION-Y: 5
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-1-6:
+  POSITION-X: 1
+  POSITION-Y: 6
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-1:
+  POSITION-X: 9
+  POSITION-Y: 1
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-2:
+  POSITION-X: 9
+  POSITION-Y: 2
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-3:
+  POSITION-X: 9
+  POSITION-Y: 3
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-4:
+  POSITION-X: 9
+  POSITION-Y: 4
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-5:
+  POSITION-X: 9
+  POSITION-Y: 5
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+item-9-6:
+  POSITION-X: 9
+  POSITION-Y: 6
+  NAME: 装饰物品
+  MATERIAL: white_stained_glass_pane
+  AMOUNT: 1
+  KEEP-OPEN: true
+  
+qd:
+  POSITION-X: 3
+  POSITION-Y: 2
+  MATERIAL: diamond
+  NAME: '&f&l签到'
+  LORE:
+    - '&e&l每日奖励一颗钻石:D'
+  ACTIONS:
+    - 'qd'
+  KEEP-OPEN: true
+ah:
+  POSITION-X: 4
+  POSITION-Y: 2
+  MATERIAL: gold_block
+  NAME: '&f&l全球市场'
+  LORE:
+    - '&e&l快来交易吧:D'
+  ACTIONS:
+    - 'ah'
+  KEEP-OPEN: true
+    
+back:
+  POSITION-X: 7
+  POSITION-Y: 5
+  NAME: 返回引导菜单
+  ACTIONS:
+    - 'clock'
+  MATERIAL: barrier
+  AMOUNT: 1
+  KEEP-OPEN: true
+version:
+  POSITION-X: 3
+  POSITION-Y: 5
+  MATERIAL: paper
+  NAME: '&f&l服务端详细版本查看'
+  LORE:
+    - '&e&l:D'
+  ACTIONS:
+    - 'helper'
+pagedown:
+  POSITION-X: 4
+  POSITION-Y: 5
+  MATERIAL: arrow
+  NAME: '&f&l上一页'
+  LORE:
+    - '&e&l第二页:D'
+  ACTIONS:
+    - 'op:cc open menu'
+  KEEP-OPEN: true
+pageup:
+  POSITION-X: 6
+  POSITION-Y: 5
+  MATERIAL: arrow
+  NAME: '&f&l下一页'
+  LORE:
+    - '&e&l已经是最后一页了,不能再翻了哦:D'
+  KEEP-OPEN: true
+  

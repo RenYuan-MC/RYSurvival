@@ -1,0 +1,36 @@
+Command:
+  Open:
+    Desc: Open challenges menu.
+    Usage: '[type]'
+  Reset:
+    Desc: Resets player's challenges.
+    Usage: <player> [type]
+    Done: Reset &a%type% &7challenges for &a%player%&7!
+Challenge:
+  Notify:
+    Objective:
+      Progress: '[ACTION_BAR] %challenge-name%: &e%objective-name% &f%objective-progress-current%&7/&f%objective-progress-total%'
+    Challenge:
+      Completed: '[ACTION_BAR] %challenge-name%: &a&lCOMPLETED!'
+Other:
+  Any: Any
+ChallengeJobType:
+  BLOCK_BREAK: Block Break
+  ITEM_CONSUME: Item Consume
+  ITEM_CRAFT: Item Craft
+  ITEM_COOK: Item Cook
+  ITEM_ENCHANT: Item Enchant
+  ITEM_DISENCHANT: Item Disenchant
+  ITEM_TRADE: Item Trade
+  ITEM_FISH: Item Fish
+  ENTITY_KILL: Entity Kill
+  ENTITY_TAME: Entity Tame
+  ENTITY_BREED: Entity Breed
+  ENTITY_SHEAR: Entity Shear
+  PROJECTILE_LAUNCH: Projectile Launch
+  POTION_BREW: Potion Brew
+  ANVIL_RENAME: Anvil Rename
+ChallengeType:
+  DAILY: Daily
+  WEEKLY: Weekly
+  MONTHLY: Monthly

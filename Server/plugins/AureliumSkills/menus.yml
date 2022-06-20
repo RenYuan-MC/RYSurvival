@@ -41,7 +41,9 @@ skills_menu:
       display_name: '&b{skill} &3{level}'
       lore:
         - '{skill_desc}'
-        - '{stats_leveled}'
+        - ' '
+        - '{primary_stat}'
+        - '{secondary_stat}'
         - '{ability_levels}{mana_ability}'
         - '{level}'
         - ' '
@@ -95,7 +97,9 @@ stats_menu:
       display_name: '{color}{stat}'
       lore:
         - '{stat_desc}'
-        - '{skills}'
+        - ' '
+        - '{primary_skills_two}{primary_skills_three}'
+        - '{secondary_skills_two}{secondary_skills_three}'
         - ' '
         - '{your_level}'
         - ' '
@@ -170,7 +174,9 @@ level_progression_menu:
       display_name: '&b{skill} &3{level}'
       lore:
         - '{skill_desc}'
-        - '{stats_leveled}'
+        - ' '
+        - '{primary_stat}'
+        - '{secondary_stat}'
         - '{ability_levels}{mana_ability}'
         - '{level}'
         - ' '
@@ -204,4 +210,4 @@ level_progression_menu:
         - '{locked}'
 
 # DO NOT TOUCH
-file_version: 3
+file_version: 1

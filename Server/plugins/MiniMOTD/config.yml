@@ -1,0 +1,42 @@
+# Do you want the plugin to check for updates on GitHub at launch?
+# https://github.com/jmanpenilla/MiniMOTD
+updateChecker: false
+
+motd:
+  # Do you want to enable this feature?
+  motdEnabled: true
+
+  # Placeholders: {onlinePlayers} {maxPlayers}
+  # Use {br} to separate lines.
+  # Putting more than one will cause one to be randomly chosen each refresh
+  motds:
+    - "<bold><gradient:black:white>----====[</gradient> <gradient:green:blue>任渊趣味生存 <gradient:red:yellow></bold><italic>1.7.2-1.17</gradient></italic><bold> <gradient:white:black>]=====----</gradient></bold>{br}<bold>    <gradient:#EEFF4A:#F7FFAE><italic>V1.2.1(Test-pre)</italic></gradient>    <rainbow>版本兼容增强!<rainbow>"
+
+maxPlayers:
+  # Do you want to enable this feature?
+  maxPlayersEnabled: true
+
+  # Changes the Max Players value.
+  maxPlayers: 40
+
+  # Changes the Max Players to X more than the online players
+  # Example: 16/19 players online.
+  justXMoreEnabled: false
+  xValue: 3
+
+# These options work on Paper Servers, BungeeCord or Waterfall based proxies,
+#  and Velocity proxies.
+# These options do not work on pure Spigot Servers as the API methods are missing
+# Get Paper here: https://papermc.io/downloads
+bungeeOnly:
+  # Do you want to enable this feature?
+  fakePlayersEnabled: false
+
+  # Modes: static, random, percent
+  #   static: This many fake players will be added
+  #     ex: fakePlayers: "3"
+  #   random: A random number of fake players in this range will be added
+  #     ex: fakePlayers: "3:6"
+  #   percent: The player count will be inflated by this much, rounding up
+  #     ex: fakePlayers: "25%"
+  fakePlayers: "25%"

@@ -1,0 +1,550 @@
+reward1:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward2:
+  lore:
+  - x2 Diamonds
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward12:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward23:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward14:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward25:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward16:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward27:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward18:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward29:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward110:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward211:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward112:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward213:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward114:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward215:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward116:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward217:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward118:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward219:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward120:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward221:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward122:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward223:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward124:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward225:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward126:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward227:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward128:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward229:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward130:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward231:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward132:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward233:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward134:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward235:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward136:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward237:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward138:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward239:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward140:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward241:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward142:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward243:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward144:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward245:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward146:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward247:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'
+reward10:
+  lore:
+  - $2500
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: eco give %target% 2500; ~target: self;'
+reward21:
+  lore:
+  - x2 钻石
+  custom-actions:
+    default:
+      target-selectors:
+      - '[SELF] ~name: self;'
+      conditions:
+        list: []
+      action-executors:
+      - '[COMMAND_CONSOLE] ~message: give %target% diamond 2; ~target: self;'

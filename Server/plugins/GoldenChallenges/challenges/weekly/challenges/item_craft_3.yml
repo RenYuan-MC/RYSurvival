@@ -1,0 +1,40 @@
+name: '%generator-name% &7Lv. %generator-level%'
+type: ITEM_CRAFT
+icon:
+  material: ENCHANTING_TABLE
+  name: '%name%'
+  lore: []
+  item-flags:
+  - '*'
+generator:
+  names:
+  - '&d附魔时间'
+  levels:
+    minimum: 1
+    maximum: 5
+  objectives:
+    amount:
+      minimum: '1'
+      maximum: '2'
+      list:
+        '1':
+        - ENCHANTING_TABLE
+        - BOOKSHELF
+    progress:
+      default:
+        minimum: 3 * %level%
+        maximum: 4 * %level%
+      ENCHANTING_TABLE:
+        minimum: '1'
+        maximum: '2'
+  affected-worlds:
+    minimum: '1'
+    maximum: '1'
+    list: {}
+  rewards:
+    minimum: '1'
+    maximum: '2'
+    list:
+      '1':
+      - reward1
+      - reward2

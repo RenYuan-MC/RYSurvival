@@ -1,0 +1,37 @@
+name: '%generator-name% &7Lv. %generator-level%'
+type: ITEM_COOK
+icon:
+  material: COOKED_COD
+  name: '%name%'
+  lore: []
+  item-flags:
+  - '*'
+generator:
+  names:
+  - '&6烤鱼'
+  levels:
+    minimum: 1
+    maximum: 5
+  objectives:
+    amount:
+      minimum: '1'
+      maximum: '2'
+      list:
+        '1':
+        - COOKED_COD
+        - COOKED_SALMON
+    progress:
+      default:
+        minimum: 4 * %level%
+        maximum: 6 * %level%
+  affected-worlds:
+    minimum: '1'
+    maximum: '1'
+    list: {}
+  rewards:
+    minimum: '1'
+    maximum: '2'
+    list:
+      '1':
+      - reward1
+      - reward2

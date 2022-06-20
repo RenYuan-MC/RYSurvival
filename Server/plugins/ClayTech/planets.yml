@@ -1,0 +1,6 @@
+world: true
+CMoon: false
+CMars: false
+world-spawnMobs: true
+CMoon-spawnMobs: false
+CMars-spawnMobs: false

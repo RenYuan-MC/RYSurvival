@@ -248,8 +248,6 @@ Global:
     honeycomb: true
     # Applies to: Both
     nametag: true
-    # Applies to: Both
-    copper: true
   # This sets GUI items to represent each flag, if not given, then gray wool will be used
   FlagGui:
     animalkilling: CHICKEN
@@ -371,7 +369,6 @@ Global:
     honey: BEEHIVE
     honeycomb: BEE_NEST
     nametag: NAME_TAG
-    copper: IRON_BLOCK
   # These are default flags applied to all residences from any user group.
   ResidenceDefault:
     build: false

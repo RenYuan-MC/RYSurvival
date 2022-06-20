@@ -21,26 +21,26 @@ settings:
   connection-throttle: 4000
   query-plugins: true
   deprecated-verbose: default
-  shutdown-message: 服务器已关闭或重启
+  shutdown-message: Server closed
   minimum-api: none
 spawn-limits:
-  water-underground-creature: 5
-  monsters: 20
-  animals: 7
-  water-animals: 5
-  water-ambient: 5
-  ambient: 2
+  water-ambient: 20
+  monsters: 70
+  animals: 10
+  water-animals: 15
+  ambient: 15
 chunk-gc:
-  period-in-ticks: 300
+  period-in-ticks: 400
 ticks-per:
-  water-underground-creature-spawns: 1
+  water-ambient-spawns: 1
   animal-spawns: 400
-  monster-spawns: 8
-  water-spawns: 40
-  water-ambient-spawns: 25
-  ambient-spawns: 80
+  monster-spawns: 2
+  water-spawns: 3
+  ambient-spawns: 3
   autosave: 6000
-aliases: now-in-commands.yml
 worlds:
-  otd_dungeon:
+  world:
     generator: Terra:DEFAULT
+  world_nether:
+    generator: Terra:NETHER
+aliases: now-in-commands.yml

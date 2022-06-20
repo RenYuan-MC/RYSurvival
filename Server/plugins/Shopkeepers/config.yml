@@ -1,0 +1,790 @@
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+# Shopkeepers Config
+# Wiki: https://github.com/Shopkeepers/Shopkeepers-Wiki/wiki/Configuration
+# The wiki also explains how item data gets specified inside the config.
+# Community translations: https://github.com/Shopkeepers/Translations
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+# Determines the required config migrations. Do not edit manually!
+config-version: 3
+# The initial debugging state of the plugin.
+debug: false
+# Additional debugging options.
+# - 'capabilities': Logs details of the server version dependent capabilities.
+# - 'log-all-events': Logs all events.
+# - 'print-listeners': Prints the registered listeners for the first call of
+#    each event.
+# - 'shopkeeper-activation': Enables debugging output related to shopkeeper
+#    activation.
+# - 'commands': Enables additional commands related debugging output.
+# - 'owner-name-updates': Logs information when updating stored shop owner
+#    names.
+# - 'item-migrations': Logs whenever a shopkeeper performs item migrations (eg.
+#    for trading offers).
+# - 'item-conversions': Logs whenever we explicitly convert items to Spigot's
+#    data format. Note that this does not log when items get implicitly
+#    converted, which may happen under various circumstances.
+debug-options: []
+# Whether to report anonymous usage statistics to https://bStats.org
+# All reported information can be found here:
+# https://bstats.org/plugin/bukkit/Shopkeepers
+enable-metrics: true
+
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+# Shopkeeper Data
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+# The file encoding to use for the save file. If empty, your system's default
+# encoding will be used. If you have issues with the save file, such as special
+# characters not being saved correctly, try setting this option to 'UTF-8'.
+file-encoding: "UTF-8"
+# Whether the save file shall get written every time a shopkeeper was edited.
+# If disabled, saving will occur at 5 minute intervals and on plugin shutdown.
+# If you have a large server with many players and/or many shopkeepers, it
+# might be a good idea to disable this for performance reasons.
+save-instantly: true
+
+# Enables the automatic conversion of items inside the inventories of players
+# and shop containers whenever a player opens a shopkeeper UI (eg. trading,
+# editor, hiring, etc.) The items are converted to conform to Spigot's internal
+# data format.
+# This setting helps with issues related to items which have been created on
+# previous Spigot versions or via some Minecraft mechanism (eg. give command,
+# loot tables, etc.) no longer getting accepted when trading with shopkeepers.
+# In order for the items to get reliably accepted during trades, their data has
+# to match the internal format which Spigot uses when a plugin would create the
+# same items via the Spigot API. Spigot occasionally makes changes to this
+# internal data format. Any previously created items, or newly created items
+# which don't conform to this new format, may cause trading and item stacking
+# issues then.
+# This setting is intended to help with the portion of the issue affecting
+# shopkeeper trades. This setting will not reliably help you prevent item
+# stacking related issues!
+# Enabling this setting comes with a performance impact! Try to avoid using
+# this option and search for alternative solutions instead (eg. stick to
+# Spigot's data format when creating items via Minecraft mechanisms). Try to
+# only keep this setting enabled for as long as required (eg. until you assume
+# that most of your players' legacy items got converted by now).
+convert-player-items: false
+# If 'convert-player-items' is enabled, this setting toggles whether the
+# 'convert-player-items-exceptions' setting acts as black- or whitelist.
+# If enabled, all items inside the checked inventories will be converted except
+# those that match the items specified by 'convert-player-items-exceptions'.
+# If disabled, only items that match the items specified by
+# 'convert-player-items-exceptions' get converted.
+convert-all-player-items: true
+# Black- or whitelist of items affected by the 'convert-player-items' setting.
+convert-player-items-exceptions: []
+
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+# Plugin Compatibility
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+# Whether the plugin shall periodically verify that all shopkeepers that should
+# currently be spawned are actually present. This should only be enabled if you
+# have problems with shopkeepers disappearing.
+enable-spawn-verifier: false
+# If enabled, Shopkeepers tries to bypass other plugins which deny mob spawning
+# (ex. land protection plugins).
+bypass-spawn-blocking: true
+# If enabled, Shopkeepers takes into account whether other plugins deny
+# interaction with the shopkeepers.
+check-shop-interaction-result: false
+
+# If enabled, players will only be able to place shopkeepers where they have
+# permission from WorldGuard to build or where the 'allow-shop' flag is set.
+enable-world-guard-restrictions: false
+# If enabled (additionally to the enable-world-guard-restrictions setting),
+# players will only be able to place shopkeepers in regions where the
+# 'allow-shop' flag is set, but nowhere else. However, players will still
+# require container access to setup shops. And in case they can't place
+# containers in the affected region, shop containers need to be pre-setup by
+# someone else and the require-container-recently-placed setting needs to be
+# disabled.
+require-world-guard-allow-shop-flag: false
+# Whether to register the allow-shop flag with WorldGuard (if no other plugin
+# has registered it yet). Usually there should be no need to disable this.
+# Changing this setting has no effect until the next server restart or full
+# server reload!
+register-world-guard-allow-shop-flag: true
+
+# If enabled, players will only be able to place shopkeepers in places that
+# have been designated as commercial areas by Towny.
+enable-towny-restrictions: false
+
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+# Shop Creation (and removal)
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+# The item used to create player shops.
+# Use the '/shopkeeper give' command to give yourself this item in-game.
+shop-creation-item:
+  type: VILLAGER_SPAWN_EGG
+  display-name: "&aShopkeeper"
+
+# Whether to prevent normal usage of the shop-creation item. Players with the
+# bypass permission (usually admins) can bypass this.
+prevent-shop-creation-item-regular-usage: true
+# Whether deleting (or destroying) a player shopkeeper returns (drops) the
+# shop-creation item.
+deleting-player-shop-returns-creation-item: false
+
+# Whether to allow creating player shops with the /shopkeeper command.
+create-player-shop-with-command: false
+
+# Whether the selected container must have been recently placed by the player
+# who is attempting to create the shopkeeper.
+require-container-recently-placed: true
+# The maximum distance a player shopkeeper can be placed from its backing
+# container. This cannot be set to a value greater than 50.
+max-container-distance: 15
+# The default maximum number of shops a player can have. Set to 0 to allow any
+# number of shops.
+max-shops-per-player: 0
+# A list of permission nodes that can be used to explicitly set the maximum
+# number of shops a specific player or group of players can have. Use the
+# shopkeeper.maxshops.<count> permission node pattern to use this feature.
+max-shops-perm-options: 5,15,25
+
+# Whether to protect player shop containers from being accessed or broken. It
+# is usually recommended to keep this enabled.
+protect-containers: true
+# Whether to prevent item movements from and to protected shop containers (via
+# hoppers, droppers, etc.). Item movement will always be allowed if the
+# container protection is disabled.
+prevent-item-movement: true
+# Whether to delete player shopkeepers when their container is broken.
+delete-shopkeeper-on-break-container: false
+
+# If enabled (set to a value greater than 0), Shopkeepers will check for and
+# remove the shops of inactive players once every plugin start. This setting
+# determines how many days ago a player's last login has to be in order for the
+# player to be considered inactive.
+player-shopkeeper-inactive-days: 0
+
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+# Shop (Object) Types
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+# A list of mob types which can be used for shopkeepers. Adding new mob types
+# to the defaults here is unsupported, as some mob types might not properly
+# work and can cause all kinds of issues.
+enabled-living-shops:
+- VILLAGER
+- COW
+- MUSHROOM_COW
+- SHEEP
+- PIG
+- CHICKEN
+- OCELOT
+- RABBIT
+- WOLF
+- SNOWMAN
+- IRON_GOLEM
+- POLAR_BEAR
+- BLAZE
+- SILVERFISH
+- SKELETON
+- STRAY
+- WITHER_SKELETON
+- SPIDER
+- CAVE_SPIDER
+- CREEPER
+- WITCH
+- ENDERMAN
+- ZOMBIE
+- ZOMBIE_VILLAGER
+- HUSK
+- GIANT
+- GHAST
+- SLIME
+- MAGMA_CUBE
+- SQUID
+- HORSE
+- MULE
+- DONKEY
+- SKELETON_HORSE
+- ZOMBIE_HORSE
+- EVOKER
+- VEX
+- VINDICATOR
+- ILLUSIONER
+- PARROT
+- TURTLE
+- PHANTOM
+- COD
+- SALMON
+- PUFFERFISH
+- TROPICAL_FISH
+- DROWNED
+- DOLPHIN
+- CAT
+- PANDA
+- PILLAGER
+- RAVAGER
+- LLAMA
+- TRADER_LLAMA
+- WANDERING_TRADER
+- FOX
+- BEE
+- ZOMBIFIED_PIGLIN
+- PIGLIN
+- HOGLIN
+- ZOGLIN
+- STRIDER
+
+# Whether shopkeeper mobs shall not be affected by gravity.
+disable-gravity: false
+# The range in chunks around players in which shopkeeper mobs will be affected
+# by gravity. Setting this too high may have a negative impact on performance.
+# And setting it below the server's entity tracking range will result in
+# players being able to see mobs floating in mid air until they get close
+# enough. A value of 0 will limit the gravity to mobs within chunks that
+# contain a player. This has no effect if gravity is disabled.
+gravity-chunk-range: 4
+
+# Whether mob shopkeepers make sounds.
+silence-living-shop-entities: true
+
+# Whether to show nameplates of mob shopkeepers.
+show-nameplates: true
+# Whether to always show nameplates. If disabled, nameplates will only be shown
+# when looking directly at the shopkeeper.
+always-show-nameplates: false
+# The prefix for nameplates (to help distinguish them from players).
+nameplate-prefix: "&a"
+
+# Whether to allow citizen (npc) shops. Requires the plugin Citizens.
+enable-citizen-shops: true
+
+# Whether to allow sign shops.
+enable-sign-shops: true
+# Whether to allow the creation of sign posts (instead of only wall signs).
+enable-sign-post-shops: true
+# The first line of a sign shop.
+sign-shop-first-line: "[SHOP]"
+
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+# Naming
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+# A regular expression used to validate shopkeeper names. For detailed
+# information on regular expressions the following documentations are helpful:
+# * https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html
+# * http://www.regular-expressions.info/tutorial.html
+# Here are a few examples:
+# * "[A-Za-z0-9 ]{3,25}": The default. Allows letters and numbers, from 3 to 25
+# characters long.
+# * "[A-Za-z0-9& ]{3,25}": Same as the default, but also allows the ampersand
+# character which enables color codes.
+# * "\p{L}": Matches any letter, regardless of language.
+# * ".*": Matches everything.
+# * Adding "(?i)" at the front enables case insensitive matching.
+# * "(?=X)": The name has to match "X" (X can be another embedded expression),
+# but the name is not consumed and has to also match the following expressions.
+# * "(?!.*X).*": The name is not allowed to contain anything that matches "X".
+# * "(?i)(?=[a-z0-9 ]{3,25})(?!.*bitch|dick|ass).*": Filters bad words.
+name-regex: "[A-Za-z0-9 ]{3,25}"
+# Whether player shops get named via item. This will hide the naming option
+# from the editor menu.
+naming-of-player-shops-via-item: false
+# Whether renaming of player npc (citizen) shopkeepers is allowed. By default
+# those shopkeepers will be named after the player who owns the shop.
+allow-renaming-of-player-npc-shops: false
+
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+# Editor Menu
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+# The window title of the shopkeeper editor menu.
+editor-title: "Shopkeeper Editor"
+
+# The number of pages that can be filled with trades. Max 10.
+max-trades-pages: 5
+
+# The items used for the buttons and icons in the trades page row.
+# The display name and lore of these items get set via the corresponding
+# messages and can therefore not be defined here.
+previous-page-item: WRITABLE_BOOK
+next-page-item: WRITABLE_BOOK
+current-page-item: WRITABLE_BOOK
+trade-setup-item: PAPER
+
+# The item used for the set-name button, and the naming item (if enabled).
+name-item: NAME_TAG
+
+# Whether the editor menu of player shops contains an option to open the shop's
+# container.
+enable-container-option-on-player-shop: true
+# The item used for the 'open container' editor button.
+container-item: CHEST
+
+# The item used for the delete button.
+delete-item: BONE
+
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+# Non-shopkeeper villagers
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+# Whether to prevent trading with non-shopkeeper villagers.
+disable-other-villagers: false
+# Whether to block regular non-shopkeeper villagers from spawning. Villagers
+# spawned by plugins, spawn eggs, mob spawners or by curing zombie villagers
+# are however not affected by this.
+block-villager-spawns: false
+# Whether to prevent curing of zombie villagers.
+disable-zombie-villager-curing: false
+# Whether non-shopkeeper villagers can be hired.
+hire-other-villagers: false
+
+# Whether to prevent trading with non-shopkeeper wandering traders.
+disable-wandering-traders: false
+# Whether to block non-shopkeeper wandering traders and trader llamas from
+# spawning. Wandering traders and trader llamas spawned by plugins, spawn eggs
+# or mob spawners are however not affected by this.
+block-wandering-trader-spawns: false
+# Whether non-shopkeeper wandering traders can be hired.
+hire-wandering-traders: false
+
+# Whether regular villagers can be edited by sneaking and right-clicking.
+edit-regular-villagers: true
+# Whether regular wandering traders can be edited by sneaking and
+# right-clicking.
+edit-regular-wandering-traders: true
+
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+# Hiring
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+# The item to use for the hire button in player shopkeepers that are for sale,
+# and for the hire-cost when hiring non-shopkeeper villagers.
+hire-item: EMERALD
+# The amount of hire-cost items it costs to hire a non-shopkeeper villager.
+hire-other-villagers-costs: 1
+# The title of the hiring inventory window when hiring a player shopkeeper.
+for-hire-title: "For Hire"
+# Whether hiring a player shopkeeper also requires the permission to create
+# player shopkeepers of that type.
+hire-require-creation-permission: true
+
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+# Trading
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+# Whether to prevent players from trading with their own shopkeepers. Keeping
+# this enabled is recommended.
+prevent-trading-with-own-shop: true
+# With this enabled player shopkeepers don't trade while their owner is online.
+# This might be useful for role-playing servers, which wish to force players to
+# trade with each other directly while being online.
+prevent-trading-while-owner-is-online: false
+# Minecraft allows trading of not fully matching items in some situations
+# (ex. items with additional data are accepted in trades). With this enabled
+# Shopkeepers will always check that the traded items are fully matching and it
+# will prevent the trade once the player tries to pickup the item from the
+# trading result slot.
+use-strict-item-comparison: false
+# Whether all shopkeeper purchases shall be logged to csv files in the plugin
+# folder. Note: This might currently not properly work for admin shops, so
+# don't rely on the correctness of the logged purchases for those!
+enable-purchase-logging: false
+# Whether to increment minecraft's talked-to-villager and traded-with-villager
+# statistics whenever a player opens the trading menu and trades with a
+# shopkeeper.
+increment-villager-statistics: false
+
+# The percentage that should be removed from player shop earnings.
+tax-rate: 0
+# Whether to round up instead of down when calculating the tax of a player shop
+# transaction.
+tax-round-up: false
+
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+# Currencies
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+# The item for the currency used in player shops.
+currency-item: EMERALD
+
+# The item for the placeholder when a player has not set the cost for an item.
+zero-currency-item: BARRIER
+
+# The item for a second, higher-value currency used in the second trading slot
+# of player shops. Set to 'AIR' to disable the second currency.
+high-currency-item: EMERALD_BLOCK
+
+# The item for the placeholder when a player has not set the second currency
+# cost for an item.
+zero-high-currency-item: BARRIER
+
+# The value of the second currency, based on the first currency.
+high-currency-value: 9
+# The second currency will only be used if an item's cost is greater than this
+# value.
+high-currency-min-cost: 20
+
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+# Messages
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+language: en
+
+msg-shop-type-admin-regular: "Admin shop"
+msg-shop-type-selling: "Selling shop"
+msg-shop-type-buying: "Buying shop"
+msg-shop-type-trading: "Trading shop"
+msg-shop-type-book: "Book shop"
+
+msg-shop-type-desc-admin-regular: "has unlimited stock"
+msg-shop-type-desc-selling: "sells items to players"
+msg-shop-type-desc-buying: "buys items from players"
+msg-shop-type-desc-trading: "trades items with players"
+msg-shop-type-desc-book: "sells book copies"
+
+msg-shop-object-type-living: "{type}"
+msg-shop-object-type-sign: "sign"
+msg-shop-object-type-npc: "npc"
+
+msg-selected-shop-type: "&aSelected shop type: &6{type} &7({description})"
+msg-selected-shop-object-type: "&aSelected object type: &6{type}"
+
+msg-creation-item-selected: |-
+  &aShop creation:
+  &e  Left/Right-click to select the shop type.
+  &e  Sneak + left/right-click to select the object type.
+  &e  Right-click a container to select it.
+  &e  Then right-click a block to place the shopkeeper.
+
+msg-button-previous-page: "&6<- Previous page ({prev_page} of {max_page})"
+msg-button-previous-page-lore: []
+msg-button-next-page: "&6Next page ({next_page} of {max_page}) ->"
+msg-button-next-page-lore: []
+msg-button-current-page: "&6Page {page} of {max_page}"
+msg-button-current-page-lore: []
+
+msg-button-name: "&aSet shop name"
+msg-button-name-lore:
+- Lets you rename
+- your shopkeeper
+msg-button-container: "&aView shop inventory"
+msg-button-container-lore:
+- Lets you view the inventory
+- your shopkeeper is using
+msg-button-delete: "&4Delete"
+msg-button-delete-lore:
+- Closes and removes
+- this shopkeeper
+msg-button-hire: "&aHire"
+msg-button-hire-lore:
+- Buy this shopkeeper
+
+msg-button-sign-variant: "&aChoose sign variant"
+msg-button-sign-variant-lore:
+- "Changes the sign's"
+- "wood type"
+msg-button-baby: "&aToggle baby variant"
+msg-button-baby-lore:
+- "Toggles between the mob's"
+- "baby and adult variant"
+msg-button-sitting: "&aToggle sitting pose"
+msg-button-sitting-lore:
+- "Toggles the mob's"
+- "sitting pose"
+msg-button-cat-variant: "&aChoose cat variant"
+msg-button-cat-variant-lore:
+- "Changes the cat's look"
+msg-button-rabbit-variant: "&aChoose rabbit variant"
+msg-button-rabbit-variant-lore:
+- "Changes the rabbit's look"
+msg-button-collar-color: "&aChoose collar color"
+msg-button-collar-color-lore:
+- "Changes the mob's"
+- "collar color"
+msg-button-wolf-angry: "&aToggle angry wolf"
+msg-button-wolf-angry-lore:
+- "Toggles the wolf's"
+- "angry state"
+msg-button-carrying-chest: "&aToggle carrying chest"
+msg-button-carrying-chest-lore:
+- "Toggles whether the mob"
+- "is carrying a chest"
+msg-button-horse-color: "&aChoose horse color"
+msg-button-horse-color-lore:
+- "Changes the color"
+- "of the horse"
+msg-button-horse-style: "&aChoose horse style"
+msg-button-horse-style-lore:
+- "Changes the coat pattern"
+- "of the horse"
+msg-button-horse-armor: "&aChoose horse armor"
+msg-button-horse-armor-lore:
+- "Changes the armor"
+- "of the horse"
+msg-button-llama-variant: "&aChoose llama variant"
+msg-button-llama-variant-lore:
+- "Changes the llama's look"
+msg-button-llama-carpet-color: "&aLlama carpet color"
+msg-button-llama-carpet-color-lore:
+- "Changes the llama's"
+- "carpet color"
+msg-button-creeper-charged: "&aToggle charged creeper"
+msg-button-creeper-charged-lore:
+- "Toggles the creeper's"
+- "charged state"
+msg-button-fox-variant: "&aChoose fox variant"
+msg-button-fox-variant-lore:
+- "Changes the fox's look"
+msg-button-fox-crouching: "&aToggle crouching pose"
+msg-button-fox-crouching-lore:
+- "Toggles the fox's"
+- "crouching pose"
+msg-button-fox-sleeping: "&aToggle sleeping pose"
+msg-button-fox-sleeping-lore:
+- "Toggles the fox's"
+- "sleeping pose"
+msg-button-mooshroom-variant: "&aChoose mooshroom variant"
+msg-button-mooshroom-variant-lore:
+- "Changes the look"
+- "of the mooshroom"
+msg-button-panda-variant: "&aChoose panda variant"
+msg-button-panda-variant-lore:
+- "Changes the panda's look"
+msg-button-parrot-variant: "&aChoose parrot variant"
+msg-button-parrot-variant-lore:
+- "Changes the parrot's look"
+msg-button-pig-saddle: "&aToggle pig saddle"
+msg-button-pig-saddle-lore:
+- "Toggles the pig's saddle"
+msg-button-sheep-color: "&aChoose sheep color"
+msg-button-sheep-color-lore:
+- "Changes the sheep's"
+- "wool color"
+msg-button-sheep-sheared: "&aToggle sheared sheep"
+msg-button-sheep-sheared-lore:
+- "Toggles the sheep's"
+- "sheared state"
+msg-button-villager-profession: "&aChoose villager profession"
+msg-button-villager-profession-lore:
+- "Changes the profession"
+- "of the villager"
+msg-button-villager-variant: "&aChoose villager variant"
+msg-button-villager-variant-lore:
+- "Changes the look"
+- "of the villager"
+msg-button-villager-level: "&aChoose villager badge color"
+msg-button-villager-level-lore:
+- "Changes the badge color"
+- "of the villager"
+msg-button-zombie-villager-profession: "&aChoose villager profession"
+msg-button-zombie-villager-profession-lore:
+- "Changes the profession"
+- "of the zombie villager"
+msg-button-slime-size: "&aChoose slime size"
+msg-button-slime-size-lore:
+- "Cycles the slime's size."
+- "Current size: &e{size}"
+msg-button-magma-cube-size: "&aChoose magma cube size"
+msg-button-magma-cube-size-lore:
+- "Cycles the magma cube's size."
+- "Current size: &e{size}"
+
+msg-trading-title-prefix: "&2"
+msg-trading-title-default: "Shopkeeper"
+
+msg-container-selected: "&aContainer selected! Right-click a block to place your shopkeeper."
+msg-unsupported-container: "&7This type of container cannot be used for shops."
+msg-must-select-container: "&7You must right-click a container before placing your shopkeeper."
+msg-invalid-container: "&7The selected block is not a valid container!"
+msg-container-too-far-away: "&7The shopkeeper's container is too far away!"
+msg-container-not-placed: "&7You must select a container you have recently placed!"
+msg-container-already-in-use: "&7Another shopkeeper is already using the selected container!"
+msg-no-container-access: "&7You cannot access the selected container!"
+msg-too-many-shops: "&7You have too many shops!"
+msg-no-admin-shop-type-selected: "&7You have to select an admin shop type!"
+msg-no-player-shop-type-selected: "&7You have to select a player shop type!"
+msg-shop-create-fail: "&7You cannot create a shopkeeper there."
+
+msg-type-new-name: "&aPlease type the shop's name into the chat.\n  &aType a dash (-) to remove the name."
+msg-name-set: "&aThe shop's name has been set!"
+msg-name-has-not-changed: "&aThe shop's name has not changed."
+msg-name-invalid: "&aThat name is not valid!"
+
+msg-shop-type-disabled: "&7The shop type '&6{type}&7' is disabled."
+msg-shop-object-type-disabled: "&7The shop object type '&6{type}&7' is disabled."
+
+msg-must-target-shop: "&7You have to target a shopkeeper."
+msg-must-target-admin-shop: "&7You have to target an admin shopkeeper."
+msg-must-target-player-shop: "&7You have to target a player shopkeeper."
+msg-target-entity-is-no-shop: "&7The targeted entity is no shopkeeper."
+msg-target-shop-is-no-admin-shop: "&7The targeted shopkeeper is no admin shopkeeper."
+msg-target-shop-is-no-player-shop: "&7The targeted shopkeeper is no player shopkeeper."
+msg-unused-container: "&7No shopkeeper is using this container."
+msg-not-owner: "&7You are not the owner of this shopkeeper."
+msg-owner-set: "&aNew owner was set to &e{owner}"
+msg-shop-creation-items-given: "&aPlayer &e{player}&a has received &e{amount}&a shop creation item(s)!"
+msg-shop-creation-items-received: "&aYou have received &e{amount}&a shop creation item(s)!"
+msg-currency-items-given: "&aPlayer &e{player}&a has received &e{amount}&a currency item(s)!"
+msg-currency-items-received: "&aYou have received &e{amount}&a currency item(s)!"
+msg-high-currency-items-given: "&aPlayer &e{player}&a has received &e{amount}&a high currency item(s)!"
+msg-high-currency-items-received: "&aYou have received &e{amount}&a high currency item(s)!"
+msg-high-currency-disabled: "&cThe high currency is disabled!"
+msg-items-converted: "&aConverted &e{count}&a item stack(s)!"
+msg-unknown-book-author: "Unknown"
+
+msg-trade-perm-set: "&aThe shop's trading permission has been set to '&e{perm}&a'!"
+msg-trade-perm-removed: "&aThe shop's trading permission '&e{perm}&a' has been removed!"
+msg-trade-perm-view: "&aThe shop's current trading permission is '&e{perm}&a'."
+
+msg-zombie-villager-curing-disabled: "&7Curing of zombie villagers is disabled."
+msg-must-hold-hire-item: "&7You have to hold the required hire item in your hand."
+msg-set-for-hire: "&aThe Shopkeeper was set for hire."
+msg-hired: "&aYou have hired this shopkeeper!"
+msg-missing-hire-perm: "&7You do not have the permission to hire shopkeepers."
+msg-cant-hire: "&7You cannot afford to hire this shopkeeper."
+msg-cant-hire-shop-type: "&7You do not have the permission to hire this type of shopkeeper."
+msg-villager-for-hire: "&aThe villager offered his services as a shopkeeper in exchange for &6{costs}x {hire-item}&a."
+
+msg-missing-trade-perm: "&7You do not have the permission to trade with this shop."
+msg-missing-custom-trade-perm: "&7You do not have the permission to trade with this shop."
+msg-cant-trade-with-own-shop: "&7You cannot trade with your own shop."
+msg-cant-trade-while-owner-online: "&7You cannot trade while the owner of this shop ('&e{owner}&7') is online."
+msg-cant-trade-with-shop-missing-container: "&7You cannot trade with this shop, because its container is missing."
+
+msg-shopkeeper-created: "&aShopkeeper created: &6{type} &7({description})\n{setupDesc}"
+
+msg-shop-setup-desc-selling: |-
+  &e  Add items you want to sell to your container, then
+  &e  right-click the shop while sneaking to modify costs.
+msg-shop-setup-desc-buying: |-
+  &e  Add one of each item you want to buy to your container,
+  &e  then right-click the shop while sneaking to modify costs.
+msg-shop-setup-desc-trading: |-
+  &e  Add items you want to sell to your container, then
+  &e  right-click the shop while sneaking to modify costs.
+msg-shop-setup-desc-book: |-
+  &e  Add written and blank books to your container, then
+  &e  right-click the shop while sneaking to modify costs.
+msg-shop-setup-desc-admin-regular: |-
+  &e  Right-click the shop while sneaking to modify trades.
+
+msg-trade-setup-desc-header: '&6{shopType}'
+msg-trade-setup-desc-admin-regular:
+- Has unlimited stock.
+- Insert items from your inventory.
+- 'Top row: Result items'
+- 'Bottom rows: Cost items'
+msg-trade-setup-desc-selling:
+- Sells items to players.
+- Insert items to sell into the container.
+- Left/Right click to adjust amounts.
+- 'Top row: Items being sold'
+- 'Bottom rows: Cost items'
+msg-trade-setup-desc-buying:
+- Buys items from players.
+- Insert one of each item you want to
+- buy and plenty of currency items
+- into the container.
+- Left/Right click to adjust amounts.
+- 'Top row: Cost items'
+- 'Bottom row: Items being bought'
+msg-trade-setup-desc-trading:
+- Trades items with players.
+- Pickup an item from your inventory
+- and then click a slot to place it.
+- Left/Right click to adjust amounts.
+- 'Top row: Result items'
+- 'Bottom rows: Cost items'
+msg-trade-setup-desc-book:
+- Sells book copies.
+- Insert written and blank books
+- into the container.
+- Left/Right click to adjust costs.
+- 'Top row: Books being sold'
+- 'Bottom rows: Cost items'
+
+msg-missing-edit-villagers-perm: "&7You do not have the permission to edit villagers."
+msg-missing-edit-wandering-traders-perm: "&7You do not have the permission to edit wandering traders."
+msg-must-target-entity: "&7You have to target an entity."
+msg-must-target-villager: "&7You have to target a villager."
+msg-target-entity-is-no-villager: "&7The targeted entity is no regular villager."
+
+msg-villager-editor-title: "&aVillager Editor: &e{villagerName}"
+msg-villager-editor-description-header: "&6Villager Editor"
+msg-villager-editor-description:
+- 'Top row: Result items'
+- 'Bottom rows: Cost items'
+- 'Edited trades have infinite'
+- 'uses and no XP rewards.'
+
+msg-button-delete-villager: "&4Delete"
+msg-button-delete-villager-lore:
+- Deletes the villager
+msg-button-villager-inventory: "&aView villager inventory"
+msg-button-villager-inventory-lore:
+- Lets you view a copy of
+- the villager's inventory
+msg-button-mob-ai: "&aToggle mob AI"
+msg-button-mob-ai-lore:
+- "Toggles the mob's AI"
+
+msg-villager-inventory-title: "Villager inventory (copy)"
+msg-set-villager-xp: "&aSet the villager's XP to &e{xp}"
+msg-no-villager-trades-changed: "&aNo trades have been changed."
+msg-villager-trades-changed: "&e{changedTrades}&a trades have been changed."
+
+msg-list-admin-shops-header: "&9There are &e{shopsCount} &9admin shops: &e(Page {page} of {maxPage})"
+msg-list-all-shops-header: "&9There are &e{shopsCount} &9shops in total: &e(Page {page} of {maxPage})"
+msg-list-player-shops-header: "&9Player '&e{player}&9' has &e{shopsCount} &9shops: &e(Page {page} of {maxPage})"
+msg-list-shops-entry: "  &e{shopId}) &7{shopName}&r&8at &7({location})&8, type: &7{shopType}&8, object: &7{objectType}"
+
+msg-removed-admin-shops: "&e{shopsCount} &aadmin shops were removed."
+msg-removed-shops-of-player: "&e{shopsCount} &ashops of player '&e{player}&a' were removed."
+msg-removed-player-shops: "&e{shopsCount} &aplayer shops were removed."
+
+msg-confirm-remove-all-admin-shops: "&cYou are about to irrevocable remove all admin shops (&6{shopsCount}&c)!"
+msg-confirm-remove-all-own-shops: "&cYou are about to irrevocable remove all your shops (&6{shopsCount}&c)!"
+msg-confirm-remove-all-shops-of-player: "&cYou are about to irrevocable remove all shops of player &6{player}&c (&6{shopsCount}&c)!"
+msg-confirm-remove-all-player-shops: "&cYou are about to irrevocable remove all player shops of all players (&6{shopsCount}&c)!"
+
+msg-confirmation-required: "&7Please confirm this action by typing &6/shopkeepers confirm"
+msg-confirmation-expired: "&cConfirmation expired."
+msg-nothing-to-confirm: "&cThere is nothing to confirm currently."
+
+msg-no-permission: "&cYou don't have the permission to do that."
+
+msg-command-unknown: "&cUnknown command '&e{command}&c'!"
+msg-command-argument-unexpected: "&cUnexpected argument '&e{argument}&c'."
+msg-command-argument-requires-player: "&cArgument '&e{argumentFormat}&c' requires a player to execute the command."
+msg-command-argument-missing: "&cMissing argument '&e{argumentFormat}&c'."
+msg-command-argument-invalid: "&cInvalid argument '&e{argument}&c'."
+msg-command-player-argument-missing: "&cNo player specified for '&e{argumentFormat}&c'."
+msg-command-player-argument-invalid: "&cNo player found for '&e{argument}&c'."
+msg-command-shop-type-argument-invalid: "&cUnknown shop type '&e{argument}&c'."
+msg-command-shop-object-type-argument-invalid: "&cUnknown shop object type '&e{argument}&c'."
+msg-command-shopkeeper-argument-invalid: "&cNo shopkeeper found for '&e{argument}&c'."
+msg-command-shopkeeper-argument-no-admin-shop: "&cShopkeeper '&e{argument}&c' is no admin shopkeeper."
+msg-command-shopkeeper-argument-no-player-shop: "&cShopkeeper '&e{argument}&c' is no player shopkeeper."
+
+msg-ambiguous-player-name: "&cThere are multiple matches for the name '&e{name}&c'!"
+msg-ambiguous-player-name-entry: "&c  - '&e{name}&r&c' (&6{uuid}&c)"
+msg-ambiguous-player-name-more: "&c  - ...."
+
+msg-command-help-title: "&9***** &8[&6Shopkeepers v{version}&8] &9*****"
+msg-command-help-usage-format: "&e{usage}"
+msg-command-help-description-format: "&8 - &3{description}"
+
+msg-command-description-shopkeeper: "Creates a shopkeeper."
+msg-command-description-help: "Shows this help page."
+msg-command-description-reload: "Reloads this plugin."
+msg-command-description-debug: "Toggles debug mode on and off."
+msg-command-description-list: "Lists all shops for the specified player, or all admin shops."
+msg-command-description-remove: "Removes all shops for the specified player, all players, or all admin shops."
+msg-command-description-give: "Gives shop creation item(s) to the specified player."
+msg-command-description-give-currency: "Gives currency item(s) to the specified player."
+msg-command-description-convert-items: "Converts the held (or all) items to conform to Spigot's data format."
+msg-command-description-remote: "Remotely opens a shop (Optionally: For another player)."
+msg-command-description-remote-edit: "Remotely edits a shop."
+msg-command-description-transfer: "Transfers the ownership of a shop."
+msg-command-description-settradeperm: "Sets, removes (-) or displays (?) the trading permission."
+msg-command-description-setforhire: "Sets one of your shops for sale."
+msg-command-description-edit-villager: "Opens the editor for the target villager."

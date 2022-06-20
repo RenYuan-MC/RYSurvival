@@ -1,0 +1,69 @@
+Command:
+  Open:
+    Desc: 打开挑战菜单.
+    Usage: '[type]'
+  Reset:
+    Desc: 重置玩家的挑战.
+    Usage: <player> [type]
+    Done: 成功为玩家 &a%player% &7重置 &a%type% &7!
+Challenge:
+  Notify:
+    Objective:
+      Progress: '[ACTION_BAR] %challenge-name%: &e%objective-name% &f%objective-progress-current%&7/&f%objective-progress-total%'
+    Challenge:
+      Completed: '[ACTION_BAR] %challenge-name%: &a&l挑战完成!'
+Other:
+  Any: 任何
+ChallengeJobType:
+  BLOCK_BREAK: 采集方块
+  ITEM_CONSUME: 吃掉食物
+  ITEM_CRAFT: 合成物品
+  ITEM_COOK: 烹饪/熔炼物品
+  ITEM_ENCHANT: 物品附魔
+  ITEM_DISENCHANT: 物品祛魔
+  ITEM_TRADE: 物品交易
+  ITEM_FISH: 钓鱼
+  ENTITY_KILL: 击杀生物
+  ENTITY_TAME: 驯服生物
+  ENTITY_BREED: 喂养生物
+  ENTITY_SHEAR: 剪毛
+  PROJECTILE_LAUNCH: 发射弹射物
+  POTION_BREW: 酿造药水
+  ANVIL_RENAME: 铁砧重命名
+  ENTITY_KILL_MYTHIC: 击杀神话怪物
+  DAMAGE_RECEIVE: 受到伤害
+  DAMAGE_INFLICT: 造成伤害
+  BLOCK_PLACE: Block Place
+ChallengeType:
+  DAILY: 每日挑战
+  WEEKLY: 每周挑战
+  MONTHLY: 每月挑战
+DamageCause:
+  CONTACT: 接触
+  ENTITY_ATTACK: 实体攻击
+  ENTITY_SWEEP_ATTACK: 实体横扫攻击
+  PROJECTILE: 弹射物
+  SUFFOCATION: 窒息
+  FALL: 摔落
+  FIRE: 着火
+  FIRE_TICK: 烫伤
+  MELTING: 融化
+  LAVA: 岩浆
+  DROWNING: 溺水
+  BLOCK_EXPLOSION: 方块爆炸
+  ENTITY_EXPLOSION: 实体爆炸
+  VOID: 虚空
+  LIGHTNING: 闪电
+  SUICIDE: 自杀
+  STARVATION: 饥饿
+  POISON: 中毒
+  MAGIC: 魔法
+  WITHER: 凋零
+  FALLING_BLOCK: 掉落方块
+  THORNS: 荆棘
+  DRAGON_BREATH: 龙息
+  CUSTOM: 自定义
+  FLY_INTO_WALL: 撞入墙中
+  HOT_FLOOR: 炙热地板
+  CRAMMING: 挤压
+  DRYOUT: 干涸

@@ -1,0 +1,59 @@
+Version: 1
+Seed: 8243351540124652184
+Messages:
+  1:
+    LeaveMessage: Now leaving %residence.
+    EnterMessage: Welcome %player to %residence, owned by %owner.
+Flags:
+  1:
+    container: true
+    ignite: true
+    move: true
+    shear: true
+    use: true
+    destroy: true
+    animalkilling: true
+    trade: true
+    mobkilling: true
+    build: true
+    vehicledestroy: true
+    leash: true
+  2:
+    container: false
+    ignite: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    pvp: false
+    animalkilling: true
+    healing: true
+    feed: true
+    hook: false
+    build: false
+    falldamage: false
+    explode: false
+    vehicledestroy: false
+    tnt: false
+    animals: true
+    leash: false
+    pistonprotection: true
+    tp: true
+    glow: true
+    creeper: false
+    fireball: false
+Residences:
+  nether:
+    TPLoc: -44.5:94.0:-166.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.25
+    ChannelColor: Dark_Purple
+    Permissions:
+      PlayerFlags:
+        2cbd024d-58dd-3120-beed-4a509bd4fb63: 1
+      AreaFlags: 2
+      OwnerUUID: 2cbd024d-58dd-3120-beed-4a509bd4fb63
+      OwnerLastKnownName: F_XH
+    CreatedOn: 1594356840358
+    Areas:
+      main: -48:93:-170:-42:96:-164

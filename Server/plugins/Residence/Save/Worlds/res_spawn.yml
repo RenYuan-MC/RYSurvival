@@ -1,0 +1,125 @@
+Version: 1
+Seed: -4265283948009399314
+Messages:
+  1:
+    LeaveMessage: Now leaving %residence.
+    EnterMessage: Welcome %player to %residence, owned by %owner.
+Flags:
+  1:
+    container: true
+    ignite: true
+    move: true
+    shear: true
+    use: true
+    destroy: true
+    animalkilling: true
+    trade: true
+    mobkilling: true
+    build: true
+    vehicledestroy: true
+    leash: true
+  2:
+    container: true
+    bed: false
+    ignite: false
+    door: true
+    waterflow: false
+    egg: false
+    use: true
+    decay: true
+    icemelt: false
+    lavaflow: false
+    healing: true
+    hook: false
+    mobexpdrop: true
+    cake: true
+    explode: false
+    snowtrail: false
+    vehicledestroy: false
+    flowinprotection: false
+    shoot: false
+    trample: false
+    animals: false
+    nmonsters: true
+    day: true
+    wspeed1: false
+    flow: false
+    chorustp: false
+    rain: false
+    grow: false
+    mobitemdrop: true
+    witherdamage: false
+    firespread: false
+    night: false
+    destroy: false
+    monsters: false
+    pvp: false
+    lever: true
+    pressure: true
+    brew: true
+    dryup: true
+    nomobs: true
+    feed: true
+    beacon: true
+    canimals: false
+    itemdrop: true
+    dragongrief: true
+    sanimals: false
+    diode: true
+    witherspawn: false
+    tnt: false
+    snowball: false
+    pistonprotection: true
+    glow: true
+    creeper: false
+    note: true
+    shop: false
+    anvil: true
+    riding: false
+    sun: true
+    animalkilling: false
+    hotfloor: false
+    button: true
+    iceform: true
+    falldamage: false
+    cmonsters: false
+    witherdestruction: false
+    itempickup: true
+    place: false
+    subzone: false
+    fireball: false
+    coords: false
+    table: true
+    burn: true
+    move: true
+    shear: true
+    nanimals: false
+    piston: false
+    anvilbreak: true
+    spread: false
+    enderpearl: false
+    dye: false
+    trade: true
+    mobkilling: true
+    build: false
+    chat: false
+    flowerpot: false
+    enchant: true
+    fallinprotection: false
+    leash: false
+    tp: true
+    smonsters: false
+Residences:
+  spawn:
+    Messages: 1
+    BlockSellPrice: 0.25
+    ChannelColor: Dark_Purple
+    Permissions:
+      PlayerFlags:
+        2cbd024d-58dd-3120-beed-4a509bd4fb63: 1
+      AreaFlags: 2
+      OwnerUUID: 2cbd024d-58dd-3120-beed-4a509bd4fb63
+      OwnerLastKnownName: F_XH
+    CreatedOn: 1593855870952
+    Areas:
+      main: -42:100:54:14:138:110

@@ -1,0 +1,20 @@
+name: 'Confusion'
+tier: 'common'
+description: '%chance%% chance to apply %potion-effect% %potion-level% for %potion-duration%s. on hit.'
+level:
+  min: 1
+  max: 3
+enchantment-table:
+  min-player-level: 15
+  chance: 30.0
+anvil:
+  merge-cost: '%level%'
+villagers:
+  chance: 30.0
+loot-generation:
+  chance: 30.0
+settings:
+  particle-effect: 'ITEM_CRACK:ROTTEN_FLESH'
+  enchant-trigger-chance: '60.0'
+  effect-level: '%level%'
+  effect-duration: '%level% * 3.2'

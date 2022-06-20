@@ -1,0 +1,33 @@
+#
+# ChestSort Default Category File
+#
+# If you want to change this file, rename it.
+# Please do NOT use file prefixed between 900 and 999 for
+# your custom files because ChestSort will overwrite them
+#
+
+# When sticky is set to true, order the items in this
+# category exactly as defined in this file.
+# When set to false, the items are only grouped together
+# and then sorted according to the other variables
+# in your sorting-method
+sticky=false
+
+ghast_tear
+potion
+glass_bottle
+blaze_rod
+fermented_spider_eye
+blaze_powder
+magma_cream
+brewing_stand
+nether_wart
+nether_wart_block
+cauldron
+glistering_melon_slice
+golden_carrot
+rabbit_foot
+dragon_breath
+splash_potion
+lingering_potion
+phantom_membrane

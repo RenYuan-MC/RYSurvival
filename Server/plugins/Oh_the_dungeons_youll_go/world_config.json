@@ -1,0 +1,464 @@
+{
+  "dict": {
+    "otd_dungeon_shadow_world": {
+      "roguelike": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "encase": true,
+        "generous": true,
+        "looting": 0.0,
+        "lowerLimit": 60,
+        "random": false,
+        "upperLimit": 100,
+        "builtinLoot": true,
+        "loots": []
+      },
+      "doomlike": {
+        "biomeExclusions": [],
+        "builtinLoot": true,
+        "doNaturalSpawn": true,
+        "easyFind": true,
+        "singleEntrance": true,
+        "thinSpawners": true,
+        "difficulty": "NORM",
+        "loots": []
+      },
+      "battletower": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "loots": [],
+        "chest": "BOX"
+      },
+      "smoofydungeon": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "loots": [],
+        "Skeleton": true,
+        "Blaze": true,
+        "Spider": true,
+        "PigZombie": true,
+        "Zombie": true,
+        "Ghast": true,
+        "Creeper": true
+      },
+      "roguelike_weight": 3,
+      "doomlike_weight": 3,
+      "battle_tower_weight": 2,
+      "smoofy_weight": 3,
+      "draylar_weight": 3,
+      "antman_weight": 3,
+      "aether_weight": 3,
+      "lich_weight": 3,
+      "distance": 22,
+      "egg_change_spawner": true,
+      "silk_vanilla_spawner": false,
+      "silk_dungeon_spawner": false,
+      "mob_drop_in_vanilla_spawner": true,
+      "mob_drop_in_dungeon_spawner": false,
+      "prevent_spawner_dropping": false,
+      "prevent_spawner_breaking": false,
+      "disappearance_rate_vanilla": 0.0,
+      "disappearance_rate_dungeon": 0.0,
+      "draylar_battletower": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "loots": []
+      },
+      "ant_man_dungeon": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "loots": []
+      },
+      "aether_dungeon": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "height": 180,
+        "cloud": true,
+        "loots": []
+      },
+      "lich_tower": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "doArt": true,
+        "loots": []
+      }
+    },
+    "example_otd": {
+      "roguelike": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": false,
+        "encase": true,
+        "generous": true,
+        "looting": 0.0,
+        "lowerLimit": 60,
+        "random": false,
+        "upperLimit": 100,
+        "builtinLoot": true,
+        "loots": []
+      },
+      "doomlike": {
+        "biomeExclusions": [],
+        "builtinLoot": true,
+        "doNaturalSpawn": false,
+        "easyFind": true,
+        "singleEntrance": true,
+        "thinSpawners": true,
+        "difficulty": "NORM",
+        "loots": []
+      },
+      "battletower": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": false,
+        "builtinLoot": true,
+        "loots": [],
+        "chest": "BOX"
+      },
+      "smoofydungeon": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": false,
+        "builtinLoot": true,
+        "loots": [],
+        "Skeleton": true,
+        "Blaze": true,
+        "Spider": true,
+        "PigZombie": true,
+        "Zombie": true,
+        "Ghast": true,
+        "Creeper": true
+      },
+      "roguelike_weight": 3,
+      "doomlike_weight": 3,
+      "battle_tower_weight": 2,
+      "smoofy_weight": 3,
+      "draylar_weight": 3,
+      "antman_weight": 3,
+      "aether_weight": 3,
+      "lich_weight": 3,
+      "distance": 22,
+      "egg_change_spawner": true,
+      "silk_vanilla_spawner": false,
+      "silk_dungeon_spawner": false,
+      "mob_drop_in_vanilla_spawner": true,
+      "mob_drop_in_dungeon_spawner": false,
+      "prevent_spawner_dropping": false,
+      "prevent_spawner_breaking": false,
+      "disappearance_rate_vanilla": 0.0,
+      "disappearance_rate_dungeon": 0.0,
+      "draylar_battletower": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": false,
+        "builtinLoot": true,
+        "loots": []
+      },
+      "ant_man_dungeon": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": false,
+        "builtinLoot": true,
+        "loots": []
+      },
+      "aether_dungeon": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": false,
+        "builtinLoot": true,
+        "height": 180,
+        "cloud": true,
+        "loots": []
+      },
+      "lich_tower": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": false,
+        "builtinLoot": true,
+        "doArt": true,
+        "loots": []
+      }
+    },
+    "world": {
+      "roguelike": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "encase": true,
+        "generous": true,
+        "looting": 0.0,
+        "lowerLimit": 60,
+        "random": false,
+        "upperLimit": 100,
+        "builtinLoot": true,
+        "loots": []
+      },
+      "doomlike": {
+        "biomeExclusions": [],
+        "builtinLoot": true,
+        "doNaturalSpawn": true,
+        "easyFind": true,
+        "singleEntrance": true,
+        "thinSpawners": true,
+        "difficulty": "NORM",
+        "loots": []
+      },
+      "battletower": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "loots": [],
+        "chest": "BOX"
+      },
+      "smoofydungeon": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "loots": [],
+        "Skeleton": true,
+        "Blaze": true,
+        "Spider": true,
+        "PigZombie": true,
+        "Zombie": true,
+        "Ghast": true,
+        "Creeper": true
+      },
+      "roguelike_weight": 4,
+      "doomlike_weight": 4,
+      "battle_tower_weight": 3,
+      "smoofy_weight": 4,
+      "draylar_weight": 4,
+      "antman_weight": 4,
+      "aether_weight": 4,
+      "lich_weight": 4,
+      "distance": 22,
+      "egg_change_spawner": true,
+      "silk_vanilla_spawner": false,
+      "silk_dungeon_spawner": false,
+      "mob_drop_in_vanilla_spawner": true,
+      "mob_drop_in_dungeon_spawner": false,
+      "prevent_spawner_dropping": false,
+      "prevent_spawner_breaking": false,
+      "disappearance_rate_vanilla": 0.0,
+      "disappearance_rate_dungeon": 0.0,
+      "draylar_battletower": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "loots": []
+      },
+      "ant_man_dungeon": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "loots": []
+      },
+      "aether_dungeon": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "height": 180,
+        "cloud": true,
+        "loots": []
+      },
+      "lich_tower": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "doArt": true,
+        "loots": []
+      }
+    },
+    "world_nether": {
+      "roguelike": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "encase": true,
+        "generous": true,
+        "looting": 0.0,
+        "lowerLimit": 60,
+        "random": false,
+        "upperLimit": 100,
+        "builtinLoot": true,
+        "loots": []
+      },
+      "doomlike": {
+        "biomeExclusions": [],
+        "builtinLoot": true,
+        "doNaturalSpawn": true,
+        "easyFind": true,
+        "singleEntrance": true,
+        "thinSpawners": true,
+        "difficulty": "NORM",
+        "loots": []
+      },
+      "battletower": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "loots": [],
+        "chest": "BOX"
+      },
+      "smoofydungeon": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "loots": [],
+        "Skeleton": true,
+        "Blaze": true,
+        "Spider": true,
+        "PigZombie": true,
+        "Zombie": true,
+        "Ghast": true,
+        "Creeper": true
+      },
+      "roguelike_weight": 4,
+      "doomlike_weight": 4,
+      "battle_tower_weight": 3,
+      "smoofy_weight": 4,
+      "draylar_weight": 4,
+      "antman_weight": 4,
+      "aether_weight": 4,
+      "lich_weight": 4,
+      "distance": 22,
+      "egg_change_spawner": true,
+      "silk_vanilla_spawner": false,
+      "silk_dungeon_spawner": false,
+      "mob_drop_in_vanilla_spawner": true,
+      "mob_drop_in_dungeon_spawner": false,
+      "prevent_spawner_dropping": false,
+      "prevent_spawner_breaking": false,
+      "disappearance_rate_vanilla": 0.0,
+      "disappearance_rate_dungeon": 0.0,
+      "draylar_battletower": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "loots": []
+      },
+      "ant_man_dungeon": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "loots": []
+      },
+      "aether_dungeon": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "height": 180,
+        "cloud": true,
+        "loots": []
+      },
+      "lich_tower": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "doArt": true,
+        "loots": []
+      }
+    },
+    "world_the_end": {
+      "roguelike": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "encase": true,
+        "generous": true,
+        "looting": 0.0,
+        "lowerLimit": 60,
+        "random": false,
+        "upperLimit": 100,
+        "builtinLoot": true,
+        "loots": []
+      },
+      "doomlike": {
+        "biomeExclusions": [],
+        "builtinLoot": true,
+        "doNaturalSpawn": true,
+        "easyFind": true,
+        "singleEntrance": true,
+        "thinSpawners": true,
+        "difficulty": "NORM",
+        "loots": []
+      },
+      "battletower": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "loots": [],
+        "chest": "BOX"
+      },
+      "smoofydungeon": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "loots": [],
+        "Skeleton": true,
+        "Blaze": true,
+        "Spider": true,
+        "PigZombie": true,
+        "Zombie": true,
+        "Ghast": true,
+        "Creeper": true
+      },
+      "roguelike_weight": 4,
+      "doomlike_weight": 4,
+      "battle_tower_weight": 3,
+      "smoofy_weight": 4,
+      "draylar_weight": 4,
+      "antman_weight": 4,
+      "aether_weight": 4,
+      "lich_weight": 4,
+      "distance": 22,
+      "egg_change_spawner": true,
+      "silk_vanilla_spawner": false,
+      "silk_dungeon_spawner": false,
+      "mob_drop_in_vanilla_spawner": true,
+      "mob_drop_in_dungeon_spawner": false,
+      "prevent_spawner_dropping": false,
+      "prevent_spawner_breaking": false,
+      "disappearance_rate_vanilla": 0.0,
+      "disappearance_rate_dungeon": 0.0,
+      "draylar_battletower": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "loots": []
+      },
+      "ant_man_dungeon": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "loots": []
+      },
+      "aether_dungeon": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "height": 180,
+        "cloud": true,
+        "loots": []
+      },
+      "lich_tower": {
+        "biomeExclusions": [],
+        "doNaturalSpawn": true,
+        "builtinLoot": true,
+        "doArt": true,
+        "loots": []
+      }
+    }
+  },
+  "furniture": true,
+  "preciousBlocks": true,
+  "rogueSpawners": true,
+  "disableAPI": false,
+  "noMobChanges": false,
+  "version": 10,
+  "rollCoolDownInSecond": 10,
+  "rollRange": 15,
+  "diceUUID": "afbe4c67-a6a5-4559-ad06-78a6ed2ab4e9",
+  "diceTexture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTE1ZjdjMzEzYmNhOWMyZjk1OGU2OGFiMTRhYjM5Mzg2N2Q2NzUwM2FmZmZmOGYyMGNiMTNmYmU5MTdmZDMxIn19fQ\u003d\u003d",
+  "dungeon_world": {
+    "dungeon_count": 30,
+    "dungeon_count_finish": 0,
+    "finished": false
+  }
+}

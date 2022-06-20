@@ -1,0 +1,282 @@
+Settings:
+  Prefix: '&7[&4疯狂 &b拍卖&7]: ' 
+  GUIName: '&4疯狂 &b拍卖&8' 
+  Players-Current-Items: '&8当前出售' 
+  Cancelled/Expired-Items: '&8收件箱' 
+  Buying-Item: '&8你将要购买这件物品: 是否确认购买?' 
+  Bidding-On-Item: '&8你正在竞拍此商品' 
+  Categories: '&8分类' 
+  # 每件商品最多出售的时间，超过时间则该物品返回收件箱
+  Sell-Time: 2d 
+  # 拍卖物品的时间间隔，若无人加价，则该物品归上一个加价的人所有
+  # 若根本无人竞拍，则该物品返回收件箱
+  Bid-Time: 2m 30s 
+  # 物品存放在收件箱的时限
+  Full-Expire-Time: 10d 
+  # 成功竞拍到物品的玩家确认商品的时限
+  Bid-Winner-Time: 20d 
+  # 每件物品最小出售价格
+  Minimum-Sell-Price: 10 
+  # 每件物品最大出售价格
+  Max-Beginning-Sell-Price: 1000000 
+  # 每件物品最小起拍价
+  Minimum-Bid-Price: 100 
+  # 每件物品最大起拍价
+  Max-Beginning-Bid-Price: 1000000 
+  # 允许出售/拍卖耐久不是完整的商品吗
+  Allow-Damaged-Items: False 
+  # 这项如果设置为true 玩家打开交易大厅时首先看到的会是分类选择
+  Category-Page-Opens-First: False 
+  Feature-Toggle: #可直接禁用出售/拍卖功能，请不要两个都禁用，否则插件将毫无意义
+    Selling: true 
+    Bidding: true 
+  Sounds:
+    # 设置声音开关
+    Toggle: False 
+    # 这个默认音效只在1.8及以前能听到，如果你开的是1.9+服务器请一定要更改至适合的音效
+    Sound: 'CLICK' 
+    #1.8 及以前音效列表: http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Sound.html
+    #1.9 及以后音效列表: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+  GUISettings: #GUI界面的一些设置
+    SellingItemLore: # 出售物品的lore
+      - '&7-------------------------'
+      - '&a点击购买'
+      - ''
+      - '&9价格: &e$%Price%'
+      - '&9出售者: &e%Seller%'
+      - '&7-------------------------'
+    CurrentLore: # 你的出售物品
+      - '&7-------------------------'
+      - '&a点击取消'
+      - ''
+      - '&9价格: &e$%Price%'
+      - '&9时间剩余: &e%Time%'
+      - '&7-------------------------'
+    Cancelled/ExpiredLore: # 收件箱
+      - '&7-------------------------'
+      - '&a点击返回背包'
+      - ''
+      - '&9时间剩余: &e%Time%'
+      - '&7-------------------------'
+    Bidding: # 拍卖物品
+      - '&7-------------------------'
+      - '&a点击竞拍'
+      - ''
+      - '&9出售者: &e%Seller%'
+      - '&9当前拍价: &e$%TopBid%'
+      - '&9最高竞拍者: &e%TopBidder%'
+      - '&9时间剩余: &e%Time%'
+      - '&7-------------------------'
+    Category-Settings:
+      Armor:
+        Item: '315'
+        Toggle: true
+        Slot: 11
+        Name: '&6&l盔甲'
+        Lore:
+          - '&7这个分类包含了当前正在出售的盔甲'
+      Weapons:
+        Item: '283'
+        Toggle: true
+        Slot: 12
+        Name: '&6&l武器'
+        Lore:
+          - '&7这个分类包含了当前正在出售的武器'
+      Tools:
+        Item: '285'
+        Toggle: true
+        Slot: 13
+        Name: '&6&l工具'
+        Lore:
+          - '&7这个分类包含了当前正在出售的工具'
+      Food:
+        Item: '322'
+        Toggle: true
+        Slot: 14
+        Name: '&6&l食物'
+        Lore:
+          - '&7这个分类包含了当前正在出售的食物'
+      Potions:
+        Item: '373:8227'
+        Toggle: true
+        Slot: 15
+        Name: '&6&l药水'
+        Lore:
+          - '&7这个分类包含了当前正在出售的药水'
+      Blocks:
+        Item: '2'
+        Toggle: true
+        Slot: 16
+        Name: '&6&l方块'
+        Lore:
+          - '&7这个分类包含了当前正在出售的方块'
+      Other:
+        Item: '371'
+        Toggle: true
+        Slot: 17
+        Name: '&6&l其它'
+        Lore:
+          - '&7这个分类包含了其它物品'
+      None:
+        Item: '166'
+        Toggle: true
+        Slot: 23
+        Name: '&6&l无'
+        Lore:
+          - '&7这个分类包含了已经被出售的物品'
+    OtherSettings: # GUI的其它设置
+      SellingItems: 
+        Item: '264' #这个按钮的种类
+        Toggle: true #这个按钮是否在GUI内
+        Slot: 46 #这个按钮的位置，不要修改
+        Name: '&6你的出售' #按钮的名字
+        Lore: 
+          - '&a点击查看你当前'
+          - '&a正在出售的物品'
+      Cancelled/ExpiredItems: 
+        Item: '394'
+        Toggle: true
+        Slot: 47
+        Name: '&6收件箱'
+        Lore:
+          - '&a点击查看你已经撤销出售'
+          - '&a或者已过期的物品'
+      PreviousPage: 
+        Item: '339'
+        Toggle: true
+        Slot: 49
+        Name: '&6上一页'
+        Lore: {}
+      Refesh: 
+        Item: '175'
+        Toggle: true
+        Slot: 50
+        Name: '&6刷新'
+        Lore: {}
+      NextPage: 
+        Item: '339'
+        Toggle: true
+        Slot: 51
+        Name: '&6下一页'
+        Lore: {}
+      Category1: 
+        Item: '54'
+        Toggle: true
+        Slot: 52
+        Name: '&6商品分类'
+        Lore:
+          - '&b当前分类: &6%Category%'
+          - '&a点击查看商品分类'
+      Category2: 
+        Item: '54'
+        Toggle: true
+        Slot: 48
+        Name: '&6商品分类'
+        Lore:
+          - '&b当前分类: &6%Category%'
+          - '&a点击查看商品分类'
+      Bidding/Selling: 
+        Selling:
+          Item: '341'
+          Toggle: true
+          Slot: 53
+          Name: '&6当前正在查看可购买商品'
+          Lore:
+            - '&7&l(&6&l!&7&l) &7点击切换至拍卖商品'
+        Bidding:
+          Item: '378'
+          Toggle: true
+          Slot: 53
+          Name: '&6当前正在查看可拍卖商品'
+          Lore:
+            - '&7&l(&6&l!&7&l) &7点击切换至购买商品'
+      WhatIsThis: 
+        SellingShop: 
+          Item: '340'
+          Toggle: true
+          Slot: 54
+          Name: '&6交易大厅介绍'
+          Lore:
+            - '&a这里是交易大厅，你可以在这里'
+            - '&a购买别人上架的商品，也可以在'
+            - '&a这里上架你自己的商品'
+        BiddingShop: 
+          Item: '340'
+          Toggle: true
+          Slot: 54
+          Name: '&6拍卖大厅介绍'
+          Lore:
+            - '&a这里是拍卖大厅，你可以在这里'
+            - '&a竞拍别人拍卖的商品，也可以拍'
+            - '&a卖你自己的商品'
+        CurrentItems: 
+          Item: '340'
+          Toggle: true
+          Slot: 54
+          Name: '&6当前出售'
+          Lore:
+            - '&a这里列出的是你当前出售/拍卖的商品'
+        Cancelled/ExpiredItems: 
+          Item: '340'
+          Toggle: true
+          Slot: 54
+          Name: '&6收件箱'
+          Lore:
+            - '&a这里列出的是你撤销出售/过期的商品'
+            - '&a点击它们即可返回背包'
+        Viewing: 
+          Item: '340'
+          Toggle: true
+          Slot: 50
+          Name: '&6出售/拍卖列表'
+          Lore:
+            - '&a这里展示的是其它玩家出售/拍卖的商品'
+        Categories: 
+          Item: '340'
+          Toggle: true
+          Slot: 54
+          Name: '&6分类'
+          Lore:
+            - '&a这里展示的是正在出售商品的分类'
+      Back: 
+        Item: '339'
+        Slot: 46
+        Name: '&6返回'
+      Return: 
+        Item: '390'
+        Slot: 50
+        Name: '&6一键返回背包'
+        Lore:
+          - '&a点击将所有物品'
+          - '&a返还至你的背包'
+      Confirm: 
+        Item: '160:5'
+        Name: '&a确认'
+      Cancel: 
+        Item: '160:14'
+        Name: '&c取消'
+      Your-Item: 
+        Item: '166'
+        Name: '&c你不能购买你自己的物品'
+      Cant-Afford: 
+        Item: '166'
+        Name: '&c你的钱不够'
+      Top-Bidder: 
+        Item: '166'
+        Name: '&c你已经是最高拍卖者了'
+      Bidding: 
+        Item: '160:15'
+        Name: '&7拍卖'
+        Lore:
+          - '&7<--&a加价 &c减价&7-->'
+          - '&9你的拍卖价格: &e$%Bid%'
+          - '&9最高拍卖价格: &e$%TopBid%'
+      Bid: 
+        Item: '160:3'
+        Name: '&b竞拍！'
+        Lore:
+          - '&7点击竞拍'
+  # 商品黑名单        
+  BlackList:
+    - '7'
+    - '120'

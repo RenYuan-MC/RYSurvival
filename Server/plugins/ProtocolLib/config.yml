@@ -1,30 +1,30 @@
 global:
-  #自动版本更新程序的设置
+  # Settings for the automatic version updater
   auto updater:
-    notify: false
+    notify: true
     download: false
     
-    #下载新更新之前等待的秒数
-    delay: 43200 #12小时
+    # Number of seconds to wait until a new update is downloaded
+    delay: 43200 # 12 hours
  
-  metrics: false
+  metrics: true
   
-  #自动编译结构修饰符
+  # Automatically compile structure modifiers 
   background compiler: true
   
-  #禁用指定的Minecraft版本检查,启用前先备份你的世界！
+  # Disable version checking for the given Minecraft version. Backup your world first!
   ignore version check: 
   
-  # Override the starting injecting method(不知道怎么翻译)
+  # Override the starting injecting method
   injection method: 
   
-  #是否启用Filter命令
+  # Whether or not to enable the filter command
   debug: false
   
-  #是否为每个警告打印堆栈跟踪
+  # Whether or not to print a stack trace for every warning
   detailed error: false
   
-  #Filter命令使用的引擎
+  # The engine used by the filter command
   script engine: JavaScript
   
   suppressed reports:

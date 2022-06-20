@@ -1,0 +1,43 @@
+name: '%generator-name% &7Lv. %generator-level%'
+type: BLOCK_BREAK
+icon:
+  material: OAK_LOG
+  name: '%name%'
+  lore: []
+  item-flags:
+  - '*'
+generator:
+  names:
+  - '&a伐木'
+  levels:
+    minimum: 1
+    maximum: 5
+  objectives:
+    amount:
+      minimum: '1'
+      maximum: '3'
+      list:
+        '1':
+        - OAK_LOG
+        - BIRCH_LOG
+        - SPRUCE_LOG
+        - JUNGLE_LOG
+        - ACACIA_LOG
+        - DARK_OAK_LOG
+    progress:
+      default:
+        minimum: 50 * 1 + %level% / 10
+        maximum: 70 * 1 + %level% / 10
+  affected-worlds:
+    minimum: '1'
+    maximum: '1'
+    list:
+      '1':
+      - world
+  rewards:
+    minimum: '1'
+    maximum: '2'
+    list:
+      '1':
+      - reward1
+      - reward2

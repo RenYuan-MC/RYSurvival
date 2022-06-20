@@ -1,0 +1,18 @@
+# Available values: CELSIUS, FAHRENHEIT, KELVIN
+temperature-scale: CELSIUS
+messages:
+  climate-change: '&c[GlobalWarming] &eThe global temperature rising value is now: %value%'
+  breaking-news: '&c[GlobalWarming] &e&nBreaking news:&3 %news%'
+  news:
+  - 'People rescued from flooded homes by boat.'
+  - 'Tornadoes caught on camera across two counties.'
+  - 'Texas storm: "Never seen a light show like that"'
+  - 'Flooding in Venice and deadly storms across Italy.'
+  - 'Dramatic storms across Wales are captured on camera.'
+  - 'Lighting storms struck Washington DC as the city was under a flash flood warning.'
+  - 'Forest fires in Chernobyl exclusion zone bring a hike in radiation.'
+  - 'Satellite images show expanding fire at South American tri-border area.'
+  - 'Activists are protesting against coal mining.'
+  - 'Several countries started building more EcoPower generators to reduce emission.'
+  - 'Venice floods close city to cruise ships for six days.'
+  - 'Nether star reactor explodes in Zambia due to overheating. Africa is experiencing continent-wide withering.'

@@ -1,0 +1,18 @@
+name: 'Exp Hunter'
+tier: 'exotic'
+description: '%chance%% chance to drop x%exp% more exp on kill.'
+level:
+  min: 1
+  max: 6
+enchantment-table:
+  min-player-level: 30
+  chance: 20.0
+anvil:
+  merge-cost: '%level%'
+villagers:
+  chance: 20.0
+loot-generation:
+  chance: 20.0
+settings:
+  enchant-trigger-chance: '100.0'
+  exp-modifier: '1.%level%'

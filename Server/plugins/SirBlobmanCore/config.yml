@@ -1,0 +1,7 @@
+# Set this to false to prevent the update checker from running.
+# Default: true
+update-checker: false
+
+# Set this to true to enable the command logger.
+# Default: false
+command-logger: false

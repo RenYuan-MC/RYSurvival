@@ -1,0 +1,65 @@
+name: '%generator-name% &7Lv. %generator-level%'
+type: BLOCK_BREAK
+icon:
+  material: DIAMOND_PICKAXE
+  name: '%name%'
+  lore: []
+  item-flags:
+  - '*'
+generator:
+  names:
+  - '&b挖矿'
+  levels:
+    minimum: 1
+    maximum: 5
+  objectives:
+    amount:
+      minimum: '1'
+      maximum: '3'
+      list:
+        '1':
+        - COAL_ORE
+        - IRON_ORE
+        - GOLD_ORE
+        - REDSTONE_ORE
+        - LAPIS_ORE
+        - EMERALD_ORE
+        - DIAMOND_ORE
+    progress:
+      default:
+        minimum: 30 * %level%
+        maximum: 50 * %level%
+      COAL_ORE:
+        minimum: 30 * 1 + %level% / 10
+        maximum: 40 * 1 + %level% / 10
+      IRON_ORE:
+        minimum: 30 * 1 + %level% / 10
+        maximum: 40 * 1 + %level% / 10
+      GOLD_ORE:
+        minimum: 30 * 1 + %level% / 10
+        maximum: 40 * 1 + %level% / 10
+      REDSTONE_ORE:
+        minimum: 20 * 1 + %level% / 100
+        maximum: 40 * 1 + %level% / 100
+      LAPIS_ORE:
+        minimum: 20 * 1 + %level% / 100
+        maximum: 40 * 1 + %level% / 100
+      EMERALD_ORE:
+        minimum: 10 * 1 + %level% / 100
+        maximum: 20 * 1 + %level% / 100
+      DIAMOND_ORE:
+        minimum: 15 * 1 + %level% / 100
+        maximum: 30 * 1 + %level% / 100
+  affected-worlds:
+    minimum: '1'
+    maximum: '1'
+    list:
+      '1':
+      - world
+  rewards:
+    minimum: '1'
+    maximum: '2'
+    list:
+      '1':
+      - reward1
+      - reward2

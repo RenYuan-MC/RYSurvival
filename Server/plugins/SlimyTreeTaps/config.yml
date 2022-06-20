@@ -1,0 +1,7 @@
+options:
+  auto-update: false
+amber-chance: 16
+resin-chance:
+  standard: 12
+  reinforced: 24
+  diamond: 32

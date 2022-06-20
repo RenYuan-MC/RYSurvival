@@ -1,0 +1,12 @@
+Notbuildworld: 
+    - spawn
+Break:
+    switch: true
+    message: "你没有权限在主城世界建造, 如需要建造请前往生存世界"
+Place: 
+    switch: true
+    message: "你没有权限在主城世界建造, 如需要建造请前往生存世界"
+LeavesDecayworld: 
+    - spawn
+BlockFadeworld: 
+    - spawn

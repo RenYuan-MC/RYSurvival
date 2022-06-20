@@ -1,0 +1,9 @@
+# cStats collects some data for plugin authors like how many servers are using their plugins.
+# To honor their work, you should not disable it.
+# This has nearly no effect on the server performance!
+# Check out https://cstats.iroselle.com/ to learn more :)
+enabled: false
+serverUuid: a9e35dbc-7ca9-4eeb-871a-d91854ede809
+logFailedRequests: false
+logSentData: false
+logResponseStatusText: false

@@ -1,0 +1,33 @@
+#When loading plugins ignore files that don't end with .jar
+#Default: false
+IgnoreNonJarPlugins: false
+
+#The user agent used to make web requests
+UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+
+#A list of plugins which should be ignored on mass actions
+#Default: - PluginManager
+IgnoredPlugins:
+ - PluginManager
+
+#Check for PluginManager updates on startup
+#Default: true
+CheckForUpdates: false
+
+#Automatically download the latest PluginManager version
+#Default: true
+AutoUpdate: false
+
+#Have extra permission for 'download direct' and 'download spigot'
+#Permission for 'download direct': pluginmanager.commands.download.direct
+#Permission for 'download spigot': pluginmanager.commands.download.spigot
+#Default: true
+ExtraDownloadPermissions: true
+
+#Hide the PluginManager commands from a player if he/she does not have permission for it
+#Default: false
+HideNoPermissionCommands: false
+
+#Automatically reload the updated plugins
+#default: false
+AutoReloadUpdated: false
