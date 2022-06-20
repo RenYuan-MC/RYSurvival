@@ -59,9 +59,6 @@ Messages-To-Hide-Filter:
 - '******************************************'
 - 'Floodgate found on the server'
 
-#ClockGUI无用信息屏蔽
-- '制作者QQ'
-
 #ViaBackward无用信息屏蔽
 - 'Ignoring plugin channel in incoming REGISTER'
 
@@ -88,7 +85,6 @@ Messages-To-Hide-Filter:
 - 'Failed to start metrics as the file could not be downloaded'
 - 'Failed to fetch latest builds for Metrics'
 - '未检测到 Quickshop-Reremake, 相关功能将自动关闭'
-
 
 #Residence下载失败信息屏蔽
 - 'Failed to download'
