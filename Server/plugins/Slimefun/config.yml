@@ -29,6 +29,7 @@ options:
   drop-excess-sf-give-items: false
   backup-data: true
 guide:
+  show-hidden-item-groups-in-search: false
   show-vanilla-recipes: true
   receive-on-first-join: true
 researches:

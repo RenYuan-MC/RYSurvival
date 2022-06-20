@@ -1,4 +1,14 @@
+smithing_table:
+  not-working: '&4你不能使用 Slimefun 物品作为锻造材料!'
 commands:
+  transform: 将物品转换为英文物品
+  id: 获取手持物品的 Slimefun ID
+  debug:
+    description: 输出调试日志以供开发者使用
+    current: '&7当前测试项: &6%test_case%'
+    none-running: '&7当前没有运行的测试项!'
+    running: '&7正在调试模式中运行该测试项: &6%test%'
+    disabled: '&7已禁用调试模式'
   help: 显示此帮助
   cheat: 直接拿取 Slimefun 物品
   give: 给予玩家 Slimefun 物品
@@ -30,6 +40,10 @@ commands:
 placeholderapi:
   profile-loading: 加载中...
 guide:
+  locked-itemgroup:
+  - 为了解锁这一类别
+  - 你需要先解锁以下
+  - 类别里的所有物品
   locked: 已锁定
   work-in-progress: 该功能暂未推出!
   locked-category:
@@ -118,6 +132,7 @@ guide:
       resourcepack: '&c材质制作者'
       translator: '&9翻译者'
 messages:
+  invalid-item-in-hand: '&e你手中拿的不是粘液科技的物品!'
   android-no-permission: '&c你的机器人在某个你没有权限的领地/地皮中无法工作, 机器人已自动暂停运行.'
   transform:
     success: '&a物品转换成功!'
@@ -152,6 +167,9 @@ messages:
     mode-change: '&b%device% 的模式已切换为: &9%mode%'
     not-shears: '&c多功能工具 (Multi Tool) 不能作为剪刀使用!'
   auto-crafting:
+    recipe-unavailable: |
+      &c此物品无法使用. 可能是因为你没有解锁它, 或者物品被服务器禁用了.
+      &7如果你还没有解锁该物品, 请先解锁然后再合成.
     select-a-recipe: '&7手持你想要合成的物品 &e蹲下并右键 &7此方块.'
     recipe-set: '&a成功设置了此机器的合成配方.'
     recipe-removed: '&e成功从此机器中删除了先前的合成配方. 你可以随时重新设置一个新配方!'
@@ -172,6 +190,7 @@ messages:
       - '&e左键 &7使用此配方'
       - '&e右键 &7删除此配方'
   talisman:
+    farmer: '&a&o你的护身符使掉落物翻倍了'
     anvil: '&a&o你的护身符使你的工具免于损坏'
     miner: '&a&o你的护身符使矿物双倍掉落了'
     hunter: '&a&o你的护身符使掉落物双倍掉落了'
@@ -364,6 +383,7 @@ android:
       add-player: '&a左键 > 添加信任玩家'
       delete-player: '&c左键 > 删除信任玩家'
     messages:
+      reach-limit: '&c信任玩家个数已达上限 (10), 请先删除已有玩家再添加!'
       input: 请输入你想要添加的信任玩家的 ID.
       cannot-find-player: '&c找不到你要添加的玩家: %player%'
       is-trusted-player: '&a%player% 已经是你信任的玩家了!'

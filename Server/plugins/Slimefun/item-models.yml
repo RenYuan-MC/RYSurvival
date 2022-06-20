@@ -1,9 +1,3 @@
-# This file is used to assign items from Slimefun or any of its addons
-# the 'CustomModelData' NBT tag. This can be used in conjunction with a custom resource pack
-# to give items custom textures.
-# 0 means there is no data assigned to that item.
-# 
-# There is no official Slimefun resource pack at the moment.
 SLIMEFUN_GUIDE: 2200001
 _UI_BACKGROUND: 2200002
 _UI_BACK: 2200003
@@ -1569,3 +1563,5 @@ MOLTEN_[GOLD]: 0
 MOLTEN_[IRON]: 0
 MOLTEN_[NETHERITE]: 0
 MOLTEN_[REDSTONE_DUST]: 0
+ORGANIC_FOOD_SEAGRASS: 0
+FERTILIZER_SEAGRASS: 0

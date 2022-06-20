@@ -1347,6 +1347,11 @@ MAGICIAN_TALISMAN:
       aqua_affinity:
         level:
           '1': true
+      swift_sneak:
+        level:
+          '3': true
+          '1': true
+          '2': true
   allow-enchantment-books: false
 ENDER_MAGICIAN_TALISMAN:
   enabled: true
@@ -3479,12 +3484,14 @@ FREEZER:
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  use-vanilla-ratios: false
 FREEZER_2:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  use-vanilla-ratios: false
 REACTOR_COLLANT_CELL:
   enabled: true
   can-be-used-in-workbenches: false
@@ -3704,6 +3711,18 @@ PRODUCE_COLLECTOR:
   allow-disenchanting: true
   range: 2
 CRAFTER_SMART_PORT:
+  enabled: true
+  can-be-used-in-workbenches: false
+  hide-in-guide: false
+  allow-enchanting: true
+  allow-disenchanting: true
+ORGANIC_FOOD_SEAGRASS:
+  enabled: true
+  can-be-used-in-workbenches: false
+  hide-in-guide: false
+  allow-enchanting: true
+  allow-disenchanting: true
+FERTILIZER_SEAGRASS:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false

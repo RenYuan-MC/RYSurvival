@@ -6,7 +6,7 @@
 # |      Config Guide: https://wiki.aurelium.dev/skills/config/main-config     | #
 # +----------------------------------------------------------------------------+ #
 # Plugin made by Archy
-# 
+#
 # MySql Options
 default-language: zh-CN
 try-detect-client-language: false
@@ -138,6 +138,7 @@ modifier:
 requirement:
   enabled: true
   item:
+    prevent-interact: true
     prevent-tool-use: true
     prevent-weapon-use: true
     prevent-block-place: true
@@ -215,6 +216,7 @@ agility:
   check-cancelled: true
   check-multiplier-permissions: true
 alchemy:
+  ignore-custom-potions: false
   enabled: true
   max-level: 97
   check-cancelled: true
@@ -227,6 +229,7 @@ enchanting:
   check-cancelled: true
   check-multiplier-permissions: true
 sorcery:
+  check-cancelled: true
   enabled: true
   max-level: 97
   check-multiplier-permissions: true

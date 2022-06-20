@@ -39,6 +39,7 @@ npc:
       range: 5
     text:
       '0': Hi, I'm <npc>!
+    spawn-nodamage-ticks: 20
   chat:
     options:
       bystanders-hear-targeted-chat: false
@@ -86,12 +87,12 @@ npc:
   commands:
     error-messages:
       maximum-times-used: You have reached the maximum number of uses ({0}).
-      missing-item: "&f[&6服务器&f] 缺少 {1} {0}"
-      no-permission: "&f[&6服务器&f] 你没有权限."
+      missing-item: '&f[&6服务器&f] 缺少 {1} {0}'
+      no-permission: '&f[&6服务器&f] 你没有权限.'
       not-enough-experience: You need at least {0} experience.
       not-enough-money: You need at least ${0}.
-      on-cooldown: "&f[&6服务器&f] 请等待 {minutes} 分钟 {seconds_over} 秒."
-      on-global-cooldown:  "&f[&6服务器&f] 请等待 {minutes} 分钟 {seconds_over} 秒."
+      on-cooldown: '&f[&6服务器&f] 请等待 {minutes} 分钟 {seconds_over} 秒.'
+      on-global-cooldown: '&f[&6服务器&f] 请等待 {minutes} 分钟 {seconds_over} 秒.'
   packets:
     update-delay: 30
   player:

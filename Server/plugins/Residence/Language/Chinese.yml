@@ -484,9 +484,12 @@ Language:
     InvalidHelp: '&f[&6服务器&f] 无效帮助页码.'
     TeleportDeny: '&f[&6服务器&f] 你没有传送的权限.'
     TeleportSuccess: '&f[&6服务器&f] 已传送!'
-    TeleportConfirmLava: '&f[&6服务器&f] 传送不安全, 你将掉入 &6岩浆&f. 如果仍要传送, 输入 &6/res tpconfirm &f确认.'
-    TeleportConfirmVoid: '&f[&6服务器&f] 传送不安全, 你将掉入 &6虚空&f. 如果仍要传送, 输入 &6/res tpconfirm &f确认.'
-    TeleportConfirm: '&f[&6服务器&f] 传送不安全, 你将摔落 &6%1 &f个方块. 如果仍要传送, 输入 &6/res tpconfirm &f确认.'
+    TeleportConfirmLava: '&f[&6服务器&f] 传送不安全, 你将掉入 &6岩浆&f. 如果仍要传送, 输入 &6/res tpconfirm
+      &f确认.'
+    TeleportConfirmVoid: '&f[&6服务器&f] 传送不安全, 你将掉入 &6虚空&f. 如果仍要传送, 输入 &6/res tpconfirm
+      &f确认.'
+    TeleportConfirm: '&f[&6服务器&f] 传送不安全, 你将摔落 &6%1 &f个方块. 如果仍要传送, 输入 &6/res tpconfirm
+      &f确认.'
     TeleportStarted: '&f[&6服务器&f] 开始向 &6%1 &f传送, 在 &6%2 &f秒内不要移动.'
     TeleportTitle: '&f[&6服务器&f] 传送中..'
     TeleportTitleTime: '&6%1'
@@ -560,7 +563,8 @@ Language:
     Subzones: '&f子区域'
     # The below lines represent various messages residence sends to the players.
     # Note that some messages have variables such as %1 that are inserted at runtime.
-    NewPlayerInfo: '&f[&6服务器&f] 如果要创建领地以保护房屋, 请用木锄选取保护区的两个对角, 然后执行 &2/res create 领地名称 &f命令.'
+    NewPlayerInfo: '&f[&6服务器&f] 如果要创建领地以保护房屋, 请用木锄选取保护区的两个对角, 然后执行 &2/res create 领地名称
+      &f命令.'
 CommandHelp:
   Description: 领地的命令帮助
   SubCommands:
@@ -1583,6 +1587,11 @@ CommandHelp:
               Description: Allows to modify copper blocks
               Info:
               - '&fUsage: &6/res set/pset <residence> copper true/false/remove'
+            harvest:
+              Translated: harvest
+              Description: Allows harvesting
+              Info:
+              - '&eUsage: &6/res set/pset <residence> harvest true/false/remove'
         remove:
           Info:
           - '&f[&6服务器&f] 用法: &6/res remove <领地名>'

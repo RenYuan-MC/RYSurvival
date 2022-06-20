@@ -1,57 +1,112 @@
+
 # Full color code support and some variables
+
 # Keep in mind that variables wont work for some lines, when it will for anothers :)
+
 # Just keep them where there are now and everything will be ok :)
+
 # Some lines can have global variables set. For player who will be effected. In example /heal Zrips then Zrips data will be used
+
 # [serverName] to show server name
+
 # [playerName] to show target player name
+
 # [playerDisplayName] to show target player display name
+
 # [lvl] to show target player level
+
 # [exp] to show target player total exp
+
 # [hp] to show target player health
+
 # [maxHp] to show target player max health
+
 # [hunger] to show target player hunger level
+
 # [gameMode] to show target player gamemode
+
 # [prefix] to show target player prefix if possible
+
 # [suffix] to show target player suffix if possible
+
 # Sender is console or player who performs command. In example Zrips performs /heal Zhax then Zrips data will be used
+
 # [senderName] to show Sender player name
+
 # [senderDisplayName] to show Sender player display name
+
 # [senderLvl] to show Sender player level
+
 # [senderExp] to show Sender player total exp
+
 # [senderHp] to show Sender player health
+
 # [senderMaxHp] to show Sender player max health
+
 # [senderHunger] to show Sender player hunger level
+
 # [senderGameMode] to show Sender player gamemode
+
 # [senderPrefix] to show Sender player prefix if possible
+
 # [senderSuffix] to show Sender player suffix if possible
+
 # Source is player which is being used for extra info. In example Zrips performs /tp Zhax Zrips then Zhax data will be used as its location is being taken for new player location
+
 # [sourceName] to show source player name
+
 # [sourceDisplayName] to show source player display name
+
 # [sourceLvl] to show source player level
+
 # [sourceExp] to show source player total exp
+
 # [sourceHp] to show source player health
+
 # [sourceMaxHp] to show source player max health
+
 # [sourceHunger] to show source player hunger level
+
 # [sourceGameMode] to show source player gamemode
+
 # [sourcePrefix] to show source player prefix if possible
+
 # [sourceSuffix] to show source player suffix if possible
+
 # ***********************************************
+
 # Some lines supports option to send them to custom places, like action bar, title, sub title or even create JSON/clickable messages
+
 # If line starts with !toast! then player will get toast message (advancement popup, only 1.12 and up). Some extra variables can be used to define type and icon. example: !toast! -t:goal -icon:paper Hello world!
+
 # If line starts with !actionbar! then player will get action bar message defined after this variable
+
 # If line starts with !actionbar:[seconds]! then player will get action bar message for defined amount of time
+
 # If line starts with !broadcast! then everyone will receive message. You can add extra !toast! !actionbar! or !title! to send message for everyone to specific place, in example !broadcast!!title!
+
 # If line starts with !customtext:[cTextName]! then custom text will be taken by name provided and shown for player. In case its used after !broadcast! then everyone who is online will get this custom text message
+
 # If line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message
+
 # If line starts with !bosbar:[name]-[timer]! then player will get bossbar message defined after this variable, in addition you can define how long this message will be visible. You need to define bossbar name which can be anything you want, but lines with same name will override each other to prevent stacking
+
 # To include clickable messages: <T>Text</T><H>Hover text</H><C>command</C><SC>Suggested text</SC>
+
 # <T> and </T> required, other is optional
+
 # Use /n to break line
+
 # To have more than one JSON message use <Next>
+
 # <C> performs command as a player who clicked
+
 # <CC> performs command from console once
+
 # <CCI> performs command from console every time player clicks text
+
 # <URL> includes url
+
 info:
   # Use !prefix! in any locale line to automatically include this prefix
   prefix: '&e[&aCMI&e] '
@@ -65,18 +120,11 @@ info:
   FromConsole: '&c只能在控制台这么做!'
   NotOnline: '&c玩家不在线!'
   NobodyOnline: '&c服务器里没有玩家'
-  Same: '&c你不能打开你自己的背包'
-  cantLoginWithDifCap: '&c请注意名字的大小写! 旧名字:&e[oldName]&c. 当前名字: &e[currentName]'
-  Searching: '&e正在搜索玩家数据，请稍等...'
   NoPlayer: '&c找不到这个玩家'
   NoCommand: '&c未知指令'
-  NoCommandWhileSleeping: '&cCan''t perform commands while sleeping!'
   cantFindCommand: '&5Couldn''t find &7[%1]&5 command, did you mean &7[%2]&5?'
   nolocation: '&4Can''t find suitable location'
-  PurgeNotEnabled: '&c合并机制未在config中启用'
   FeatureNotEnabled: '&c该机制未启用'
-  TeamManagementDisabled: '&7This feature will have limited functionalaty while DisableTeamManagement
-    is set to true!'
   ModuleNotEnabled: '&cThis module is not enabled!'
   versionNotSupported: '&c服务器版本不支持此特性'
   spigotNotSupported: '&cYou need Paper branch type server'
@@ -88,33 +136,8 @@ info:
   UseBoolean: '&4请使用布尔值 True 或者 False!'
   NoLessThan: '&4数值不能小于 [amount]!'
   NoMoreThan: '&4数值不能大于 [amount]'
-  NoGameMode: '&c你只能使用 0/1/2/3 或者 Survival/Creative/Adventure/Spectator 或者 s/c/a/sp!'
   NoWorld: '&4找不到该世界'
   IncorrectLocation: '&4位置指定错误'
-  NameChange: '&6[playerDisplayName] &e进入服务器，他的原名是: &6[namelist]'
-  Cooldowns: '&e该指令 &6[cmd] &e需要冷却 &6[time]'
-  specializedCooldowns: '&e该指令需要冷却，请等待 &6[time]'
-  specializedRunning: '&eCommand still running, please wait &6[time]'
-  CooldownOneTime: '&e该指令只能使用一次'
-  WarmUp:
-    canceled: '&e哎呀，你移动了一下，指令取消了'
-    counter: '!actionbar!&6--> &e[time] &6<--'
-    DontMove: '!title!!subtitle!&6不要移动'
-    Boss:
-      DontMove: '&4Don''t move for &7[autoTimeLeft] &4seconds!'
-      WaitFor: '&4Wait for &7[autoTimeLeft] &4seconds!'
-  Spawner: '&r[type] 刷怪笼'
-  FailedSpawnerMine: '!actionbar!&cFailed to mine spawner. &7[percent]% &cdrop chance'
-  ClickSpawner: '!actionbar!&7[percent]% &eDrop chance'
-  Elevator:
-    created: '&e创建电梯木牌'
-  CantPlaceSpawner: '&e你不能把一个刷怪笼放置的距离另一个那么近，距离至少要大于 (&6[range]&e)'
-  ChunksLoading: '&e世界区块数据正在加载中，请稍等...'
-  ShulkerBox: 潜影盒
-  CantUseNonEncrypted: '!actionbar!&cCommands on this item are not encrypted. Can''t
-    use them!'
-  CantDecode: '!actionbar!&cCan''t decode message/command. Key file contains wrong
-    key for this task. Inform server administration about this'
   Show: '&e展示'
   Remove: '&c移除'
   Back: '&e返回'
@@ -128,10 +151,8 @@ info:
   ClickToPaste: '&e点击粘贴进聊天'
   CantTeleportWorld: '&eYou can''t teleport to this world'
   CantTeleportNoWorld: '&cTarget world doesn''t exist. Teleportation canceled'
-  CantTeleport: '&e你无法传送，因为你携带了过量的限制物品'
   ClickToConfirmDelete: '&eClick to confirm removal of &6[name]'
   teleported: '&eYou have been teleported.'
-  BlackList: '&e[material] [amount] &6最多: [max]'
   PlayerSpliter: '&e----- &6[playerDisplayName] &e-----'
   Spliter: '&e--------------------------------------------------'
   SpliterValue: '&e------------------ &6[value] &e------------------'
@@ -146,11 +167,8 @@ info:
   noItem: '&c找不到物品'
   dontHaveItem: '&c你的背包中没有 &6[itemName] x[amount] &c'
   wrongWorld: '&c不可在此世界这样做'
-  wrongPortal: '&cYou are in incorrect area of effect'
   differentWorld: '&cDifferent worlds'
   HaveItem: '&c在背包里有&6[amount]x [itemName]'
-  ItemWillBreak: '!actionbar!&e你的物品 (&6[itemName]&e) 马上快要爆了 &e[current]&6/&e[max]'
-  ArmorWillBreak: '!actionbar!&eYour [itemName] will break soon! &e[current]&6/&e[max]'
   cantDoInGamemode: '&eYou can''t do this in this game mode'
   cantDoForPlayer: '&e你不能对 &6[playerDisplayName] &e这么做'
   cantDoForYourSelf: '&eYou can''t do this to yourself'
@@ -164,44 +182,12 @@ info:
   alreadyexist: '&4该名称已被占用'
   dontexist: '&4未找到'
   worldDontExist: '&c目标世界不存在'
-  flyingToHigh: '&c你不能再飞得更高了, 最大高度限制是 &6[max]&c!'
-  specializedItemFail: '&c无法根据物品数量值:&7[value]确定具体物品'
-  sunSpeeding: Sleeping [count] of [total] [hour] hour [speed]X speed
-  sleepersRequired: '!actionbar!&f[sleeping] &7of &f[required] &7sleeping from required
-    for night time speedup'
-  sunSpeedingTitle: '&7[hour]'
-  skippingNight: '!title!&7Skipping entire night'
-  sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
-  repairConfirm: '&eClick to confirm &7[items] &eitem repair for &7[cost]'
-  bookDate: '&7Written at &f[date]'
-  maintenance: '&7Maintenance mode'
   notSet: 未设置
-  mapLimit: '&cCant go beyond 30 000 000 blocks'
-  startedEditingPainting: '&e开始画布编辑，点击其它方块取消'
-  canceledEditingPainting: '&e你取消了画布编辑'
-  changedPainting: '!actionbar!&e将画布更名为 &6[name] &eID为 &6[id]'
-  noSpam: '!title!&c不要刷屏!'
-  noCmdSpam: '!title!&c指令使用频率太快！'
-  spamConsoleInform: '&cPlayer (&7[playerName]&c) triggered (&7[rules]&c) chat filter
-    with:&r [message]'
   lookAtSign: '&e请指向一个木牌'
   lookAtBlock: '&e请指向一个方块'
   lookAtEntity: '&e请指向一个实体'
   noSpace: '&eNot enough free space'
   notOnGround: '&e飞行期间不能这么做'
-  # This line can have extra variables: [totalUsers] [onlinePlayers]
-  FirstJoin: '&e欢迎 &6[playerDisplayName] &e来到本服务器'
-  LogoutCustom: ' &6[playerDisplayName] &e退出了游戏'
-  LoginCustom: ' &6[playerDisplayName] &e加入了游戏'
-  deathlocation: '&e你死在了位于世界&6[world]的x:&6[x]&e,y:&6[y]&e z:&6[z]'
-  book:
-    exploit: '&cYou cant create book with more than [amount] pages'
-  combat:
-    CantUseShulkerBox: '&cCan''t use shulker box while you are in combat with player.
-      Wait: [time]'
-    CantUseCommand: '!actionbar!&cCan''t use command while in combat mobe. Wait: [time]'
-    bossBarPvp: '&cCombat mode [autoTimeLeft]'
-    bossBarPve: '&2Combat mode [autoTimeLeft]'
   bungee:
     Online: '&6在线'
     Offline: '&c离线'
@@ -225,13 +211,115 @@ info:
     spectator: '&6旁观'
     flying: '&6飞行'
     notflying: '&6未飞行'
+  Inventory:
+    Full: '&5Your inventory is full. Can''t add item'
+    FullDrop: '&5Not all items fit in your inventory. They have been dropped on ground'
+  TimeNotRecorded: '&e-No record-'
+  years: '&e[years] &6年 '
+  oneYear: '&e[years] &6年 '
+  day: '&e[days] &6天 '
+  oneDay: '&e[days] &6天 '
+  hour: '&e[hours] &6小时 '
+  oneHour: '&e[hours] &6小时 '
+  min: '&e[mins] &6分钟 '
+  sec: '&e[secs] &6秒 '
+  nextPageConsole: '&fFor next page perform &5[command]'
+  prevPage: '&2----<< &6上一页 '
+  prevPageGui: '&6上一页 '
+  prevPageClean: '&6上 '
+  prevPageOff: '&2----<< &7上一页 '
+  prevPageHover: '&7<<<'
+  firstPageHover: '&7|<'
+  nextPage: '&6 下一页 &2>>----'
+  nextPageGui: '&6下一页'
+  nextPageClean: '&6 下'
+  nextPageOff: '&7 下一页 &2>>----'
+  nextPageHover: '&7>>>'
+  lastPageHover: '&7>|'
+  pageCount: '&2[current]&7/&2[total]'
+  pageCountHover: '&2[totalEntries]'
+  skullOwner: '!actionbar!&7Owner:&r [playerName]'
+  circle: '&3圆形'
+  square: '&5正方形'
+  clear: '&7Clear'
+  protectedArea: '&c保护区域. 不可以这样做.'
+  valueToLong: '&e数值过长，最长: [max]'
+  valueToShort: '&e数值过短，最短: [min]'
+  pickIcon: '&8Pick icon'
+  # Following locale lines got moved to CMI folder and will be removed in future updates from this file. If you want to modify those lines check CMI locale directory
+  Same: '&c你不能打开你自己的背包'
+  cantLoginWithDifCap: '&c请注意名字的大小写! 旧名字:&e[oldName]&c. 当前名字: &e[currentName]'
+  Searching: '&e正在搜索玩家数据，请稍等...'
+  NoCommandWhileSleeping: '&cCan''t perform commands while sleeping!'
+  PurgeNotEnabled: '&c合并机制未在config中启用'
+  TeamManagementDisabled: '&7This feature will have limited functionalaty while DisableTeamManagement
+    is set to true!'
+  NoGameMode: '&c你只能使用 0/1/2/3 或者 Survival/Creative/Adventure/Spectator 或者 s/c/a/sp!'
+  NameChange: '&6[playerDisplayName] &e进入服务器，他的原名是: &6[namelist]'
+  Cooldowns: '&e该指令 &6[cmd] &e需要冷却 &6[time]'
+  specializedCooldowns: '&e该指令需要冷却，请等待 &6[time]'
+  specializedRunning: '&eCommand still running, please wait &6[time]'
+  CooldownOneTime: '&e该指令只能使用一次'
+  WarmUp:
+    canceled: '&e哎呀，你移动了一下，指令取消了'
+    counter: '!actionbar!&6--> &e[time] &6<--'
+    DontMove: '!title!!subtitle!&6不要移动'
+    Boss:
+      DontMove: '&4Don''t move for &7[autoTimeLeft] &4seconds!'
+      WaitFor: '&4Wait for &7[autoTimeLeft] &4seconds!'
+  Spawner: '&r[type] 刷怪笼'
+  FailedSpawnerMine: '!actionbar!&cFailed to mine spawner. &7[percent]% &cdrop chance'
+  ClickSpawner: '!actionbar!&7[percent]% &eDrop chance'
+  Elevator:
+    created: '&e创建电梯木牌'
+  CantPlaceSpawner: '&e你不能把一个刷怪笼放置的距离另一个那么近，距离至少要大于 (&6[range]&e)'
+  ChunksLoading: '&e世界区块数据正在加载中，请稍等...'
+  CantUseNonEncrypted: '!actionbar!&cCommands on this item are not encrypted. Can''t
+    use them!'
+  CantDecode: '!actionbar!&cCan''t decode message/command. Key file contains wrong
+    key for this task. Inform server administration about this'
+  CantTeleport: '&e你无法传送，因为你携带了过量的限制物品'
+  BlackList: '&e[material] [amount] &6最多: [max]'
+  wrongPortal: '&cYou are in incorrect area of effect'
+  ItemWillBreak: '!actionbar!&e你的物品 (&6[itemName]&e) 马上快要爆了 &e[current]&6/&e[max]'
+  ArmorWillBreak: '!actionbar!&eYour [itemName] will break soon! &e[current]&6/&e[max]'
+  flyingToHigh: '&c你不能再飞得更高了, 最大高度限制是 &6[max]&c!'
+  specializedItemFail: '&c无法根据物品数量值:&7[value]确定具体物品'
+  sunSpeeding: Sleeping [count] of [total] [hour] hour [speed]X speed
+  sleepersRequired: '!actionbar!&f[sleeping] &7of &f[required] &7sleeping from required
+    for night time speedup'
+  sunSpeedingTitle: '&7[hour]'
+  skippingNight: '!title!&7Skipping entire night'
+  sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
+  repairConfirm: '&eClick to confirm &7[items] &eitem repair for &7[cost]'
+  bookDate: '&7Written at &f[date]'
+  maintenance: '&7Maintenance mode'
+  mapLimit: '&cCant go beyond 30 000 000 blocks'
+  startedEditingPainting: '&e开始画布编辑，点击其它方块取消'
+  canceledEditingPainting: '&e你取消了画布编辑'
+  changedPainting: '!actionbar!&e将画布更名为 &6[name] &eID为 &6[id]'
+  noSpam: '!title!&c不要刷屏!'
+  noCmdSpam: '!title!&c指令使用频率太快！'
+  spamConsoleInform: '&cPlayer (&7[playerName]&c) triggered (&7[rules]&c) chat filter
+    with:&r [message]'
+  # This line can have extra variables: [totalUsers] [onlinePlayers]
+  FirstJoin: '&e欢迎 &6[playerDisplayName] &e来到本服务器'
+  LogoutCustom: ' &6[playerDisplayName] &e退出了游戏'
+  LoginCustom: ' &6[playerDisplayName] &e加入了游戏'
+  deathlocation: '&e你死在了位于世界&6[world]的x:&6[x]&e,y:&6[y]&e z:&6[z]'
+  book:
+    exploit: '&cYou cant create book with more than [amount] pages'
+  combat:
+    CantUseShulkerBox: '&cCan''t use shulker box while you are in combat with player.
+      Wait: [time]'
+    CantUseCommand: '!actionbar!&cCan''t use command while in combat mobe. Wait: [time]'
+    bossBarPvp: '&cCombat mode [autoTimeLeft]'
+    bossBarPve: '&2Combat mode [autoTimeLeft]'
   noSchedule: '&c找不到这个计划任务'
   totem:
     cooldown: '&e不死图腾冷却中: [time]'
     warmup: '&e不死图腾效果: [time]'
     cantConsume: '&e不死图腾使用被取消，因为还在冷却中！'
-  Inventory:
-    FullDrop: '&5Not all items fit in your inventory. They have been dropped on ground'
   InventorySave:
     info: '&8Info: &8[playerDisplayName]'
     saved: '&e[time] &e背包已保存 ID: &e[id]'
@@ -252,42 +340,11 @@ info:
     PreviousInventory: '&e上一个背包'
     Editable: '&e编辑模式启用'
     NonEditable: '&e编辑模式禁用'
-  TimeNotRecorded: '&e-No record-'
-  years: '&e[years] &6年 '
-  oneYear: '&e[years] &6年 '
-  day: '&e[days] &6天 '
-  oneDay: '&e[days] &6天 '
-  hour: '&e[hours] &6小时 '
-  oneHour: '&e[hours] &6小时 '
-  min: '&e[mins] &6分钟 '
-  sec: '&e[secs] &6秒 '
   vanishSymbolOn: '&8[&7H&8]&r'
   vanishSymbolOff: ''
   afkSymbolOn: '&8[&7离开&8]&r'
   afkSymbolOff: ''
-  nextPageConsole: '&fFor next page perform &5[command]'
-  prevPage: '&2----<< &6上一页 '
-  prevPageGui: '&6上一页 '
-  prevPageClean: '&6上 '
-  prevPageOff: '&2----<< &7上一页 '
-  prevPageHover: '&7<<<'
-  firstPageHover: '&7|<'
-  nextPage: '&6 下一页 &2>>----'
-  nextPageGui: '&6下一页'
-  nextPageClean: '&6 下'
-  nextPageOff: '&7 下一页 &2>>----'
-  nextPageHover: '&7>>>'
-  lastPageHover: '&7>|'
-  pageCount: '&2[current]&7/&2[total]'
-  pageCountHover: '&2[totalEntries]'
-  skullOwner: '!actionbar!&7Owner:&r [playerName]'
   beeinfo: '!actionbar!&7Honey level: &e[level]&7/&e[maxlevel] &7Bees inside: &e[count]&7/&e[maxcount]'
-  circle: '&3圆形'
-  square: '&5正方形'
-  clear: '&7Clear'
-  protectedArea: '&c保护区域. 不可以这样做.'
-  valueToLong: '&e数值过长，最长: [max]'
-  valueToShort: '&e数值过短，最短: [min]'
   pvp:
     noGodDamage: '!actionbar!&cYou can''t damage players while being immortal'
   pve:
@@ -303,7 +360,6 @@ info:
     quickbarslots: '&eYour quick bar should have atleast &6[count] &eempty slots!'
     subinv: '&eYour sub inventory should be empty!'
     subinvslots: '&eYour  sub inventory should have atleast &6[count] &eempty slots!'
-  pickIcon: '&8Pick icon'
   DamageCause:
     block_explosion: 爆炸
     contact: 方块伤害
@@ -328,6 +384,7 @@ info:
     melting: 融化
     poison: 药水
     projectile: 投射物
+    sonic_boom: sonic boom
     starvation: 饥饿
     suffocation: 窒息
     suicide: 自杀
@@ -336,26 +393,20 @@ info:
     wither: 凋零
   Biomes:
     BADLANDS: Badlands
-    BADLANDS_PLATEAU: Badlands plateau
     BAMBOO_JUNGLE: Bamboo jungle
-    BAMBOO_JUNGLE_HILLS: Bamboo jungle hills
     BASALT_DELTAS: Basalt deltas
     BEACH: Beach
     BIRCH_FOREST: Birch forest
-    BIRCH_FOREST_HILLS: Birch forest hills
     COLD_OCEAN: Cold ocean
     CRIMSON_FOREST: Crimson forest
     CUSTOM: Custom
     DARK_FOREST: Dark forest
-    DARK_FOREST_HILLS: Dark forest hills
     DEEP_COLD_OCEAN: Deep cold ocean
+    DEEP_DARK: Deep dark
     DEEP_FROZEN_OCEAN: Deep frozen ocean
     DEEP_LUKEWARM_OCEAN: Deep lukewarm ocean
     DEEP_OCEAN: Deep ocean
-    DEEP_WARM_OCEAN: Deep warm ocean
     DESERT: Desert
-    DESERT_HILLS: Desert hills
-    DESERT_LAKES: Desert lakes
     DRIPSTONE_CAVES: Dripstone caves
     END_BARRENS: End barrens
     END_HIGHLANDS: End highlands
@@ -364,60 +415,49 @@ info:
     FLOWER_FOREST: Flower forest
     FOREST: Forest
     FROZEN_OCEAN: Frozen ocean
+    FROZEN_PEAKS: Frozen peaks
     FROZEN_RIVER: Frozen river
-    GIANT_SPRUCE_TAIGA: Giant spruce taiga
-    GIANT_SPRUCE_TAIGA_HILLS: Giant spruce taiga hills
-    GIANT_TREE_TAIGA: Giant tree taiga
-    GIANT_TREE_TAIGA_HILLS: Giant tree taiga hills
-    GRAVELLY_MOUNTAINS: Gravelly mountains
+    GROVE: Grove
     ICE_SPIKES: Ice spikes
+    JAGGED_PEAKS: Jagged peaks
     JUNGLE: Jungle
-    JUNGLE_EDGE: Jungle edge
-    JUNGLE_HILLS: Jungle hills
     LUKEWARM_OCEAN: Lukewarm ocean
     LUSH_CAVES: Lush caves
-    MODIFIED_BADLANDS_PLATEAU: Modified badlands plateau
-    MODIFIED_GRAVELLY_MOUNTAINS: Modified gravelly mountains
-    MODIFIED_JUNGLE: Modified jungle
-    MODIFIED_JUNGLE_EDGE: Modified jungle edge
-    MODIFIED_WOODED_BADLANDS_PLATEAU: Modified wooded badlands plateau
-    MOUNTAINS: Mountains
-    MOUNTAIN_EDGE: Mountain edge
+    MANGROVE_SWAMP: Mangrove swamp
+    MEADOW: Meadow
     MUSHROOM_FIELDS: Mushroom fields
-    MUSHROOM_FIELD_SHORE: Mushroom field shore
     NETHER_WASTES: Nether wastes
     OCEAN: Ocean
+    OLD_GROWTH_BIRCH_FOREST: Old growth birch forest
+    OLD_GROWTH_PINE_TAIGA: Old growth pine taiga
+    OLD_GROWTH_SPRUCE_TAIGA: Old growth spruce taiga
     PLAINS: Plains
     RIVER: River
     SAVANNA: Savanna
     SAVANNA_PLATEAU: Savanna plateau
-    SHATTERED_SAVANNA: Shattered savanna
-    SHATTERED_SAVANNA_PLATEAU: Shattered savanna plateau
     SMALL_END_ISLANDS: Small end islands
     SNOWY_BEACH: Snowy beach
-    SNOWY_MOUNTAINS: Snowy mountains
+    SNOWY_PLAINS: Snowy plains
+    SNOWY_SLOPES: Snowy slopes
     SNOWY_TAIGA: Snowy taiga
-    SNOWY_TAIGA_HILLS: Snowy taiga hills
-    SNOWY_TAIGA_MOUNTAINS: Snowy taiga mountains
-    SNOWY_TUNDRA: Snowy tundra
     SOUL_SAND_VALLEY: Soul sand valley
-    STONE_SHORE: Stone shore
+    SPARSE_JUNGLE: Sparse jungle
+    STONY_PEAKS: Stony peaks
+    STONY_SHORE: Stony shore
     SUNFLOWER_PLAINS: Sunflower plains
     SWAMP: Swamp
-    SWAMP_HILLS: Swamp hills
     TAIGA: Taiga
-    TAIGA_HILLS: Taiga hills
-    TAIGA_MOUNTAINS: Taiga mountains
-    TALL_BIRCH_FOREST: Tall birch forest
-    TALL_BIRCH_HILLS: Tall birch hills
     THE_END: The end
     THE_VOID: The void
     WARM_OCEAN: Warm ocean
     WARPED_FOREST: Warped forest
-    WOODED_BADLANDS_PLATEAU: Wooded badlands plateau
-    WOODED_HILLS: Wooded hills
-    WOODED_MOUNTAINS: Wooded mountains
+    WINDSWEPT_FOREST: Windswept forest
+    WINDSWEPT_GRAVELLY_HILLS: Windswept gravelly hills
+    WINDSWEPT_HILLS: Windswept hills
+    WINDSWEPT_SAVANNA: Windswept savanna
+    WOODED_BADLANDS: Wooded badlands
   EntityType:
+    allay: Allay
     area_effect_cloud: 药水云
     armor_stand: 盔甲架
     arrow: 箭
@@ -428,6 +468,7 @@ info:
     boat: 船
     cat: Cat
     cave_spider: 洞穴蜘蛛
+    chest_boat: Chest boat
     chicken: 鸡
     cod: Cod
     cow: 牛
@@ -453,6 +494,7 @@ info:
     firework: 烟花
     fishing_hook: 鱼钩
     fox: Fox
+    frog: Frog
     ghast: 恶魂
     giant: 巨人
     glow_item_frame: Glow item frame
@@ -512,6 +554,7 @@ info:
     squid: 鱿鱼
     stray: 流髑
     strider: Strider
+    tadpole: Tadpole
     thrown_exp_bottle: 扔出的附魔之瓶
     trader_llama: Trader llama
     trident: Trident
@@ -522,6 +565,7 @@ info:
     villager: 村民
     vindicator: 卫道士
     wandering_trader: Wandering trader
+    warden: Warden
     witch: 女巫
     wither: 凋灵
     wither_skeleton: 凋灵骷髅
@@ -581,6 +625,8 @@ info:
     - Smite
     multishot:
     - Multishot
+    swift_sneak:
+    - SWIFTSNEAK
     fire_aspect:
     - FireAspect
     channeling:
@@ -675,6 +721,8 @@ info:
     - Bad omen
     hero_of_the_village:
     - Hero of the village
+    darkness:
+    - Darkness
 direction:
   n: North
   ne: North East
@@ -686,6 +734,7 @@ direction:
   nw: North West
 modify:
   middlemouse: '&2鼠标中键单击进行编辑'
+  qButtonEdit: '&2Click Q to edit'
   newItem: '&7放置新物品'
   newLine: '&2<新的一行>'
   newLineHover: '&2添加新的一行'
@@ -727,6 +776,7 @@ modify:
   commandList: ' &e[command]  '
   emptyLine: '&7[Empty line]'
   commandEdit: '&e编辑列表'
+  nameAddInfo: '&eEnter new name. Type &6cancel &eto cancel'
   lineAddInfo: '&eEnter new line. Type &6cancel &eto cancel'
   commandAddInfo: '&e输入一个新指令，或使用 &6cancel &e取消'
   commandAddInformationHover: "&e[playerName] 代表玩家变量 \n&e 想给指令加延迟请使用: \n&edelay! 5\
@@ -734,14 +784,44 @@ modify:
   commandEditInfo: '&e点击粘贴旧内容，使用 &6cancel &e取消，或使用 &6remove &e移除一行'
   listLimit: '&eList can''t be bigger than &6[amount] &eentries'
   commandEditInfoHover: '&e点击粘贴旧内容'
-warp:
-  list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
 teleportation:
   relocation: '!actionbar!&4你将要传送到的地方不安全，已将你传送至 安全的地方'
+econ:
+  noMoney: '&c你的钱不够'
+  charged: '!actionbar!&fCharged: &6[amount]'
+  notEnoughMoney: '&cYou dont have enough money. Required (&6[amount]&c)'
+  tooMuchMoney: '&cYou have too much money'
+  disabled: '&c经济已禁用，你不能使用这个指令'
+  commandCost: '&7This command cost is &6[cost] &7repeat it or click here to confirm'
+Selection:
+  SelectPoints: '&c用选择工具选择 2 个点 AKA: &6[tool]'
+  PrimaryPoint: '&e选择 &6第一个 &e选择点 [point]'
+  SecondaryPoint: '&e选择了 &6第二个 &e选择点 [point]'
+  CoordsTop: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
+  CoordsBottom: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
+  Area: '&7[world] &f(&6[x1]:[y1]:[z1] &e[x2]:[y2]:[z2]&f)'
+Location:
+  Title: '&8玩家位置'
+  Killer: '&e击杀者: &6[killer]'
+  OneLiner: '&eLocation: &6[location]'
+  DeathReason: '&e死亡原因: &6[reason]'
+  Full: '&7[world] &f[x]&7:&f[y]&7:&f[z]'
+  World: '&e世界: &6[world]'
+  X: '&eX: &6[x]'
+  Y: '&eY: &6[y]'
+  Z: '&eZ: &6[z]'
+  Pitch: '&ePitch: &6[pitch]'
+  Yaw: '&eYaw: &6[yaw]'
+  WorldNames:
+  - world-&2World
+  - world_nether-&2World Nether
+  - world_the_end-&2World The End
+  - spawn-&2Spawn
+Locations: '&7Locations: '
+warp:
+  list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
 afk:
-  'on': '&6AFK'
   'off': '&7Playing'
-  left: '&6[playerDisplayName] &e回来了'
   MayNotRespond: '&e玩家处于离开状态，可能无法回复你'
   MayNotRespondStaff: '&e服务器管理员处于离开状态，可能无法立刻解决你的问题'
 BossBar:
@@ -764,23 +844,13 @@ Information:
   BadGameMode: '&c当前游戏模式下不能这么做'
   BadArea: '&c你不可以在此区域这样做'
   GameMode: '&e游戏模式: &6[GameMode]'
-  GodMode: '&e上帝模式: &6[GodMode]'
   Flying: '&e飞行: &6[Flying]'
-  CanFly: '&e可以飞行: &6[CanFly]'
   Uuid: '&6[uuid]'
-  ip: '&eIP 地址: &6[address]'
   FirstConnection: '&eFirst connection: &6[time]'
   Lastseen: '&e上次离线: &6[time]'
   Onlinesince: '&e上线时间: &6[time]'
   Money: '&e金钱: &6[money]'
   Group: '&e组: &6[group]'
-econ:
-  disabled: '&c经济已禁用，你不能使用这个指令'
-  noMoney: '&c你的钱不够'
-  charged: '!actionbar!&fCharged: &6[amount]'
-  notEnoughMoney: '&cYou dont have enough money. Required (&6[amount]&c)'
-  tooMuchMoney: '&cYou have too much money'
-  commandCost: '&7This command cost is &6[cost] &7repeat it or click here to confirm'
 Elytra:
   Speed: '&e速度: &6[speed]&ekm/h'
   SpeedBoost: ' &2+ '
@@ -788,37 +858,11 @@ Elytra:
   CanUse: '&c没有权限，无法装载鞘翅'
   CantGlide: '&cCan''t use elytra here!'
   Charging: '&e充能 &f[percentage]&e%'
-Selection:
-  SelectPoints: '&c用选择工具选择 2 个点 AKA: &6[tool]'
-  PrimaryPoint: '&e选择 &6第一个 &e选择点 [point]'
-  SecondaryPoint: '&e选择了 &6第二个 &e选择点 [point]'
-  CoordsTop: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
-  CoordsBottom: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
-  Area: '&7[world] &f(&6[x1]:[y1]:[z1] &e[x2]:[y2]:[z2]&f)'
 NetherPortal:
   ToHigh: '&c传送门太高了，最大高度 &6[max]&c!'
   ToWide: '&c传送门太宽了，最宽宽度 &6[max]&c!'
   Creation: '!actionbar!&7Created [height]x[width] nether portal!'
   Disabled: '&c传送门创建已禁用'
-Location:
-  Title: '&8玩家位置'
-  Killer: '&e击杀者: &6[killer]'
-  OneLiner: '&eLocation: &6[location]'
-  DeathReason: '&e死亡原因: &6[reason]'
-  Full: '&7[world] &f[x]&7:&f[y]&7:&f[z]'
-  World: '&e世界: &6[world]'
-  X: '&eX: &6[x]'
-  Y: '&eY: &6[y]'
-  Z: '&eZ: &6[z]'
-  Pitch: '&ePitch: &6[pitch]'
-  Yaw: '&eYaw: &6[yaw]'
-  # Mainly used in %cmi_user_world_formatted% placeholder
-  WorldNames:
-  - world-&2World
-  - world_nether-&2World Nether
-  - world_the_end-&2World The End
-  - spawn-&2Spawn
-Locations: '&7Locations: '
 Ender:
   Title: '&7打开末影箱'
 Chat:
@@ -847,10 +891,6 @@ command:
   nocmd:
     help:
       info: '&eShows all available commands'
-      args: ''
-  actionbarmsg:
-    help:
-      info: ''
       args: ''
   reload:
     help:
