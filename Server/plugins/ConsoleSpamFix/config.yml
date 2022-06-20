@@ -67,6 +67,7 @@ Messages-To-Hide-Filter:
 - 'Unable to find spawn biome'
 - 'Uncaught exception in thread Profile Lookup Executor'
 - 'look up profile properties for'
+- 'Failed to parse level-type default'
 
 #OhTheDungeons无用信息屏蔽
 - 'WorldEdit not installed, custom dungeon function is disabled. Dont worry, you could still use the built-in dungeons'
@@ -75,8 +76,9 @@ Messages-To-Hide-Filter:
 
 #Geyser无用信息屏蔽
 - '无法翻译数据包'
+- 'Failed to read git.properties'
 
-#slimefun无用信息屏蔽
+#Slimefun无用信息屏蔽
 - 'Attempted to refresh skin cache'
 - 'This usually means mojang.com is temporarily down or started'
 - 'Retrying request to'
@@ -85,6 +87,9 @@ Messages-To-Hide-Filter:
 - 'Failed to start metrics as the file could not be downloaded'
 - 'Failed to fetch latest builds for Metrics'
 - '未检测到 Quickshop-Reremake, 相关功能将自动关闭'
+
+#QuickShop网络问题导致的报错屏蔽
+- 'Failed to update game assets from MojangAPI server'
 
 #Residence下载失败信息屏蔽
 - 'Failed to download'
