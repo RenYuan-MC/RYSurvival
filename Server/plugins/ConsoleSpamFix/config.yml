@@ -57,6 +57,7 @@ Messages-To-Hide-Filter:
 #Floodgate无用信息屏蔽
 - 'The prefix you entered in your Floodgate config'
 - '******************************************'
+- 'Floodgate found on the server'
 
 #ClockGUI无用信息屏蔽
 - '制作者QQ'
