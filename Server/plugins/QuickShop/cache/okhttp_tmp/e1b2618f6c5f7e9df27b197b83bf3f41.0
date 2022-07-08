@@ -4,20 +4,20 @@ GET
 HTTP/1.1 200 OK
 15
 Content-Type: application/json
-Content-Length: 146243
+Content-Length: 144433
 Connection: keep-alive
-Last-Modified: Wed, 15 Jun 2022 17:15:04 GMT
+Last-Modified: Wed, 18 May 2022 15:59:24 GMT
 Accept-Ranges: bytes
 Server: AmazonS3
-Date: Mon, 20 Jun 2022 13:51:08 GMT
-ETag: "253376be7dd2b66706cfdbce0ee44bf8"
+Date: Fri, 20 May 2022 20:16:01 GMT
+ETag: "5a884f45454b06eebfddd3b7925c8632"
 X-Cache: Hit from cloudfront
-Via: 1.1 45948029a5d1b1b229096d18b2602a40.cloudfront.net (CloudFront)
-X-Amz-Cf-Pop: TPE52-C1
-X-Amz-Cf-Id: g4g8Bgyutwwsr4v5Uv2iMm30pvk22zOk1ok8np5kb7VA5qO40x_DRA==
-Age: 273
-OkHttp-Sent-Millis: 1655733339887
-OkHttp-Received-Millis: 1655733340948
+Via: 1.1 f7a747899149deb363c7a3968c0ed56a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: LAX50-C1
+X-Amz-Cf-Id: VykA01oYYFRasqNXLPWmryjvR6C-DOq68xsRc_2uaV_-v_dcX-qW2w==
+Age: 161
+OkHttp-Sent-Millis: 1653077901815
+OkHttp-Received-Millis: 1653077902088
 
 TLS_AES_128_GCM_SHA256
 3
