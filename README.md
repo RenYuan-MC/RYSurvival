@@ -16,7 +16,7 @@ minebbs 链接: https://www.minebbs.com/resources/4131/<br>
 <br>
 QQ 交流群：1029946156<br>
 <br>
-**注:此服务端还在开发中,目前进度60%**
+**注:此服务端还在开发中,目前进度70%**
 # 如何下载
 * 方法一:<br>
 前往此 [下载页面](https://rymc.ren) 下载(感谢SHIJIATONG帮忙制作的网站)
