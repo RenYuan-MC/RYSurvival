@@ -1,7 +1,7 @@
 # QuickShop-Reremake Plugin Configuration
 
 #Do not touch this if you don't know what you're doing!
-config-version: 158
+config-version: 160
 
 #Set the default language code the plugin should use, it will apply to:
 #Item Name
@@ -37,11 +37,11 @@ dev-mode: false
 
 #Tax amount (decimal)
 #Example: P1 buys $50 worth of stuff from P2.  Therefore, P1 loses $50, P2 gains $(1-0.05)*50, and the tax-account gains $(0.05)*50.
-tax: 0.00
+tax: 0.0
 
 #The fake player where the tax money goes to.
 #Set this to "" to disable it (Taxing will still work but not deposit to any account)
-tax-account: ""
+tax-account: ''
 
 #Turn on this option will migrate shop owner to specified account when you set a shop to unlimited.
 #It won't affect exists shops, you will need switch to unlimited again to apply it.
@@ -103,10 +103,12 @@ auto-report-errors: true
 include-offlineplayer-list: false
 
 #What economy provider should QuickShop use?
+#If you need to use Multi-Currency feature
+#You need to install the eco plugin supported listing there
+#and change to corresponding type
 #0=Vault
 #3=GemsEconomy with Multi-Currency on
 #4=TNE with Multi-Currency on
-#DO NOT TOUCH THIS IF YOU DON'T KNOW WHAT IT DOES. ASK FOR SUPPORT BEFORE TOUCHING THIS!
 economy-type: 0
 
 #Whether to use decimal format to display money.
@@ -329,12 +331,12 @@ shop:
 
   #The minimum price for a shop.
   #The default is 0.01
-  #This will not affect existing shops!
+  #This WILL AFFECT existing shops!
   minimum-price: 0.01
 
   #The maximum price for a shop.
   #Set this to -1 to disable it. (Unlimited maximum shop price)
-  #This will not affect existing shops!
+  #This WILL AFFECT existing shops!
   maximum-price: -1
 
   #Per item price restrictions.
@@ -389,12 +391,11 @@ shop:
   - disabled_world
 
   #The listener list to skip when protection-checking.
-  #Requires "protection-checking-handler" set to 1.
+  #
   #Examples:
   #- xx.xxx.xxx.xxxxx.BlockBreakListenerClass
   #  This will skip calling the xx.xxx.xxx.xxxxx.BlockBreakListenerClass.
   #  This can improve performance because its not string based.
-  #
   #- xx.xx.xxx.xxxxx
   #  This will skip calling all classes that start with xx.xx.xxx.xxxxx.
   # 
@@ -470,10 +471,10 @@ plugin:
   PlaceHolderAPI: true
   #If you have LWC/LWCX, QuickShop will check access.
   LWC: true
-  #If you use BlockHub, Should QuickShop use BlockHub to check region access for players?
+  #If you use BlocksHub, Should QuickShop use BlockHub to check region access for players?
   BlockHub:
     enable: true
-    #Should BlockHub only be used for permission checks?
+    #Should BlocksHub only be used for permission checks?
     only: false
   #If you have WorldEdit, QuickShop will try migrating shops in EditSession. [BETA]
   WorldEdit: true
@@ -618,8 +619,12 @@ integration:
     whitelist-mode: false
     #If QS should ignore disabled worlds.
     ignore-disabled-worlds: true
-    #Should we delete the shop in a land when the shop owner loses the permission for this land?
+    #Should we delete the shop in the land when the shop owner loses the permission for this land?
     delete-on-lose-permission: false
+    #Should we delete all the shop of land members and owner in the land which deleted?
+    delete-on-land-deleted: false
+    #Should we delete all the shop of land members and owner in the land which expired?
+    delete-on-land-expired: false
   #FabledSkyblock Integration
   fabledskyblock:
     # If a player wants to create a shop, the player must have the quickshop-create flag.
@@ -743,6 +748,12 @@ integration:
     owner-create-only: false
     #Delete shops when the shop owner got kicked/quited from the island.
     delete-shop-on-member-leave: true
+    #Should we prevent the creation of a shop or trade with a shop outside the superior-skyblock area?
+    whitelist-mode: true
+    #The privilege needs when creating shop
+    create-privilege-needs-list: []
+    #The privilege needs when trading with a shop
+    trade-privilege-needs-list: []
   #AdvanvedRegionMarket shop deletion Integration
   advancedregionmarket:
     enable: true

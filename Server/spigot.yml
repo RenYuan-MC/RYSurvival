@@ -3,108 +3,74 @@
 # with caution, and make sure you know what each option does before configuring.
 # For a reference for any variable inside this file, check out the Spigot wiki at
 # http://www.spigotmc.org/wiki/spigot-configuration/
-# 
+#
 # If you need help with the configuration or have any questions related to Spigot,
-# join us at the IRC or drop by our forums and leave a post.
-# 
-# IRC: #spigot @ irc.spi.gt ( http://www.spigotmc.org/pages/irc/ )
+# join us at the Discord or drop by our forums and leave a post.
+#
+# Discord: https://www.spigotmc.org/go/discord
 # Forums: http://www.spigotmc.org/
 
-config-version: 12
 settings:
-  log-named-deaths: true
-  debug: false
-  bungeecord: false
-  netty-threads: 4
-  user-cache-size: 1000
+  timeout-time: 60
+  restart-on-crash: false
+  restart-script: ./start.sh
   sample-count: 12
   player-shuffle: 0
-  timeout-time: 60
-  restart-on-crash: true
-  restart-script: ./start.sh
-  moved-wrongly-threshold: 0.0625
-  save-user-cache-on-stop-only: false
-  moved-too-quickly-multiplier: 10.0
-  log-villager-deaths: true
+  user-cache-size: 1000
+  bungeecord: false
+  netty-threads: 4
+  log-villager-deaths: false
+  log-named-deaths: false
   attribute:
     maxHealth:
-      max: 32767.0
+      max: 2048.0
     movementSpeed:
       max: 2048.0
     attackDamage:
       max: 2048.0
+  save-user-cache-on-stop-only: false
+  moved-wrongly-threshold: 0.0625
+  moved-too-quickly-multiplier: 10.0
+  debug: false
 messages:
+  restart: 服务器重启中
   whitelist: You are not whitelisted on this server!
   unknown-command: §f[§6服务器§f] 未知的命令
   server-full: 服务器人满了!
   outdated-client: 客户端版本过老! 请使用 {0}
   outdated-server: 客户端版本过新! 请使用 {0}
-  restart: 服务器重启中
-advancements:
-  disable-saving: false
-  disabled:
-  - minecraft:story/disabled
 commands:
   spam-exclusions:
   - /skill
-  tab-complete: 0
-  send-namespaced: true
   replace-commands:
   - setblock
   - summon
   - testforblock
   - tellraw
+  tab-complete: 0
+  send-namespaced: true
   log: true
   silent-commandblock-console: false
-stats:
-  disable-saving: false
-  forced-stats: {}
-players:
-  disable-saving: false
 world-settings:
   default:
-    thunder-chance: 100000
-    verbose: false
-    enable-zombie-pigmen-portal-spawns: true
-    view-distance: default
-    item-despawn-rate: 6000
-    wither-spawn-sound-radius: 0
-    seed-village: 10387312
-    seed-desert: 14357617
-    seed-igloo: 14357618
-    seed-jungle: 14357619
-    seed-swamp: 14357620
-    seed-monument: 10387313
-    seed-shipwreck: 165745295
-    seed-ocean: 14357621
-    seed-outpost: 165745296
-    seed-endcity: 10387313
-    seed-slime: 987234911
-    seed-bastion: 30084232
-    seed-fortress: 30084232
-    seed-mansion: 10387319
-    seed-fossil: 14357921
-    seed-portal: 34222645
-    dragon-death-sound-radius: 0
-    arrow-despawn-rate: 1200
-    trident-despawn-rate: 1200
-    nerf-spawner-mobs: false
-    mob-spawn-range: 3
+    below-zero-generation-in-existing-chunks: true
     hanging-tick-frequency: 100
+    wither-spawn-sound-radius: 16
     zombie-aggressive-towards-villager: true
-    hopper-amount: 1
-    max-tnt-per-tick: 100
-    end-portal-sound-radius: 0
-    max-entity-collisions: 8
-    entity-tracking-range:
-      players: 48
-      animals: 48
-      monsters: 48
-      misc: 32
-      other: 64
+    enable-zombie-pigmen-portal-spawns: true
     merge-radius:
-      item: 5
-      exp: 7
+      item: 3.5
+      exp: 5.0
+    item-despawn-rate: 3000
+    view-distance: default
+    simulation-distance: default
+    thunder-chance: 100000
+    dragon-death-sound-radius: 0
+    arrow-despawn-rate: 20
+    trident-despawn-rate: 20
+    end-portal-sound-radius: 0
+    nerf-spawner-mobs: false
+    mob-spawn-range: 2
     growth:
       cactus-modifier: 100
       cane-modifier: 100
@@ -122,21 +88,18 @@ world-settings:
       bamboo-modifier: 100
       sweetberry-modifier: 100
       kelp-modifier: 100
-    ticks-per:
-      hopper-transfer: 8
-      hopper-check: 1
+      twistingvines-modifier: 100
+      weepingvines-modifier: 100
+      cavevines-modifier: 100
+      glowberry-modifier: 100
     entity-activation-range:
-      animals: 14
-      monsters: 18
-      raiders: 40
-      misc: 16
-      water: 16
-      villagers: 16
-      flying-monsters: 16
-      villagers-work-immunity-after: 100
-      villagers-work-immunity-for: 20
-      villagers-active-for-panic: true
-      tick-inactive-villagers: true
+      animals: 8
+      monsters: 20
+      raiders: 12
+      misc: 2
+      water: 4
+      villagers: 4
+      flying-monsters: 24
       wake-up-inactive:
         animals-max-per-tick: 4
         animals-every: 1200
@@ -150,6 +113,41 @@ world-settings:
         flying-monsters-max-per-tick: 8
         flying-monsters-every: 200
         flying-monsters-for: 100
+      villagers-work-immunity-after: 100
+      villagers-work-immunity-for: 20
+      villagers-active-for-panic: true
+      tick-inactive-villagers: true
+      ignore-spectators: false
+    entity-tracking-range:
+      players: 40
+      animals: 40
+      monsters: 40
+      misc: 32
+      other: 64
+    ticks-per:
+      hopper-transfer: 24
+      hopper-check: 3
+    hopper-amount: 1
+    hopper-can-load-chunks: false
+    max-tick-time:
+      tile: 50
+      entity: 50
+    seed-village: 10387312
+    seed-desert: 14357617
+    seed-igloo: 14357618
+    seed-jungle: 14357619
+    seed-swamp: 14357620
+    seed-monument: 10387313
+    seed-shipwreck: 165745295
+    seed-ocean: 14357621
+    seed-outpost: 165745296
+    seed-endcity: 10387313
+    seed-slime: 987234911
+    seed-nether: 30084232
+    seed-mansion: 10387319
+    seed-fossil: 14357921
+    seed-portal: 34222645
+    seed-stronghold: default
     hunger:
       jump-walk-exhaustion: 0.05
       jump-sprint-exhaustion: 0.2
@@ -158,10 +156,15 @@ world-settings:
       swim-multiplier: 0.01
       sprint-multiplier: 0.1
       other-multiplier: 0.0
-    squid-spawn-range:
-      min: 45.0
-    max-tick-time:
-      tile: 30
-      entity: 30
-  worldeditregentempworld:
+    max-tnt-per-tick: 10
     verbose: false
+players:
+  disable-saving: false
+advancements:
+  disable-saving: false
+  disabled:
+  - minecraft:story/disabled
+config-version: 12
+stats:
+  disable-saving: false
+  forced-stats: {}

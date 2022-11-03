@@ -1,5 +1,5 @@
 {
-	"format_version": "1.0.0",
+	"format_version": "1",
 	"items": {
 		"minecraft:stick": [
 			{
@@ -17,6 +17,13 @@
 			{
 				"name": "blade_of_vampires",
 				"custom_model_data": 2200237,
+				"texture_size": 16
+			}
+		],
+		"minecraft:iron_axe": [
+			{
+				"name": "seismic_axe",
+				"custom_model_data": 2200270,
 				"texture_size": 16
 			}
 		],

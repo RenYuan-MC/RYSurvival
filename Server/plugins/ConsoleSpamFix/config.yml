@@ -73,6 +73,7 @@ Messages-To-Hide-Filter:
 - 'WorldEdit not installed, custom dungeon function is disabled. Dont worry, you could still use the built-in dungeons'
 - 'MythicMobs not installed, will disable MythicMobs related features'
 - 'Boss not installed, will disable BossPlugin related features'
+- 'EcoBosses not installed, will disable BossPlugin EcoBosses features'
 
 #Geyser无用信息屏蔽
 - '无法翻译数据包'

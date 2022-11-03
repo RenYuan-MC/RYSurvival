@@ -1,5 +1,5 @@
 {
-	"format_version": "1.0.0",
+	"format_version": "1",
 	"items": {
 		"minecraft:sugar": [
 			{
@@ -170,6 +170,23 @@
 				"name": "organic_fertilizer_cocoa_beans",
 				"custom_model_data": 2200498,
 				"texture_size": 16
+			}
+		],
+		"minecraft:bow": [
+			{
+				"name": "soulbound_bow",
+				"custom_model_data": 2200274,
+				"texture_size": 32
+			},
+			{
+				"name": "explosive_bow",
+				"custom_model_data": 2200311,
+				"texture_size": 32
+			},
+			{
+				"name": "icy_bow",
+				"custom_model_data": 2200312,
+				"texture_size": 32
 			}
 		],
 		"minecraft:paper": [
