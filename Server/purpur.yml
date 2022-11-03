@@ -10,11 +10,49 @@
 
 verbose: false
 settings:
+  fix-projectile-looting-transfer: false
+  block-fall-multipliers:
+    minecraft:white_bed:
+      distance: 0.5
+    minecraft:hay_block:
+      damage: 0.2
+    minecraft:red_bed:
+      distance: 0.5
+    minecraft:pink_bed:
+      distance: 0.5
+    minecraft:light_blue_bed:
+      distance: 0.5
+    minecraft:purple_bed:
+      distance: 0.5
+    minecraft:magenta_bed:
+      distance: 0.5
+    minecraft:light_gray_bed:
+      distance: 0.5
+    minecraft:brown_bed:
+      distance: 0.5
+    minecraft:lime_bed:
+      distance: 0.5
+    minecraft:yellow_bed:
+      distance: 0.5
+    minecraft:black_bed:
+      distance: 0.5
+    minecraft:orange_bed:
+      distance: 0.5
+    minecraft:green_bed:
+      distance: 0.5
+    minecraft:blue_bed:
+      distance: 0.5
+    minecraft:cyan_bed:
+      distance: 0.5
+    minecraft:gray_bed:
+      distance: 0.5
+  blast-resistance-overrides: {}
   network:
     upnp-port-forwarding: false
     max-joins-per-second: false
     kick-for-out-of-order-chat: true
   logger:
+    suppress-library-loader: false
     suppress-init-legacy-material-errors: false
     suppress-ignored-advancement-warnings: false
     suppress-unrecognized-recipe-errors: false
@@ -30,6 +68,8 @@ settings:
     death:
       only-broadcast-to-affected-player: false
   messages:
+    ram-command-output: '<green>Ram Usage: <used>/<xmx> (<percent>)'
+    rambar-command-output: <green>Rambar toggled <onoff> for <target>
     death-message:
       run-with-scissors: <player> slipped and fell on their shears
       stonecutter: <player> has sawed themself in half
@@ -53,6 +93,14 @@ settings:
       mineshaft: -1
   lagging-threshold: 19.0
   blocks:
+    cave_vines:
+      max-growth-age: 25
+    kelp:
+      max-growth-age: 25
+    twisting_vines:
+      max-growth-age: 25
+    weeping_vines:
+      max-growth-age: 25
     barrel:
       rows: 3
     ender_chest:
@@ -76,6 +124,18 @@ settings:
     disable-note-block-updates: false
     disable-chorus-plant-updates: false
   command:
+    rambar:
+      title: <gray>Ram<yellow>:</yellow> <used>/<xmx> (<percent>)
+      overlay: NOTCHED_20
+      progress-color:
+        good: GREEN
+        medium: YELLOW
+        low: RED
+      text-color:
+        good: <gradient:#55ff55:#00aa00><text></gradient>
+        medium: <gradient:#ffff55:#ffaa00><text></gradient>
+        low: <gradient:#ff5555:#aa0000><text></gradient>
+      tick-interval: 20
     tpsbar:
       title: <gray>TPS<yellow>:</yellow> <tps> MSPT<yellow>:</yellow> <mspt> Ping<yellow>:</yellow>
         <ping>ms
@@ -113,10 +173,11 @@ settings:
       seconds: '%02d seconds'
   disable-give-dropping: false
   tps-catchup: true
-  server-mod-name: Purpur
+  server-mod-name: RenYuan-Survival (Based on KeYiMC)
   use-alternate-keepalive: true
   username-valid-characters: ^[a-zA-Z0-9_.]*$
   enchantment:
+    allow-transparent-blocks-in-enchantment-box: false
     allow-infinity-and-mending-together: false
     allow-infinity-on-crossbow: false
     allow-looting-on-shears: false
@@ -171,6 +232,7 @@ world-settings:
           explosion-fire: false
           explosion-effect: DESTROY
       anvil:
+        use-mini-message: false
         allow-colors: false
         iron-ingots-used-for-repair: 0
         obsidian-used-for-damage: 0
@@ -490,6 +552,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       allay:
+        respect-nbt: []
         ridable: false
         ridable-in-water: false
         controllable: true
@@ -570,6 +633,7 @@ world-settings:
         naturally-aggressive-to-players-chance: 0.0
         always-drop-exp: false
       creeper:
+        encircle-target: false
         ridable: false
         ridable-in-water: false
         controllable: true
@@ -744,6 +808,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       glow_squid:
+        rainglow-mode: rainbow
         ridable: false
         controllable: true
         attributes:
@@ -1054,6 +1119,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       skeleton:
+        bow-accuracy: 14 - difficulty * 4
         ridable: false
         ridable-in-water: false
         controllable: true
@@ -1334,9 +1400,13 @@ world-settings:
     hunger:
       starvation-damage: 1.0
     gameplay-mechanics:
+      arrow:
+        movement-resets-despawn-counter: false
+      milk-clears-beneficial-effects: true
       entity-lifespan: 0
       entity-left-handed-chance: 0.05000000074505806
       mob-spawning:
+        ignore-creative-players: false
         village-cats: default
         raid-patrols: default
         phantoms: default
@@ -1350,6 +1420,7 @@ world-settings:
         hunger-exhaustion-amount: 0.004999999888241291
         saturation-regen-amount: 1.0
       player:
+        burp-delay: 10
         idle-timeout:
           kick-if-idle: true
           tick-nearby-entities: true
