@@ -1,145 +1,108 @@
 enable: true
 global-permission-defaults:
-  USE: false
-  COMMAND: false
+  USE: true
+  COMMAND: true
 
 forms:
-  servers:
+  main-form:
     type: simple_form
-    title: "Server Selector"
-    content: "Click on the server button of choice."
+    title: "§e§l主菜单"
+    content: "主菜单"
     buttons:
-      - text: "Server Lobby: %bungee_lobby% players"
-        image: "https://www.digminecraft.com/block_recipes/images/cyan_concrete.png"
+      - text: "世界传送菜单"
+        image: "textures/ui/arrow_dark_right_stretch.png"
         actions:
-          - message: Taking you to the lobby.
-          - server: "lobby"
+          - form: world-teleport
 
-      - text: "Survival: %bungee_survival% players"
-        image: "https://www.digminecraft.com/block_recipes/images/blue_concrete.png"
-        actions:
-          - server: "survival"
-
-      - text: "Minigames"
-        image: "https://www.digminecraft.com/weapon_recipes/images/diamond_sword.png"
-        actions:
-          - form: minigames
-
-      - text: "Spawn"
+      - text: "玩家传送菜单"
+        image: "textures/items/ender_pearl.png"
         actions:
           - commands:
-              - "console; tp %player_name% 0 80 0"
+              - "player; tpaui"
 
-  minigames:
+      - text: "功能菜单"
+        image: "textures/ui/settings_glyph_color_2x.png"
+        actions:
+          - form: setting
+
+      - text: "领地菜单"
+        image: "textures/items/clock_item.png"
+        actions:
+          - commands:
+              - "player; rform"
+
+      - text: "家管理"
+        image: "textures/ui/store_home_icon.png"
+        actions:
+          - form: home-manager
+
+
+  world-teleport:
     type: simple_form
-    command: minigames
-    title: "Minigames"
-    content: "Click on a minigame of choice."
+    title: "§l世界传送"
+    content: "世界传送"
     buttons:
-      - text: "Spleef"
-        image: "https://www.digminecraft.com/materials/images/snowball.png"
+      - text: "生存世界随机传送"
+        image: "textures/blocks/netherrack.png"
         actions:
-          - server: "spleef"
+          - commands:
+              - "player; rtp world world"
 
-      - text: "Hide & Seek"
+      - text: "地狱世界随机传送"
+        image: "textures/items/ender_pearl.png"
         actions:
-          - server: "hideseek"
+          - commands:
+              - "player; rtp world world_nether"
 
-  leave:
-    type: modal_form
-    title: "Do you want to leave the server?"
-    content: "This will result in you leaving the server. Are you sure?"
-    button1:
-      text: "Yes"
-      actions:
-        - commands:
-            - "console; kick %player_name%"
-    button2:
-      text: "No"
+      - text: "末地世界传送"
+        image: "textures/blocks/end_stone.png"
+        actions:
+          - commands:
+              - "player; tpend"
 
-  broadcast:
-    type: custom_form
-    permission-defaults:
-      USE: FALSE
-      COMMAND: FALSE
-    title: "Choose something to broadcast"
-    components:
-      - type: input
-        text: "Enter a broadcast"
-        parsers:
-          - type: block-placeholders
+      - text: "资源世界随机传送"
+        image: "textures/blocks/emerald_block.png"
+        actions:
+          - commands:
+              - "player; rtp world otd_dungeon"
 
-    actions:
-      - commands:
-          - "say %result_0%"
+      - text: "传送至主城"
+        image: "textures/blocks/planks_oak.png"
+        actions:
+          - commands:
+              - "player; spawn"
 
-  switch:
-    type: custom_form
-    title: Server Switcher
-    components:
-      - type: label
-        text: "            Enter server details"
 
-      - type: input
-        text: Address
-        placeholder: address
-        parsers:
-          - type: block-placeholders
+  setting:
+    type: simple_form
+    title: "§l功能菜单"
+    content: "功能菜单"
+    buttons:
+      - text: "开关计分板"
+        image: "textures/items/apple.png"
+        actions:
+          - commands:
+              - "player; sb toggle"
 
-      - type: input
-        text: Port
-        placeholder: port
-        default-text: 19132
-        parsers:
-          - type: block-placeholders
-    actions:
-      - message: "Sending you to %result_1%:%result_2%"
-      - type: transfer_packet
-        address: "%result_1%"
-        port: "%result_2%"
 
-  example:
-    type: custom_form
-    title: "This is the form's title"
-    components:
-      - type: label
-        text: "This is a label"
+  home-manager:
+    type: simple_form
+    title: "§l家管理"
+    content: "家管理"
+    buttons:
+      - text: "传送到你的家"
+        image: "textures/ui/arrow_dark_right_stretch.png"
+        actions:
+          - commands:
+              - "player; home home"
 
-      - type: dropdown
-        text: "This is a dropdown"
-        default-option: 0
-        options:
-          - "option 0"
-          - "option 1"
-          - "option 2"
+      - text: "将当前位置设置为家"
+        image: "textures/blocks/planks_oak.png"
+        actions:
+          - commands:
+              - "player; sethome home"
 
-      - type: input
-        text: "This is an input"
-        placeholder: ""
-        default-text: ""
-        parsers:
-          - type: block-placeholders
 
-      - type: slider
-        text: "This is a slider"
-        min: 0
-        max: 10
-        step: 1
-        default-value: 0
 
-      - type: step_slider
-        text: "This is a step slider"
-        default-step: 0
-        steps:
-          - "step 0"
-          - "step 1"
-          - "step 2"
 
-      - type: toggle
-        default-value: true
-
-    actions:
-      - message: "You entered: '%result_0%' '%result_1%' '%result_2%' '%result_3%' '%result_4%' '%result_5%'"
-
-# Don't touch this
 config-version: 5

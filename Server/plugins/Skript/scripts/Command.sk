@@ -5,16 +5,9 @@ command /tpend:
 command /cd:
     trigger:
         if player is from floodgate:
-            make player execute command "obemenu"
+            make console execute command "forms send %player% main-form"
         else:
             make player execute command "dm open menu" 
-
-command /signincheck:
-    trigger:
-        if player is from floodgate:
-            make player execute command "signin click"
-        else:
-            make player execute command "signin gui"
 
 command /renaaspawn <player>:
     trigger:
