@@ -6,17 +6,19 @@ mcbbs 链接: https://www.mcbbs.net/thread-1322237-1-1.html<br>
 minebbs 链接: https://www.minebbs.net/resources/4131/<br>
 其他冷门论坛的服务端宣传贴请 [点击这查看](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/blob/main/bbs.md)<br>
 <br>
+**开发版本:**<br>
+[V1.6 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/dev/1.6) (1.19.2)<br>
 **最新版本:**<br>
-查看1.19.2版本请前往 [V1.5 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/ver/1.5)<br>
+[V1.5 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/ver/1.5) (1.19.2)<br>
 **过时版本:**<br>
-查看1.18.2版本请前往 [V1.4 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/ver/1.4)<br>
-查看1.17.1版本请前往 [V1.3 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/legacy/1.3)<br>
+[V1.4 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/ver/1.4) (1.18.2)<br>
+[V1.3 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/legacy/1.3) (1.17.1)<br>
 **远古版本:**<br>
-查看1.16.5版本请前往 [V1.2 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/legacy/1.2)<br>
+[V1.2 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/legacy/1.2) (1.16.5)<br>
 <br>
 QQ 交流群：1029946156<br>
 <br>
-**注:此服务端还在开发中,目前进度70%**
+**注:此服务端还在开发中,目前进度75%**
 # 如何下载
 * 方法一:<br>
 前往此 [下载页面](https://rymc.ren) 下载(感谢SHIJIATONG帮忙制作的网站)
