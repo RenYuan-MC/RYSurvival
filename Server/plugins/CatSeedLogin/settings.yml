@@ -1,5 +1,6 @@
 IpCountLimit: 1000
 LimitChineseID: true
+BedrockLoginBypass: true
 MinLengthID: 2
 MaxLengthID: 24
 BeforeLoginNoDamage: true
