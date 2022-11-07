@@ -5,7 +5,7 @@ command /tpend:
 command /cd:
     trigger:
         if player is from floodgate:
-            make player execute command "OpenBeMenu"
+            make console execute command "forms send %player% main-form"
         else:
             make player execute command "dm open menu" 
 
