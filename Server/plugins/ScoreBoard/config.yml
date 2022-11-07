@@ -1,6 +1,6 @@
 Scoreboard:
 #计分板标题
-  title: '&c&l1.19.2 趣味生存'
+  title: '&b1.19.2 任渊生存'
 #您可以在不使用PlaceHolderAPI的情况下使用占位符：
 #{Player} 获取玩家名称。
 #{Online} 获取在线玩家的计数。
@@ -10,14 +10,14 @@ Scoreboard:
 #PlayerPoints 示例的PlaceHolderAPI格式:%playerpoints_points%
   text: 
     - ''
-    - ' §f玩家: [§e{Player}§f]'
-    - ' §f延迟: [§a%player_ping%ms§f]'
-    - ' §f金币: [&a%vault_eco_balance_fixed%金币&f]'
-    - ' §f点券: [&a%playerpoints_points%点券&f]'
-    - ' §f所处: [§a1.19.2趣味生存§f]'
-    - ' §f主菜单:§e/cd'
+    - '&2▶ &7名称: &3%player_name%'
+    - '&2▶ &7等级: &3%player_level%'
+    - '&2▶ &7称号: &3%vault_prefix%'
     - ''
-    - ' §6§l§m咕咕咕咕咕咕咕咕咕咕咕咕'
+    - '&a▶ &7金币: &e%vault_eco_balance_fixed% ⛂'
+    - '&a▶ &7点卷: &e%playerpoints_points% ⛁'
+    - ''
+    - '任渊生存 rymc.ren'
 
 Settings:
 #禁用计分板的世界列表
