@@ -91,7 +91,7 @@ forms:
               - "player; sb toggle"
     buttons:
       - text: "开关技能状态显示栏"
-        image: "textures/items/apple_golden.png")
+        image: "textures/items/apple_golden.png"
         actions:
           - commands:
               - "player; abtoggle"
