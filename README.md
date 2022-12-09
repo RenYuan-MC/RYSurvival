@@ -7,6 +7,7 @@ minebbs 链接: https://www.minebbs.net/resources/4131/<br>
 其他冷门论坛的服务端宣传贴请 [点击这查看](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/blob/main/bbs.md)<br>
 <br>
 **开发版本:**<br>
+[V1.7 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/dev/1.7) (1.19.3)<br>
 [V1.6 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/dev/1.6) (1.19.2)<br>
 **最新版本:**<br>
 [V1.5 分支](https://github.com/lRENyaaa/MinecraftRenYuanSurvivalServerPack/tree/ver/1.5) (1.19.2)<br>
