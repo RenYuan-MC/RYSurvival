@@ -31,7 +31,7 @@ Titles:
     Subtitle: '&c传送失败，未找到安全位置'
     SendMessage: true
 Particles:
-  Enabled: true
+  Enabled: false
   Type:
   - EXPLOSION_NORMAL
   - CRIT
