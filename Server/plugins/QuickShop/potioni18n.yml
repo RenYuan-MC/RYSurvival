@@ -1,15 +1,17 @@
 potioni18n:
+  comment: This is quickshop potion effect i18n file, you can add plugin potion effect
+    you saw in-game as key and give correct value to it or change value there.
   SPEED: 速度
-  SLOW: Slow
-  FAST_DIGGING: Fast Digging
-  SLOW_DIGGING: Slow Digging
-  INCREASE_DAMAGE: Increase Damage
-  HEAL: Heal
-  HARM: Harm
-  JUMP: Jump
-  CONFUSION: Confusion
+  SLOW: 缓慢
+  FAST_DIGGING: 急迫
+  SLOW_DIGGING: 挖掘疲劳
+  INCREASE_DAMAGE: 力量
+  HEAL: 瞬间治疗
+  HARM: 瞬间伤害
+  JUMP: 跳跃提升
+  CONFUSION: 反胃
   REGENERATION: 生命恢复
-  DAMAGE_RESISTANCE: Damage Resistance
+  DAMAGE_RESISTANCE: 抗性提升
   FIRE_RESISTANCE: 防火
   WATER_BREATHING: 水下呼吸
   INVISIBILITY: 隐身

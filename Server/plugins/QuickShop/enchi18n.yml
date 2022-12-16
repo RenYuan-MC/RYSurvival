@@ -1,4 +1,6 @@
 enchi18n:
+  comment: This is quickshop enchantment i18n file, you can add plugin enchantment
+    you saw in-game as key and give correct value to it or change value there.
   fire_protection: 火焰保护
   sharpness: 锋利
   flame: 火矢
@@ -23,6 +25,7 @@ enchi18n:
   blast_protection: 爆炸保护
   smite: 亡灵杀手
   multishot: 多重射击
+  swift_sneak: 迅捷潜行
   fire_aspect: 火焰附加
   channeling: 引雷
   sweeping: 横扫之刃
@@ -37,4 +40,3 @@ enchi18n:
   feather_falling: 摔落保护
   power: 力量
   infinity: 无限
-  swift_sneak: 迅捷潜行
