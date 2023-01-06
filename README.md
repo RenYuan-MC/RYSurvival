@@ -8,7 +8,7 @@ minebbs 链接: https://www.minebbs.net/resources/4131/<br>
 <br>
 **开发版本:**<br>
 [V2.0 分支](https://github.com/RenYuan-MC/RYSurvival/tree/dev/2.0) (1.19.3)<br>
-**:**<br>
+**最新版本:**<br>
 [V1.7 分支](https://github.com/RenYuan-MC/RYSurvival/tree/ver/1.7) (1.19.3)<br>
 **过时版本:**<br>
 [V1.6 分支](https://github.com/RenYuan-MC/RYSurvival/tree/legacy/1.6) (1.19.2)<br>
