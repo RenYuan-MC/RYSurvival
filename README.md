@@ -28,6 +28,9 @@ QQ 交流群：1029946156
 添加QQ群1029946156,群内下载  
 * 方法三:  
 首先将 [RYTools](https://github.com/RenYuan-MC/RYSurvival-Tools) 和 [本仓库](https://github.com/RenYuan-MC/RYSurvival) Clone至同一文件夹  
-然后找到RYTools中的tools文件夹打开 [打包模式.bat](https://github.com/RenYuan-MC/RYSurvival-Tools/tree/main/tools)  
-等待打包完成后可以在build文件夹找到打包完成的版本    
-(这样你可以下载到部分功能未完成的版本,虽然可以体验到最新添加的功能,但是这可能会导致更多未解决的问题)  
+然后找到RYTools中的tools文件夹打开 [打包模式.bat](https://github.com/RenYuan-MC/RYSurvival-Tools/tree/main/tools) 即可  
+注意事项：     
+1 你所选择的分支版本即为打包后的版本,请提前调整到你希望构建的分支上  
+2 在1.4以前的版本不支持构建   
+3 打包完成后的文件在build文件夹  
+4 你可以通过此方式获取到最新的版本,但是可能会遇到其他未解决的问题    
