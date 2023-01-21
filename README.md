@@ -18,14 +18,16 @@ minebbs 链接: https://www.minebbs.net/resources/4131/
 **远古版本:**  
 [V1.2 分支](https://github.com/RenYuan-MC/RYSurvival/tree/legacy/1.2) (1.16.5)  
 <br>
-QQ 交流群：1029946156  
-<br>
-**注:此服务端还在开发中,目前进度75%**
+QQ 交流群：[1029946156](https://jq.qq.com/?_wv=1027&k=DN77Hlfh)  
+# 已知问题
+* 主城系统商店失效 (故意删除的,因为定价不合理,短期内不会修复)
+* 服务端刷怪量过少 (怪物生成调太低了,暂时还没改)
+* 其他问题请查看 [Issues](https://github.com/RenYuan-MC/RYSurvival/issues)
 # 如何下载
 * 方法一:  
-前往此 [下载页面](https://rymc.ren) 下载(感谢SHIJIATONG帮忙制作的网站)  
+前往[官网](https://rymc.ltd)下载(感谢SHIJIATONG制作的网站)  
 * 方法二:  
-添加QQ群1029946156,群内下载  
+添加QQ群[1029946156](https://jq.qq.com/?_wv=1027&k=DN77Hlfh),群内下载  
 # 自行构建版本  
 首先将 [RYTools](https://github.com/RenYuan-MC/RYSurvival-Tools) 和 [本仓库](https://github.com/RenYuan-MC/RYSurvival) Clone至同一文件夹  
 然后找到RYTools中的tools文件夹打开 [打包模式.bat](https://github.com/RenYuan-MC/RYSurvival-Tools/tree/main/tools) 即可  
@@ -34,4 +36,23 @@ QQ 交流群：1029946156
 * 你所选择的分支版本即为打包后的版本,请提前调整到你希望构建的分支上  
 * 在1.4以前的版本不支持构建   
 * 打包完成后的文件在build文件夹  
-* 你可以通过此方式获取到最新的版本,但是可能会遇到其他未解决的问题    
+* 你可以通过此方式获取到最新的版本,但是可能会遇到其他未解决的问题 
+# 再往后的打算
+这个服务端从第一个版本到现在已经有3年了  
+随着时间流逝,我对这端的热情也日益消散  
+并且服务端底层的问题也越来越多  
+随着时间推移甚至我只能将服务端做到勉强运行,细节什么的根本不到位  
+Geyser也出现了很多有意思的东西,最近自定义方块都快支持了(2023-01-22)  
+我是有想法去整个重构,做个2.0版本,但是发现似乎有些力不从心  
+也许2.0永远不会出现,这端也逐渐变的没人使用  
+不过我会尽力,让这一切不会发生  
+# 数据统计
+* 服务端目前正依靠RenYuan-Core进行数据统计,同时使用了bstats和cstats  
+cstats: https://cstats.iroselle.com/plugin/bukkit/RenYuan-Core  
+bstats: https://bstats.org/plugin/bukkit/RenYuan-Survival/16814  
+bstats(两年前的旧统计): https://bstats.org/plugin/bukkit/RenYuanServerPackBstats/12099  
+* **由于最早使用的是cstats,所以bstats统计到的数据不全**  
+顺便给大家踩个坑,不要用cstats!太多问题了,功能也不如bstats  
+* 下方是bstats的数据统计 (不放数据更多的cstats是因为cstats不支持)  
+  
+[![](https://bstats.org/signatures/bukkit/RenYuan-Survival.svg)](https://bstats.org/plugin/bukkit/RenYuan-Survival/16814)
