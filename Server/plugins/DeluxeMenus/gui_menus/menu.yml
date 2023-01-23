@@ -32,7 +32,6 @@ items:
     slots: 
     - 10
     - 12
-    - 13
     - 14
     - 16
     display_name: '&f&l装饰物品'
@@ -48,7 +47,7 @@ items:
     - '[player] dm open worldtp'
   'SETTINGS':
     material: crafting_table
-    slot: 15
+    slot: 13
     display_name: '&f&l功能菜单'
     lore:
     - '&e&l基础功能:D'
@@ -56,6 +55,16 @@ items:
     - '[player] dm open settings'
     right_click_commands:
     - '[player] dm open settings'
+  'PLAYING':
+    material: diamond_block
+    slot: 15
+    display_name: '&f&l玩法菜单'
+    lore:
+    - '&e&l粘液科技?:D'
+    left_click_commands:
+    - '[player] dm open playing'
+    right_click_commands:
+    - '[player] dm open playing'
 
 
     

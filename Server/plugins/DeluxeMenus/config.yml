@@ -12,5 +12,7 @@ gui_menus:
     file: worldtp.yml
   settings:
     file: settings.yml
+  playing:
+    file: playing.yml
   resourcepack:
     file: resourcepack.yml

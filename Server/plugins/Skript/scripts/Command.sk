@@ -9,6 +9,13 @@ command /cd:
         else:
             make player execute command "dm open menu" 
 
+command /signincheck:
+    trigger:
+        if player is from floodgate:
+            make player execute command "signin click"
+        else:
+            make player execute command "signin gui"
+
 command /renaaspawn <player>:
     trigger:
         if command sender is not the console:

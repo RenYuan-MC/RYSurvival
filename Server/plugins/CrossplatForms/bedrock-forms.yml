@@ -37,6 +37,12 @@ forms:
           - form: home-manager
 
 
+      - text: "玩法菜单"
+        image: "textures/items/book_enchanted.png"
+        actions:
+          - form: play-form
+
+
   world-teleport:
     type: simple_form
     title: "§l世界传送"
@@ -83,6 +89,12 @@ forms:
         actions:
           - commands:
               - "player; sb toggle"
+    buttons:
+      - text: "开关技能状态显示栏"
+        image: "textures/items/apple_golden.png"
+        actions:
+          - commands:
+              - "player; abtoggle"
 
 
   home-manager:
@@ -101,6 +113,30 @@ forms:
         actions:
           - commands:
               - "player; sethome home"
+
+
+  play-form:
+    type: simple_form
+    title: "§l玩法菜单"
+    content: "玩法菜单"
+    buttons:
+      - text: "获取粘液科技指南"
+        image: "textures/items/book_enchanted.png"
+        actions:
+          - commands:
+              - "player; sf guide"
+
+      - text: "打开技能菜单"
+        image: "textures/items/diamond_axe.png"
+        actions:
+          - commands:
+              - "player; skills"
+
+      - text: "签到"
+        image: "textures/items/paper.png"
+        actions:
+          - commands:
+              - "player; signin click"
 
 
 
