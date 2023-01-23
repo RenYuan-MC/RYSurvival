@@ -12,7 +12,6 @@ Scoreboard:
     - ''
     - '&2▶ &7名称: &3%player_name%'
     - '&2▶ &7等级: &3%player_level%'
-    - '&2▶ &7称号: &3%vault_prefix%'
     - ''
     - '&a▶ &7金币: &e%vault_eco_balance_fixed% ⛂'
     - '&a▶ &7点卷: &e%playerpoints_points% ⛁'
