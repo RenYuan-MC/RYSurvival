@@ -7,9 +7,6 @@ On join:
     player has enough space for 64 clock
     remove clock named "§b§l主菜单" from player
     give a clock named "§b§l主菜单" with lore "§e主菜单" to the player
-    player is from floodgate
-    player does not have permission "group.bedrock"
-    command "lp user %player% parent add bedrock"
 
 on click holding a clock:
     name of player's tool contains "§b§l主菜单"
