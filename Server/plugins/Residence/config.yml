@@ -257,7 +257,7 @@ Global:
       # This dont have effect in residence area
       Level: 63
       # With this set to true, lava flow outside residence is blocked
-      NoLavaFlow: true
+      NoLavaFlow: false
       # With this set to true, water flow outside residence is blocked
       NoWaterFlow: false
       Worlds:
@@ -267,7 +267,7 @@ Global:
       # This don't have effect in residence area
       Level: 63
       # With this set to true, playrs cant place lava outside residence
-      NoLavaPlace: true
+      NoLavaPlace: false
       # With this set to true, players cant place water outside residence
       NoWaterPlace: false
       Worlds:
