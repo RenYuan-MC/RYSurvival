@@ -21,7 +21,7 @@ minebbs 链接: https://www.minebbs.net/resources/4131/
 QQ 交流群：[1029946156](https://jq.qq.com/?_wv=1027&k=DN77Hlfh)  
 # 已知问题
 * 主城系统商店失效 (故意删除的,因为定价不合理,短期内不会修复)
-* 服务端刷怪量过少 (怪物生成调太低了,暂时还没改)
+* 仍有部分粘液科技材质错乱
 * 其他问题请查看 [Issues](https://github.com/RenYuan-MC/RYSurvival/issues)
 # 如何下载
 * 方法一:  
