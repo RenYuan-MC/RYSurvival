@@ -1,15 +1,16 @@
-On Swap Hand Items:
+options:
+    item: clock named "§b§l主菜单" with lore "§e主菜单"
+
+on swap hand items:
     player is sneaking
-    make player execute command "dm open menu"
+    make player execute command "cd"
     cancel event
 
-On join:
-    player has enough space for 64 clock
-    remove clock named "§b§l主菜单" from player
-    give a clock named "§b§l主菜单" with lore "§e主菜单" to the player
+on join:
+    player doesn't have a {@item}
+    give a {@item} to the player
 
-on click holding a clock:
-    name of player's tool contains "§b§l主菜单"
-    tool's lore contains "§e主菜单"
+on click:
+    player's tool is {@item}
     make player execute command "cd"
     cancel event
