@@ -11,6 +11,6 @@
 **UTC论坛**: https://www.mcutc.com/resources/pufferfish-1-7-2-1-18-2.114  
 **曙光MC论坛**: https://www.mcdbbs.cn/d/123  
 **McahBBS**: https://bbs.pixelecraft.com/threads/37  
-**玖视星域**: https://www.mc9z.cn/thread-7388-1-1.html  
 **PixelXloud**: https://store.pixelcloud.cn/modpacks/62b5eff7da9ae8001cc9e568   
 **梦想小站**: https://www.mxxz.top/1275/minecraft-renyuanshengcun.html
+**沧海博客**: https://www.sxiongd.com/1220.html
