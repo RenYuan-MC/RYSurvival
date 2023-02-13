@@ -1,9 +1,15 @@
 options:
+
+    # 菜单物品的信息
     item: clock named "§b§l主菜单" with lore "§e主菜单"
+
+    # 打开菜单的命令
+    command: "cd"
+
 
 on swap hand items:
     player is sneaking
-    make player execute command "cd"
+    make player execute command {@command}
     cancel event
 
 on join:
@@ -12,5 +18,5 @@ on join:
 
 on click:
     player's tool is {@item}
-    make player execute command "cd"
+    make player execute command {@command}
     cancel event

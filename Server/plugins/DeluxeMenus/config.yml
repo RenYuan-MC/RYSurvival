@@ -14,5 +14,3 @@ gui_menus:
     file: settings.yml
   playing:
     file: playing.yml
-  resourcepack:
-    file: resourcepack.yml

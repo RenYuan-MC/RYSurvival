@@ -1,81 +1,33 @@
-import:
-    com.viaversion.viaversion.api.Via
+options:
+    
+    # 资源包的URL下载链接
+    url: "https://rymc.ltd/survival/pack/1.1"
 
-command /loadpack-1:
+    # 资源包的SHA-1值
+    hash: "2fa9b5326e064b24499edcf9569a3c466bd739ae"
+
+    # 资源包支持的最低协议版本
+    version: 498
+
+
+on join:
+    player is not from floodgate
+    protocol version of player >= {@version}
+    send the resource pack from {@url} with hash {@hash} to the player
+
+command /loadpack:
     trigger:
         if player is from floodgate:
-            send "§f[§6服务器§f] 基岩版玩家暂不支持此功能" to player
-        else if Via.getAPI().getPlayerVersion(player) < 498:
+            send "§f[§6服务器§f] 基岩版玩家不支持此功能" to player
+        else if protocol version of player < {@version}:
             send "§f[§6服务器§f] 你的游戏版本过低,不支持此功能" to player
         else:
-            send the resource pack from "https://hub.fastgit.xyz/lRENyaaa/RYServerTexture/releases/download/v1.1/Pack.zip" with hash "2fa9b5326e064b24499edcf9569a3c466bd739ae" to the player
-            send "§f[§6服务器§f] 已发送资源包加载请求-线路1(国内)" to player
-
-command /loadpack-2:
-    trigger:
-        if player is from floodgate:
-            send "§f[§6服务器§f] 基岩版玩家暂不支持此功能" to player
-        else if Via.getAPI().getPlayerVersion(player) < 498:
-            send "§f[§6服务器§f] 你的游戏版本过低,不支持此功能" to player
-        else:
-            send the resource pack from "https://github.com/lRENyaaa/RYServerTexture/releases/download/v1.1/Pack.zip" with hash "2fa9b5326e064b24499edcf9569a3c466bd739ae" to the player
-            send "§f[§6服务器§f] 已发送资源包加载请求-线路2(国外)" to player
+            send the resource pack from {@url} with hash {@hash} to the player
+            send "§f[§6服务器§f] 已发送资源包加载请求" to player
 
 on resource pack request response:
     if the resource pack was declined:
         send "§f[§6服务器§f] 服务器资源包加载被禁用" to player
         send "§f[§6服务器§f] 请将服务器列表中§c编辑§f页面的§c服务器资源包§f选项设置为启用" to player
     else if the resource pack was failed to download:
-        send "§f[§6服务器§f] §e服务器资源包下载失败,可能的解决方法如下:" to player
-        send "§f[§6服务器§f] 1.换一条线路" to player
-        send "§f[§6服务器§f] 2.检查你是否能访问hub.fastgit.xyz或github.com" to player
-        send "§f[§6服务器§f] 3.询问管理" to player
-
-on join:
-    if player is from floodgate:
-        exit
-    else if Via.getAPI().getPlayerVersion(player) < 498:
-        exit
-    else if player has permission "autoloadpack.1":
-        if player has permission "autoloadpack.2":
-            command "lp user %player% permission set autoloadpack.1 false" 
-            command "lp user %player% permission set autoloadpack.2 false" 
-            exit
-        make player execute command "loadpack-1"
-    else if player has permission "autoloadpack.2":
-        make player execute command "loadpack-2"
-
-command /autoloadpack-2:
-    trigger:
-        if player is from floodgate:
-            send "§f[§6服务器§f] 基岩版玩家暂不支持此功能" to player
-        else if Via.getAPI().getPlayerVersion(player) < 498:
-            send "§f[§6服务器§f] 你的游戏版本过低,不支持此功能" to player
-        else:
-            if player does not have permission "autoloadpack.2":
-                command "lp user %player% permission set autoloadpack.2 true" 
-                send "§f[§6服务器§f] 已启用服务器资源包自动加载-线路2(国外)" to player
-                if player has permission "autoloadpack.1":
-                    command "lp user %player% permission set autoloadpack.1 false" 
-                    send "§f[§6服务器§f] 已禁用服务器资源包自动加载-线路1(国内)" to player
-            else:
-                command "lp user %player% permission set autoloadpack.2 false" 
-                send "§f[§6服务器§f] 已禁用服务器资源包自动加载-线路2(国外)" to player
-
-
-command /autoloadpack-1:
-    trigger:
-        if player is from floodgate:
-            send "§f[§6服务器§f] 基岩版玩家暂不支持此功能" to player
-        else if Via.getAPI().getPlayerVersion(player) < 498:
-            send "§f[§6服务器§f] 你的游戏版本过低,不支持此功能" to player
-        else:
-            if player does not have permission "autoloadpack.1":
-                command "lp user %player% permission set autoloadpack.1 true" 
-                send "§f[§6服务器§f] 已启用服务器资源包自动加载-线路1(国内)" to player
-                if player has permission "autoloadpack.2":
-                    command "lp user %player% permission set autoloadpack.2 false"  
-                    send "§f[§6服务器§f] 已禁用服务器资源包自动加载-线路2(国外)" to player
-            else:
-                command "lp user %player% permission set autoloadpack.1 false" 
-                send "§f[§6服务器§f] 已禁用服务器资源包自动加载-线路1(国内)" to player
+        send "§f[§6服务器§f] 服务器资源包下载失败,使用指令§e/loadpack§f再次加载资源包" to player

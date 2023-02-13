@@ -48,14 +48,14 @@ items:
   'RESOURCESPACK':
     material: chest
     slot: 13
-    display_name: '&f&l打开服务器资源包菜单'
+    display_name: '&f&l加载服务器资源包'
     lore:
-    - '&e&l服务器专用资源包设置:D'
+    - '&e&l服务器专用资源包'
     left_click_commands:
-    - '[player] dm open resourcepack'
+    - '[player] loakpack'
     - '[close]'
     right_click_commands:
-    - '[player] dm open resourcepack'
+    - '[player] loadpack'
     - '[close]'
   'ABTOGGLE':
     material: golden_apple
