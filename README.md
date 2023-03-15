@@ -1,5 +1,5 @@
 # 任渊生存服务端
-Minecraft生存服务端整合包,适用于1.19.3版本  
+Minecraft生存服务端整合包,适用于1.19.3/1.19.4版本  
 <br>
 klpbbs 链接: https://klpbbs.com/thread-4196-1-1.html  
 mcbbs 链接: https://www.mcbbs.net/thread-1322237-1-1.html  
@@ -7,7 +7,7 @@ minebbs 链接: https://www.minebbs.net/resources/4131/
 其他冷门论坛的服务端宣传贴请 [点击这查看](https://github.com/RenYuan-MC/RYSurvival/blob/main/bbs.md)  
 <br>
 **开发版本:**  
-[V2.0 分支](https://github.com/RenYuan-MC/RYSurvival/tree/dev/2.0) (1.19.3)  
+[V1.8 分支](https://github.com/RenYuan-MC/RYSurvival/tree/dev/1.8) (1.19.4)  
 **最新版本:**  
 [V1.7 分支](https://github.com/RenYuan-MC/RYSurvival/tree/ver/1.7) (1.19.3)  
 **过时版本:**  
