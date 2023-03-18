@@ -1,6 +1,6 @@
 Scoreboard:
 #计分板标题
-  title: '&b1.19.3 任渊生存'
+  title: '&b1.19.4 任渊生存'
 #您可以在不使用PlaceHolderAPI的情况下使用占位符：
 #{Player} 获取玩家名称。
 #{Online} 获取在线玩家的计数。
