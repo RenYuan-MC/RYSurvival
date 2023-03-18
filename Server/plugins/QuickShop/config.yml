@@ -1,7 +1,7 @@
 # QuickShop-Reremake Plugin Configuration
 
 #Do not touch this if you don't know what you're doing!
-config-version: 160
+config-version: 163
 
 #Set the default language code the plugin should use, it will apply to:
 #Item Name
@@ -14,7 +14,11 @@ config-version: 160
 game-language: zh_cn
 
 #Choose which languages should be enabled
-#Any client connect to server that using disabled language, will fallback to game-language option there
+#All clients connect to server that using disabled language using following fallback logic:
+# 1. if just one language was enabled, then it will use this language (Static language)
+# 2. if not, it will use the value of game-language option there
+# 3. if still could not find a valid language, it will use built-in en_us language
+#
 #Set to - '*' to enable all available languages
 #The language files will automatically update thorough Crowdin OTA system, you can translate it there:
 #https://crowdin.com/project/quickshop-reremake
@@ -135,7 +139,7 @@ use-caching: true
 #1=Adventure (Removed In Current Version)
 chat-type: 0
 
-#MySQL database settings.
+#Mysql Database settings.
 database:
   #false = use local SQLite database.
   #true = use local/remote MySQL database.
@@ -145,8 +149,9 @@ database:
   database: quickshop
   user: root
   password: passwd
-  #Set prefix to "none" to remove prefix
+  #Table prefix, set prefix to "none" to remove prefix
   prefix: qs_
+  #Whether to use ssl when using mysql
   usessl: false
   #Whether to use async queue?
   queue: true
@@ -154,6 +159,13 @@ database:
   queue-commit-interval: 2
   #Auto set table encoding to utf8mb4 (beta)
   auto-fix-encoding-issue-in-database: false
+  #Connect options when using mysql
+  #Each entry contains one option, using key=value format
+  #Built-in options as follows, you can change value or add new option
+  mysql-connect-options:
+  - autoReconnect=true
+  - useUnicode=true
+  - characterEncoding=utf8
 
 #Limits the number of shops a person can create and own at a time.
 limits:
@@ -220,7 +232,7 @@ shop:
   lock: true
 
   #Should QS disable the quick creation of shop?
-  #To quickly create a shop click a chest with an Item.
+  #Quick creation means the way of create a shop click a chest with an Item.
   disable-quick-create: false
 
   #Interaction settings.
@@ -371,6 +383,7 @@ shop:
   #NOTE: Only one effect is shown and is randomly chosen.
   use-effect-for-potion-item: false
   #The list of worlds in which quickShop is disabled.
+  #Supports regex (needs prefix with $)
   blacklist-world:
   - disabled_world_name
 
@@ -450,6 +463,10 @@ shop:
   allow-stacks: false
   #This setting controls if QuickShop should ignore the item's custom display name.
   force-use-item-original-name: false
+
+  #Should QS should ask which shop type to use?
+  #It will be asked which creating shop
+  create-needs-select-type: false
 #List of items that can't be sold in shops.  
 #Anyone with the quickshop.bypass.<itemID> permission can bypass it.
 blacklist:
@@ -817,3 +834,9 @@ custom-commands:
 #Let this stay false, DO NOT TOUCH IT!
 config-damaged: false
 server-uuid: c7301927-4859-4bfe-bb54-98c2899c2824
+
+#Should QS including offline player for the command which needed the specified player?
+#This might improve player experience, but can cause lag for large amount of offline player
+#false = Only include OnlinePlayer
+#true = Include all players that have ever joined your server.
+include-offlineplayer-for-command: false

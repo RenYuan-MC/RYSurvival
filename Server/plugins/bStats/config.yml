@@ -1,5 +1,0 @@
-#bStats为插件作者收集一些数据，比如有多少服务器在使用他们的插件。
-#查看 https://bStats.org/ 要了解更多信息:)
-enabled: true
-serverUuid: 8076d045-9ea3-4281-87a2-6bbe8f46cf4f
-logFailedRequests: false

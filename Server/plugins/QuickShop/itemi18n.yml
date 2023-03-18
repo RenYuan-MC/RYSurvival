@@ -1328,3 +1328,50 @@ itemi18n:
   BIG_DRIPLEAF_STEM: 大型垂滴叶茎
   POTTED_AZALEA_BUSH: 杜鹃花丛盆栽
   POTTED_FLOWERING_AZALEA_BUSH: 盛开的杜鹃花丛盆栽
+  CHERRY_PLANKS: 樱花木板
+  CHERRY_SAPLING: 樱花树苗
+  SUSPICIOUS_SAND: 可疑的沙子
+  CHERRY_LOG: 樱花原木
+  STRIPPED_CHERRY_LOG: 去皮樱花原木
+  STRIPPED_CHERRY_WOOD: 去皮樱花木
+  CHERRY_WOOD: 樱花木
+  CHERRY_LEAVES: 樱花树叶
+  TORCHFLOWER: 火把花
+  PINK_PETALS: 粉红色花簇
+  CHERRY_SLAB: 樱花木台阶
+  DECORATED_POT: 饰纹陶罐
+  CHERRY_FENCE: 樱花木栅栏
+  CHERRY_STAIRS: 樱花木楼梯
+  CHERRY_BUTTON: 樱花木按钮
+  CHERRY_PRESSURE_PLATE: 樱花木压力板
+  CHERRY_DOOR: 樱花木门
+  CHERRY_TRAPDOOR: 樱花木活板门
+  CHERRY_FENCE_GATE: 樱花木栅栏门
+  CHERRY_BOAT: 樱花木船
+  CHERRY_CHEST_BOAT: 樱花木运输船
+  CHERRY_SIGN: 樱花木告示牌
+  CHERRY_HANGING_SIGN: 悬挂式樱花木告示牌
+  SNIFFER_SPAWN_EGG: 嗅探兽刷怪蛋
+  TORCHFLOWER_SEEDS: 火把花种子
+  BRUSH: 刷子
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: Netherite Upgrade Smithing Template
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: Sentry Armor Trim Smithing Template
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: Dune Armor Trim Smithing Template
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: Coast Armor Trim Smithing Template
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: Wild Armor Trim Smithing Template
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: Ward Armor Trim Smithing Template
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: Eye Armor Trim Smithing Template
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: Vex Armor Trim Smithing Template
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: Tide Armor Trim Smithing Template
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: Snout Armor Trim Smithing Template
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: Rib Armor Trim Smithing Template
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: Spire Armor Trim Smithing Template
+  POTTERY_SHARD_ARCHER: 弓箭纹样陶片
+  POTTERY_SHARD_PRIZE: 珍宝纹样陶片
+  POTTERY_SHARD_ARMS_UP: 举臂纹样陶片
+  POTTERY_SHARD_SKULL: 头颅纹样陶片
+  CHERRY_WALL_SIGN: 墙上的樱花木告示牌
+  CHERRY_WALL_HANGING_SIGN: 墙上的悬挂式樱花木告示牌
+  POTTED_TORCHFLOWER: 火把花盆栽
+  POTTED_CHERRY_SAPLING: 樱花树苗盆栽
+  TORCHFLOWER_CROP: 火把花植株
