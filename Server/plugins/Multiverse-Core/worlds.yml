@@ -96,7 +96,7 @@ worlds:
   world:
     ==: MVWorld
     hidden: 'false'
-    alias: '&3生存世界'
+    alias: '&3生存'
     color: WHITE
     style: NORMAL
     pvp: 'true'
@@ -187,7 +187,7 @@ worlds:
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
-  otd_dungeon:
+  world_resources:
     ==: MVWorld
     hidden: 'false'
     alias: '&3资源'

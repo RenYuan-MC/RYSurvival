@@ -49,13 +49,13 @@ forms:
     content: "世界传送"
     buttons:
       - text: "生存世界随机传送"
-        image: "textures/blocks/netherrack.png"
+        image: "textures/blocks/grass_path_side.png"
         actions:
           - commands:
               - "player; rtp world world"
 
       - text: "地狱世界随机传送"
-        image: "textures/items/ender_pearl.png"
+        image: "textures/blocks/netherrack.png"
         actions:
           - commands:
               - "player; rtp world world_nether"
@@ -70,7 +70,7 @@ forms:
         image: "textures/blocks/emerald_block.png"
         actions:
           - commands:
-              - "player; rtp world otd_dungeon"
+              - "player; rtp world world_resources"
 
       - text: "传送至主城"
         image: "textures/blocks/planks_oak.png"
@@ -89,13 +89,6 @@ forms:
         actions:
           - commands:
               - "player; sb toggle"
-    buttons:
-      - text: "开关技能状态显示栏"
-        image: "textures/items/apple_golden.png"
-        actions:
-          - commands:
-              - "player; abtoggle"
-
 
   home-manager:
     type: simple_form

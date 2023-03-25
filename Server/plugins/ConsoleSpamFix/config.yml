@@ -20,74 +20,29 @@ Messages-To-Hide-Filter:
 - 'While this makes the game possible to play without internet access'
 - 'You will not be offered any support as long as the server allows offline-mode players to join'
 
-#ESS更新提示屏蔽
-- '正在获取版本信息...'
-- '服务端版本V1.3.1'
-
-#ESS无用信息屏蔽
-- 'Permissions lag notice with'
-- '被拒绝使用命令'
-
 #Vault无用信息屏蔽
 - 'Loaded class com.earth2me.essentials.api.Economy from'
 
 #Multiverse-Core无用信息屏蔽
 - 'has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method'
-- 'We are aware of the warning about the deprecated event'
-
-#Scoreboard无用信息屏蔽
-- '»'
-
-#PlaceholderAPI无用信息屏蔽
-- 'Successfully registered expansion'
-- 'placeholder hooks successfully registered'
-
-#CatSeedLogin无用信息屏蔽
-- '缓存加载'
 
 #CMILib更新提示屏蔽
 - 'New version of CMILib was detected'
 
-#CMILib无用信息屏蔽
-- 'Server version: v1_17_R1 - 1.17.1 - paper'
-
-#未知无用信息屏蔽
-- 'UUID of added entity already exists'
-
 #Floodgate无用信息屏蔽
 - 'The prefix you entered in your Floodgate config'
-- '******************************************'
 - 'Floodgate found on the server'
 
 #ViaBackward无用信息屏蔽
 - 'Ignoring plugin channel in incoming REGISTER'
 
-#懂的都懂,看着就烦
-- 'Preparing spawn area: 0%'
-- 'Unable to find spawn biome'
-- 'Uncaught exception in thread Profile Lookup Executor'
-- 'look up profile properties for'
-- 'Failed to parse level-type default'
-
-#OhTheDungeons无用信息屏蔽
-- 'WorldEdit not installed, custom dungeon function is disabled. Dont worry, you could still use the built-in dungeons'
-- 'MythicMobs not installed, will disable MythicMobs related features'
-- 'Boss not installed, will disable BossPlugin related features'
-- 'EcoBosses not installed, will disable BossPlugin EcoBosses features'
-
-#Geyser无用信息屏蔽
-- '无法翻译数据包'
-- 'Failed to read git.properties'
-
 #Slimefun无用信息屏蔽
 - 'Attempted to refresh skin cache'
 - 'This usually means mojang.com is temporarily down or started'
-- 'Retrying request to'
 - 'I/O exception (java.net.SocketException)'
 - 'Failed to fetch the latest jar file from the builds page'
 - 'Failed to start metrics as the file could not be downloaded'
 - 'Failed to fetch latest builds for Metrics'
-- '未检测到 Quickshop-Reremake, 相关功能将自动关闭'
 
 #QuickShop网络问题导致的报错屏蔽
 - 'Failed to update game assets from MojangAPI server'
@@ -95,14 +50,8 @@ Messages-To-Hide-Filter:
 #Residence下载失败信息屏蔽
 - 'Failed to download'
 
-#不联网导致的报错屏蔽(请联网,OK?)
-- 'Got an error'
-- 'Exception while requesting skin'
+#未知但烦人的信息屏蔽
 - 'You can do it manually or try again later or simply ignore it'
-- 'Failed to check for Residence update on spigot web page'
-- 'Unable to check for updates'
-- '无法获取本地附件缓存'
-- '非法的本地下载和加载请求'
 
 ChatMessages:
     NoPermission: '&f[&6服务器&f] &f你没有权限'

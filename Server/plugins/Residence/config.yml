@@ -182,7 +182,7 @@ Global:
         MinCoord: 500
         CenterX: 0
         CenterZ: 0
-      otd_dungeon:
+      world_resources:
         Enabled: true
         MaxCoord: 1000
         MinCoord: 500

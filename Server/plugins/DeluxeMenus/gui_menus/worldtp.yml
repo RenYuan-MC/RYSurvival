@@ -76,10 +76,10 @@ items:
     lore:
     - '&e&l获取资源的好去处:D'
     left_click_commands:
-    - '[player] rtp world otd_dungeon'
+    - '[player] rtp world world_resources'
     - '[close]'
     right_click_commands:
-    - '[player] rtp world otd_dungeon'
+    - '[player] rtp world world_resources'
     - '[close]'
   'SPAWN':
     material: oak_planks
