@@ -18,12 +18,13 @@ npc:
       sneak:
         sneaking: false
       owner:
-        uuid: dfdbceb5-8be1-33aa-9fb1-eb94be69b3ae
+        uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
       commandtrait:
         cost: -1.0
         executionMode: LINEAR
-        experienceCost: -1.0
+        experienceCost: -1
         hideErrorMessages: false
+        persistSequence: false
         commands:
           '0':
             command: rtp world otd_dungeon
@@ -35,13 +36,13 @@ npc:
             n: -1
             delay: 0
       location:
-        bodyYaw: -45.610947
+        bodyYaw: 74.51918
         world: spawn
-        x: '74.5'
-        y: '105.0'
-        z: '-153.5'
-        yaw: '-40.2657'
-        pitch: '-5.7754'
+        x: '84.5'
+        y: '103.0'
+        z: '-159.5'
+        yaw: '74.5192'
+        pitch: '-52.547'
       type: PLAYER
       spawned: true
       lookclose:
@@ -51,13 +52,17 @@ npc:
         enableRandomLook: false
         randomLookDelay: 60
         realisticlooking: false
+        headonly: false
+        perplayer: false
+        randomSwitchTargets: false
+        targetnpcs: false
         randomPitchRange:
           '0': -10.0
           '1': 0.0
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: type,mounttrait,scoreboardtrait,skintrait,equipment,spawned,inventory,commandtrait,sneak,lookclose,owner,location
+    traitnames: sneak,mounttrait,location,owner,inventory,type,scoreboardtrait,skintrait,rotationtrait,spawned,lookclose,equipment,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -78,12 +83,13 @@ npc:
       sneak:
         sneaking: false
       owner:
-        uuid: dfdbceb5-8be1-33aa-9fb1-eb94be69b3ae
+        uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
       commandtrait:
         cost: -1.0
         executionMode: LINEAR
-        experienceCost: -1.0
+        experienceCost: -1
         hideErrorMessages: false
+        persistSequence: false
         commands:
           '0':
             command: tpend
@@ -95,13 +101,13 @@ npc:
             n: -1
             delay: 0
       location:
-        bodyYaw: 1.1768036
+        bodyYaw: -144.10294
         world: spawn
-        x: '82.5'
-        y: '105.0'
-        z: '-153.5'
-        yaw: '-27.4933'
-        pitch: '9.114'
+        x: '74.5'
+        y: '103.0'
+        z: '-159.5'
+        yaw: '-144.1029'
+        pitch: '0.0'
       type: PLAYER
       spawned: true
       lookclose:
@@ -111,13 +117,17 @@ npc:
         enableRandomLook: false
         randomLookDelay: 60
         realisticlooking: false
+        headonly: false
+        perplayer: false
+        randomSwitchTargets: false
+        targetnpcs: false
         randomPitchRange:
           '0': -10.0
           '1': 0.0
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: type,mounttrait,scoreboardtrait,skintrait,equipment,inventory,spawned,commandtrait,owner,lookclose,sneak,location
+    traitnames: sneak,mounttrait,location,owner,inventory,type,skintrait,scoreboardtrait,rotationtrait,spawned,lookclose,equipment,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -138,12 +148,13 @@ npc:
       sneak:
         sneaking: false
       owner:
-        uuid: dfdbceb5-8be1-33aa-9fb1-eb94be69b3ae
+        uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
       commandtrait:
         cost: -1.0
         executionMode: LINEAR
-        experienceCost: -1.0
+        experienceCost: -1
         hideErrorMessages: false
+        persistSequence: false
         commands:
           '0':
             command: rtp world world_nether
@@ -155,13 +166,13 @@ npc:
             n: -1
             delay: 0
       location:
-        bodyYaw: -9.391411
+        bodyYaw: -92.798485
         world: spawn
-        x: '84.5'
-        y: '105.0'
-        z: '-151.5'
-        yaw: '-49.3914'
-        pitch: '-0.3677'
+        x: '77.5'
+        y: '103.0'
+        z: '-158.5'
+        yaw: '-92.7985'
+        pitch: '-67.1293'
       type: PLAYER
       spawned: true
       lookclose:
@@ -171,13 +182,17 @@ npc:
         enableRandomLook: false
         randomLookDelay: 60
         realisticlooking: false
+        headonly: false
+        perplayer: false
+        randomSwitchTargets: false
+        targetnpcs: false
         randomPitchRange:
           '0': -10.0
           '1': 0.0
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: type,mounttrait,scoreboardtrait,skintrait,equipment,spawned,inventory,commandtrait,lookclose,sneak,owner,location
+    traitnames: sneak,mounttrait,location,owner,inventory,type,skintrait,scoreboardtrait,rotationtrait,spawned,lookclose,equipment,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -198,12 +213,13 @@ npc:
       sneak:
         sneaking: false
       owner:
-        uuid: dfdbceb5-8be1-33aa-9fb1-eb94be69b3ae
+        uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
       commandtrait:
         cost: -1.0
         executionMode: LINEAR
-        experienceCost: -1.0
+        experienceCost: -1
         hideErrorMessages: false
+        persistSequence: false
         commands:
           '0':
             command: rtp world world
@@ -215,13 +231,13 @@ npc:
             n: -1
             delay: 0
       location:
-        bodyYaw: 22.861374
+        bodyYaw: -173.17761
         world: spawn
-        x: '84.5'
-        y: '105.0'
-        z: '-153.5'
-        yaw: '-17.1386'
-        pitch: '13.5238'
+        x: '81.5'
+        y: '103.0'
+        z: '-158.5'
+        yaw: '-173.1776'
+        pitch: '-62.7508'
       type: PLAYER
       spawned: true
       lookclose:
@@ -231,13 +247,17 @@ npc:
         enableRandomLook: false
         randomLookDelay: 60
         realisticlooking: false
+        headonly: false
+        perplayer: false
+        randomSwitchTargets: false
+        targetnpcs: false
         randomPitchRange:
           '0': -10.0
           '1': 0.0
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: type,mounttrait,scoreboardtrait,skintrait,equipment,inventory,spawned,commandtrait,lookclose,sneak,owner,location
+    traitnames: sneak,mounttrait,location,owner,inventory,type,scoreboardtrait,skintrait,rotationtrait,spawned,lookclose,equipment,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -259,186 +279,256 @@ npc:
       waypoints:
         linear:
           cachePaths: false
-          cycle: false
+          cycle: true
           points:
-            '0':
-              location:
-                world: spawn
-                x: '61.0'
-                y: '103.0'
-                z: '-163.0'
-                yaw: '0.0'
-                pitch: '0.0'
             '1':
               location:
                 world: spawn
-                x: '61.0'
-                y: '103.0'
-                z: '-153.0'
+                x: '65.0'
+                y: '98.0'
+                z: '-184.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '2':
               location:
                 world: spawn
-                x: '61.0'
-                y: '103.0'
-                z: '-137.0'
+                x: '69.0'
+                y: '97.0'
+                z: '-194.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '3':
               location:
                 world: spawn
-                x: '68.0'
-                y: '103.0'
-                z: '-132.0'
+                x: '79.0'
+                y: '98.0'
+                z: '-198.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '4':
               location:
                 world: spawn
-                x: '75.0'
-                y: '103.0'
-                z: '-131.0'
+                x: '69.0'
+                y: '97.0'
+                z: '-194.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '5':
               location:
                 world: spawn
-                x: '83.0'
-                y: '103.0'
-                z: '-131.0'
+                x: '65.0'
+                y: '98.0'
+                z: '-184.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '6':
               location:
                 world: spawn
-                x: '91.0'
-                y: '103.0'
-                z: '-131.0'
+                x: '69.0'
+                y: '97.0'
+                z: '-174.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '7':
               location:
                 world: spawn
-                x: '94.0'
-                y: '103.0'
-                z: '-134.0'
+                x: '79.0'
+                y: '98.0'
+                z: '-170.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '8':
               location:
                 world: spawn
-                x: '97.0'
-                y: '103.0'
-                z: '-139.0'
+                x: '89.0'
+                y: '97.0'
+                z: '-174.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '9':
               location:
                 world: spawn
-                x: '97.0'
-                y: '103.0'
-                z: '-145.0'
+                x: '93.0'
+                y: '98.0'
+                z: '-184.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '10':
               location:
                 world: spawn
-                x: '97.0'
-                y: '103.0'
-                z: '-153.0'
+                x: '89.0'
+                y: '97.0'
+                z: '-194.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '11':
               location:
                 world: spawn
-                x: '97.0'
-                y: '103.0'
-                z: '-158.0'
+                x: '79.0'
+                y: '98.0'
+                z: '-198.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '12':
               location:
                 world: spawn
-                x: '97.0'
-                y: '103.0'
-                z: '-161.0'
+                x: '89.0'
+                y: '97.0'
+                z: '-194.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '13':
               location:
                 world: spawn
-                x: '94.0'
-                y: '103.0'
-                z: '-164.0'
+                x: '93.0'
+                y: '98.0'
+                z: '-184.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '14':
               location:
                 world: spawn
-                x: '91.0'
-                y: '103.0'
-                z: '-167.0'
+                x: '89.0'
+                y: '97.0'
+                z: '-174.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '15':
               location:
                 world: spawn
-                x: '85.0'
-                y: '103.0'
-                z: '-167.0'
+                x: '79.0'
+                y: '98.0'
+                z: '-170.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '16':
               location:
                 world: spawn
-                x: '80.0'
-                y: '103.0'
-                z: '-167.0'
+                x: '69.0'
+                y: '97.0'
+                z: '-174.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '17':
               location:
                 world: spawn
-                x: '76.0'
-                y: '103.0'
-                z: '-167.0'
+                x: '65.0'
+                y: '98.0'
+                z: '-184.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '18':
               location:
                 world: spawn
-                x: '71.0'
-                y: '103.0'
-                z: '-167.0'
+                x: '69.0'
+                y: '97.0'
+                z: '-174.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '19':
               location:
                 world: spawn
-                x: '67.0'
-                y: '103.0'
-                z: '-167.0'
+                x: '79.0'
+                y: '98.0'
+                z: '-170.0'
                 yaw: '0.0'
                 pitch: '0.0'
             '20':
               location:
                 world: spawn
-                x: '63.0'
-                y: '103.0'
-                z: '-163.0'
+                x: '89.0'
+                y: '97.0'
+                z: '-174.0'
                 yaw: '0.0'
                 pitch: '0.0'
-              triggers:
-                '0':
-                  location:
-                    world: spawn
-                    x: '63.3868'
-                    y: '103.0'
-                    z: '-162.4865'
-                    yaw: '-5.0769'
-                    pitch: '56.9918'
-                  type: teleport
+            '21':
+              location:
+                world: spawn
+                x: '93.0'
+                y: '98.0'
+                z: '-184.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '22':
+              location:
+                world: spawn
+                x: '89.0'
+                y: '97.0'
+                z: '-194.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '23':
+              location:
+                world: spawn
+                x: '79.0'
+                y: '98.0'
+                z: '-198.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '24':
+              location:
+                world: spawn
+                x: '69.0'
+                y: '97.0'
+                z: '-194.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '25':
+              location:
+                world: spawn
+                x: '65.0'
+                y: '98.0'
+                z: '-184.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '26':
+              location:
+                world: spawn
+                x: '69.0'
+                y: '97.0'
+                z: '-174.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '27':
+              location:
+                world: spawn
+                x: '79.0'
+                y: '98.0'
+                z: '-170.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '28':
+              location:
+                world: spawn
+                x: '89.0'
+                y: '97.0'
+                z: '-174.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '29':
+              location:
+                world: spawn
+                x: '93.0'
+                y: '98.0'
+                z: '-184.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '30':
+              location:
+                world: spawn
+                x: '89.0'
+                y: '97.0'
+                z: '-194.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '31':
+              location:
+                world: spawn
+                x: '79.0'
+                y: '98.0'
+                z: '-198.0'
+                yaw: '0.0'
+                pitch: '0.0'
         provider: linear
       lookclose:
         range: '5.0'
@@ -447,6 +537,10 @@ npc:
         enableRandomLook: false
         randomLookDelay: 60
         realisticlooking: false
+        headonly: false
+        perplayer: false
+        randomSwitchTargets: false
+        targetnpcs: false
         randomPitchRange:
           '0': -10.0
           '1': 0.0
@@ -456,12 +550,13 @@ npc:
       sneak:
         sneaking: false
       owner:
-        uuid: dfdbceb5-8be1-33aa-9fb1-eb94be69b3ae
+        uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
       commandtrait:
         cost: -1.0
         executionMode: LINEAR
-        experienceCost: -1.0
+        experienceCost: -1
         hideErrorMessages: false
+        persistSequence: false
         commands:
           '0':
             command: renaaspawn %player%
@@ -472,21 +567,16 @@ npc:
             globalcooldown: 0
             n: -1
             delay: 0
-        cooldowns:
-          dfdbceb5-8be1-33aa-9fb1-eb94be69b3ae:
-            lastUsed:
-              cmVuYWFzcGF3biAlcGxheWVyJQ==: 1645886386
-            lastUsedId: 0
       location:
-        bodyYaw: 81.72827
+        bodyYaw: 267.46057
         world: spawn
-        x: '61.0'
-        y: '103.0'
-        z: '-163.0'
-        yaw: '81.7283'
-        pitch: '56.9918'
+        x: '82.9737'
+        y: '97.9375'
+        z: '-171.4767'
+        yaw: '-92.5394'
+        pitch: '6.0607'
       spawned: true
-    traitnames: scoreboardtrait,skintrait,equipment,spawned,inventory,sneak,type,mounttrait,commandtrait,lookclose,owner,location,waypoints
+    traitnames: sneak,mounttrait,location,waypoints,owner,inventory,type,skintrait,scoreboardtrait,rotationtrait,spawned,lookclose,equipment,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
