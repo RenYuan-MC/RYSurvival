@@ -43,6 +43,7 @@ Messages-To-Hide-Filter:
 - 'Failed to fetch the latest jar file from the builds page'
 - 'Failed to start metrics as the file could not be downloaded'
 - 'Failed to fetch latest builds for Metrics'
+- 'Exception while requesting skin:'
 
 #QuickShop网络问题导致的报错屏蔽
 - 'Failed to update game assets from MojangAPI server'
