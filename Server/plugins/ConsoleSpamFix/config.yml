@@ -53,6 +53,7 @@ Messages-To-Hide-Filter:
 
 #未知但烦人的信息屏蔽
 - 'You can do it manually or try again later or simply ignore it'
+- 'Failed to parse level-type default, defaulting to minecraft:normal'
 
 ChatMessages:
     NoPermission: '&f[&6服务器&f] &f你没有权限'
