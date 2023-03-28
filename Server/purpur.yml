@@ -173,7 +173,7 @@ settings:
       seconds: '%02d seconds'
   disable-give-dropping: false
   tps-catchup: true
-  server-mod-name: RenYuan-Survival (Based on KeYiMC)
+  server-mod-name: RenYuan-Survival (Based on Purpur)
   use-alternate-keepalive: true
   username-valid-characters: ^[a-zA-Z0-9_.]*$
   enchantment:
