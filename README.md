@@ -6,9 +6,8 @@ mcbbs 链接: https://www.mcbbs.net/thread-1322237-1-1.html
 minebbs 链接: https://www.minebbs.net/resources/4131/  
 其他冷门论坛的服务端宣传贴请 [点击这查看](https://github.com/RenYuan-MC/RYSurvival/blob/main/bbs.md)  
 <br>
-**开发版本:**  
-[V1.8 分支](https://github.com/RenYuan-MC/RYSurvival/tree/dev/1.8) (1.19.4)  
-**最新版本:**  
+**最新版本:**   
+[V1.8 分支](https://github.com/RenYuan-MC/RYSurvival/tree/ver/1.8) (1.19.4)  
 [V1.7 分支](https://github.com/RenYuan-MC/RYSurvival/tree/ver/1.7) (1.19.3)  
 **过时版本:**  
 [V1.6 分支](https://github.com/RenYuan-MC/RYSurvival/tree/legacy/1.6) (1.19.2)  
@@ -19,6 +18,13 @@ minebbs 链接: https://www.minebbs.net/resources/4131/
 [V1.2 分支](https://github.com/RenYuan-MC/RYSurvival/tree/legacy/1.2) (1.16.5)  
 <br>
 QQ 交流群：[1029946156](https://jq.qq.com/?_wv=1027&k=DN77Hlfh)  
+# Folia测试版本
+[Folia 分支](https://github.com/RenYuan-MC/RYSurvival/tree/test/Folia) (1.19.4)  
+* Folia是Paper的新分支,其为服务器添加了"区域化多线程"(regionised multithreading)   
+* Folia可以调用CPU的全部核心,但是插件兼容性为0,需要单独兼容  
+* 这是一个实验性版本,在Folia稳定前不会有发布版本,目前以可用性为主,不考虑玩法兼容 
+
+ 
 # 已知问题
 * 主城系统商店失效 (故意删除的,因为定价不合理,短期内不会修复)
 * 仍有部分粘液科技材质错乱
