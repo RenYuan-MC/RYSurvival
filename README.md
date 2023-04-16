@@ -19,7 +19,7 @@ minebbs 链接: https://www.minebbs.net/resources/4131/
 <br>
 QQ 交流群：[1029946156](https://jq.qq.com/?_wv=1027&k=DN77Hlfh)  
 # Folia测试版本
-[Folia 分支](https://github.com/RenYuan-MC/RYSurvival/tree/test/Folia) (1.19.4)  
+[Folia 分支](https://github.com/RenYuan-MC/RYSurvival/tree/test/folia) (1.19.4)  
 * Folia是Paper的新分支,其为服务器添加了"区域化多线程"(regionised multithreading)   
 * Folia可以调用CPU的全部核心,但是插件兼容性为0,需要单独兼容  
 * 这是一个实验性版本,在Folia稳定前不会有发布版本,目前以可用性为主,不考虑玩法兼容 
