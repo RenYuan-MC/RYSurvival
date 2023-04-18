@@ -28,6 +28,11 @@
 作者无回应,但有相关功能请求: https://github.com/Zrips/CMI/discussions/7736  
 <br>
 
+## ConsoleSpamFix
+**非官方支持**  
+由于插件内容本身和Folia涉及的修改内容关联性不大,直接修改插件内plugin.yml即可兼容  
+<br>
+
 ## CommandBlocker
 **未支持**   
 无相关支持信息  
