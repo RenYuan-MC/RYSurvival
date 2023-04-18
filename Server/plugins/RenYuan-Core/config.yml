@@ -1,0 +1,28 @@
+#任渊生存服务端功能核心插件
+#此插件集成了一些我自己写的功能和服务端数据统计
+#你可以在 https://github.com/lRENyaaa/RenYuan-Core 查看本插件源代码
+
+#本服务端使用CStats/BStats来获取服务端使用统计
+#CStats数据统计可以前往 http://cstats.iroselle.com/plugin/bukkit/RenYuan-Core 查看
+#BStats数据统计可以前往 https://bstats.org/plugin/bukkit/RenYuan-Survival/16814 查看
+Metrics:
+  #是否启用
+  Enable: true
+
+#基岩版玩家死亡重生时的菜单
+BedrockRespawnMenu:
+  Enable: true
+
+#发送信息时的前缀
+Prefix: "§f[§6服务器§f] "
+
+#禁止在某个世界圈地
+#此功能不会使/res tp此类命令在这个世界失效
+ResCreateLimit:
+  - world_resources
+  - spawn
+
+#主城扩展,主城无伤害,虚空返回主城
+SpawnExtension:
+  #是否启用
+  Enable: false
