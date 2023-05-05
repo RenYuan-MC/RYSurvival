@@ -1,10 +1,10 @@
 options:
     
     # 资源包的URL下载链接
-    url: "https://rymc.ltd/survival/pack/1.1"
+    url: "https://rymc.ltd/survival/pack/2.0"
 
     # 资源包的SHA-1值
-    hash: "2fa9b5326e064b24499edcf9569a3c466bd739ae"
+    hash: "665ad5d064b5d00c6728b041bf172449a830ef81"
 
     # 资源包支持的最低协议版本
     version: 498
