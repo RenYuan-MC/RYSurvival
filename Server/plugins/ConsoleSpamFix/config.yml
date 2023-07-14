@@ -62,7 +62,7 @@ Messages-To-Hide-Filter:
 #ViaBackward无用信息屏蔽
 - 'Ignoring plugin channel in incoming REGISTER'
 
-#懂的都懂,看着就烦
+#看着烦
 - 'Preparing spawn area: 0%'
 - 'Unable to find spawn biome'
 - 'Uncaught exception in thread Profile Lookup Executor'
@@ -78,6 +78,7 @@ Messages-To-Hide-Filter:
 #Geyser无用信息屏蔽
 - '无法翻译数据包'
 - 'Failed to read git.properties'
+- 'The resource pack player_skulls.mcpack has a file in it that meets or exceeds 80 characters in its path'
 
 #Slimefun无用信息屏蔽
 - 'Attempted to refresh skin cache'
@@ -95,7 +96,7 @@ Messages-To-Hide-Filter:
 #Residence下载失败信息屏蔽
 - 'Failed to download'
 
-#不联网导致的报错屏蔽(请联网,OK?)
+#不联网导致的报错屏蔽
 - 'Got an error'
 - 'Exception while requesting skin'
 - 'You can do it manually or try again later or simply ignore it'
