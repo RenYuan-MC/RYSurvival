@@ -6,10 +6,11 @@ mcbbs 链接: https://www.mcbbs.net/thread-1322237-1-1.html
 minebbs 链接: https://www.minebbs.net/resources/4131/  
 其他冷门论坛的服务端宣传贴请 [点击这查看](https://github.com/RenYuan-MC/RYSurvival/blob/main/bbs.md)  
 <br>
-**最新版本:**   
+**最新版本:**  
+[V1.8.2 分支](https://github.com/RenYuan-MC/RYSurvival/tree/ver/1.8.2) (1.20.1)  
+**过时版本:**  
 [V1.8 分支](https://github.com/RenYuan-MC/RYSurvival/tree/ver/1.8) (1.19.4)  
 [V1.7 分支](https://github.com/RenYuan-MC/RYSurvival/tree/ver/1.7) (1.19.3)  
-**过时版本:**  
 [V1.6 分支](https://github.com/RenYuan-MC/RYSurvival/tree/legacy/1.6) (1.19.2)  
 [V1.5 分支](https://github.com/RenYuan-MC/RYSurvival/tree/legacy/1.5) (1.19.2)  
 [V1.4 分支](https://github.com/RenYuan-MC/RYSurvival/tree/legacy/1.4) (1.18.2)  
